@@ -1,0 +1,572 @@
+"""Regenerate the bulk PopTracker pack files from the HP2PC_AP world.
+
+Reads ../HP2PC_AP/apworld/{items,locations,regions,rules}.py and emits:
+    items/items.json
+    locations/<Region>.json   (one per region)
+    maps/maps.json            (only if missing — otherwise leaves Stefan's
+                               hand-tuned floor map layout alone)
+    scripts/locations_import.lua
+    scripts/autotracking/item_mapping.lua
+    scripts/autotracking/location_mapping.lua
+    scripts/autotracking/setting_mapping.lua
+    scripts/logic/access_rules.lua
+
+Pure-AST: never imports the apworld package (it pulls in BaseClasses /
+ItemClassification / AutoWorld, which only resolve inside an Archipelago
+checkout). The lambdas in regions.py / rules.py follow a small,
+regular grammar so parsing them with ast is straightforward.
+
+Run from the pack root:
+    py -3.12 tools/generate.py
+"""
+from __future__ import annotations
+
+import ast
+import json
+import os
+import re
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+PACK = HERE.parent
+APWORLD = PACK.parent / "HP2PC_AP" / "apworld"
+
+REGION_DISPLAY = {
+    "BicornLevel": "Bicorn Level",
+    "BoomslangLevel": "Boomslang Level",
+    "CastleExterior": "Castle Exterior",
+    "ChamberOfSecrets": "Chamber of Secrets",
+    "DiffindoChallenge": "Diffindo Challenge",
+    "DuellingClub": "Duelling Club",
+    "DumbledoreStudy": "Dumbledore's Study",
+    "ForbiddenForest": "Forbidden Forest",
+    "GoldCardRoom": "Gold Card Room",
+    "GoyleLevel": "Goyle Level",
+    "GryffindorChallenge": "Gryffindor Challenge",
+    "Hogwarts": "Hogwarts",
+    "Quidditch": "Quidditch",
+    "RictusempraChallenge": "Rictusempra Challenge",
+    "SkurgeChallenge": "Skurge Challenge",
+    "SlytherinCommon": "Slytherin Common Room",
+    "SpongifyChallenge": "Spongify Challenge",
+    "WhompingWillow": "Whomping Willow",
+    "Menu": "Menu",
+}
+
+# Map LOCATION_GROUPS group → tracker visibility helper from logic.lua.
+# Groups not listed here are always visible.
+GROUP_TO_VIS = {
+    "CardLocations": "$visCards",
+    "Secrets": "$visSecrets",
+    "ChallengeStars": "$visStars",
+    "QuidditchPurchases": "$visQuidPurch",
+    "Duels": "$visDuels",
+    "QuidditchMatches": "$visQuidMatch",
+    "SpellChallengeTimes": "$visSpellTimes",
+    "Tradersanity": "$visTraders",
+    # "Classrooms" / "LevelCompletions" handled below by mode rather than group.
+}
+
+# Map item classification (string from ITEM_CLASSIFICATIONS) → image path.
+# Stefan provides the PNGs at these paths; the pack still loads without them.
+CLASS_TO_IMG_DIR = {
+    "spell": "images/items/spells",
+    "key": "images/items/keys",
+    "equip": "images/items/equipment",
+    "card_bronze": "images/items/cards/bronze",
+    "card_silver": "images/items/cards/silver",
+    "card_gold": "images/items/cards/gold",
+    "filler": "images/items/filler",
+    "trap": "images/items/traps",
+}
+
+# Display order for the layouts/items.json grid — driven from the items list,
+# but grouped for clarity. The handwritten layouts/items.json references item
+# codes directly, so changing this dict only affects re-emission, not layout.
+
+
+# ---------------------------------------------------------------------------
+# Source loading
+# ---------------------------------------------------------------------------
+
+def _eval_literal(node):
+    """Evaluate AST literal nodes (Constant/List/Tuple/Set/Dict/Call(frozenset))
+    into Python values. Used for the data dicts in items.py / locations.py."""
+    if isinstance(node, ast.Constant):
+        return node.value
+    if isinstance(node, (ast.List, ast.Tuple)):
+        return [_eval_literal(e) for e in node.elts]
+    if isinstance(node, ast.Set):
+        return {_eval_literal(e) for e in node.elts}
+    if isinstance(node, ast.Dict):
+        return {_eval_literal(k): _eval_literal(v) for k, v in zip(node.keys, node.values)}
+    if isinstance(node, ast.Attribute):
+        # ItemClassification.progression  →  "progression"
+        return node.attr
+    if isinstance(node, ast.Call) and isinstance(node.func, ast.Name) and node.func.id == "frozenset":
+        if not node.args:
+            return frozenset()
+        return frozenset(_eval_literal(node.args[0]))
+    if isinstance(node, ast.Name):
+        return node.id  # e.g. an enum unqualified
+    raise ValueError(f"unhandled literal node: {ast.dump(node)}")
+
+
+def load_assignments(path: Path) -> dict[str, object]:
+    """Return all module-level `NAME = expr` assignments in a file, with
+    literal expressions evaluated. Skips assignments whose RHS isn't a
+    literal we know how to evaluate."""
+    tree = ast.parse(path.read_text(encoding="utf-8"))
+    out: dict[str, object] = {}
+    for stmt in tree.body:
+        if not isinstance(stmt, (ast.Assign, ast.AnnAssign)):
+            continue
+        targets = stmt.targets if isinstance(stmt, ast.Assign) else [stmt.target]
+        value = stmt.value
+        if value is None:
+            continue
+        for t in targets:
+            if not isinstance(t, ast.Name):
+                continue
+            try:
+                out[t.id] = _eval_literal(value)
+            except ValueError:
+                pass
+    return out
+
+
+def load_rule_dicts(path: Path) -> dict[str, dict[str, ast.AST]]:
+    """For rules.py / regions.py: each top-level dict is { 'Name': lambda ... }.
+    Returns { dict_name: { key: lambda_body_ast } } — lambdas kept as AST so
+    the translator can walk them."""
+    tree = ast.parse(path.read_text(encoding="utf-8"))
+    out: dict[str, dict[str, ast.AST]] = {}
+    for stmt in tree.body:
+        if isinstance(stmt, (ast.Assign, ast.AnnAssign)):
+            targets = stmt.targets if isinstance(stmt, ast.Assign) else [stmt.target]
+            value = stmt.value
+            if not isinstance(value, ast.Dict):
+                continue
+            for t in targets:
+                if not isinstance(t, ast.Name):
+                    continue
+                d: dict[str, ast.AST] = {}
+                for k, v in zip(value.keys, value.values):
+                    key = _eval_literal(k) if isinstance(k, ast.Constant) else None
+                    if key is None:
+                        continue
+                    # value is either Lambda(args, body) or a literal (True/False)
+                    if isinstance(v, ast.Lambda):
+                        d[key] = v.body
+                    elif isinstance(v, ast.Constant):
+                        d[key] = v
+                    else:
+                        d[key] = v
+                out[t.id] = d
+    return out
+
+
+# ---------------------------------------------------------------------------
+# Lambda body → Lua expression
+# ---------------------------------------------------------------------------
+
+def lambda_to_lua(node) -> str:
+    if isinstance(node, ast.Constant):
+        if node.value is True:
+            return "true"
+        if node.value is False:
+            return "false"
+        raise ValueError(f"unexpected constant: {node.value!r}")
+    if isinstance(node, ast.BoolOp):
+        op = " and " if isinstance(node.op, ast.And) else " or "
+        return "(" + op.join(lambda_to_lua(v) for v in node.values) + ")"
+    if isinstance(node, ast.UnaryOp) and isinstance(node.op, ast.Not):
+        return "(not " + lambda_to_lua(node.operand) + ")"
+    if isinstance(node, ast.Call):
+        # state.has('X', player)
+        if (isinstance(node.func, ast.Attribute) and node.func.attr == "has"
+                and len(node.args) >= 1 and isinstance(node.args[0], ast.Constant)):
+            item = node.args[0].value
+            return f'has("{_lua_escape(item)}")'
+    raise ValueError(f"unsupported expr node: {ast.dump(node)}")
+
+
+def _lua_escape(s: str) -> str:
+    return s.replace("\\", "\\\\").replace('"', '\\"')
+
+
+# ---------------------------------------------------------------------------
+# Slug + naming
+# ---------------------------------------------------------------------------
+
+_SLUG_RE = re.compile(r"[^A-Za-z0-9]+")
+
+
+def slug(s: str) -> str:
+    return _SLUG_RE.sub("_", s).strip("_")
+
+
+def rule_fn_name(loc_name: str) -> str:
+    return f"rule_{slug(loc_name)}"
+
+
+def region_rule_fn_name(region: str) -> str:
+    return f"region_{region}"
+
+
+# ---------------------------------------------------------------------------
+# Items
+# ---------------------------------------------------------------------------
+
+# Setting items injected on top of the AP items. Each one becomes a
+# progressive multi-stage item; stage codes are what slot_data mapping
+# resolves to, and what the logic helpers in logic.lua test via has().
+SETTING_ITEMS = [
+    {
+        "name": "Game mode", "key": "game_mode",
+        "stages": [
+            ("vanilla", "Vanilla"),
+            ("open_castle", "Open Castle"),
+        ],
+    },
+    {"name": "Vanilla gate levels", "key": "vanilla_gate_levels", "binary": True},
+    {"name": "Enable wizard cards", "key": "enable_wizard_cards", "binary": True},
+    {"name": "Enable secrets", "key": "enable_secrets", "binary": True},
+    {"name": "Allow secrets progression", "key": "allow_secrets_progression", "binary": True},
+    {"name": "Enable challenge stars", "key": "enable_challenge_stars", "binary": True},
+    {"name": "Enable Quidditch upgrades", "key": "enable_quidditch_upgrades", "binary": True},
+    {"name": "Enable Duelling", "key": "enable_duelling", "binary": True},
+    {"name": "Enable Quidditch matches", "key": "enable_quidditch_matches", "binary": True},
+    {"name": "Enable spell challenge times", "key": "enable_spell_challenge_times", "binary": True},
+    {"name": "Enable traps", "key": "enable_traps", "binary": True},
+    {"name": "Ring Link", "key": "ring_link", "binary": True},
+    {"name": "Death Link", "key": "death_link", "binary": True},
+    {
+        "name": "Tradersanity", "key": "tradersanity",
+        "stages": [
+            ("off", "Off"),
+            ("price_vanilla", "Vanilla price"),
+            ("price_random", "Random price"),
+            ("price_low", "Low price"),
+        ],
+    },
+]
+
+
+def _classify_for_img(name: str, groups: dict[str, list[str]]) -> str:
+    def in_group(g):
+        return name in groups.get(g, [])
+    if in_group("Spells"):
+        return "spell"
+    if in_group("Blocker Keys"):
+        return "key"
+    if in_group("Equipment"):
+        return "equip"
+    if in_group("Cards (Bronze)"):
+        return "card_bronze"
+    if in_group("Cards (Silver)"):
+        return "card_silver"
+    if in_group("Cards (Gold)"):
+        return "card_gold"
+    if in_group("Traps"):
+        return "trap"
+    return "filler"
+
+
+def build_items_json(items: dict) -> list:
+    name_to_id = items["ITEM_NAME_TO_ID"]
+    groups = items["ITEM_GROUPS"]
+    out = []
+    for name in name_to_id:
+        kind = _classify_for_img(name, groups)
+        img = f"{CLASS_TO_IMG_DIR[kind]}/{slug(name).lower()}.png"
+        out.append({
+            "name": name,
+            "type": "toggle",
+            "img": img,
+            "codes": name,
+        })
+    for s in SETTING_ITEMS:
+        if s.get("binary"):
+            stages = [
+                {
+                    "img": f"images/items/settings/{s['key']}_off.png",
+                    "name": f"{s['name']}: off",
+                    "codes": f"{s['key']},{s['key']}_off",
+                    "inherit_codes": False,
+                },
+                {
+                    "img": f"images/items/settings/{s['key']}_on.png",
+                    "name": f"{s['name']}: on",
+                    "codes": f"{s['key']},{s['key']}_on",
+                    "inherit_codes": False,
+                },
+            ]
+        else:
+            stages = [
+                {
+                    "img": f"images/items/settings/{s['key']}_{stage_key}.png",
+                    "name": f"{s['name']}: {stage_label}",
+                    "codes": f"{s['key']},{s['key']}_{stage_key}",
+                    "inherit_codes": False,
+                }
+                for stage_key, stage_label in s["stages"]
+            ]
+        out.append({
+            "name": s["name"],
+            "type": "progressive",
+            "loop": False,
+            "allow_disabled": False,
+            "codes": s["key"],
+            "stages": stages,
+        })
+    return out
+
+
+# ---------------------------------------------------------------------------
+# Locations
+# ---------------------------------------------------------------------------
+
+def loc_section_ref(region_display: str, loc_name: str) -> str:
+    short = loc_name
+    # Drop the "Region - " prefix for the section/leaf label so it reads
+    # naturally on the map ("Card Agrippa" rather than "Bicorn Level - Card Agrippa").
+    prefix = region_display + " - "
+    if short.startswith(prefix):
+        short = short[len(prefix):]
+    return short
+
+
+def build_region_locations_json(region: str, region_locs: list[str],
+                                 loc_groups: dict[str, str],
+                                 existing_map_locations: dict[str, list]) -> list:
+    """Build the locations/<Region>.json structure for a single region.
+
+    existing_map_locations: section name → previous map_locations list from
+    the file on disk. Carries pin coordinates forward across regenerations
+    so a fresh run doesn't wipe coordinates Stefan has already placed."""
+    display = REGION_DISPLAY.get(region, region)
+    children = []
+    for loc_name in sorted(region_locs):
+        section_name = loc_section_ref(display, loc_name)
+        prior = existing_map_locations.get(section_name)
+        map_locs = prior if prior else [{"map": display, "x": 0, "y": 0}]
+        entry = {
+            "name": section_name,
+            "chest_unopened_img": "images/items/item.png",
+            "chest_opened_img": "images/items/item_opened.png",
+            "access_rules": [f"${rule_fn_name(loc_name)}"],
+            "sections": [{"name": section_name}],
+            "map_locations": map_locs,
+        }
+        group = loc_groups.get(loc_name)
+        vis = GROUP_TO_VIS.get(group or "")
+        # Classrooms locations only exist in vanilla; the open-castle-only
+        # Gryffindor challenge region is the mirror image.
+        if group == "Classrooms":
+            vis = "$visClassrooms"
+        elif region == "GryffindorChallenge":
+            vis = "$visOpenCastleOnly"
+        if vis is not None:
+            entry["visibility_rules"] = [vis]
+        children.append(entry)
+    return [{
+        "name": display,
+        "chest_unopened_img": "images/items/item.png",
+        "chest_opened_img": "images/items/item_opened.png",
+        "children": children,
+    }]
+
+
+def load_existing_map_locations(path: Path) -> dict[str, list]:
+    """Read a previously-written locations/<Region>.json and pull each
+    child's map_locations back out, keyed by section name."""
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    out: dict[str, list] = {}
+    for region_entry in data:
+        for child in region_entry.get("children", []):
+            name = child.get("name")
+            ml = child.get("map_locations")
+            if name and ml:
+                out[name] = ml
+    return out
+
+
+# ---------------------------------------------------------------------------
+# Output writers
+# ---------------------------------------------------------------------------
+
+def write_json(path: Path, data) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, indent="\t", ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def write_text(path: Path, body: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(body, encoding="utf-8")
+
+
+def lua_table_kv(items, key_quote=False) -> str:
+    """Render { [key] = value, ... }, one entry per line, tab-indented."""
+    lines = []
+    for k, v in items:
+        kk = f'["{_lua_escape(k)}"]' if key_quote else f"[{k}]"
+        lines.append(f"\t{kk} = {v},")
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# Generation entry point
+# ---------------------------------------------------------------------------
+
+def main() -> None:
+    items = load_assignments(APWORLD / "items.py")
+    locations = load_assignments(APWORLD / "locations.py")
+    regions = load_assignments(APWORLD / "regions.py")
+    region_rules = load_rule_dicts(APWORLD / "regions.py")
+    location_rules = load_rule_dicts(APWORLD / "rules.py")
+
+    name_to_id_items = items["ITEM_NAME_TO_ID"]
+    name_to_id_locs = locations["LOCATION_NAME_TO_ID"]
+    loc_regions = locations["LOCATION_REGIONS"]
+    loc_groups = locations["LOCATION_GROUPS"]
+    region_names = regions["REGION_NAMES"]
+
+    # ---- items/items.json -------------------------------------------------
+    write_json(PACK / "items" / "items.json", build_items_json(items))
+
+    # ---- locations/<Region>.json -----------------------------------------
+    by_region: dict[str, list[str]] = {r: [] for r in region_names}
+    for loc, region in loc_regions.items():
+        by_region.setdefault(region, []).append(loc)
+    for region, locs in by_region.items():
+        if not locs:
+            continue
+        display = REGION_DISPLAY.get(region, region)
+        out_path = PACK / "locations" / f"{display}.json"
+        prior = load_existing_map_locations(out_path)
+        write_json(out_path, build_region_locations_json(region, locs, loc_groups, prior))
+
+    # ---- scripts/locations_import.lua ------------------------------------
+    import_lines = []
+    for region in sorted(by_region):
+        if not by_region[region]:
+            continue
+        display = REGION_DISPLAY.get(region, region)
+        import_lines.append(f'Tracker:AddLocations("locations/{display}.json")')
+    write_text(PACK / "scripts" / "locations_import.lua",
+               "\n".join(import_lines) + "\n")
+
+    # ---- scripts/autotracking/item_mapping.lua ---------------------------
+    item_rows = []
+    for name, ap_id in name_to_id_items.items():
+        item_rows.append((str(ap_id), f'{{"{_lua_escape(name)}", "toggle"}}'))
+    write_text(PACK / "scripts" / "autotracking" / "item_mapping.lua",
+               "ITEM_MAPPING = {\n" + lua_table_kv(item_rows) + "\n}\n")
+
+    # ---- scripts/autotracking/location_mapping.lua -----------------------
+    loc_rows = []
+    for name, ap_id in name_to_id_locs.items():
+        region = loc_regions.get(name, "TBD")
+        display = REGION_DISPLAY.get(region, region)
+        section = loc_section_ref(display, name)
+        code = f"@{display}/{section}"
+        loc_rows.append((str(ap_id), f'{{"{_lua_escape(code)}"}}'))
+    write_text(PACK / "scripts" / "autotracking" / "location_mapping.lua",
+               "LOCATION_MAPPING = {\n" + lua_table_kv(loc_rows) + "\n}\n")
+
+    # ---- scripts/autotracking/setting_mapping.lua ------------------------
+    # Slot data keys → tracker code + value mapping. Boolean and integer
+    # slot values are normalised to a stage index in the progressive item.
+    slot_lines = ["SLOT_CODES = {"]
+    for s in SETTING_ITEMS:
+        slot_lines.append(f'\t{s["key"]} = {{')
+        slot_lines.append(f'\t\tcode = "{s["key"]}",')
+        slot_lines.append("\t\tmapping = {")
+        if s.get("binary"):
+            # AP slot_data sends booleans (yaml `true`/`false`) or 0/1 ints.
+            slot_lines.append("\t\t\t[0] = 0, [1] = 1,")
+            slot_lines.append('\t\t\t[false] = 0, [true] = 1,')
+        else:
+            for i, (stage_key, _) in enumerate(s["stages"]):
+                slot_lines.append(f'\t\t\t["{stage_key}"] = {i}, [{i}] = {i},')
+        slot_lines.append("\t\t},")
+        slot_lines.append("\t},")
+    slot_lines.append("}")
+    write_text(PACK / "scripts" / "autotracking" / "setting_mapping.lua",
+               "\n".join(slot_lines) + "\n")
+
+    # ---- scripts/logic/access_rules.lua ---------------------------------
+    # For each AP location, emit `function rule_<slug>()` returning the
+    # mode-correct composed rule (region entry AND per-location require).
+    region_vanilla = region_rules.get("REGION_ENTRY_RULES_VANILLA", {})
+    region_open = region_rules.get("REGION_ENTRY_RULES_OPEN_CASTLE", {})
+    loc_rules_v = location_rules.get("LOCATION_RULES_VANILLA", {})
+    loc_rules_o = location_rules.get("LOCATION_RULES_OPEN_CASTLE", {})
+
+    def compose(region: str, loc_name: str, region_tbl, loc_tbl) -> str:
+        parts = []
+        rnode = region_tbl.get(region)
+        if rnode is not None:
+            parts.append(lambda_to_lua(rnode))
+        lnode = loc_tbl.get(loc_name)
+        if lnode is not None:
+            parts.append(lambda_to_lua(lnode))
+        if not parts:
+            return "true"
+        return " and ".join(parts)
+
+    lua_lines = [
+        "-- Auto-generated by tools/generate.py from HP2PC_AP/apworld/{regions,rules}.py.",
+        "-- One function per AP location returning whether it is accessible now.",
+        "-- Mode-switched on isOpenCastle() — both vanilla and open castle rules embedded.",
+        "",
+    ]
+    for loc_name in name_to_id_locs:
+        region = loc_regions.get(loc_name, "TBD")
+        van = compose(region, loc_name, region_vanilla, loc_rules_v)
+        ocs = compose(region, loc_name, region_open, loc_rules_o)
+        fn = rule_fn_name(loc_name)
+        if van == ocs:
+            lua_lines.append(f"function {fn}() return {van} end")
+        else:
+            lua_lines.append(f"function {fn}()")
+            lua_lines.append("\tif isOpenCastle() then")
+            lua_lines.append(f"\t\treturn {ocs}")
+            lua_lines.append("\telse")
+            lua_lines.append(f"\t\treturn {van}")
+            lua_lines.append("\tend")
+            lua_lines.append("end")
+    write_text(PACK / "scripts" / "logic" / "access_rules.lua",
+               "\n".join(lua_lines) + "\n")
+
+    # ---- maps/maps.json (only if missing) -------------------------------
+    maps_path = PACK / "maps" / "maps.json"
+    if not maps_path.exists():
+        # One placeholder map per region. Stefan replaces each entry with the
+        # per-floor map breakdown when the rendered images land.
+        maps = []
+        for region in sorted(by_region):
+            if not by_region[region]:
+                continue
+            display = REGION_DISPLAY.get(region, region)
+            maps.append({
+                "name": display,
+                "location_size": 12,
+                "location_border_thickness": 1,
+                "img": f"images/maps/{slug(display).lower()}.png",
+            })
+        write_json(maps_path, maps)
+
+    print(f"Wrote items: {len(name_to_id_items)} items")
+    print(f"Wrote locations across {sum(1 for r in by_region if by_region[r])} regions ({len(name_to_id_locs)} total)")
+    print(f"Wrote access rules for {len(name_to_id_locs)} locations")
+
+
+if __name__ == "__main__":
+    main()

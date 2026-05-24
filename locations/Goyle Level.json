@@ -1,0 +1,351 @@
+[
+	{
+		"name": "Goyle Level",
+		"chest_unopened_img": "images/items/item.png",
+		"chest_opened_img": "images/items/item_opened.png",
+		"children": [
+			{
+				"name": "Card Bloxam",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Card_Bloxam"
+				],
+				"sections": [
+					{
+						"name": "Card Bloxam"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Circe",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Card_Circe"
+				],
+				"sections": [
+					{
+						"name": "Card Circe"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Plumpton",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Card_Plumpton"
+				],
+				"sections": [
+					{
+						"name": "Card Plumpton"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Stroulger",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Card_Stroulger"
+				],
+				"sections": [
+					{
+						"name": "Card Stroulger"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Whitehorn",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Card_Whitehorn"
+				],
+				"sections": [
+					{
+						"name": "Card Whitehorn"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Wildsmith",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Card_Wildsmith"
+				],
+				"sections": [
+					{
+						"name": "Card Wildsmith"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Complete",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Complete"
+				],
+				"sections": [
+					{
+						"name": "Complete"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Secret 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Secret_1"
+				],
+				"sections": [
+					{
+						"name": "Secret 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Secret_2"
+				],
+				"sections": [
+					{
+						"name": "Secret 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Secret_3"
+				],
+				"sections": [
+					{
+						"name": "Secret 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Secret_4"
+				],
+				"sections": [
+					{
+						"name": "Secret 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Secret_5"
+				],
+				"sections": [
+					{
+						"name": "Secret 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Secret_6"
+				],
+				"sections": [
+					{
+						"name": "Secret 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Secret_7"
+				],
+				"sections": [
+					{
+						"name": "Secret 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Secret_8"
+				],
+				"sections": [
+					{
+						"name": "Secret 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,78 @@
+[
+	{
+		"name": "Dumbledore's Study",
+		"chest_unopened_img": "images/items/item.png",
+		"chest_opened_img": "images/items/item_opened.png",
+		"children": [
+			{
+				"name": "Card Beamish",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Dumbledore_s_Study_Card_Beamish"
+				],
+				"sections": [
+					{
+						"name": "Card Beamish"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Dumbledore's Study",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Muldoon",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Dumbledore_s_Study_Card_Muldoon"
+				],
+				"sections": [
+					{
+						"name": "Card Muldoon"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Dumbledore's Study",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Secret",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Dumbledore_s_Study_Secret"
+				],
+				"sections": [
+					{
+						"name": "Secret"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Dumbledore's Study",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			}
+		]
+	}
+]

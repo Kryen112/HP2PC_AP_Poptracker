@@ -1,0 +1,1136 @@
+[
+	{
+		"name": "Alohomora",
+		"type": "toggle",
+		"img": "images/items/spells/alohomora.png",
+		"codes": "Alohomora"
+	},
+	{
+		"name": "Diffindo",
+		"type": "toggle",
+		"img": "images/items/spells/diffindo.png",
+		"codes": "Diffindo"
+	},
+	{
+		"name": "Flipendo",
+		"type": "toggle",
+		"img": "images/items/spells/flipendo.png",
+		"codes": "Flipendo"
+	},
+	{
+		"name": "Lumos",
+		"type": "toggle",
+		"img": "images/items/spells/lumos.png",
+		"codes": "Lumos"
+	},
+	{
+		"name": "Rictusempra",
+		"type": "toggle",
+		"img": "images/items/spells/rictusempra.png",
+		"codes": "Rictusempra"
+	},
+	{
+		"name": "Skurge",
+		"type": "toggle",
+		"img": "images/items/spells/skurge.png",
+		"codes": "Skurge"
+	},
+	{
+		"name": "Spongify",
+		"type": "toggle",
+		"img": "images/items/spells/spongify.png",
+		"codes": "Spongify"
+	},
+	{
+		"name": "Chamber of Secrets Key",
+		"type": "toggle",
+		"img": "images/items/keys/chamber_of_secrets_key.png",
+		"codes": "Chamber of Secrets Key"
+	},
+	{
+		"name": "Spongify Challenge Key",
+		"type": "toggle",
+		"img": "images/items/keys/spongify_challenge_key.png",
+		"codes": "Spongify Challenge Key"
+	},
+	{
+		"name": "Skurge Challenge Key",
+		"type": "toggle",
+		"img": "images/items/keys/skurge_challenge_key.png",
+		"codes": "Skurge Challenge Key"
+	},
+	{
+		"name": "Rictusempra Challenge Key",
+		"type": "toggle",
+		"img": "images/items/keys/rictusempra_challenge_key.png",
+		"codes": "Rictusempra Challenge Key"
+	},
+	{
+		"name": "Diffindo Challenge Key",
+		"type": "toggle",
+		"img": "images/items/keys/diffindo_challenge_key.png",
+		"codes": "Diffindo Challenge Key"
+	},
+	{
+		"name": "Boomslang Level Key",
+		"type": "toggle",
+		"img": "images/items/keys/boomslang_level_key.png",
+		"codes": "Boomslang Level Key"
+	},
+	{
+		"name": "Whomping Willow Key",
+		"type": "toggle",
+		"img": "images/items/keys/whomping_willow_key.png",
+		"codes": "Whomping Willow Key"
+	},
+	{
+		"name": "Forbidden Forest Key",
+		"type": "toggle",
+		"img": "images/items/keys/forbidden_forest_key.png",
+		"codes": "Forbidden Forest Key"
+	},
+	{
+		"name": "Slytherin Common Room Key",
+		"type": "toggle",
+		"img": "images/items/keys/slytherin_common_room_key.png",
+		"codes": "Slytherin Common Room Key"
+	},
+	{
+		"name": "Goyle Level Key",
+		"type": "toggle",
+		"img": "images/items/keys/goyle_level_key.png",
+		"codes": "Goyle Level Key"
+	},
+	{
+		"name": "Bicorn Level Key",
+		"type": "toggle",
+		"img": "images/items/keys/bicorn_level_key.png",
+		"codes": "Bicorn Level Key"
+	},
+	{
+		"name": "Duelling Key",
+		"type": "toggle",
+		"img": "images/items/keys/duelling_key.png",
+		"codes": "Duelling Key"
+	},
+	{
+		"name": "Quidditch Key",
+		"type": "toggle",
+		"img": "images/items/keys/quidditch_key.png",
+		"codes": "Quidditch Key"
+	},
+	{
+		"name": "Gryffindor Challenge Key",
+		"type": "toggle",
+		"img": "images/items/keys/gryffindor_challenge_key.png",
+		"codes": "Gryffindor Challenge Key"
+	},
+	{
+		"name": "Nimbus 2001",
+		"type": "toggle",
+		"img": "images/items/equipment/nimbus_2001.png",
+		"codes": "Nimbus 2001"
+	},
+	{
+		"name": "Quidditch Armour",
+		"type": "toggle",
+		"img": "images/items/equipment/quidditch_armour.png",
+		"codes": "Quidditch Armour"
+	},
+	{
+		"name": "Bronze Card - Agrippa",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_agrippa.png",
+		"codes": "Bronze Card - Agrippa"
+	},
+	{
+		"name": "Bronze Card - Alderton",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_alderton.png",
+		"codes": "Bronze Card - Alderton"
+	},
+	{
+		"name": "Bronze Card - Barbary",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_barbary.png",
+		"codes": "Bronze Card - Barbary"
+	},
+	{
+		"name": "Bronze Card - Barkwith",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_barkwith.png",
+		"codes": "Bronze Card - Barkwith"
+	},
+	{
+		"name": "Bronze Card - Belby",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_belby.png",
+		"codes": "Bronze Card - Belby"
+	},
+	{
+		"name": "Bronze Card - Blane",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_blane.png",
+		"codes": "Bronze Card - Blane"
+	},
+	{
+		"name": "Bronze Card - Bloxam",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_bloxam.png",
+		"codes": "Bronze Card - Bloxam"
+	},
+	{
+		"name": "Bronze Card - Bonham",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_bonham.png",
+		"codes": "Bronze Card - Bonham"
+	},
+	{
+		"name": "Bronze Card - Catchlove",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_catchlove.png",
+		"codes": "Bronze Card - Catchlove"
+	},
+	{
+		"name": "Bronze Card - Elphick",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_elphick.png",
+		"codes": "Bronze Card - Elphick"
+	},
+	{
+		"name": "Bronze Card - Ethelred",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_ethelred.png",
+		"codes": "Bronze Card - Ethelred"
+	},
+	{
+		"name": "Bronze Card - Fancourt",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_fancourt.png",
+		"codes": "Bronze Card - Fancourt"
+	},
+	{
+		"name": "Bronze Card - Goshawk",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_goshawk.png",
+		"codes": "Bronze Card - Goshawk"
+	},
+	{
+		"name": "Bronze Card - Graves",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_graves.png",
+		"codes": "Bronze Card - Graves"
+	},
+	{
+		"name": "Bronze Card - Gunhilda",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_gunhilda.png",
+		"codes": "Bronze Card - Gunhilda"
+	},
+	{
+		"name": "Bronze Card - Hipworth",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_hipworth.png",
+		"codes": "Bronze Card - Hipworth"
+	},
+	{
+		"name": "Bronze Card - Kegg",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_kegg.png",
+		"codes": "Bronze Card - Kegg"
+	},
+	{
+		"name": "Bronze Card - Ketteridge",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_ketteridge.png",
+		"codes": "Bronze Card - Ketteridge"
+	},
+	{
+		"name": "Bronze Card - Marjoribanks",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_marjoribanks.png",
+		"codes": "Bronze Card - Marjoribanks"
+	},
+	{
+		"name": "Bronze Card - Merlin",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_merlin.png",
+		"codes": "Bronze Card - Merlin"
+	},
+	{
+		"name": "Bronze Card - Merwyn",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_merwyn.png",
+		"codes": "Bronze Card - Merwyn"
+	},
+	{
+		"name": "Bronze Card - Muldoon",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_muldoon.png",
+		"codes": "Bronze Card - Muldoon"
+	},
+	{
+		"name": "Bronze Card - Ollerton",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_ollerton.png",
+		"codes": "Bronze Card - Ollerton"
+	},
+	{
+		"name": "Bronze Card - Peakes",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_peakes.png",
+		"codes": "Bronze Card - Peakes"
+	},
+	{
+		"name": "Bronze Card - Pilliwickle",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_pilliwickle.png",
+		"codes": "Bronze Card - Pilliwickle"
+	},
+	{
+		"name": "Bronze Card - Platt",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_platt.png",
+		"codes": "Bronze Card - Platt"
+	},
+	{
+		"name": "Bronze Card - Plumpton",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_plumpton.png",
+		"codes": "Bronze Card - Plumpton"
+	},
+	{
+		"name": "Bronze Card - Po",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_po.png",
+		"codes": "Bronze Card - Po"
+	},
+	{
+		"name": "Bronze Card - Pokeby",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_pokeby.png",
+		"codes": "Bronze Card - Pokeby"
+	},
+	{
+		"name": "Bronze Card - Sawbridge",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_sawbridge.png",
+		"codes": "Bronze Card - Sawbridge"
+	},
+	{
+		"name": "Bronze Card - Scamander",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_scamander.png",
+		"codes": "Bronze Card - Scamander"
+	},
+	{
+		"name": "Bronze Card - Starkey",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_starkey.png",
+		"codes": "Bronze Card - Starkey"
+	},
+	{
+		"name": "Bronze Card - Stroulger",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_stroulger.png",
+		"codes": "Bronze Card - Stroulger"
+	},
+	{
+		"name": "Bronze Card - Stump",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_stump.png",
+		"codes": "Bronze Card - Stump"
+	},
+	{
+		"name": "Bronze Card - Sweeting",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_sweeting.png",
+		"codes": "Bronze Card - Sweeting"
+	},
+	{
+		"name": "Bronze Card - Sykes",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_sykes.png",
+		"codes": "Bronze Card - Sykes"
+	},
+	{
+		"name": "Bronze Card - Thruston",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_thruston.png",
+		"codes": "Bronze Card - Thruston"
+	},
+	{
+		"name": "Bronze Card - Toke",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_toke.png",
+		"codes": "Bronze Card - Toke"
+	},
+	{
+		"name": "Bronze Card - Twonk",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_twonk.png",
+		"codes": "Bronze Card - Twonk"
+	},
+	{
+		"name": "Bronze Card - Ulric",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_ulric.png",
+		"codes": "Bronze Card - Ulric"
+	},
+	{
+		"name": "Bronze Card - Vablatsky",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_vablatsky.png",
+		"codes": "Bronze Card - Vablatsky"
+	},
+	{
+		"name": "Bronze Card - Waffling",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_waffling.png",
+		"codes": "Bronze Card - Waffling"
+	},
+	{
+		"name": "Bronze Card - Wagtail",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_wagtail.png",
+		"codes": "Bronze Card - Wagtail"
+	},
+	{
+		"name": "Bronze Card - Warbeck",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_warbeck.png",
+		"codes": "Bronze Card - Warbeck"
+	},
+	{
+		"name": "Bronze Card - Wellbeloved",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_wellbeloved.png",
+		"codes": "Bronze Card - Wellbeloved"
+	},
+	{
+		"name": "Bronze Card - Wenlock",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_wenlock.png",
+		"codes": "Bronze Card - Wenlock"
+	},
+	{
+		"name": "Bronze Card - Whitehorn",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_whitehorn.png",
+		"codes": "Bronze Card - Whitehorn"
+	},
+	{
+		"name": "Bronze Card - Wintringham",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_wintringham.png",
+		"codes": "Bronze Card - Wintringham"
+	},
+	{
+		"name": "Bronze Card - Withers",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_withers.png",
+		"codes": "Bronze Card - Withers"
+	},
+	{
+		"name": "Bronze Card - Woodcroft",
+		"type": "toggle",
+		"img": "images/items/cards/bronze/bronze_card_woodcroft.png",
+		"codes": "Bronze Card - Woodcroft"
+	},
+	{
+		"name": "Silver Card - Andros",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_andros.png",
+		"codes": "Silver Card - Andros"
+	},
+	{
+		"name": "Silver Card - Beamish",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_beamish.png",
+		"codes": "Silver Card - Beamish"
+	},
+	{
+		"name": "Silver Card - Chittock",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_chittock.png",
+		"codes": "Silver Card - Chittock"
+	},
+	{
+		"name": "Silver Card - Circe",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_circe.png",
+		"codes": "Silver Card - Circe"
+	},
+	{
+		"name": "Silver Card - Clagg",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_clagg.png",
+		"codes": "Silver Card - Clagg"
+	},
+	{
+		"name": "Silver Card - Cliodne",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_cliodne.png",
+		"codes": "Silver Card - Cliodne"
+	},
+	{
+		"name": "Silver Card - Cronk",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_cronk.png",
+		"codes": "Silver Card - Cronk"
+	},
+	{
+		"name": "Silver Card - Crumb",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_crumb.png",
+		"codes": "Silver Card - Crumb"
+	},
+	{
+		"name": "Silver Card - Dodderidge",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_dodderidge.png",
+		"codes": "Silver Card - Dodderidge"
+	},
+	{
+		"name": "Silver Card - Duke",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_duke.png",
+		"codes": "Silver Card - Duke"
+	},
+	{
+		"name": "Silver Card - Fay",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_fay.png",
+		"codes": "Silver Card - Fay"
+	},
+	{
+		"name": "Silver Card - Fulbert",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_fulbert.png",
+		"codes": "Silver Card - Fulbert"
+	},
+	{
+		"name": "Silver Card - Furmage",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_furmage.png",
+		"codes": "Silver Card - Furmage"
+	},
+	{
+		"name": "Silver Card - Gregory",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_gregory.png",
+		"codes": "Silver Card - Gregory"
+	},
+	{
+		"name": "Silver Card - Grunnion",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_grunnion.png",
+		"codes": "Silver Card - Grunnion"
+	},
+	{
+		"name": "Silver Card - Jones",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_jones.png",
+		"codes": "Silver Card - Jones"
+	},
+	{
+		"name": "Silver Card - Lufkin",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_lufkin.png",
+		"codes": "Silver Card - Lufkin"
+	},
+	{
+		"name": "Silver Card - Maeve",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_maeve.png",
+		"codes": "Silver Card - Maeve"
+	},
+	{
+		"name": "Silver Card - Montmorency",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_montmorency.png",
+		"codes": "Silver Card - Montmorency"
+	},
+	{
+		"name": "Silver Card - Mopsus",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_mopsus.png",
+		"codes": "Silver Card - Mopsus"
+	},
+	{
+		"name": "Silver Card - Nutcombe",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_nutcombe.png",
+		"codes": "Silver Card - Nutcombe"
+	},
+	{
+		"name": "Silver Card - Oglethorpe",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_oglethorpe.png",
+		"codes": "Silver Card - Oglethorpe"
+	},
+	{
+		"name": "Silver Card - Oldridge",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_oldridge.png",
+		"codes": "Silver Card - Oldridge"
+	},
+	{
+		"name": "Silver Card - Oliphant",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_oliphant.png",
+		"codes": "Silver Card - Oliphant"
+	},
+	{
+		"name": "Silver Card - Plunkett",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_plunkett.png",
+		"codes": "Silver Card - Plunkett"
+	},
+	{
+		"name": "Silver Card - Rastrick",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_rastrick.png",
+		"codes": "Silver Card - Rastrick"
+	},
+	{
+		"name": "Silver Card - Shimpling",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_shimpling.png",
+		"codes": "Silver Card - Shimpling"
+	},
+	{
+		"name": "Silver Card - Shingleton",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_shingleton.png",
+		"codes": "Silver Card - Shingleton"
+	},
+	{
+		"name": "Silver Card - Smethwyck",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_smethwyck.png",
+		"codes": "Silver Card - Smethwyck"
+	},
+	{
+		"name": "Silver Card - Stalk",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_stalk.png",
+		"codes": "Silver Card - Stalk"
+	},
+	{
+		"name": "Silver Card - Summerbee",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_summerbee.png",
+		"codes": "Silver Card - Summerbee"
+	},
+	{
+		"name": "Silver Card - Thurkell",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_thurkell.png",
+		"codes": "Silver Card - Thurkell"
+	},
+	{
+		"name": "Silver Card - Toothill",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_toothill.png",
+		"codes": "Silver Card - Toothill"
+	},
+	{
+		"name": "Silver Card - Tremlett",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_tremlett.png",
+		"codes": "Silver Card - Tremlett"
+	},
+	{
+		"name": "Silver Card - Tugwood",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_tugwood.png",
+		"codes": "Silver Card - Tugwood"
+	},
+	{
+		"name": "Silver Card - Wadcock",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_wadcock.png",
+		"codes": "Silver Card - Wadcock"
+	},
+	{
+		"name": "Silver Card - Wendelin",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_wendelin.png",
+		"codes": "Silver Card - Wendelin"
+	},
+	{
+		"name": "Silver Card - Wildsmith",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_wildsmith.png",
+		"codes": "Silver Card - Wildsmith"
+	},
+	{
+		"name": "Silver Card - Wright",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_wright.png",
+		"codes": "Silver Card - Wright"
+	},
+	{
+		"name": "Silver Card - Youdle",
+		"type": "toggle",
+		"img": "images/items/cards/silver/silver_card_youdle.png",
+		"codes": "Silver Card - Youdle"
+	},
+	{
+		"name": "Gold Card - Bott",
+		"type": "toggle",
+		"img": "images/items/cards/gold/gold_card_bott.png",
+		"codes": "Gold Card - Bott"
+	},
+	{
+		"name": "Gold Card - Dumbledore",
+		"type": "toggle",
+		"img": "images/items/cards/gold/gold_card_dumbledore.png",
+		"codes": "Gold Card - Dumbledore"
+	},
+	{
+		"name": "Gold Card - Gryffindor",
+		"type": "toggle",
+		"img": "images/items/cards/gold/gold_card_gryffindor.png",
+		"codes": "Gold Card - Gryffindor"
+	},
+	{
+		"name": "Gold Card - Herpo",
+		"type": "toggle",
+		"img": "images/items/cards/gold/gold_card_herpo.png",
+		"codes": "Gold Card - Herpo"
+	},
+	{
+		"name": "Gold Card - Hufflepuff",
+		"type": "toggle",
+		"img": "images/items/cards/gold/gold_card_hufflepuff.png",
+		"codes": "Gold Card - Hufflepuff"
+	},
+	{
+		"name": "Gold Card - Knightley",
+		"type": "toggle",
+		"img": "images/items/cards/gold/gold_card_knightley.png",
+		"codes": "Gold Card - Knightley"
+	},
+	{
+		"name": "Gold Card - Paracelsus",
+		"type": "toggle",
+		"img": "images/items/cards/gold/gold_card_paracelsus.png",
+		"codes": "Gold Card - Paracelsus"
+	},
+	{
+		"name": "Gold Card - Pinkstone",
+		"type": "toggle",
+		"img": "images/items/cards/gold/gold_card_pinkstone.png",
+		"codes": "Gold Card - Pinkstone"
+	},
+	{
+		"name": "Gold Card - Potter",
+		"type": "toggle",
+		"img": "images/items/cards/gold/gold_card_potter.png",
+		"codes": "Gold Card - Potter"
+	},
+	{
+		"name": "Gold Card - Ravenclaw",
+		"type": "toggle",
+		"img": "images/items/cards/gold/gold_card_ravenclaw.png",
+		"codes": "Gold Card - Ravenclaw"
+	},
+	{
+		"name": "Gold Card - Slytherin",
+		"type": "toggle",
+		"img": "images/items/cards/gold/gold_card_slytherin.png",
+		"codes": "Gold Card - Slytherin"
+	},
+	{
+		"name": "Small Jar of Beans",
+		"type": "toggle",
+		"img": "images/items/filler/small_jar_of_beans.png",
+		"codes": "Small Jar of Beans"
+	},
+	{
+		"name": "Medium Jar of Beans",
+		"type": "toggle",
+		"img": "images/items/filler/medium_jar_of_beans.png",
+		"codes": "Medium Jar of Beans"
+	},
+	{
+		"name": "Large Jar of Beans",
+		"type": "toggle",
+		"img": "images/items/filler/large_jar_of_beans.png",
+		"codes": "Large Jar of Beans"
+	},
+	{
+		"name": "Massive Jar of Beans",
+		"type": "toggle",
+		"img": "images/items/filler/massive_jar_of_beans.png",
+		"codes": "Massive Jar of Beans"
+	},
+	{
+		"name": "Wiggenweld Potion",
+		"type": "toggle",
+		"img": "images/items/filler/wiggenweld_potion.png",
+		"codes": "Wiggenweld Potion"
+	},
+	{
+		"name": "Wiggentree Bark",
+		"type": "toggle",
+		"img": "images/items/filler/wiggentree_bark.png",
+		"codes": "Wiggentree Bark"
+	},
+	{
+		"name": "Flobberworm Mucous",
+		"type": "toggle",
+		"img": "images/items/filler/flobberworm_mucous.png",
+		"codes": "Flobberworm Mucous"
+	},
+	{
+		"name": "Chocolate Frog",
+		"type": "toggle",
+		"img": "images/items/filler/chocolate_frog.png",
+		"codes": "Chocolate Frog"
+	},
+	{
+		"name": "1 Bean",
+		"type": "toggle",
+		"img": "images/items/filler/1_bean.png",
+		"codes": "1 Bean"
+	},
+	{
+		"name": "5 Beans",
+		"type": "toggle",
+		"img": "images/items/filler/5_beans.png",
+		"codes": "5 Beans"
+	},
+	{
+		"name": "10 Beans",
+		"type": "toggle",
+		"img": "images/items/filler/10_beans.png",
+		"codes": "10 Beans"
+	},
+	{
+		"name": "Bean Thief Trap",
+		"type": "toggle",
+		"img": "images/items/traps/bean_thief_trap.png",
+		"codes": "Bean Thief Trap"
+	},
+	{
+		"name": "Goyle Transformation Trap",
+		"type": "toggle",
+		"img": "images/items/traps/goyle_transformation_trap.png",
+		"codes": "Goyle Transformation Trap"
+	},
+	{
+		"name": "Forgetfulness Trap",
+		"type": "toggle",
+		"img": "images/items/traps/forgetfulness_trap.png",
+		"codes": "Forgetfulness Trap"
+	},
+	{
+		"name": "Game mode",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "game_mode",
+		"stages": [
+			{
+				"img": "images/items/settings/game_mode_vanilla.png",
+				"name": "Game mode: Vanilla",
+				"codes": "game_mode,game_mode_vanilla",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/game_mode_open_castle.png",
+				"name": "Game mode: Open Castle",
+				"codes": "game_mode,game_mode_open_castle",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Vanilla gate levels",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "vanilla_gate_levels",
+		"stages": [
+			{
+				"img": "images/items/settings/vanilla_gate_levels_off.png",
+				"name": "Vanilla gate levels: off",
+				"codes": "vanilla_gate_levels,vanilla_gate_levels_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/vanilla_gate_levels_on.png",
+				"name": "Vanilla gate levels: on",
+				"codes": "vanilla_gate_levels,vanilla_gate_levels_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Enable wizard cards",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "enable_wizard_cards",
+		"stages": [
+			{
+				"img": "images/items/settings/enable_wizard_cards_off.png",
+				"name": "Enable wizard cards: off",
+				"codes": "enable_wizard_cards,enable_wizard_cards_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/enable_wizard_cards_on.png",
+				"name": "Enable wizard cards: on",
+				"codes": "enable_wizard_cards,enable_wizard_cards_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Enable secrets",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "enable_secrets",
+		"stages": [
+			{
+				"img": "images/items/settings/enable_secrets_off.png",
+				"name": "Enable secrets: off",
+				"codes": "enable_secrets,enable_secrets_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/enable_secrets_on.png",
+				"name": "Enable secrets: on",
+				"codes": "enable_secrets,enable_secrets_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Allow secrets progression",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "allow_secrets_progression",
+		"stages": [
+			{
+				"img": "images/items/settings/allow_secrets_progression_off.png",
+				"name": "Allow secrets progression: off",
+				"codes": "allow_secrets_progression,allow_secrets_progression_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/allow_secrets_progression_on.png",
+				"name": "Allow secrets progression: on",
+				"codes": "allow_secrets_progression,allow_secrets_progression_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Enable challenge stars",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "enable_challenge_stars",
+		"stages": [
+			{
+				"img": "images/items/settings/enable_challenge_stars_off.png",
+				"name": "Enable challenge stars: off",
+				"codes": "enable_challenge_stars,enable_challenge_stars_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/enable_challenge_stars_on.png",
+				"name": "Enable challenge stars: on",
+				"codes": "enable_challenge_stars,enable_challenge_stars_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Enable Quidditch upgrades",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "enable_quidditch_upgrades",
+		"stages": [
+			{
+				"img": "images/items/settings/enable_quidditch_upgrades_off.png",
+				"name": "Enable Quidditch upgrades: off",
+				"codes": "enable_quidditch_upgrades,enable_quidditch_upgrades_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/enable_quidditch_upgrades_on.png",
+				"name": "Enable Quidditch upgrades: on",
+				"codes": "enable_quidditch_upgrades,enable_quidditch_upgrades_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Enable Duelling",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "enable_duelling",
+		"stages": [
+			{
+				"img": "images/items/settings/enable_duelling_off.png",
+				"name": "Enable Duelling: off",
+				"codes": "enable_duelling,enable_duelling_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/enable_duelling_on.png",
+				"name": "Enable Duelling: on",
+				"codes": "enable_duelling,enable_duelling_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Enable Quidditch matches",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "enable_quidditch_matches",
+		"stages": [
+			{
+				"img": "images/items/settings/enable_quidditch_matches_off.png",
+				"name": "Enable Quidditch matches: off",
+				"codes": "enable_quidditch_matches,enable_quidditch_matches_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/enable_quidditch_matches_on.png",
+				"name": "Enable Quidditch matches: on",
+				"codes": "enable_quidditch_matches,enable_quidditch_matches_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Enable spell challenge times",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "enable_spell_challenge_times",
+		"stages": [
+			{
+				"img": "images/items/settings/enable_spell_challenge_times_off.png",
+				"name": "Enable spell challenge times: off",
+				"codes": "enable_spell_challenge_times,enable_spell_challenge_times_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/enable_spell_challenge_times_on.png",
+				"name": "Enable spell challenge times: on",
+				"codes": "enable_spell_challenge_times,enable_spell_challenge_times_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Enable traps",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "enable_traps",
+		"stages": [
+			{
+				"img": "images/items/settings/enable_traps_off.png",
+				"name": "Enable traps: off",
+				"codes": "enable_traps,enable_traps_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/enable_traps_on.png",
+				"name": "Enable traps: on",
+				"codes": "enable_traps,enable_traps_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Ring Link",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "ring_link",
+		"stages": [
+			{
+				"img": "images/items/settings/ring_link_off.png",
+				"name": "Ring Link: off",
+				"codes": "ring_link,ring_link_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/ring_link_on.png",
+				"name": "Ring Link: on",
+				"codes": "ring_link,ring_link_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Death Link",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "death_link",
+		"stages": [
+			{
+				"img": "images/items/settings/death_link_off.png",
+				"name": "Death Link: off",
+				"codes": "death_link,death_link_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/death_link_on.png",
+				"name": "Death Link: on",
+				"codes": "death_link,death_link_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Tradersanity",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "tradersanity",
+		"stages": [
+			{
+				"img": "images/items/settings/tradersanity_off.png",
+				"name": "Tradersanity: Off",
+				"codes": "tradersanity,tradersanity_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/tradersanity_price_vanilla.png",
+				"name": "Tradersanity: Vanilla price",
+				"codes": "tradersanity,tradersanity_price_vanilla",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/tradersanity_price_random.png",
+				"name": "Tradersanity: Random price",
+				"codes": "tradersanity,tradersanity_price_random",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/tradersanity_price_low.png",
+				"name": "Tradersanity: Low price",
+				"codes": "tradersanity,tradersanity_price_low",
+				"inherit_codes": false
+			}
+		]
+	}
+]

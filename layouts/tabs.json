@@ -1,0 +1,102 @@
+{
+	"tabbed_maps": {
+		"type": "tabbed",
+		"tabs": [
+			{
+				"title": "Castle",
+				"content": {
+					"type": "tabbed",
+					"tabs": [
+						{ "title": "Hogwarts",              "content": { "type": "map", "maps": [ "Hogwarts" ] } },
+						{ "title": "Castle Exterior",       "content": { "type": "map", "maps": [ "Castle Exterior" ] } },
+						{ "title": "Dumbledore's Study",    "content": { "type": "map", "maps": [ "Dumbledore's Study" ] } },
+						{ "title": "Slytherin Common Room", "content": { "type": "map", "maps": [ "Slytherin Common Room" ] } },
+						{ "title": "Gold Card Room",        "content": { "type": "map", "maps": [ "Gold Card Room" ] } }
+					]
+				}
+			},
+			{
+				"title": "Levels",
+				"content": {
+					"type": "tabbed",
+					"tabs": [
+						{ "title": "Whomping Willow",    "content": { "type": "map", "maps": [ "Whomping Willow" ] } },
+						{ "title": "Bicorn Level",       "content": { "type": "map", "maps": [ "Bicorn Level" ] } },
+						{ "title": "Boomslang Level",    "content": { "type": "map", "maps": [ "Boomslang Level" ] } },
+						{ "title": "Goyle Level",        "content": { "type": "map", "maps": [ "Goyle Level" ] } },
+						{ "title": "Forbidden Forest",   "content": { "type": "map", "maps": [ "Forbidden Forest" ] } },
+						{ "title": "Chamber of Secrets", "content": { "type": "map", "maps": [ "Chamber of Secrets" ] } }
+					]
+				}
+			},
+			{
+				"title": "Spell challenges",
+				"content": {
+					"type": "tabbed",
+					"tabs": [
+						{ "title": "Rictusempra", "content": { "type": "map", "maps": [ "Rictusempra Challenge" ] } },
+						{ "title": "Skurge",      "content": { "type": "map", "maps": [ "Skurge Challenge" ] } },
+						{ "title": "Diffindo",    "content": { "type": "map", "maps": [ "Diffindo Challenge" ] } },
+						{ "title": "Spongify",    "content": { "type": "map", "maps": [ "Spongify Challenge" ] } },
+						{ "title": "Gryffindor",  "content": { "type": "map", "maps": [ "Gryffindor Challenge" ] } }
+					]
+				}
+			},
+			{
+				"title": "Activities",
+				"content": {
+					"type": "tabbed",
+					"tabs": [
+						{ "title": "Duelling Club", "content": { "type": "map", "maps": [ "Duelling Club" ] } },
+						{ "title": "Quidditch",     "content": { "type": "map", "maps": [ "Quidditch" ] } }
+					]
+				}
+			},
+			{
+				"title": "Cards",
+				"content": {
+					"type": "array",
+					"orientation": "vertical",
+					"margin": "4,4",
+					"content": [
+						{
+							"type": "itemgrid",
+							"h_alignment": "left",
+							"item_margin": "2,2",
+							"item_size": 28,
+							"rows": [
+								[ "Bronze Card - Agrippa", "Bronze Card - Alderton", "Bronze Card - Barbary", "Bronze Card - Barkwith", "Bronze Card - Belby", "Bronze Card - Blane", "Bronze Card - Bloxam", "Bronze Card - Bonham", "Bronze Card - Catchlove", "Bronze Card - Elphick" ],
+								[ "Bronze Card - Ethelred", "Bronze Card - Fancourt", "Bronze Card - Goshawk", "Bronze Card - Graves", "Bronze Card - Gunhilda", "Bronze Card - Hipworth", "Bronze Card - Kegg", "Bronze Card - Ketteridge", "Bronze Card - Marjoribanks", "Bronze Card - Merlin" ],
+								[ "Bronze Card - Merwyn", "Bronze Card - Muldoon", "Bronze Card - Ollerton", "Bronze Card - Peakes", "Bronze Card - Pilliwickle", "Bronze Card - Platt", "Bronze Card - Plumpton", "Bronze Card - Po", "Bronze Card - Pokeby", "Bronze Card - Sawbridge" ],
+								[ "Bronze Card - Scamander", "Bronze Card - Starkey", "Bronze Card - Stroulger", "Bronze Card - Stump", "Bronze Card - Sweeting", "Bronze Card - Sykes", "Bronze Card - Thruston", "Bronze Card - Toke", "Bronze Card - Twonk", "Bronze Card - Ulric" ],
+								[ "Bronze Card - Vablatsky", "Bronze Card - Waffling", "Bronze Card - Wagtail", "Bronze Card - Warbeck", "Bronze Card - Wellbeloved", "Bronze Card - Wenlock", "Bronze Card - Whitehorn", "Bronze Card - Wintringham", "Bronze Card - Withers", "Bronze Card - Woodcroft" ]
+							]
+						},
+						{
+							"type": "itemgrid",
+							"h_alignment": "left",
+							"item_margin": "2,2",
+							"item_size": 28,
+							"rows": [
+								[ "Silver Card - Andros", "Silver Card - Beamish", "Silver Card - Chittock", "Silver Card - Circe", "Silver Card - Clagg", "Silver Card - Cliodne", "Silver Card - Cronk", "Silver Card - Crumb", "Silver Card - Dodderidge", "Silver Card - Duke" ],
+								[ "Silver Card - Fay", "Silver Card - Fulbert", "Silver Card - Furmage", "Silver Card - Gregory", "Silver Card - Grunnion", "Silver Card - Jones", "Silver Card - Lufkin", "Silver Card - Maeve", "Silver Card - Montmorency", "Silver Card - Mopsus" ],
+								[ "Silver Card - Nutcombe", "Silver Card - Oglethorpe", "Silver Card - Oldridge", "Silver Card - Oliphant", "Silver Card - Plunkett", "Silver Card - Rastrick", "Silver Card - Shimpling", "Silver Card - Shingleton", "Silver Card - Smethwyck", "Silver Card - Stalk" ],
+								[ "Silver Card - Summerbee", "Silver Card - Thurkell", "Silver Card - Toothill", "Silver Card - Tremlett", "Silver Card - Tugwood", "Silver Card - Wadcock", "Silver Card - Wendelin", "Silver Card - Wildsmith", "Silver Card - Wright", "Silver Card - Youdle" ]
+							]
+						},
+						{
+							"type": "itemgrid",
+							"h_alignment": "left",
+							"item_margin": "2,2",
+							"item_size": 32,
+							"rows": [
+								[ "Gold Card - Bott", "Gold Card - Dumbledore", "Gold Card - Gryffindor", "Gold Card - Herpo", "Gold Card - Hufflepuff", "Gold Card - Knightley" ],
+								[ "Gold Card - Paracelsus", "Gold Card - Pinkstone", "Gold Card - Potter", "Gold Card - Ravenclaw", "Gold Card - Slytherin" ]
+							]
+						}
+					]
+				}
+			}
+		]
+	}
+}

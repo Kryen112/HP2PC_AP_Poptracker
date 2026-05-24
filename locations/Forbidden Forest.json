@@ -1,0 +1,259 @@
+[
+	{
+		"name": "Forbidden Forest",
+		"chest_unopened_img": "images/items/item.png",
+		"chest_opened_img": "images/items/item_opened.png",
+		"children": [
+			{
+				"name": "Card Cliodne",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Card_Cliodne"
+				],
+				"sections": [
+					{
+						"name": "Card Cliodne"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Fancourt",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Card_Fancourt"
+				],
+				"sections": [
+					{
+						"name": "Card Fancourt"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Oliphant",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Card_Oliphant"
+				],
+				"sections": [
+					{
+						"name": "Card Oliphant"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Ollerton",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Card_Ollerton"
+				],
+				"sections": [
+					{
+						"name": "Card Ollerton"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Scamander",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Card_Scamander"
+				],
+				"sections": [
+					{
+						"name": "Card Scamander"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Wellbeloved",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Card_Wellbeloved"
+				],
+				"sections": [
+					{
+						"name": "Card Wellbeloved"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Complete",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Complete"
+				],
+				"sections": [
+					{
+						"name": "Complete"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Secret 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Secret_1"
+				],
+				"sections": [
+					{
+						"name": "Secret 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Secret_2"
+				],
+				"sections": [
+					{
+						"name": "Secret 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Secret_3"
+				],
+				"sections": [
+					{
+						"name": "Secret 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Secret_4"
+				],
+				"sections": [
+					{
+						"name": "Secret 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			}
+		]
+	}
+]

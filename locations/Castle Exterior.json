@@ -1,0 +1,561 @@
+[
+	{
+		"name": "Castle Exterior",
+		"chest_unopened_img": "images/items/item.png",
+		"chest_opened_img": "images/items/item_opened.png",
+		"children": [
+			{
+				"name": "Card Marjoribanks",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Card_Marjoribanks"
+				],
+				"sections": [
+					{
+						"name": "Card Marjoribanks"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Oglethorpe",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Card_Oglethorpe"
+				],
+				"sections": [
+					{
+						"name": "Card Oglethorpe"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Plunkett",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Card_Plunkett"
+				],
+				"sections": [
+					{
+						"name": "Card Plunkett"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Pokeby",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Card_Pokeby"
+				],
+				"sections": [
+					{
+						"name": "Card Pokeby"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Sweeting",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Card_Sweeting"
+				],
+				"sections": [
+					{
+						"name": "Card Sweeting"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Sykes",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Card_Sykes"
+				],
+				"sections": [
+					{
+						"name": "Card Sykes"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Twonk",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Card_Twonk"
+				],
+				"sections": [
+					{
+						"name": "Card Twonk"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Vendor 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Card_Vendor_1"
+				],
+				"sections": [
+					{
+						"name": "Card Vendor 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visTraders"
+				]
+			},
+			{
+				"name": "Card Vendor 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Card_Vendor_2"
+				],
+				"sections": [
+					{
+						"name": "Card Vendor 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visTraders"
+				]
+			},
+			{
+				"name": "Card Wadcock",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Card_Wadcock"
+				],
+				"sections": [
+					{
+						"name": "Card Wadcock"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Youdle",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Card_Youdle"
+				],
+				"sections": [
+					{
+						"name": "Card Youdle"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Ingredient Vendor 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Ingredient_Vendor_1"
+				],
+				"sections": [
+					{
+						"name": "Ingredient Vendor 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visTraders"
+				]
+			},
+			{
+				"name": "Ingredient Vendor 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Ingredient_Vendor_2"
+				],
+				"sections": [
+					{
+						"name": "Ingredient Vendor 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visTraders"
+				]
+			},
+			{
+				"name": "Nimbus 2001",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Nimbus_2001"
+				],
+				"sections": [
+					{
+						"name": "Nimbus 2001"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visQuidPurch"
+				]
+			},
+			{
+				"name": "Quidditch Armour",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Quidditch_Armour"
+				],
+				"sections": [
+					{
+						"name": "Quidditch Armour"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visQuidPurch"
+				]
+			},
+			{
+				"name": "Secret 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Secret_1"
+				],
+				"sections": [
+					{
+						"name": "Secret 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Secret_2"
+				],
+				"sections": [
+					{
+						"name": "Secret 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Secret_3"
+				],
+				"sections": [
+					{
+						"name": "Secret 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Secret_4"
+				],
+				"sections": [
+					{
+						"name": "Secret 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Secret_5"
+				],
+				"sections": [
+					{
+						"name": "Secret 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Secret_6"
+				],
+				"sections": [
+					{
+						"name": "Secret 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Secret_7"
+				],
+				"sections": [
+					{
+						"name": "Secret 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Secret_8"
+				],
+				"sections": [
+					{
+						"name": "Secret 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Learned Diffindo",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Learned_Diffindo"
+				],
+				"sections": [
+					{
+						"name": "Learned Diffindo"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visClassrooms"
+				]
+			}
+		]
+	}
+]

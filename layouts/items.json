@@ -1,0 +1,15 @@
+{
+	"items+settings": {
+		"type": "itemgrid",
+		"item_margin": "5,5",
+		"item_size": 40,
+		"rows": [
+			[ "Lumos", "Flipendo", "Alohomora", "Rictusempra", "Skurge", "Diffindo", "Spongify" ],
+			[ "Chamber of Secrets Key", "Bicorn Level Key", "Boomslang Level Key", "Goyle Level Key", "Slytherin Common Room Key", "Forbidden Forest Key", "Whomping Willow Key" ],
+			[ "Duelling Key", "Quidditch Key", "Rictusempra Challenge Key", "Skurge Challenge Key", "Diffindo Challenge Key", "Spongify Challenge Key", "Gryffindor Challenge Key" ],
+			[ "Nimbus 2001", "Quidditch Armour", "", "game_mode", "vanilla_gate_levels", "tradersanity", "" ],
+			[ "enable_wizard_cards", "enable_secrets", "allow_secrets_progression", "enable_challenge_stars", "enable_quidditch_upgrades", "enable_duelling", "enable_quidditch_matches" ],
+			[ "enable_spell_challenge_times", "enable_traps", "ring_link", "death_link", "", "", "" ]
+		]
+	}
+}

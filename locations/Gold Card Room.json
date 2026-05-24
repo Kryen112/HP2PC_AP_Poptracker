@@ -1,0 +1,262 @@
+[
+	{
+		"name": "Gold Card Room",
+		"chest_unopened_img": "images/items/item.png",
+		"chest_opened_img": "images/items/item_opened.png",
+		"children": [
+			{
+				"name": "Card Bott",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gold_Card_Room_Card_Bott"
+				],
+				"sections": [
+					{
+						"name": "Card Bott"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gold Card Room",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Dumbledore",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gold_Card_Room_Card_Dumbledore"
+				],
+				"sections": [
+					{
+						"name": "Card Dumbledore"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gold Card Room",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Gryffindor",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gold_Card_Room_Card_Gryffindor"
+				],
+				"sections": [
+					{
+						"name": "Card Gryffindor"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gold Card Room",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Herpo",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gold_Card_Room_Card_Herpo"
+				],
+				"sections": [
+					{
+						"name": "Card Herpo"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gold Card Room",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Hufflepuff",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gold_Card_Room_Card_Hufflepuff"
+				],
+				"sections": [
+					{
+						"name": "Card Hufflepuff"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gold Card Room",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Knightley",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gold_Card_Room_Card_Knightley"
+				],
+				"sections": [
+					{
+						"name": "Card Knightley"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gold Card Room",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Paracelsus",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gold_Card_Room_Card_Paracelsus"
+				],
+				"sections": [
+					{
+						"name": "Card Paracelsus"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gold Card Room",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Pinkstone",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gold_Card_Room_Card_Pinkstone"
+				],
+				"sections": [
+					{
+						"name": "Card Pinkstone"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gold Card Room",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Potter",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gold_Card_Room_Card_Potter"
+				],
+				"sections": [
+					{
+						"name": "Card Potter"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gold Card Room",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Ravenclaw",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gold_Card_Room_Card_Ravenclaw"
+				],
+				"sections": [
+					{
+						"name": "Card Ravenclaw"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gold Card Room",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Slytherin",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gold_Card_Room_Card_Slytherin"
+				],
+				"sections": [
+					{
+						"name": "Card Slytherin"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gold Card Room",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			}
+		]
+	}
+]

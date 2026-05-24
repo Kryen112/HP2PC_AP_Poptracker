@@ -1,0 +1,469 @@
+[
+	{
+		"name": "Gryffindor Challenge",
+		"chest_unopened_img": "images/items/item.png",
+		"chest_opened_img": "images/items/item_opened.png",
+		"children": [
+			{
+				"name": "Challenge Star 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Challenge_Star_1"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Challenge Star 10",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Challenge_Star_10"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 10"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Challenge Star 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Challenge_Star_2"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Challenge Star 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Challenge_Star_3"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Challenge Star 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Challenge_Star_4"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Challenge Star 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Challenge_Star_5"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Challenge Star 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Challenge_Star_6"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Challenge Star 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Challenge_Star_7"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Challenge Star 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Challenge_Star_8"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Challenge Star 9",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Challenge_Star_9"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Complete",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Complete"
+				],
+				"sections": [
+					{
+						"name": "Complete"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Secret 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Secret_1"
+				],
+				"sections": [
+					{
+						"name": "Secret 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Secret 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Secret_2"
+				],
+				"sections": [
+					{
+						"name": "Secret 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Secret 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Secret_3"
+				],
+				"sections": [
+					{
+						"name": "Secret 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Secret 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Secret_4"
+				],
+				"sections": [
+					{
+						"name": "Secret 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Secret 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Secret_5"
+				],
+				"sections": [
+					{
+						"name": "Secret 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Secret 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Secret_6"
+				],
+				"sections": [
+					{
+						"name": "Secret 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Secret 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Secret_7"
+				],
+				"sections": [
+					{
+						"name": "Secret 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Secret 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Secret_8"
+				],
+				"sections": [
+					{
+						"name": "Secret 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			},
+			{
+				"name": "Secret 9",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Gryffindor_Challenge_Secret_9"
+				],
+				"sections": [
+					{
+						"name": "Secret 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Gryffindor Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visOpenCastleOnly"
+				]
+			}
+		]
+	}
+]

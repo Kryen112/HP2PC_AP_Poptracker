@@ -1,0 +1,811 @@
+[
+	{
+		"name": "Diffindo Challenge",
+		"chest_unopened_img": "images/items/item.png",
+		"chest_opened_img": "images/items/item_opened.png",
+		"children": [
+			{
+				"name": "Beat Par Time",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Beat_Par_Time"
+				],
+				"sections": [
+					{
+						"name": "Beat Par Time"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSpellTimes"
+				]
+			},
+			{
+				"name": "Card Ketteridge",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Card_Ketteridge"
+				],
+				"sections": [
+					{
+						"name": "Card Ketteridge"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Merwyn",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Card_Merwyn"
+				],
+				"sections": [
+					{
+						"name": "Card Merwyn"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Shimpling",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Card_Shimpling"
+				],
+				"sections": [
+					{
+						"name": "Card Shimpling"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Smethwyck",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Card_Smethwyck"
+				],
+				"sections": [
+					{
+						"name": "Card Smethwyck"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Stalk",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Card_Stalk"
+				],
+				"sections": [
+					{
+						"name": "Card Stalk"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Thurkell",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Card_Thurkell"
+				],
+				"sections": [
+					{
+						"name": "Card Thurkell"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Ulric",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Card_Ulric"
+				],
+				"sections": [
+					{
+						"name": "Card Ulric"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Withers",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Card_Withers"
+				],
+				"sections": [
+					{
+						"name": "Card Withers"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Challenge Star 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_1"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 10",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_10"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 10"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 11",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_11"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 11"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 12",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_12"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 12"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 13",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_13"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 13"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 14",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_14"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 14"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_2"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_3"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_4"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_5"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_6"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_7"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_8"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Challenge Star 9",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Challenge_Star_9"
+				],
+				"sections": [
+					{
+						"name": "Challenge Star 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visStars"
+				]
+			},
+			{
+				"name": "Complete",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Complete"
+				],
+				"sections": [
+					{
+						"name": "Complete"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Secret 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Secret_1"
+				],
+				"sections": [
+					{
+						"name": "Secret 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 10",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Secret_10"
+				],
+				"sections": [
+					{
+						"name": "Secret 10"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 11",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Secret_11"
+				],
+				"sections": [
+					{
+						"name": "Secret 11"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Secret_2"
+				],
+				"sections": [
+					{
+						"name": "Secret 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Secret_3"
+				],
+				"sections": [
+					{
+						"name": "Secret 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Secret_4"
+				],
+				"sections": [
+					{
+						"name": "Secret 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Secret_5"
+				],
+				"sections": [
+					{
+						"name": "Secret 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Secret_6"
+				],
+				"sections": [
+					{
+						"name": "Secret 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Secret_7"
+				],
+				"sections": [
+					{
+						"name": "Secret 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Secret_8"
+				],
+				"sections": [
+					{
+						"name": "Secret 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 9",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Secret_9"
+				],
+				"sections": [
+					{
+						"name": "Secret 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			}
+		]
+	}
+]
