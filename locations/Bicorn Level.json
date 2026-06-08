@@ -19,8 +19,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 1468,
+						"y": 280
 					}
 				],
 				"visibility_rules": [
@@ -42,8 +42,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 1491,
+						"y": 546
 					}
 				],
 				"visibility_rules": [
@@ -65,8 +65,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 1003,
+						"y": 454
 					}
 				],
 				"visibility_rules": [
@@ -88,8 +88,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 1634,
+						"y": 474
 					}
 				],
 				"visibility_rules": [
@@ -111,8 +111,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 1491,
+						"y": 455
 					}
 				],
 				"visibility_rules": [
@@ -134,8 +134,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 650,
+						"y": 242
 					}
 				],
 				"visibility_rules": [
@@ -157,8 +157,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 306,
+						"y": 281
 					}
 				]
 			},
@@ -177,8 +177,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 1491,
+						"y": 508
 					}
 				],
 				"visibility_rules": [
@@ -200,8 +200,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 1593,
+						"y": 474
 					}
 				],
 				"visibility_rules": [
@@ -223,8 +223,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 1185,
+						"y": 787
 					}
 				],
 				"visibility_rules": [
@@ -246,8 +246,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 1012,
+						"y": 709
 					}
 				],
 				"visibility_rules": [
@@ -269,8 +269,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 1185,
+						"y": 479
 					}
 				],
 				"visibility_rules": [
@@ -292,8 +292,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 489,
+						"y": 234
 					}
 				],
 				"visibility_rules": [
@@ -315,8 +315,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 0,
-						"y": 0
+						"x": 412,
+						"y": 82
 					}
 				],
 				"visibility_rules": [
