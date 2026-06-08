@@ -1,109 +1,109 @@
 [
 	{
 		"name": "Bicorn Level",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/bicorn_level.png"
 	},
 	{
 		"name": "Boomslang Level",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/boomslang_level.png"
 	},
 	{
 		"name": "Castle Exterior",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/castle_exterior.png"
 	},
 	{
 		"name": "Chamber of Secrets",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/chamber_of_secrets.png"
 	},
 	{
 		"name": "Diffindo Challenge",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/diffindo_challenge.png"
 	},
 	{
 		"name": "Duelling Club",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/duelling_club.png"
 	},
 	{
 		"name": "Dumbledore's Study",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/dumbledore_s_study.png"
 	},
 	{
 		"name": "Forbidden Forest",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/forbidden_forest.png"
 	},
 	{
 		"name": "Gold Card Room",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/gold_card_room.png"
 	},
 	{
 		"name": "Goyle Level",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/goyle_level.png"
 	},
 	{
 		"name": "Gryffindor Challenge",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/gryffindor_challenge.png"
 	},
 	{
 		"name": "Hogwarts",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/hogwarts.png"
 	},
 	{
 		"name": "Quidditch",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/quidditch.png"
 	},
 	{
 		"name": "Rictusempra Challenge",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/rictusempra_challenge.png"
 	},
 	{
 		"name": "Skurge Challenge",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/skurge_challenge.png"
 	},
 	{
 		"name": "Slytherin Common Room",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/slytherin_common_room.png"
 	},
 	{
 		"name": "Spongify Challenge",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/spongify_challenge.png"
 	},
 	{
 		"name": "Whomping Willow",
-		"location_size": 12,
+		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/whomping_willow.png"
 	}
