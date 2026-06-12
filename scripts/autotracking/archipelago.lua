@@ -79,6 +79,11 @@ function onClear(slot_data)
         end
     end
 
+    for _, counter in pairs({"bronze_cards", "silver_cards", "gold_cards"}) do
+        local obj = Tracker:FindObjectForCode(counter)
+        if obj then obj.AcquiredCount = 0 end
+    end
+
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
 end
@@ -109,6 +114,20 @@ function onItem(index, item_id, item_name, player_number)
         obj.Active = true
         obj.CurrentStage = (obj.CurrentStage or 0) + 1
     end
+
+    bump_card_counter(code)
+end
+
+-- Card items each bump their tier counter (bronze_cards / silver_cards /
+-- gold_cards) so the items+settings panel shows a per-tier collected count.
+CARD_COUNTERS = { Bronze = "bronze_cards", Silver = "silver_cards", Gold = "gold_cards" }
+
+function bump_card_counter(code)
+    local tier = code:match("^(%a+) Card %- ")
+    local counter = tier and CARD_COUNTERS[tier]
+    if not counter then return end
+    local obj = Tracker:FindObjectForCode(counter)
+    if obj then obj.AcquiredCount = obj.AcquiredCount + 1 end
 end
 
 function onLocation(location_id, location_name)

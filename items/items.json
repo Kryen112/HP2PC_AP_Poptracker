@@ -852,6 +852,36 @@
 		"codes": "Confundus Trap"
 	},
 	{
+		"name": "Bronze Cards",
+		"type": "consumable",
+		"img": "images/items/cards/bronze/_count.png",
+		"codes": "bronze_cards",
+		"min_quantity": 0,
+		"max_quantity": 50,
+		"increment": 1,
+		"decrement": 1
+	},
+	{
+		"name": "Silver Cards",
+		"type": "consumable",
+		"img": "images/items/cards/silver/_count.png",
+		"codes": "silver_cards",
+		"min_quantity": 0,
+		"max_quantity": 40,
+		"increment": 1,
+		"decrement": 1
+	},
+	{
+		"name": "Gold Cards",
+		"type": "consumable",
+		"img": "images/items/cards/gold/_count.png",
+		"codes": "gold_cards",
+		"min_quantity": 0,
+		"max_quantity": 11,
+		"increment": 1,
+		"decrement": 1
+	},
+	{
 		"name": "Game mode",
 		"type": "progressive",
 		"loop": false,

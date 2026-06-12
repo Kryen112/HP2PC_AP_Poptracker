@@ -314,6 +314,23 @@ def build_items_json(items: dict) -> list:
             "img": img,
             "codes": name,
         })
+    # Per-tier card counters. These consumables aren't in ITEM_MAPPING; the
+    # autotracker bumps them by card tier in archipelago.lua's onItem, so the
+    # items+settings panel shows how many of each tier have been collected.
+    for kind, label, code in (("card_bronze", "Bronze Cards", "bronze_cards"),
+                              ("card_silver", "Silver Cards", "silver_cards"),
+                              ("card_gold", "Gold Cards", "gold_cards")):
+        total = sum(1 for n in name_to_id if _classify_for_img(n, groups) == kind)
+        out.append({
+            "name": label,
+            "type": "consumable",
+            "img": f"{CLASS_TO_IMG_DIR[kind]}/_count.png",
+            "codes": code,
+            "min_quantity": 0,
+            "max_quantity": total,
+            "increment": 1,
+            "decrement": 1,
+        })
     for s in SETTING_ITEMS:
         if s.get("binary"):
             stages = [
