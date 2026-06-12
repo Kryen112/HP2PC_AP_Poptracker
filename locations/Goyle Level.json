@@ -19,8 +19,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 195,
+						"y": 279
 					}
 				],
 				"visibility_rules": [
@@ -42,8 +42,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 1142,
+						"y": 1265
 					}
 				],
 				"visibility_rules": [
@@ -65,8 +65,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 647,
+						"y": 1164
 					}
 				],
 				"visibility_rules": [
@@ -88,8 +88,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 646,
+						"y": 18
 					}
 				],
 				"visibility_rules": [
@@ -111,8 +111,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 741,
+						"y": 144
 					}
 				],
 				"visibility_rules": [
@@ -134,8 +134,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 648,
+						"y": 1217
 					}
 				],
 				"visibility_rules": [
@@ -157,8 +157,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 1087,
+						"y": 791
 					}
 				]
 			},
@@ -177,8 +177,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 684,
+						"y": 1221
 					}
 				],
 				"visibility_rules": [
@@ -200,8 +200,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 329,
+						"y": 1141
 					}
 				],
 				"visibility_rules": [
@@ -223,8 +223,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 404,
+						"y": 859
 					}
 				],
 				"visibility_rules": [
@@ -246,8 +246,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 440,
+						"y": 401
 					}
 				],
 				"visibility_rules": [
@@ -269,8 +269,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 701,
+						"y": 144
 					}
 				],
 				"visibility_rules": [
@@ -292,8 +292,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 853,
+						"y": 188
 					}
 				],
 				"visibility_rules": [
@@ -315,8 +315,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 1258,
+						"y": 1201
 					}
 				],
 				"visibility_rules": [
@@ -338,8 +338,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 0,
-						"y": 0
+						"x": 1048,
+						"y": 1201
 					}
 				],
 				"visibility_rules": [
