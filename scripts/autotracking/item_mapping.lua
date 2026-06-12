@@ -135,6 +135,10 @@ ITEM_MAPPING = {
 	[5750309] = {"5 Beans", "toggle"},
 	[5750310] = {"10 Beans", "toggle"},
 	[5750400] = {"Bean Thief Trap", "toggle"},
-	[5750403] = {"Goyle Transformation Trap", "toggle"},
-	[5750404] = {"Forgetfulness Trap", "toggle"},
+	[5750403] = {"Polyjuice Potion Trap", "toggle"},
+	[5750404] = {"Obliviate Trap", "toggle"},
+	[5750405] = {"Drowsiness Draught Trap", "toggle"},
+	[5750406] = {"Engorgio Trap", "toggle"},
+	[5750407] = {"Reducio Trap", "toggle"},
+	[5750408] = {"Confundus Trap", "toggle"},
 }

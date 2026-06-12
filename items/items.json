@@ -816,16 +816,40 @@
 		"codes": "Bean Thief Trap"
 	},
 	{
-		"name": "Goyle Transformation Trap",
+		"name": "Polyjuice Potion Trap",
 		"type": "toggle",
-		"img": "images/items/traps/goyle_transformation_trap.png",
-		"codes": "Goyle Transformation Trap"
+		"img": "images/items/traps/polyjuice_potion_trap.png",
+		"codes": "Polyjuice Potion Trap"
 	},
 	{
-		"name": "Forgetfulness Trap",
+		"name": "Obliviate Trap",
 		"type": "toggle",
-		"img": "images/items/traps/forgetfulness_trap.png",
-		"codes": "Forgetfulness Trap"
+		"img": "images/items/traps/obliviate_trap.png",
+		"codes": "Obliviate Trap"
+	},
+	{
+		"name": "Drowsiness Draught Trap",
+		"type": "toggle",
+		"img": "images/items/traps/drowsiness_draught_trap.png",
+		"codes": "Drowsiness Draught Trap"
+	},
+	{
+		"name": "Engorgio Trap",
+		"type": "toggle",
+		"img": "images/items/traps/engorgio_trap.png",
+		"codes": "Engorgio Trap"
+	},
+	{
+		"name": "Reducio Trap",
+		"type": "toggle",
+		"img": "images/items/traps/reducio_trap.png",
+		"codes": "Reducio Trap"
+	},
+	{
+		"name": "Confundus Trap",
+		"type": "toggle",
+		"img": "images/items/traps/confundus_trap.png",
+		"codes": "Confundus Trap"
 	},
 	{
 		"name": "Game mode",
