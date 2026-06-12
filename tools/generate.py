@@ -55,10 +55,12 @@ REGION_DISPLAY = {
 }
 
 # Region → map name for the pins, when it differs from the region's own
-# display name. Dumbledore's Study keeps its own section name but physically
-# sits on the Grand Staircase, so its pins are placed on that map image.
+# display name. These regions keep their own section names but physically sit
+# inside another area, so their pins are placed on that area's map image.
 REGION_MAP_OVERRIDE = {
     "DumbledoreStudy": "Grand Staircase",
+    "DuellingClub": "Entry Hall",
+    "Quidditch": "Castle Exterior",
 }
 
 # Map LOCATION_GROUPS group → tracker visibility helper from logic.lua.

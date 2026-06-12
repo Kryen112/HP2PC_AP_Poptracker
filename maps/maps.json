@@ -30,12 +30,6 @@
 		"img": "images/maps/diffindo_challenge.png"
 	},
 	{
-		"name": "Duelling Club",
-		"location_size": 24,
-		"location_border_thickness": 1,
-		"img": "images/maps/duelling_club.png"
-	},
-	{
 		"name": "Entry Hall",
 		"location_size": 24,
 		"location_border_thickness": 1,
@@ -70,12 +64,6 @@
 		"location_size": 24,
 		"location_border_thickness": 1,
 		"img": "images/maps/grand_staircase.png"
-	},
-	{
-		"name": "Quidditch",
-		"location_size": 24,
-		"location_border_thickness": 1,
-		"img": "images/maps/quidditch.png"
 	},
 	{
 		"name": "Rictusempra Challenge",

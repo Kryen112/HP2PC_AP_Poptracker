@@ -9,9 +9,7 @@
 					"tabs": [
 						{ "title": "Entry Hall",            "content": { "type": "map", "maps": [ "Entry Hall" ] } },
 						{ "title": "Grand Staircase",       "content": { "type": "map", "maps": [ "Grand Staircase" ] } },
-						{ "title": "Castle Exterior",       "content": { "type": "map", "maps": [ "Castle Exterior" ] } },
-						{ "title": "Slytherin Common Room", "content": { "type": "map", "maps": [ "Slytherin Common Room" ] } },
-						{ "title": "Gold Card Room",        "content": { "type": "map", "maps": [ "Gold Card Room" ] } }
+						{ "title": "Castle Exterior",       "content": { "type": "map", "maps": [ "Castle Exterior" ] } }
 					]
 				}
 			},
@@ -20,12 +18,14 @@
 				"content": {
 					"type": "tabbed",
 					"tabs": [
-						{ "title": "Whomping Willow",    "content": { "type": "map", "maps": [ "Whomping Willow" ] } },
-						{ "title": "Bicorn Level",       "content": { "type": "map", "maps": [ "Bicorn Level" ] } },
-						{ "title": "Boomslang Level",    "content": { "type": "map", "maps": [ "Boomslang Level" ] } },
-						{ "title": "Goyle Level",        "content": { "type": "map", "maps": [ "Goyle Level" ] } },
-						{ "title": "Forbidden Forest",   "content": { "type": "map", "maps": [ "Forbidden Forest" ] } },
-						{ "title": "Chamber of Secrets", "content": { "type": "map", "maps": [ "Chamber of Secrets" ] } }
+						{ "title": "Whomping Willow",       "content": { "type": "map", "maps": [ "Whomping Willow" ] } },
+						{ "title": "Bicorn Level",          "content": { "type": "map", "maps": [ "Bicorn Level" ] } },
+						{ "title": "Boomslang Level",       "content": { "type": "map", "maps": [ "Boomslang Level" ] } },
+						{ "title": "Goyle Level",           "content": { "type": "map", "maps": [ "Goyle Level" ] } },
+						{ "title": "Slytherin Common Room", "content": { "type": "map", "maps": [ "Slytherin Common Room" ] } },
+						{ "title": "Forbidden Forest",      "content": { "type": "map", "maps": [ "Forbidden Forest" ] } },
+						{ "title": "Chamber of Secrets",    "content": { "type": "map", "maps": [ "Chamber of Secrets" ] } },
+						{ "title": "Gold Card Room",        "content": { "type": "map", "maps": [ "Gold Card Room" ] } }
 					]
 				}
 			},
@@ -39,16 +39,6 @@
 						{ "title": "Diffindo",    "content": { "type": "map", "maps": [ "Diffindo Challenge" ] } },
 						{ "title": "Spongify",    "content": { "type": "map", "maps": [ "Spongify Challenge" ] } },
 						{ "title": "Gryffindor",  "content": { "type": "map", "maps": [ "Gryffindor Challenge" ] } }
-					]
-				}
-			},
-			{
-				"title": "Activities",
-				"content": {
-					"type": "tabbed",
-					"tabs": [
-						{ "title": "Duelling Club", "content": { "type": "map", "maps": [ "Duelling Club" ] } },
-						{ "title": "Quidditch",     "content": { "type": "map", "maps": [ "Quidditch" ] } }
 					]
 				}
 			},
