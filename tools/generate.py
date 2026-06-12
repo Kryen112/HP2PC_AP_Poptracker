@@ -39,11 +39,12 @@ REGION_DISPLAY = {
     "DiffindoChallenge": "Diffindo Challenge",
     "DuellingClub": "Duelling Club",
     "DumbledoreStudy": "Dumbledore's Study",
+    "EntryHall": "Entry Hall",
     "ForbiddenForest": "Forbidden Forest",
     "GoldCardRoom": "Gold Card Room",
     "GoyleLevel": "Goyle Level",
+    "GrandStaircase": "Grand Staircase",
     "GryffindorChallenge": "Gryffindor Challenge",
-    "Hogwarts": "Hogwarts",
     "Quidditch": "Quidditch",
     "RictusempraChallenge": "Rictusempra Challenge",
     "SkurgeChallenge": "Skurge Challenge",
@@ -51,6 +52,13 @@ REGION_DISPLAY = {
     "SpongifyChallenge": "Spongify Challenge",
     "WhompingWillow": "Whomping Willow",
     "Menu": "Menu",
+}
+
+# Region → map name for the pins, when it differs from the region's own
+# display name. Dumbledore's Study keeps its own section name but physically
+# sits on the Grand Staircase, so its pins are placed on that map image.
+REGION_MAP_OVERRIDE = {
+    "DumbledoreStudy": "Grand Staircase",
 }
 
 # Map LOCATION_GROUPS group → tracker visibility helper from logic.lua.
@@ -170,6 +178,12 @@ def load_rule_dicts(path: Path) -> dict[str, dict[str, ast.AST]]:
 # Lambda body → Lua expression
 # ---------------------------------------------------------------------------
 
+# Module-level list constants from regions.py (e.g. _SILVER_CARD_NAMES),
+# populated in main(). Lets lambda_to_lua expand has_from_list_unique into the
+# atLeast() helper from logic.lua.
+LIST_CONSTANTS: dict[str, list] = {}
+
+
 def lambda_to_lua(node) -> str:
     if isinstance(node, ast.Constant):
         if node.value is True:
@@ -188,6 +202,18 @@ def lambda_to_lua(node) -> str:
                 and len(node.args) >= 1 and isinstance(node.args[0], ast.Constant)):
             item = node.args[0].value
             return f'has("{_lua_escape(item)}")'
+        # state.has_from_list_unique(_LIST, player, n) -> atLeast(n, has("a"), ...)
+        if (isinstance(node.func, ast.Attribute)
+                and node.func.attr in ("has_from_list_unique", "has_from_list")
+                and len(node.args) >= 3
+                and isinstance(node.args[0], ast.Name)
+                and isinstance(node.args[2], ast.Constant)):
+            names = LIST_CONSTANTS.get(node.args[0].id)
+            if names is None:
+                raise ValueError(f"unknown item-list constant: {node.args[0].id}")
+            n = node.args[2].value
+            haves = ", ".join(f'has("{_lua_escape(name)}")' for name in names)
+            return f"atLeast({n}, {haves})"
     raise ValueError(f"unsupported expr node: {ast.dump(node)}")
 
 
@@ -346,11 +372,17 @@ def build_region_locations_json(region: str, region_locs: list[str],
     the file on disk. Carries pin coordinates forward across regenerations
     so a fresh run doesn't wipe coordinates Stefan has already placed."""
     display = REGION_DISPLAY.get(region, region)
+    map_name = REGION_MAP_OVERRIDE.get(region, display)
     children = []
     for loc_name in sorted(region_locs):
         section_name = loc_section_ref(display, loc_name)
-        prior = existing_map_locations.get(section_name)
-        map_locs = prior if prior else [{"map": display, "x": 0, "y": 0}]
+        # Carry pin coordinates forward only while they belong to the current
+        # map. If a section moved to a different map (e.g. Dumbledore's Study
+        # pins relocating onto the Grand Staircase image), the old x/y are
+        # meaningless on the new picture, so reset to (0, 0) for re-placing.
+        prior = [ml for ml in (existing_map_locations.get(section_name) or [])
+                 if ml.get("map") == map_name]
+        map_locs = prior if prior else [{"map": map_name, "x": 0, "y": 0}]
         entry = {
             "name": section_name,
             "chest_unopened_img": "images/items/item.png",
@@ -428,6 +460,7 @@ def main() -> None:
     items = load_assignments(APWORLD / "items.py")
     locations = load_assignments(APWORLD / "locations.py")
     regions = load_assignments(APWORLD / "regions.py")
+    LIST_CONSTANTS.update({k: v for k, v in regions.items() if isinstance(v, list)})
     region_rules = load_rule_dicts(APWORLD / "regions.py")
     location_rules = load_rule_dicts(APWORLD / "rules.py")
 

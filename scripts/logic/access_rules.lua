@@ -32,12 +32,12 @@ function rule_Learned_Spongify()
 end
 function rule_Bicorn_Level_Card_Agrippa()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Alderton()
+function rule_Entry_Hall_Card_Alderton()
 	if isOpenCastle() then
 		return true and (has("Spongify") and has("Alohomora"))
 	else
@@ -51,7 +51,7 @@ function rule_Rictusempra_Challenge_Card_Barbary()
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Barkwith()
+function rule_Grand_Staircase_Card_Barkwith()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
@@ -65,7 +65,7 @@ function rule_Skurge_Challenge_Card_Belby()
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and has("Alohomora")
 	end
 end
-function rule_Hogwarts_Card_Blane()
+function rule_Grand_Staircase_Card_Blane()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
@@ -79,7 +79,7 @@ function rule_Goyle_Level_Card_Bloxam()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Bonham()
+function rule_Grand_Staircase_Card_Bonham()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
@@ -95,12 +95,12 @@ function rule_Skurge_Challenge_Card_Catchlove()
 end
 function rule_Chamber_of_Secrets_Card_Elphick()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge"))
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Ethelred()
+function rule_Grand_Staircase_Card_Ethelred()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
@@ -116,7 +116,7 @@ function rule_Forbidden_Forest_Card_Fancourt()
 end
 function rule_Bicorn_Level_Card_Goshawk()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
@@ -128,14 +128,14 @@ function rule_Rictusempra_Challenge_Card_Graves()
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Gunhilda()
+function rule_Entry_Hall_Card_Gunhilda()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Rictusempra"))
 	end
 end
-function rule_Hogwarts_Card_Hipworth()
+function rule_Grand_Staircase_Card_Hipworth()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
@@ -144,7 +144,7 @@ function rule_Hogwarts_Card_Hipworth()
 end
 function rule_Skurge_Challenge_Card_Kegg()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and has("Alohomora")
 	end
@@ -174,7 +174,7 @@ function rule_Diffindo_Challenge_Card_Merwyn()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Dumbledore_s_Study_Card_Muldoon()
@@ -221,7 +221,7 @@ function rule_Goyle_Level_Card_Plumpton()
 end
 function rule_Spongify_Challenge_Card_Po()
 	if isOpenCastle() then
-		return has("Spongify Challenge Key") and (has("Spongify") and has("Lumos") and has("Alohomora"))
+		return has("Spongify Challenge Key") and (has("Spongify") and has("Lumos") and has("Alohomora") and has("Flipendo"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
 	end
@@ -233,7 +233,7 @@ function rule_Castle_Exterior_Card_Pokeby()
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key"))
 	end
 end
-function rule_Hogwarts_Card_Sawbridge()
+function rule_Entry_Hall_Card_Sawbridge()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
@@ -263,7 +263,7 @@ function rule_Goyle_Level_Card_Stroulger()
 end
 function rule_Bicorn_Level_Card_Stump()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
@@ -307,10 +307,10 @@ function rule_Diffindo_Challenge_Card_Ulric()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Vablatsky()
+function rule_Grand_Staircase_Card_Vablatsky()
 	if isOpenCastle() then
 		return true and (has("Chamber of Secrets Key") and has("Alohomora"))
 	else
@@ -319,7 +319,7 @@ function rule_Hogwarts_Card_Vablatsky()
 end
 function rule_Slytherin_Common_Room_Card_Waffling()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and has("Alohomora"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
 	end
@@ -380,7 +380,7 @@ function rule_Spongify_Challenge_Card_Woodcroft()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Andros()
+function rule_Entry_Hall_Card_Andros()
 	if isOpenCastle() then
 		return true and (has("Flipendo") and has("Alohomora"))
 	else
@@ -436,7 +436,7 @@ function rule_Rictusempra_Challenge_Card_Crumb()
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Dodderidge()
+function rule_Entry_Hall_Card_Dodderidge()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
@@ -485,35 +485,35 @@ function rule_Spongify_Challenge_Card_Grunnion()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Jones()
+function rule_Entry_Hall_Card_Jones()
 	if isOpenCastle() then
 		return true and (has("Flipendo") and has("Diffindo") and has("Alohomora"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Diffindo") and has("Flipendo"))
 	end
 end
-function rule_Hogwarts_Card_Lufkin()
+function rule_Grand_Staircase_Card_Lufkin()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Skurge") and has("Diffindo") and has("Spongify"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Diffindo") and has("Spongify"))
 	end
 end
-function rule_Hogwarts_Card_Maeve()
+function rule_Grand_Staircase_Card_Maeve()
 	if isOpenCastle() then
 		return true and (has("Flipendo") and has("Alohomora"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Flipendo"))
 	end
 end
-function rule_Hogwarts_Card_Montmorency()
+function rule_Entry_Hall_Card_Montmorency()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Skurge"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Rictusempra"))
 	end
 end
-function rule_Hogwarts_Card_Mopsus()
+function rule_Entry_Hall_Card_Mopsus()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Skurge") and has("Diffindo"))
 	else
@@ -522,7 +522,7 @@ function rule_Hogwarts_Card_Mopsus()
 end
 function rule_Bicorn_Level_Card_Nutcombe()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
@@ -534,7 +534,7 @@ function rule_Castle_Exterior_Card_Oglethorpe()
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Spongify") and has("Diffindo") and has("Lumos"))
 	end
 end
-function rule_Hogwarts_Card_Oldridge()
+function rule_Grand_Staircase_Card_Oldridge()
 	if isOpenCastle() then
 		return true and (has("Spongify") and has("Alohomora"))
 	else
@@ -566,10 +566,10 @@ function rule_Diffindo_Challenge_Card_Shimpling()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Shingleton()
+function rule_Entry_Hall_Card_Shingleton()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Lumos") and has("Skurge"))
 	else
@@ -580,7 +580,7 @@ function rule_Diffindo_Challenge_Card_Smethwyck()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Card_Stalk()
@@ -604,7 +604,7 @@ function rule_Diffindo_Challenge_Card_Thurkell()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Toothill()
+function rule_Grand_Staircase_Card_Toothill()
 	if isOpenCastle() then
 		return true and has("Spongify")
 	else
@@ -632,7 +632,7 @@ function rule_Castle_Exterior_Card_Wadcock()
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Hogwarts_Card_Wendelin()
+function rule_Entry_Hall_Card_Wendelin()
 	if isOpenCastle() then
 		return true and (has("Skurge") and has("Lumos") and has("Diffindo") and has("Alohomora"))
 	else
@@ -646,7 +646,7 @@ function rule_Goyle_Level_Card_Wildsmith()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Card_Wright()
+function rule_Entry_Hall_Card_Wright()
 	if isOpenCastle() then
 		return true and (has("Diffindo") and has("Alohomora"))
 	else
@@ -662,77 +662,77 @@ function rule_Castle_Exterior_Card_Youdle()
 end
 function rule_Gold_Card_Room_Card_Bott()
 	if isOpenCastle() then
-		return (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle")) and (has("Rictusempra") or has("Spongify"))
+		return atLeast(20, has("Silver Card - Andros"), has("Silver Card - Beamish"), has("Silver Card - Chittock"), has("Silver Card - Circe"), has("Silver Card - Clagg"), has("Silver Card - Cliodne"), has("Silver Card - Cronk"), has("Silver Card - Crumb"), has("Silver Card - Dodderidge"), has("Silver Card - Duke"), has("Silver Card - Fay"), has("Silver Card - Fulbert"), has("Silver Card - Furmage"), has("Silver Card - Gregory"), has("Silver Card - Grunnion"), has("Silver Card - Jones"), has("Silver Card - Lufkin"), has("Silver Card - Maeve"), has("Silver Card - Montmorency"), has("Silver Card - Mopsus"), has("Silver Card - Nutcombe"), has("Silver Card - Oglethorpe"), has("Silver Card - Oldridge"), has("Silver Card - Oliphant"), has("Silver Card - Plunkett"), has("Silver Card - Rastrick"), has("Silver Card - Shimpling"), has("Silver Card - Shingleton"), has("Silver Card - Smethwyck"), has("Silver Card - Stalk"), has("Silver Card - Summerbee"), has("Silver Card - Thurkell"), has("Silver Card - Toothill"), has("Silver Card - Tremlett"), has("Silver Card - Tugwood"), has("Silver Card - Wadcock"), has("Silver Card - Wendelin"), has("Silver Card - Wildsmith"), has("Silver Card - Wright"), has("Silver Card - Youdle")) and (has("Rictusempra") or has("Spongify"))
 	else
 		return (has("Lumos") and has("Flipendo") and (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle"))) and (has("Rictusempra") or has("Spongify"))
 	end
 end
 function rule_Gold_Card_Room_Card_Dumbledore()
 	if isOpenCastle() then
-		return (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle")) and (has("Alohomora") and (has("Rictusempra") or has("Spongify")))
+		return atLeast(20, has("Silver Card - Andros"), has("Silver Card - Beamish"), has("Silver Card - Chittock"), has("Silver Card - Circe"), has("Silver Card - Clagg"), has("Silver Card - Cliodne"), has("Silver Card - Cronk"), has("Silver Card - Crumb"), has("Silver Card - Dodderidge"), has("Silver Card - Duke"), has("Silver Card - Fay"), has("Silver Card - Fulbert"), has("Silver Card - Furmage"), has("Silver Card - Gregory"), has("Silver Card - Grunnion"), has("Silver Card - Jones"), has("Silver Card - Lufkin"), has("Silver Card - Maeve"), has("Silver Card - Montmorency"), has("Silver Card - Mopsus"), has("Silver Card - Nutcombe"), has("Silver Card - Oglethorpe"), has("Silver Card - Oldridge"), has("Silver Card - Oliphant"), has("Silver Card - Plunkett"), has("Silver Card - Rastrick"), has("Silver Card - Shimpling"), has("Silver Card - Shingleton"), has("Silver Card - Smethwyck"), has("Silver Card - Stalk"), has("Silver Card - Summerbee"), has("Silver Card - Thurkell"), has("Silver Card - Toothill"), has("Silver Card - Tremlett"), has("Silver Card - Tugwood"), has("Silver Card - Wadcock"), has("Silver Card - Wendelin"), has("Silver Card - Wildsmith"), has("Silver Card - Wright"), has("Silver Card - Youdle")) and (has("Alohomora") and (has("Rictusempra") or has("Spongify")))
 	else
 		return (has("Lumos") and has("Flipendo") and (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle"))) and (has("Alohomora") and (has("Rictusempra") or has("Spongify")))
 	end
 end
 function rule_Gold_Card_Room_Card_Gryffindor()
 	if isOpenCastle() then
-		return (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and (has("Rictusempra") or has("Spongify")))
+		return atLeast(20, has("Silver Card - Andros"), has("Silver Card - Beamish"), has("Silver Card - Chittock"), has("Silver Card - Circe"), has("Silver Card - Clagg"), has("Silver Card - Cliodne"), has("Silver Card - Cronk"), has("Silver Card - Crumb"), has("Silver Card - Dodderidge"), has("Silver Card - Duke"), has("Silver Card - Fay"), has("Silver Card - Fulbert"), has("Silver Card - Furmage"), has("Silver Card - Gregory"), has("Silver Card - Grunnion"), has("Silver Card - Jones"), has("Silver Card - Lufkin"), has("Silver Card - Maeve"), has("Silver Card - Montmorency"), has("Silver Card - Mopsus"), has("Silver Card - Nutcombe"), has("Silver Card - Oglethorpe"), has("Silver Card - Oldridge"), has("Silver Card - Oliphant"), has("Silver Card - Plunkett"), has("Silver Card - Rastrick"), has("Silver Card - Shimpling"), has("Silver Card - Shingleton"), has("Silver Card - Smethwyck"), has("Silver Card - Stalk"), has("Silver Card - Summerbee"), has("Silver Card - Thurkell"), has("Silver Card - Toothill"), has("Silver Card - Tremlett"), has("Silver Card - Tugwood"), has("Silver Card - Wadcock"), has("Silver Card - Wendelin"), has("Silver Card - Wildsmith"), has("Silver Card - Wright"), has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and (has("Rictusempra") or has("Spongify")))
 	else
 		return (has("Lumos") and has("Flipendo") and (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle"))) and (has("Alohomora") and has("Diffindo") and (has("Rictusempra") or has("Spongify")))
 	end
 end
 function rule_Gold_Card_Room_Card_Herpo()
 	if isOpenCastle() then
-		return (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and (has("Rictusempra") or has("Spongify")))
+		return atLeast(20, has("Silver Card - Andros"), has("Silver Card - Beamish"), has("Silver Card - Chittock"), has("Silver Card - Circe"), has("Silver Card - Clagg"), has("Silver Card - Cliodne"), has("Silver Card - Cronk"), has("Silver Card - Crumb"), has("Silver Card - Dodderidge"), has("Silver Card - Duke"), has("Silver Card - Fay"), has("Silver Card - Fulbert"), has("Silver Card - Furmage"), has("Silver Card - Gregory"), has("Silver Card - Grunnion"), has("Silver Card - Jones"), has("Silver Card - Lufkin"), has("Silver Card - Maeve"), has("Silver Card - Montmorency"), has("Silver Card - Mopsus"), has("Silver Card - Nutcombe"), has("Silver Card - Oglethorpe"), has("Silver Card - Oldridge"), has("Silver Card - Oliphant"), has("Silver Card - Plunkett"), has("Silver Card - Rastrick"), has("Silver Card - Shimpling"), has("Silver Card - Shingleton"), has("Silver Card - Smethwyck"), has("Silver Card - Stalk"), has("Silver Card - Summerbee"), has("Silver Card - Thurkell"), has("Silver Card - Toothill"), has("Silver Card - Tremlett"), has("Silver Card - Tugwood"), has("Silver Card - Wadcock"), has("Silver Card - Wendelin"), has("Silver Card - Wildsmith"), has("Silver Card - Wright"), has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and (has("Rictusempra") or has("Spongify")))
 	else
 		return (has("Lumos") and has("Flipendo") and (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle"))) and (has("Alohomora") and has("Diffindo") and (has("Rictusempra") or has("Spongify")))
 	end
 end
 function rule_Gold_Card_Room_Card_Hufflepuff()
 	if isOpenCastle() then
-		return (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
+		return atLeast(20, has("Silver Card - Andros"), has("Silver Card - Beamish"), has("Silver Card - Chittock"), has("Silver Card - Circe"), has("Silver Card - Clagg"), has("Silver Card - Cliodne"), has("Silver Card - Cronk"), has("Silver Card - Crumb"), has("Silver Card - Dodderidge"), has("Silver Card - Duke"), has("Silver Card - Fay"), has("Silver Card - Fulbert"), has("Silver Card - Furmage"), has("Silver Card - Gregory"), has("Silver Card - Grunnion"), has("Silver Card - Jones"), has("Silver Card - Lufkin"), has("Silver Card - Maeve"), has("Silver Card - Montmorency"), has("Silver Card - Mopsus"), has("Silver Card - Nutcombe"), has("Silver Card - Oglethorpe"), has("Silver Card - Oldridge"), has("Silver Card - Oliphant"), has("Silver Card - Plunkett"), has("Silver Card - Rastrick"), has("Silver Card - Shimpling"), has("Silver Card - Shingleton"), has("Silver Card - Smethwyck"), has("Silver Card - Stalk"), has("Silver Card - Summerbee"), has("Silver Card - Thurkell"), has("Silver Card - Toothill"), has("Silver Card - Tremlett"), has("Silver Card - Tugwood"), has("Silver Card - Wadcock"), has("Silver Card - Wendelin"), has("Silver Card - Wildsmith"), has("Silver Card - Wright"), has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	else
 		return (has("Lumos") and has("Flipendo") and (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle"))) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	end
 end
 function rule_Gold_Card_Room_Card_Knightley()
 	if isOpenCastle() then
-		return (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
+		return atLeast(20, has("Silver Card - Andros"), has("Silver Card - Beamish"), has("Silver Card - Chittock"), has("Silver Card - Circe"), has("Silver Card - Clagg"), has("Silver Card - Cliodne"), has("Silver Card - Cronk"), has("Silver Card - Crumb"), has("Silver Card - Dodderidge"), has("Silver Card - Duke"), has("Silver Card - Fay"), has("Silver Card - Fulbert"), has("Silver Card - Furmage"), has("Silver Card - Gregory"), has("Silver Card - Grunnion"), has("Silver Card - Jones"), has("Silver Card - Lufkin"), has("Silver Card - Maeve"), has("Silver Card - Montmorency"), has("Silver Card - Mopsus"), has("Silver Card - Nutcombe"), has("Silver Card - Oglethorpe"), has("Silver Card - Oldridge"), has("Silver Card - Oliphant"), has("Silver Card - Plunkett"), has("Silver Card - Rastrick"), has("Silver Card - Shimpling"), has("Silver Card - Shingleton"), has("Silver Card - Smethwyck"), has("Silver Card - Stalk"), has("Silver Card - Summerbee"), has("Silver Card - Thurkell"), has("Silver Card - Toothill"), has("Silver Card - Tremlett"), has("Silver Card - Tugwood"), has("Silver Card - Wadcock"), has("Silver Card - Wendelin"), has("Silver Card - Wildsmith"), has("Silver Card - Wright"), has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	else
 		return (has("Lumos") and has("Flipendo") and (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle"))) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	end
 end
 function rule_Gold_Card_Room_Card_Paracelsus()
 	if isOpenCastle() then
-		return (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
+		return atLeast(20, has("Silver Card - Andros"), has("Silver Card - Beamish"), has("Silver Card - Chittock"), has("Silver Card - Circe"), has("Silver Card - Clagg"), has("Silver Card - Cliodne"), has("Silver Card - Cronk"), has("Silver Card - Crumb"), has("Silver Card - Dodderidge"), has("Silver Card - Duke"), has("Silver Card - Fay"), has("Silver Card - Fulbert"), has("Silver Card - Furmage"), has("Silver Card - Gregory"), has("Silver Card - Grunnion"), has("Silver Card - Jones"), has("Silver Card - Lufkin"), has("Silver Card - Maeve"), has("Silver Card - Montmorency"), has("Silver Card - Mopsus"), has("Silver Card - Nutcombe"), has("Silver Card - Oglethorpe"), has("Silver Card - Oldridge"), has("Silver Card - Oliphant"), has("Silver Card - Plunkett"), has("Silver Card - Rastrick"), has("Silver Card - Shimpling"), has("Silver Card - Shingleton"), has("Silver Card - Smethwyck"), has("Silver Card - Stalk"), has("Silver Card - Summerbee"), has("Silver Card - Thurkell"), has("Silver Card - Toothill"), has("Silver Card - Tremlett"), has("Silver Card - Tugwood"), has("Silver Card - Wadcock"), has("Silver Card - Wendelin"), has("Silver Card - Wildsmith"), has("Silver Card - Wright"), has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	else
 		return (has("Lumos") and has("Flipendo") and (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle"))) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	end
 end
 function rule_Gold_Card_Room_Card_Pinkstone()
 	if isOpenCastle() then
-		return (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
+		return atLeast(20, has("Silver Card - Andros"), has("Silver Card - Beamish"), has("Silver Card - Chittock"), has("Silver Card - Circe"), has("Silver Card - Clagg"), has("Silver Card - Cliodne"), has("Silver Card - Cronk"), has("Silver Card - Crumb"), has("Silver Card - Dodderidge"), has("Silver Card - Duke"), has("Silver Card - Fay"), has("Silver Card - Fulbert"), has("Silver Card - Furmage"), has("Silver Card - Gregory"), has("Silver Card - Grunnion"), has("Silver Card - Jones"), has("Silver Card - Lufkin"), has("Silver Card - Maeve"), has("Silver Card - Montmorency"), has("Silver Card - Mopsus"), has("Silver Card - Nutcombe"), has("Silver Card - Oglethorpe"), has("Silver Card - Oldridge"), has("Silver Card - Oliphant"), has("Silver Card - Plunkett"), has("Silver Card - Rastrick"), has("Silver Card - Shimpling"), has("Silver Card - Shingleton"), has("Silver Card - Smethwyck"), has("Silver Card - Stalk"), has("Silver Card - Summerbee"), has("Silver Card - Thurkell"), has("Silver Card - Toothill"), has("Silver Card - Tremlett"), has("Silver Card - Tugwood"), has("Silver Card - Wadcock"), has("Silver Card - Wendelin"), has("Silver Card - Wildsmith"), has("Silver Card - Wright"), has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	else
 		return (has("Lumos") and has("Flipendo") and (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle"))) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	end
 end
 function rule_Gold_Card_Room_Card_Potter()
 	if isOpenCastle() then
-		return (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
+		return atLeast(20, has("Silver Card - Andros"), has("Silver Card - Beamish"), has("Silver Card - Chittock"), has("Silver Card - Circe"), has("Silver Card - Clagg"), has("Silver Card - Cliodne"), has("Silver Card - Cronk"), has("Silver Card - Crumb"), has("Silver Card - Dodderidge"), has("Silver Card - Duke"), has("Silver Card - Fay"), has("Silver Card - Fulbert"), has("Silver Card - Furmage"), has("Silver Card - Gregory"), has("Silver Card - Grunnion"), has("Silver Card - Jones"), has("Silver Card - Lufkin"), has("Silver Card - Maeve"), has("Silver Card - Montmorency"), has("Silver Card - Mopsus"), has("Silver Card - Nutcombe"), has("Silver Card - Oglethorpe"), has("Silver Card - Oldridge"), has("Silver Card - Oliphant"), has("Silver Card - Plunkett"), has("Silver Card - Rastrick"), has("Silver Card - Shimpling"), has("Silver Card - Shingleton"), has("Silver Card - Smethwyck"), has("Silver Card - Stalk"), has("Silver Card - Summerbee"), has("Silver Card - Thurkell"), has("Silver Card - Toothill"), has("Silver Card - Tremlett"), has("Silver Card - Tugwood"), has("Silver Card - Wadcock"), has("Silver Card - Wendelin"), has("Silver Card - Wildsmith"), has("Silver Card - Wright"), has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	else
 		return (has("Lumos") and has("Flipendo") and (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle"))) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	end
 end
 function rule_Gold_Card_Room_Card_Ravenclaw()
 	if isOpenCastle() then
-		return (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
+		return atLeast(20, has("Silver Card - Andros"), has("Silver Card - Beamish"), has("Silver Card - Chittock"), has("Silver Card - Circe"), has("Silver Card - Clagg"), has("Silver Card - Cliodne"), has("Silver Card - Cronk"), has("Silver Card - Crumb"), has("Silver Card - Dodderidge"), has("Silver Card - Duke"), has("Silver Card - Fay"), has("Silver Card - Fulbert"), has("Silver Card - Furmage"), has("Silver Card - Gregory"), has("Silver Card - Grunnion"), has("Silver Card - Jones"), has("Silver Card - Lufkin"), has("Silver Card - Maeve"), has("Silver Card - Montmorency"), has("Silver Card - Mopsus"), has("Silver Card - Nutcombe"), has("Silver Card - Oglethorpe"), has("Silver Card - Oldridge"), has("Silver Card - Oliphant"), has("Silver Card - Plunkett"), has("Silver Card - Rastrick"), has("Silver Card - Shimpling"), has("Silver Card - Shingleton"), has("Silver Card - Smethwyck"), has("Silver Card - Stalk"), has("Silver Card - Summerbee"), has("Silver Card - Thurkell"), has("Silver Card - Toothill"), has("Silver Card - Tremlett"), has("Silver Card - Tugwood"), has("Silver Card - Wadcock"), has("Silver Card - Wendelin"), has("Silver Card - Wildsmith"), has("Silver Card - Wright"), has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	else
 		return (has("Lumos") and has("Flipendo") and (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle"))) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	end
 end
 function rule_Gold_Card_Room_Card_Slytherin()
 	if isOpenCastle() then
-		return (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and (has("Rictusempra") or has("Spongify")))
+		return atLeast(20, has("Silver Card - Andros"), has("Silver Card - Beamish"), has("Silver Card - Chittock"), has("Silver Card - Circe"), has("Silver Card - Clagg"), has("Silver Card - Cliodne"), has("Silver Card - Cronk"), has("Silver Card - Crumb"), has("Silver Card - Dodderidge"), has("Silver Card - Duke"), has("Silver Card - Fay"), has("Silver Card - Fulbert"), has("Silver Card - Furmage"), has("Silver Card - Gregory"), has("Silver Card - Grunnion"), has("Silver Card - Jones"), has("Silver Card - Lufkin"), has("Silver Card - Maeve"), has("Silver Card - Montmorency"), has("Silver Card - Mopsus"), has("Silver Card - Nutcombe"), has("Silver Card - Oglethorpe"), has("Silver Card - Oldridge"), has("Silver Card - Oliphant"), has("Silver Card - Plunkett"), has("Silver Card - Rastrick"), has("Silver Card - Shimpling"), has("Silver Card - Shingleton"), has("Silver Card - Smethwyck"), has("Silver Card - Stalk"), has("Silver Card - Summerbee"), has("Silver Card - Thurkell"), has("Silver Card - Toothill"), has("Silver Card - Tremlett"), has("Silver Card - Tugwood"), has("Silver Card - Wadcock"), has("Silver Card - Wendelin"), has("Silver Card - Wildsmith"), has("Silver Card - Wright"), has("Silver Card - Youdle")) and (has("Alohomora") and has("Diffindo") and (has("Rictusempra") or has("Spongify")))
 	else
 		return (has("Lumos") and has("Flipendo") and (has("Silver Card - Andros") and has("Silver Card - Beamish") and has("Silver Card - Chittock") and has("Silver Card - Circe") and has("Silver Card - Clagg") and has("Silver Card - Cliodne") and has("Silver Card - Cronk") and has("Silver Card - Crumb") and has("Silver Card - Dodderidge") and has("Silver Card - Duke") and has("Silver Card - Fay") and has("Silver Card - Fulbert") and has("Silver Card - Furmage") and has("Silver Card - Gregory") and has("Silver Card - Grunnion") and has("Silver Card - Jones") and has("Silver Card - Lufkin") and has("Silver Card - Maeve") and has("Silver Card - Montmorency") and has("Silver Card - Mopsus") and has("Silver Card - Nutcombe") and has("Silver Card - Oglethorpe") and has("Silver Card - Oldridge") and has("Silver Card - Oliphant") and has("Silver Card - Plunkett") and has("Silver Card - Rastrick") and has("Silver Card - Shimpling") and has("Silver Card - Shingleton") and has("Silver Card - Smethwyck") and has("Silver Card - Stalk") and has("Silver Card - Summerbee") and has("Silver Card - Thurkell") and has("Silver Card - Toothill") and has("Silver Card - Tremlett") and has("Silver Card - Tugwood") and has("Silver Card - Wadcock") and has("Silver Card - Wendelin") and has("Silver Card - Wildsmith") and has("Silver Card - Wright") and has("Silver Card - Youdle"))) and (has("Alohomora") and has("Diffindo") and (has("Rictusempra") or has("Spongify")))
 	end
@@ -893,7 +893,7 @@ function rule_Spongify_Challenge_Beat_Par_Time()
 end
 function rule_Bicorn_Level_Secret_2()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
@@ -907,35 +907,35 @@ function rule_Bicorn_Level_Secret_1()
 end
 function rule_Bicorn_Level_Secret_6()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Lumos"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Lumos") and has("Rictusempra"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Bicorn_Level_Secret_3()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Bicorn_Level_Secret_4()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Bicorn_Level_Secret_5()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Bicorn_Level_Secret_7()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
@@ -1070,42 +1070,42 @@ function rule_Diffindo_Challenge_Secret_1()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and has("Alohomora")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_2()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_3()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_5()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_6()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_4()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_7()
@@ -1166,7 +1166,7 @@ function rule_Forbidden_Forest_Secret_2()
 end
 function rule_Forbidden_Forest_Secret_1()
 	if isOpenCastle() then
-		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify"))
+		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Flipendo"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
 	end
@@ -1227,147 +1227,147 @@ function rule_Goyle_Level_Secret_2()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Secret_1()
+function rule_Entry_Hall_Secret_1()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Lumos") and has("Skurge"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and has("Skurge") and has("Alohomora") and has("Lumos"))
 	end
 end
-function rule_Hogwarts_Secret_2()
+function rule_Entry_Hall_Secret_2()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Skurge"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Secret_3()
+function rule_Entry_Hall_Secret_3()
 	if isOpenCastle() then
 		return true and (has("Skurge") and has("Lumos") and has("Diffindo"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Lumos"))
 	end
 end
-function rule_Hogwarts_Secret_4()
+function rule_Entry_Hall_Secret_4()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and has("Alohomora"))
 	end
 end
-function rule_Hogwarts_Secret_5()
+function rule_Entry_Hall_Secret_5()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Hogwarts_Secret_6()
+function rule_Entry_Hall_Secret_6()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Hogwarts_Secret_7()
+function rule_Entry_Hall_Secret_7()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Hogwarts_Secret_8()
+function rule_Entry_Hall_Secret_8()
 	if isOpenCastle() then
 		return true and has("Diffindo")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Diffindo")
 	end
 end
-function rule_Hogwarts_Secret_9()
+function rule_Entry_Hall_Secret_9()
 	if isOpenCastle() then
 		return true and (has("Flipendo") and has("Diffindo"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Diffindo") and has("Flipendo"))
 	end
 end
-function rule_Hogwarts_Secret_10()
+function rule_Entry_Hall_Secret_10()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
 	end
 end
-function rule_Hogwarts_Secret_11()
+function rule_Entry_Hall_Secret_11()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Hogwarts_Secret_12()
+function rule_Entry_Hall_Secret_12()
 	if isOpenCastle() then
 		return true and has("Spongify")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Spongify")
 	end
 end
-function rule_Hogwarts_Secret_13()
+function rule_Grand_Staircase_Secret_13()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Hogwarts_Secret_14()
+function rule_Grand_Staircase_Secret_14()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Hogwarts_Secret_15()
+function rule_Grand_Staircase_Secret_15()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Hogwarts_Secret_16()
+function rule_Grand_Staircase_Secret_16()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
 	end
 end
-function rule_Hogwarts_Secret_17()
+function rule_Grand_Staircase_Secret_17()
 	if isOpenCastle() then
 		return true and has("Spongify")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Spongify")
 	end
 end
-function rule_Hogwarts_Secret_18()
+function rule_Grand_Staircase_Secret_18()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Skurge") and has("Diffindo") and has("Spongify"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Diffindo") and has("Spongify"))
 	end
 end
-function rule_Hogwarts_Secret_19()
+function rule_Grand_Staircase_Secret_19()
 	if isOpenCastle() then
 		return true
 	else
 		return (has("Lumos") and has("Flipendo"))
 	end
 end
-function rule_Hogwarts_Secret_20()
+function rule_Grand_Staircase_Secret_20()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Hogwarts_Secret_21()
+function rule_Grand_Staircase_Secret_21()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
@@ -1502,7 +1502,7 @@ function rule_Slytherin_Common_Room_Secret_8()
 end
 function rule_Slytherin_Common_Room_Secret_4()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and has("Alohomora"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
 	end
@@ -1558,7 +1558,7 @@ function rule_Spongify_Challenge_Secret_4()
 end
 function rule_Spongify_Challenge_Secret_5()
 	if isOpenCastle() then
-		return has("Spongify Challenge Key") and (has("Spongify") and has("Lumos"))
+		return has("Spongify Challenge Key") and (has("Spongify") and has("Lumos") and has("Flipendo"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
 	end
@@ -1889,28 +1889,28 @@ function rule_Diffindo_Challenge_Challenge_Star_2()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_4()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_5()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_6()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_11()
@@ -1931,14 +1931,14 @@ function rule_Diffindo_Challenge_Challenge_Star_3()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_7()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_13()
@@ -1952,7 +1952,7 @@ function rule_Diffindo_Challenge_Challenge_Star_1()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_1()
@@ -2179,63 +2179,63 @@ function rule_Gryffindor_Challenge_Complete()
 		return false
 	end
 end
-function rule_Hogwarts_Entrance_Hall_Card_Vendor_1()
+function rule_Entry_Hall_Card_Vendor_1()
 	if isOpenCastle() then
 		return true
 	else
 		return (has("Lumos") and has("Flipendo"))
 	end
 end
-function rule_Hogwarts_Entrance_Hall_Card_Vendor_2()
+function rule_Entry_Hall_Card_Vendor_2()
 	if isOpenCastle() then
 		return true
 	else
 		return (has("Lumos") and has("Flipendo"))
 	end
 end
-function rule_Hogwarts_Entrance_Hall_Card_Vendor_3()
+function rule_Entry_Hall_Card_Vendor_3()
 	if isOpenCastle() then
 		return true
 	else
 		return (has("Lumos") and has("Flipendo"))
 	end
 end
-function rule_Hogwarts_Entrance_Hall_Ingredient_Vendor_1()
+function rule_Entry_Hall_Ingredient_Vendor_1()
 	if isOpenCastle() then
 		return true
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Rictusempra")
 	end
 end
-function rule_Hogwarts_Entrance_Hall_Ingredient_Vendor_2()
+function rule_Entry_Hall_Ingredient_Vendor_2()
 	if isOpenCastle() then
 		return true
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Rictusempra")
 	end
 end
-function rule_Hogwarts_Entrance_Hall_Ingredient_Vendor_3()
+function rule_Entry_Hall_Ingredient_Vendor_3()
 	if isOpenCastle() then
 		return true
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Rictusempra")
 	end
 end
-function rule_Hogwarts_Staircase_Card_Vendor_1()
+function rule_Grand_Staircase_Card_Vendor_1()
 	if isOpenCastle() then
 		return true
 	else
 		return (has("Lumos") and has("Flipendo"))
 	end
 end
-function rule_Hogwarts_Staircase_Card_Vendor_2()
+function rule_Grand_Staircase_Card_Vendor_2()
 	if isOpenCastle() then
 		return true
 	else
 		return (has("Lumos") and has("Flipendo"))
 	end
 end
-function rule_Hogwarts_Staircase_Ingredient_Vendor_1()
+function rule_Grand_Staircase_Ingredient_Vendor_1()
 	if isOpenCastle() then
 		return true
 	else

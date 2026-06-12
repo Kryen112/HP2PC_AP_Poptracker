@@ -36,10 +36,10 @@
 		"img": "images/maps/duelling_club.png"
 	},
 	{
-		"name": "Dumbledore's Study",
+		"name": "Entry Hall",
 		"location_size": 24,
 		"location_border_thickness": 1,
-		"img": "images/maps/dumbledore_s_study.png"
+		"img": "images/maps/entry_hall.png"
 	},
 	{
 		"name": "Forbidden Forest",
@@ -66,10 +66,10 @@
 		"img": "images/maps/gryffindor_challenge.png"
 	},
 	{
-		"name": "Hogwarts",
+		"name": "Grand Staircase",
 		"location_size": 24,
 		"location_border_thickness": 1,
-		"img": "images/maps/hogwarts.png"
+		"img": "images/maps/grand_staircase.png"
 	},
 	{
 		"name": "Quidditch",

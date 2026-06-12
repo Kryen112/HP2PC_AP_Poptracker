@@ -1,0 +1,676 @@
+[
+	{
+		"name": "Entry Hall",
+		"chest_unopened_img": "images/items/item.png",
+		"chest_opened_img": "images/items/item_opened.png",
+		"children": [
+			{
+				"name": "Card Alderton",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Alderton"
+				],
+				"sections": [
+					{
+						"name": "Card Alderton"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Andros",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Andros"
+				],
+				"sections": [
+					{
+						"name": "Card Andros"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Dodderidge",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Dodderidge"
+				],
+				"sections": [
+					{
+						"name": "Card Dodderidge"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Gunhilda",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Gunhilda"
+				],
+				"sections": [
+					{
+						"name": "Card Gunhilda"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Jones",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Jones"
+				],
+				"sections": [
+					{
+						"name": "Card Jones"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Montmorency",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Montmorency"
+				],
+				"sections": [
+					{
+						"name": "Card Montmorency"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Mopsus",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Mopsus"
+				],
+				"sections": [
+					{
+						"name": "Card Mopsus"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Sawbridge",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Sawbridge"
+				],
+				"sections": [
+					{
+						"name": "Card Sawbridge"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Shingleton",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Shingleton"
+				],
+				"sections": [
+					{
+						"name": "Card Shingleton"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Vendor 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Vendor_1"
+				],
+				"sections": [
+					{
+						"name": "Card Vendor 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visTraders"
+				]
+			},
+			{
+				"name": "Card Vendor 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Vendor_2"
+				],
+				"sections": [
+					{
+						"name": "Card Vendor 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visTraders"
+				]
+			},
+			{
+				"name": "Card Vendor 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Vendor_3"
+				],
+				"sections": [
+					{
+						"name": "Card Vendor 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visTraders"
+				]
+			},
+			{
+				"name": "Card Wendelin",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Wendelin"
+				],
+				"sections": [
+					{
+						"name": "Card Wendelin"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Wright",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Card_Wright"
+				],
+				"sections": [
+					{
+						"name": "Card Wright"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Ingredient Vendor 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Ingredient_Vendor_1"
+				],
+				"sections": [
+					{
+						"name": "Ingredient Vendor 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visTraders"
+				]
+			},
+			{
+				"name": "Ingredient Vendor 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Ingredient_Vendor_2"
+				],
+				"sections": [
+					{
+						"name": "Ingredient Vendor 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visTraders"
+				]
+			},
+			{
+				"name": "Ingredient Vendor 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Ingredient_Vendor_3"
+				],
+				"sections": [
+					{
+						"name": "Ingredient Vendor 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visTraders"
+				]
+			},
+			{
+				"name": "Secret 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_1"
+				],
+				"sections": [
+					{
+						"name": "Secret 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 10",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_10"
+				],
+				"sections": [
+					{
+						"name": "Secret 10"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 11",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_11"
+				],
+				"sections": [
+					{
+						"name": "Secret 11"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 12",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_12"
+				],
+				"sections": [
+					{
+						"name": "Secret 12"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_2"
+				],
+				"sections": [
+					{
+						"name": "Secret 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_3"
+				],
+				"sections": [
+					{
+						"name": "Secret 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_4"
+				],
+				"sections": [
+					{
+						"name": "Secret 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_5"
+				],
+				"sections": [
+					{
+						"name": "Secret 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_6"
+				],
+				"sections": [
+					{
+						"name": "Secret 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_7"
+				],
+				"sections": [
+					{
+						"name": "Secret 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_8"
+				],
+				"sections": [
+					{
+						"name": "Secret 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			},
+			{
+				"name": "Secret 9",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Secret_9"
+				],
+				"sections": [
+					{
+						"name": "Secret 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
+				]
+			}
+		]
+	}
+]

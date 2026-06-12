@@ -7,9 +7,9 @@
 				"content": {
 					"type": "tabbed",
 					"tabs": [
-						{ "title": "Hogwarts",              "content": { "type": "map", "maps": [ "Hogwarts" ] } },
+						{ "title": "Entry Hall",            "content": { "type": "map", "maps": [ "Entry Hall" ] } },
+						{ "title": "Grand Staircase",       "content": { "type": "map", "maps": [ "Grand Staircase" ] } },
 						{ "title": "Castle Exterior",       "content": { "type": "map", "maps": [ "Castle Exterior" ] } },
-						{ "title": "Dumbledore's Study",    "content": { "type": "map", "maps": [ "Dumbledore's Study" ] } },
 						{ "title": "Slytherin Common Room", "content": { "type": "map", "maps": [ "Slytherin Common Room" ] } },
 						{ "title": "Gold Card Room",        "content": { "type": "map", "maps": [ "Gold Card Room" ] } }
 					]
