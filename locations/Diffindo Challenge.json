@@ -5,26 +5,32 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
-				"name": "Beat Par Time",
+				"name": "Completion",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Beat_Par_Time"
-				],
 				"sections": [
 					{
-						"name": "Beat Par Time"
+						"name": "Complete",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Complete"
+						]
+					},
+					{
+						"name": "Beat Par Time",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Beat_Par_Time"
+						],
+						"visibility_rules": [
+							"$visSpellTimes"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1034,
+						"y": 868
 					}
-				],
-				"visibility_rules": [
-					"$visSpellTimes"
 				]
 			},
 			{
@@ -42,8 +48,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 787,
+						"y": 20
 					}
 				],
 				"visibility_rules": [
@@ -65,8 +71,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1500,
+						"y": 465
 					}
 				],
 				"visibility_rules": [
@@ -88,8 +94,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1033,
+						"y": 97
 					}
 				],
 				"visibility_rules": [
@@ -111,8 +117,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1331,
+						"y": 622
 					}
 				],
 				"visibility_rules": [
@@ -134,8 +140,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 574,
+						"y": 936
 					}
 				],
 				"visibility_rules": [
@@ -157,8 +163,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1157,
+						"y": 310
 					}
 				],
 				"visibility_rules": [
@@ -180,8 +186,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 847,
+						"y": 64
 					}
 				],
 				"visibility_rules": [
@@ -203,8 +209,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 840,
+						"y": 288
 					}
 				],
 				"visibility_rules": [
@@ -226,8 +232,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1520,
+						"y": 774
 					}
 				],
 				"visibility_rules": [
@@ -249,8 +255,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 517,
+						"y": 936
 					}
 				],
 				"visibility_rules": [
@@ -258,26 +264,35 @@
 				]
 			},
 			{
-				"name": "Challenge Star 11",
+				"name": "Secret 8 & Star 11",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Challenge_Star_11"
-				],
 				"sections": [
 					{
-						"name": "Challenge Star 11"
+						"name": "Secret 8",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Secret_8"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Challenge Star 11",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Challenge_Star_11"
+						],
+						"visibility_rules": [
+							"$visStars"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 241,
+						"y": 677
 					}
-				],
-				"visibility_rules": [
-					"$visStars"
 				]
 			},
 			{
@@ -295,8 +310,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 464,
+						"y": 101
 					}
 				],
 				"visibility_rules": [
@@ -318,8 +333,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 698,
+						"y": 336
 					}
 				],
 				"visibility_rules": [
@@ -341,8 +356,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1034,
+						"y": 471
 					}
 				],
 				"visibility_rules": [
@@ -364,8 +379,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1433,
+						"y": 501
 					}
 				],
 				"visibility_rules": [
@@ -387,8 +402,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1433,
+						"y": 382
 					}
 				],
 				"visibility_rules": [
@@ -410,8 +425,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1222,
+						"y": 277
 					}
 				],
 				"visibility_rules": [
@@ -433,8 +448,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1034,
+						"y": 184
 					}
 				],
 				"visibility_rules": [
@@ -442,49 +457,35 @@
 				]
 			},
 			{
-				"name": "Challenge Star 6",
+				"name": "Challenge Stars 6 & 7",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Challenge_Star_6"
-				],
 				"sections": [
 					{
-						"name": "Challenge Star 6"
+						"name": "Challenge Star 6",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Challenge_Star_6"
+						],
+						"visibility_rules": [
+							"$visStars"
+						]
+					},
+					{
+						"name": "Challenge Star 7",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Challenge_Star_7"
+						],
+						"visibility_rules": [
+							"$visStars"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 846,
+						"y": 230
 					}
-				],
-				"visibility_rules": [
-					"$visStars"
-				]
-			},
-			{
-				"name": "Challenge Star 7",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Challenge_Star_7"
-				],
-				"sections": [
-					{
-						"name": "Challenge Star 7"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
-					}
-				],
-				"visibility_rules": [
-					"$visStars"
 				]
 			},
 			{
@@ -502,8 +503,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 617,
+						"y": 539
 					}
 				],
 				"visibility_rules": [
@@ -525,32 +526,12 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 116,
+						"y": 761
 					}
 				],
 				"visibility_rules": [
 					"$visStars"
-				]
-			},
-			{
-				"name": "Complete",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Complete"
-				],
-				"sections": [
-					{
-						"name": "Complete"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
-					}
 				]
 			},
 			{
@@ -568,8 +549,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1330,
+						"y": 1003
 					}
 				],
 				"visibility_rules": [
@@ -591,8 +572,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 793,
+						"y": 336
 					}
 				],
 				"visibility_rules": [
@@ -614,8 +595,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1157,
+						"y": 440
 					}
 				],
 				"visibility_rules": [
@@ -637,8 +618,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1331,
+						"y": 688
 					}
 				],
 				"visibility_rules": [
@@ -660,8 +641,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1293,
+						"y": 502
 					}
 				],
 				"visibility_rules": [
@@ -683,8 +664,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 862,
+						"y": 230
 					}
 				],
 				"visibility_rules": [
@@ -706,8 +687,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 847,
+						"y": 143
 					}
 				],
 				"visibility_rules": [
@@ -729,8 +710,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 1033,
+						"y": 143
 					}
 				],
 				"visibility_rules": [
@@ -752,31 +733,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 8",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Secret_8"
-				],
-				"sections": [
-					{
-						"name": "Secret 8"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 241,
+						"y": 917
 					}
 				],
 				"visibility_rules": [
@@ -798,8 +756,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 0,
-						"y": 0
+						"x": 740,
+						"y": 101
 					}
 				],
 				"visibility_rules": [
