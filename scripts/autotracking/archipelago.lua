@@ -1,9 +1,11 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/setting_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/level_mapping.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
+LEVEL_KEY = nil
 
 local function dump_table(o, depth)
     if depth == nil then depth = 0 end
@@ -86,6 +88,37 @@ function onClear(slot_data)
 
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
+
+    -- Map-follow: subscribe to this slot's current-level key (written by the
+    -- client) and fetch its current value, so the active map tab tracks the
+    -- player. Both calls must run from a ClearHandler.
+    LEVEL_KEY = "HP2PC_AP_level:" .. TEAM_NUMBER .. ":" .. PLAYER_ID
+    Archipelago:Get({LEVEL_KEY})
+    Archipelago:SetNotify({LEVEL_KEY})
+end
+
+-- Switch the active map tab to follow the engine map name the client mirrors
+-- into AP Data Storage. Unknown maps leave the current tab alone.
+function activate_level_tab(level)
+    if type(level) ~= "string" or level == "" then return end
+    local tabs = LEVEL_TO_TAB[string.upper(level)]
+    if not tabs then
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("onLevel: no tab mapping for level %s, using default", level))
+        end
+        tabs = LEVEL_TO_TAB_DEFAULT
+    end
+    for _, tab in ipairs(tabs) do
+        Tracker:UiHint("ActivateTab", tab)
+    end
+end
+
+function onLevelRetrieved(key, value)
+    if key == LEVEL_KEY then activate_level_tab(value) end
+end
+
+function onLevelSetReply(key, value, old_value)
+    if key == LEVEL_KEY then activate_level_tab(value) end
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -153,3 +186,5 @@ end
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
+Archipelago:AddRetrievedHandler("level retrieved handler", onLevelRetrieved)
+Archipelago:AddSetReplyHandler("level set handler", onLevelSetReply)
