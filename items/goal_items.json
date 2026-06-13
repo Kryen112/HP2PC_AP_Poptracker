@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Goal: Wizard cards",
+		"type": "toggle",
+		"img": "images/items/cards/gold/_count.png",
+		"codes": "goal_cards"
+	},
+	{
+		"name": "Goal: Spells",
+		"type": "toggle",
+		"img": "images/items/spells/lumos.png",
+		"codes": "goal_spells"
+	},
+	{
+		"name": "Goal: Level objectives",
+		"type": "toggle",
+		"img": "images/items/keys/whomping_willow_key.png",
+		"codes": "goal_levels"
+	},
+	{
+		"name": "Goal: Duels won",
+		"type": "toggle",
+		"img": "images/items/keys/duelling_key.png",
+		"codes": "goal_duels"
+	},
+	{
+		"name": "Goal: Quidditch matches won",
+		"type": "toggle",
+		"img": "images/items/keys/quidditch_key.png",
+		"codes": "goal_quidditch"
+	},
+	{
+		"name": "Great Hall goal met",
+		"type": "toggle",
+		"img": "images/items/settings/game_mode_open_castle.png",
+		"codes": "goal_great_hall"
+	}
+]

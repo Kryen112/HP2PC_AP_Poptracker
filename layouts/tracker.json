@@ -13,10 +13,19 @@
 						{
 							"type": "group",
 							"header": "Items and settings",
-							"dock": "left",
+							"dock": "top",
 							"content": {
 								"type": "layout",
 								"key": "items+settings"
+							}
+						},
+						{
+							"type": "group",
+							"header": "Great Hall goal",
+							"dock": "top",
+							"content": {
+								"type": "layout",
+								"key": "goal"
 							}
 						}
 					]

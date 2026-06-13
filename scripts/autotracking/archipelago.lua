@@ -2,10 +2,14 @@ ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/setting_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/level_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/goal_mapping.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
 LEVEL_KEY = nil
+-- Open-castle Great Hall goal targets, captured from slot_data in onClear.
+-- All zero in vanilla (no targets sent), which leaves the overall light off.
+GOAL_TARGETS = { cards = 0, spells = 0, levels = 0, duels = 0, quidditch = 0 }
 
 local function dump_table(o, depth)
     if depth == nil then depth = 0 end
@@ -95,6 +99,92 @@ function onClear(slot_data)
     LEVEL_KEY = "HP2PC_AP_level:" .. TEAM_NUMBER .. ":" .. PLAYER_ID
     Archipelago:Get({LEVEL_KEY})
     Archipelago:SetNotify({LEVEL_KEY})
+
+    -- Great Hall goal targets. cards/spells/levels are NamedRange counts;
+    -- duels/quidditch are toggles meaning "win all" (10 / 6).
+    local function truthy(v) return v == true or v == 1 end
+    GOAL_TARGETS = {
+        cards = tonumber(slot_data["open_castle_goal_cards"]) or 0,
+        spells = tonumber(slot_data["open_castle_goal_spells"]) or 0,
+        levels = tonumber(slot_data["open_castle_goal_levels"]) or 0,
+        duels = truthy(slot_data["open_castle_goal_duels"]) and 10 or 0,
+        quidditch = truthy(slot_data["open_castle_goal_quidditch"]) and 6 or 0,
+    }
+    recompute_goal()
+end
+
+-- Recompute the Great Hall goal panel from current tracker state: spell
+-- toggles, card counters, and cleared completion / duel / match locations.
+-- Sets each clause's counter and lights the overall indicator when every
+-- active clause (target > 0) is satisfied. No-op-safe before items load.
+-- BadgeText / BadgeTextColor are available since PopTracker 0.31.0. On older
+-- builds the clause still greys in/out via Active; it just shows no number.
+local HAS_BADGE = PopVersion ~= nil and PopVersion >= "0.31.0"
+
+-- One clause: lit with a "progress/target" badge when it is part of the goal
+-- (so a required-but-unstarted clause reads "0/N", never grey), greyed with no
+-- badge when target is 0 (not part of this seed's goal). Badge turns green
+-- once the clause is satisfied.
+local function set_clause(code, progress, target)
+    local obj = Tracker:FindObjectForCode(code)
+    if not obj then return end
+    local in_goal = target > 0
+    obj.Active = in_goal
+    if HAS_BADGE then
+        if in_goal then
+            obj.BadgeText = tostring(progress) .. "/" .. tostring(target)
+            obj.BadgeTextColor = (progress >= target) and "#44dd44" or "#ffffff"
+        else
+            obj.BadgeText = ""
+        end
+    end
+end
+
+local function cleared(code)
+    local obj = Tracker:FindObjectForCode(code)
+    return obj ~= nil and obj.ChestCount > 0 and obj.AvailableChestCount == 0
+end
+
+local function count_cleared(codes)
+    local n = 0
+    for _, code in ipairs(codes) do
+        if cleared(code) then n = n + 1 end
+    end
+    return n
+end
+
+function recompute_goal()
+    local cards = 0
+    for _, c in ipairs(GOAL_CARD_COUNTERS) do
+        cards = cards + (Tracker:ProviderCountForCode(c) or 0)
+    end
+    local spells = 0
+    for _, s in ipairs(GOAL_SPELL_CODES) do
+        if Tracker:ProviderCountForCode(s) > 0 then spells = spells + 1 end
+    end
+    local levels = count_cleared(GOAL_LEVEL_CODES)
+    local duels = count_cleared(GOAL_DUEL_CODES)
+    local quidditch = count_cleared(GOAL_QUID_CODES)
+
+    set_clause("goal_cards", cards, GOAL_TARGETS.cards)
+    set_clause("goal_spells", spells, GOAL_TARGETS.spells)
+    set_clause("goal_levels", levels, GOAL_TARGETS.levels)
+    set_clause("goal_duels", duels, GOAL_TARGETS.duels)
+    set_clause("goal_quidditch", quidditch, GOAL_TARGETS.quidditch)
+
+    local function clause_ok(progress, target)
+        return target <= 0 or progress >= target
+    end
+    local any_target = GOAL_TARGETS.cards > 0 or GOAL_TARGETS.spells > 0
+        or GOAL_TARGETS.levels > 0 or GOAL_TARGETS.duels > 0 or GOAL_TARGETS.quidditch > 0
+    local met = any_target
+        and clause_ok(cards, GOAL_TARGETS.cards)
+        and clause_ok(spells, GOAL_TARGETS.spells)
+        and clause_ok(levels, GOAL_TARGETS.levels)
+        and clause_ok(duels, GOAL_TARGETS.duels)
+        and clause_ok(quidditch, GOAL_TARGETS.quidditch)
+    local obj = Tracker:FindObjectForCode("goal_great_hall")
+    if obj then obj.Active = met end
 end
 
 -- Switch the active map tab to follow the engine map name the client mirrors
@@ -149,6 +239,7 @@ function onItem(index, item_id, item_name, player_number)
     end
 
     bump_card_counter(code)
+    recompute_goal()
 end
 
 -- Card items each bump their tier counter (bronze_cards / silver_cards /
@@ -181,6 +272,7 @@ function onLocation(location_id, location_name)
             end
         end
     end
+    recompute_goal()
 end
 
 Archipelago:AddClearHandler("clear handler", onClear)

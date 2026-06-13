@@ -12,5 +12,13 @@
 			[ "enable_spell_challenge_times", "enable_traps", "ring_link", "death_link", "", "", "" ],
 			[ "bronze_cards", "silver_cards", "gold_cards", "", "", "", "" ]
 		]
+	},
+	"goal": {
+		"type": "itemgrid",
+		"item_margin": "5,5",
+		"item_size": 40,
+		"rows": [
+			[ "goal_cards", "goal_spells", "goal_levels", "goal_duels", "goal_quidditch", "goal_great_hall" ]
+		]
 	}
 }

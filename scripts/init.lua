@@ -3,6 +3,7 @@ AUTOTRACKER_ENABLE_ITEM_TRACKING = true
 AUTOTRACKER_ENABLE_LOCATION_TRACKING = true
 
 Tracker:AddItems("items/items.json")
+Tracker:AddItems("items/goal_items.json")
 
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 ScriptHost:LoadScript("scripts/logic/access_rules.lua")
