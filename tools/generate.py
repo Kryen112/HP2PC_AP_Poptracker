@@ -584,7 +584,11 @@ def main() -> None:
         region = loc_regions.get(name, "TBD")
         display = REGION_DISPLAY.get(region, region)
         section = loc_section_ref(display, name)
-        code = f"@{display}/{section}"
+        # Full section path: region node / child location / section, all three
+        # segments. The child location and its section share the name, but the
+        # section segment is required — "@Region/Section" resolves against the
+        # region node, which has no direct sections, so the clear would no-op.
+        code = f"@{display}/{section}/{section}"
         loc_rows.append((str(ap_id), f'{{"{_lua_escape(code)}"}}'))
     write_text(PACK / "scripts" / "autotracking" / "location_mapping.lua",
                "LOCATION_MAPPING = {\n" + lua_table_kv(loc_rows) + "\n}\n")
