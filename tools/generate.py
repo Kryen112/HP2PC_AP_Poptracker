@@ -63,6 +63,21 @@ REGION_MAP_OVERRIDE = {
     "Quidditch": "Castle Exterior",
 }
 
+# "Menu room" pins: a host region's map carries one aggregate pin per source
+# region, each listing all that region's checks via section refs. The pin
+# shares state with the region's own map while letting players reach a room's
+# whole check list from the hub map it branches off. Keyed by host region.
+MENU_ROOMS = {
+    "GrandStaircase": ("Staircase Rooms", ["ChamberOfSecrets", "GoldCardRoom"]),
+    "CastleExterior": ("Castle Exterior Rooms", [
+        "DiffindoChallenge", "ForbiddenForest", "BoomslangLevel", "WhompingWillow",
+    ]),
+    "EntryHall": ("Entry Hall Rooms", [
+        "RictusempraChallenge", "SpongifyChallenge", "SkurgeChallenge",
+        "BicornLevel", "GoyleLevel", "SlytherinCommon", "GryffindorChallenge",
+    ]),
+}
+
 # Map LOCATION_GROUPS group → tracker visibility helper from logic.lua.
 # Groups not listed here are always visible.
 GROUP_TO_VIS = {
@@ -429,6 +444,41 @@ def build_region_locations_json(region: str, region_locs: list[str],
     }]
 
 
+def build_menu_room_node(parent_name: str, target_map: str,
+                         source_regions: list[str], by_region: dict[str, list[str]],
+                         existing_map_locations: dict[str, list]) -> dict:
+    """Build an aggregate menu node placed on target_map: one pin per source
+    region, each pin's sections being refs to every check in that region, so it
+    mirrors the region's own map. Pin coordinates carry forward like checks —
+    keyed by the source region's display name, which is the pin's node name."""
+    children = []
+    for src in source_regions:
+        src_display = REGION_DISPLAY.get(src, src)
+        sections = []
+        for loc_name in sorted(by_region.get(src, [])):
+            section_name = loc_section_ref(src_display, loc_name)
+            sections.append({
+                "name": section_name,
+                "ref": f"{src_display}/{section_name}/{section_name}",
+            })
+        prior = [ml for ml in (existing_map_locations.get(src_display) or [])
+                 if ml.get("map") == target_map]
+        map_locs = prior if prior else [{"map": target_map, "x": 0, "y": 0}]
+        children.append({
+            "name": src_display,
+            "chest_unopened_img": "images/items/item.png",
+            "chest_opened_img": "images/items/item_opened.png",
+            "sections": sections,
+            "map_locations": map_locs,
+        })
+    return {
+        "name": parent_name,
+        "chest_unopened_img": "images/items/item.png",
+        "chest_opened_img": "images/items/item_opened.png",
+        "children": children,
+    }
+
+
 def load_existing_map_locations(path: Path) -> dict[str, list]:
     """Read a previously-written locations/<Region>.json and pull each
     child's map_locations back out, keyed by section name."""
@@ -502,7 +552,14 @@ def main() -> None:
         display = REGION_DISPLAY.get(region, region)
         out_path = PACK / "locations" / f"{display}.json"
         prior = load_existing_map_locations(out_path)
-        write_json(out_path, build_region_locations_json(region, locs, loc_groups, prior))
+        region_json = build_region_locations_json(region, locs, loc_groups, prior)
+        if region in MENU_ROOMS:
+            parent_name, sources = MENU_ROOMS[region]
+            target_map = REGION_MAP_OVERRIDE.get(region, display)
+            region_json.append(
+                build_menu_room_node(parent_name, target_map, sources, by_region, prior)
+            )
+        write_json(out_path, region_json)
 
     # ---- scripts/locations_import.lua ------------------------------------
     import_lines = []

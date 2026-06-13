@@ -557,5 +557,292 @@
 				]
 			}
 		]
+	},
+	{
+		"name": "Castle Exterior Rooms",
+		"chest_unopened_img": "images/items/item.png",
+		"chest_opened_img": "images/items/item_opened.png",
+		"children": [
+			{
+				"name": "Diffindo Challenge",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Beat Par Time",
+						"ref": "Diffindo Challenge/Beat Par Time/Beat Par Time"
+					},
+					{
+						"name": "Card Ketteridge",
+						"ref": "Diffindo Challenge/Card Ketteridge/Card Ketteridge"
+					},
+					{
+						"name": "Card Merwyn",
+						"ref": "Diffindo Challenge/Card Merwyn/Card Merwyn"
+					},
+					{
+						"name": "Card Shimpling",
+						"ref": "Diffindo Challenge/Card Shimpling/Card Shimpling"
+					},
+					{
+						"name": "Card Smethwyck",
+						"ref": "Diffindo Challenge/Card Smethwyck/Card Smethwyck"
+					},
+					{
+						"name": "Card Stalk",
+						"ref": "Diffindo Challenge/Card Stalk/Card Stalk"
+					},
+					{
+						"name": "Card Thurkell",
+						"ref": "Diffindo Challenge/Card Thurkell/Card Thurkell"
+					},
+					{
+						"name": "Card Ulric",
+						"ref": "Diffindo Challenge/Card Ulric/Card Ulric"
+					},
+					{
+						"name": "Card Withers",
+						"ref": "Diffindo Challenge/Card Withers/Card Withers"
+					},
+					{
+						"name": "Challenge Star 1",
+						"ref": "Diffindo Challenge/Challenge Star 1/Challenge Star 1"
+					},
+					{
+						"name": "Challenge Star 10",
+						"ref": "Diffindo Challenge/Challenge Star 10/Challenge Star 10"
+					},
+					{
+						"name": "Challenge Star 11",
+						"ref": "Diffindo Challenge/Challenge Star 11/Challenge Star 11"
+					},
+					{
+						"name": "Challenge Star 12",
+						"ref": "Diffindo Challenge/Challenge Star 12/Challenge Star 12"
+					},
+					{
+						"name": "Challenge Star 13",
+						"ref": "Diffindo Challenge/Challenge Star 13/Challenge Star 13"
+					},
+					{
+						"name": "Challenge Star 14",
+						"ref": "Diffindo Challenge/Challenge Star 14/Challenge Star 14"
+					},
+					{
+						"name": "Challenge Star 2",
+						"ref": "Diffindo Challenge/Challenge Star 2/Challenge Star 2"
+					},
+					{
+						"name": "Challenge Star 3",
+						"ref": "Diffindo Challenge/Challenge Star 3/Challenge Star 3"
+					},
+					{
+						"name": "Challenge Star 4",
+						"ref": "Diffindo Challenge/Challenge Star 4/Challenge Star 4"
+					},
+					{
+						"name": "Challenge Star 5",
+						"ref": "Diffindo Challenge/Challenge Star 5/Challenge Star 5"
+					},
+					{
+						"name": "Challenge Star 6",
+						"ref": "Diffindo Challenge/Challenge Star 6/Challenge Star 6"
+					},
+					{
+						"name": "Challenge Star 7",
+						"ref": "Diffindo Challenge/Challenge Star 7/Challenge Star 7"
+					},
+					{
+						"name": "Challenge Star 8",
+						"ref": "Diffindo Challenge/Challenge Star 8/Challenge Star 8"
+					},
+					{
+						"name": "Challenge Star 9",
+						"ref": "Diffindo Challenge/Challenge Star 9/Challenge Star 9"
+					},
+					{
+						"name": "Complete",
+						"ref": "Diffindo Challenge/Complete/Complete"
+					},
+					{
+						"name": "Secret 1",
+						"ref": "Diffindo Challenge/Secret 1/Secret 1"
+					},
+					{
+						"name": "Secret 10",
+						"ref": "Diffindo Challenge/Secret 10/Secret 10"
+					},
+					{
+						"name": "Secret 11",
+						"ref": "Diffindo Challenge/Secret 11/Secret 11"
+					},
+					{
+						"name": "Secret 2",
+						"ref": "Diffindo Challenge/Secret 2/Secret 2"
+					},
+					{
+						"name": "Secret 3",
+						"ref": "Diffindo Challenge/Secret 3/Secret 3"
+					},
+					{
+						"name": "Secret 4",
+						"ref": "Diffindo Challenge/Secret 4/Secret 4"
+					},
+					{
+						"name": "Secret 5",
+						"ref": "Diffindo Challenge/Secret 5/Secret 5"
+					},
+					{
+						"name": "Secret 6",
+						"ref": "Diffindo Challenge/Secret 6/Secret 6"
+					},
+					{
+						"name": "Secret 7",
+						"ref": "Diffindo Challenge/Secret 7/Secret 7"
+					},
+					{
+						"name": "Secret 8",
+						"ref": "Diffindo Challenge/Secret 8/Secret 8"
+					},
+					{
+						"name": "Secret 9",
+						"ref": "Diffindo Challenge/Secret 9/Secret 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 100,
+						"y": 100
+					}
+				]
+			},
+			{
+				"name": "Forbidden Forest",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Card Cliodne",
+						"ref": "Forbidden Forest/Card Cliodne/Card Cliodne"
+					},
+					{
+						"name": "Card Fancourt",
+						"ref": "Forbidden Forest/Card Fancourt/Card Fancourt"
+					},
+					{
+						"name": "Card Oliphant",
+						"ref": "Forbidden Forest/Card Oliphant/Card Oliphant"
+					},
+					{
+						"name": "Card Ollerton",
+						"ref": "Forbidden Forest/Card Ollerton/Card Ollerton"
+					},
+					{
+						"name": "Card Scamander",
+						"ref": "Forbidden Forest/Card Scamander/Card Scamander"
+					},
+					{
+						"name": "Card Wellbeloved",
+						"ref": "Forbidden Forest/Card Wellbeloved/Card Wellbeloved"
+					},
+					{
+						"name": "Complete",
+						"ref": "Forbidden Forest/Complete/Complete"
+					},
+					{
+						"name": "Secret 1",
+						"ref": "Forbidden Forest/Secret 1/Secret 1"
+					},
+					{
+						"name": "Secret 2",
+						"ref": "Forbidden Forest/Secret 2/Secret 2"
+					},
+					{
+						"name": "Secret 3",
+						"ref": "Forbidden Forest/Secret 3/Secret 3"
+					},
+					{
+						"name": "Secret 4",
+						"ref": "Forbidden Forest/Secret 4/Secret 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 160,
+						"y": 160
+					}
+				]
+			},
+			{
+				"name": "Boomslang Level",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Card Toke",
+						"ref": "Boomslang Level/Card Toke/Card Toke"
+					},
+					{
+						"name": "Card Tugwood",
+						"ref": "Boomslang Level/Card Tugwood/Card Tugwood"
+					},
+					{
+						"name": "Complete",
+						"ref": "Boomslang Level/Complete/Complete"
+					},
+					{
+						"name": "Secret 1",
+						"ref": "Boomslang Level/Secret 1/Secret 1"
+					},
+					{
+						"name": "Secret 2",
+						"ref": "Boomslang Level/Secret 2/Secret 2"
+					},
+					{
+						"name": "Secret 3",
+						"ref": "Boomslang Level/Secret 3/Secret 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 220,
+						"y": 220
+					}
+				]
+			},
+			{
+				"name": "Whomping Willow",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Card Starkey",
+						"ref": "Whomping Willow/Card Starkey/Card Starkey"
+					},
+					{
+						"name": "Complete",
+						"ref": "Whomping Willow/Complete/Complete"
+					},
+					{
+						"name": "Secret 1",
+						"ref": "Whomping Willow/Secret 1/Secret 1"
+					},
+					{
+						"name": "Secret 2",
+						"ref": "Whomping Willow/Secret 2/Secret 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				]
+			}
+		]
 	}
 ]

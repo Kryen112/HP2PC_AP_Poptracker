@@ -672,5 +672,718 @@
 				]
 			}
 		]
+	},
+	{
+		"name": "Entry Hall Rooms",
+		"chest_unopened_img": "images/items/item.png",
+		"chest_opened_img": "images/items/item_opened.png",
+		"children": [
+			{
+				"name": "Rictusempra Challenge",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Beat Par Time",
+						"ref": "Rictusempra Challenge/Beat Par Time/Beat Par Time"
+					},
+					{
+						"name": "Card Barbary",
+						"ref": "Rictusempra Challenge/Card Barbary/Card Barbary"
+					},
+					{
+						"name": "Card Chittock",
+						"ref": "Rictusempra Challenge/Card Chittock/Card Chittock"
+					},
+					{
+						"name": "Card Crumb",
+						"ref": "Rictusempra Challenge/Card Crumb/Card Crumb"
+					},
+					{
+						"name": "Card Duke",
+						"ref": "Rictusempra Challenge/Card Duke/Card Duke"
+					},
+					{
+						"name": "Card Graves",
+						"ref": "Rictusempra Challenge/Card Graves/Card Graves"
+					},
+					{
+						"name": "Card Thruston",
+						"ref": "Rictusempra Challenge/Card Thruston/Card Thruston"
+					},
+					{
+						"name": "Card Tremlett",
+						"ref": "Rictusempra Challenge/Card Tremlett/Card Tremlett"
+					},
+					{
+						"name": "Card Wagtail",
+						"ref": "Rictusempra Challenge/Card Wagtail/Card Wagtail"
+					},
+					{
+						"name": "Card Wintringham",
+						"ref": "Rictusempra Challenge/Card Wintringham/Card Wintringham"
+					},
+					{
+						"name": "Challenge Star 1",
+						"ref": "Rictusempra Challenge/Challenge Star 1/Challenge Star 1"
+					},
+					{
+						"name": "Challenge Star 10",
+						"ref": "Rictusempra Challenge/Challenge Star 10/Challenge Star 10"
+					},
+					{
+						"name": "Challenge Star 2",
+						"ref": "Rictusempra Challenge/Challenge Star 2/Challenge Star 2"
+					},
+					{
+						"name": "Challenge Star 3",
+						"ref": "Rictusempra Challenge/Challenge Star 3/Challenge Star 3"
+					},
+					{
+						"name": "Challenge Star 4",
+						"ref": "Rictusempra Challenge/Challenge Star 4/Challenge Star 4"
+					},
+					{
+						"name": "Challenge Star 5",
+						"ref": "Rictusempra Challenge/Challenge Star 5/Challenge Star 5"
+					},
+					{
+						"name": "Challenge Star 6",
+						"ref": "Rictusempra Challenge/Challenge Star 6/Challenge Star 6"
+					},
+					{
+						"name": "Challenge Star 7",
+						"ref": "Rictusempra Challenge/Challenge Star 7/Challenge Star 7"
+					},
+					{
+						"name": "Challenge Star 8",
+						"ref": "Rictusempra Challenge/Challenge Star 8/Challenge Star 8"
+					},
+					{
+						"name": "Challenge Star 9",
+						"ref": "Rictusempra Challenge/Challenge Star 9/Challenge Star 9"
+					},
+					{
+						"name": "Complete",
+						"ref": "Rictusempra Challenge/Complete/Complete"
+					},
+					{
+						"name": "Secret 1",
+						"ref": "Rictusempra Challenge/Secret 1/Secret 1"
+					},
+					{
+						"name": "Secret 2",
+						"ref": "Rictusempra Challenge/Secret 2/Secret 2"
+					},
+					{
+						"name": "Secret 3",
+						"ref": "Rictusempra Challenge/Secret 3/Secret 3"
+					},
+					{
+						"name": "Secret 4",
+						"ref": "Rictusempra Challenge/Secret 4/Secret 4"
+					},
+					{
+						"name": "Secret 5",
+						"ref": "Rictusempra Challenge/Secret 5/Secret 5"
+					},
+					{
+						"name": "Secret 6",
+						"ref": "Rictusempra Challenge/Secret 6/Secret 6"
+					},
+					{
+						"name": "Secret 7",
+						"ref": "Rictusempra Challenge/Secret 7/Secret 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 100,
+						"y": 100
+					}
+				]
+			},
+			{
+				"name": "Spongify Challenge",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Beat Par Time",
+						"ref": "Spongify Challenge/Beat Par Time/Beat Par Time"
+					},
+					{
+						"name": "Card Furmage",
+						"ref": "Spongify Challenge/Card Furmage/Card Furmage"
+					},
+					{
+						"name": "Card Grunnion",
+						"ref": "Spongify Challenge/Card Grunnion/Card Grunnion"
+					},
+					{
+						"name": "Card Merlin",
+						"ref": "Spongify Challenge/Card Merlin/Card Merlin"
+					},
+					{
+						"name": "Card Po",
+						"ref": "Spongify Challenge/Card Po/Card Po"
+					},
+					{
+						"name": "Card Rastrick",
+						"ref": "Spongify Challenge/Card Rastrick/Card Rastrick"
+					},
+					{
+						"name": "Card Summerbee",
+						"ref": "Spongify Challenge/Card Summerbee/Card Summerbee"
+					},
+					{
+						"name": "Card Warbeck",
+						"ref": "Spongify Challenge/Card Warbeck/Card Warbeck"
+					},
+					{
+						"name": "Card Woodcroft",
+						"ref": "Spongify Challenge/Card Woodcroft/Card Woodcroft"
+					},
+					{
+						"name": "Challenge Star 1",
+						"ref": "Spongify Challenge/Challenge Star 1/Challenge Star 1"
+					},
+					{
+						"name": "Challenge Star 10",
+						"ref": "Spongify Challenge/Challenge Star 10/Challenge Star 10"
+					},
+					{
+						"name": "Challenge Star 2",
+						"ref": "Spongify Challenge/Challenge Star 2/Challenge Star 2"
+					},
+					{
+						"name": "Challenge Star 3",
+						"ref": "Spongify Challenge/Challenge Star 3/Challenge Star 3"
+					},
+					{
+						"name": "Challenge Star 4",
+						"ref": "Spongify Challenge/Challenge Star 4/Challenge Star 4"
+					},
+					{
+						"name": "Challenge Star 5",
+						"ref": "Spongify Challenge/Challenge Star 5/Challenge Star 5"
+					},
+					{
+						"name": "Challenge Star 6",
+						"ref": "Spongify Challenge/Challenge Star 6/Challenge Star 6"
+					},
+					{
+						"name": "Challenge Star 7",
+						"ref": "Spongify Challenge/Challenge Star 7/Challenge Star 7"
+					},
+					{
+						"name": "Challenge Star 8",
+						"ref": "Spongify Challenge/Challenge Star 8/Challenge Star 8"
+					},
+					{
+						"name": "Challenge Star 9",
+						"ref": "Spongify Challenge/Challenge Star 9/Challenge Star 9"
+					},
+					{
+						"name": "Complete",
+						"ref": "Spongify Challenge/Complete/Complete"
+					},
+					{
+						"name": "Secret 1",
+						"ref": "Spongify Challenge/Secret 1/Secret 1"
+					},
+					{
+						"name": "Secret 10",
+						"ref": "Spongify Challenge/Secret 10/Secret 10"
+					},
+					{
+						"name": "Secret 11",
+						"ref": "Spongify Challenge/Secret 11/Secret 11"
+					},
+					{
+						"name": "Secret 12",
+						"ref": "Spongify Challenge/Secret 12/Secret 12"
+					},
+					{
+						"name": "Secret 13",
+						"ref": "Spongify Challenge/Secret 13/Secret 13"
+					},
+					{
+						"name": "Secret 14",
+						"ref": "Spongify Challenge/Secret 14/Secret 14"
+					},
+					{
+						"name": "Secret 15",
+						"ref": "Spongify Challenge/Secret 15/Secret 15"
+					},
+					{
+						"name": "Secret 16",
+						"ref": "Spongify Challenge/Secret 16/Secret 16"
+					},
+					{
+						"name": "Secret 2",
+						"ref": "Spongify Challenge/Secret 2/Secret 2"
+					},
+					{
+						"name": "Secret 3",
+						"ref": "Spongify Challenge/Secret 3/Secret 3"
+					},
+					{
+						"name": "Secret 4",
+						"ref": "Spongify Challenge/Secret 4/Secret 4"
+					},
+					{
+						"name": "Secret 5",
+						"ref": "Spongify Challenge/Secret 5/Secret 5"
+					},
+					{
+						"name": "Secret 6",
+						"ref": "Spongify Challenge/Secret 6/Secret 6"
+					},
+					{
+						"name": "Secret 7",
+						"ref": "Spongify Challenge/Secret 7/Secret 7"
+					},
+					{
+						"name": "Secret 8",
+						"ref": "Spongify Challenge/Secret 8/Secret 8"
+					},
+					{
+						"name": "Secret 9",
+						"ref": "Spongify Challenge/Secret 9/Secret 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 160,
+						"y": 160
+					}
+				]
+			},
+			{
+				"name": "Skurge Challenge",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Beat Par Time",
+						"ref": "Skurge Challenge/Beat Par Time/Beat Par Time"
+					},
+					{
+						"name": "Card Belby",
+						"ref": "Skurge Challenge/Card Belby/Card Belby"
+					},
+					{
+						"name": "Card Catchlove",
+						"ref": "Skurge Challenge/Card Catchlove/Card Catchlove"
+					},
+					{
+						"name": "Card Fulbert",
+						"ref": "Skurge Challenge/Card Fulbert/Card Fulbert"
+					},
+					{
+						"name": "Card Gregory",
+						"ref": "Skurge Challenge/Card Gregory/Card Gregory"
+					},
+					{
+						"name": "Card Kegg",
+						"ref": "Skurge Challenge/Card Kegg/Card Kegg"
+					},
+					{
+						"name": "Card Wenlock",
+						"ref": "Skurge Challenge/Card Wenlock/Card Wenlock"
+					},
+					{
+						"name": "Challenge Star 1",
+						"ref": "Skurge Challenge/Challenge Star 1/Challenge Star 1"
+					},
+					{
+						"name": "Challenge Star 10",
+						"ref": "Skurge Challenge/Challenge Star 10/Challenge Star 10"
+					},
+					{
+						"name": "Challenge Star 2",
+						"ref": "Skurge Challenge/Challenge Star 2/Challenge Star 2"
+					},
+					{
+						"name": "Challenge Star 3",
+						"ref": "Skurge Challenge/Challenge Star 3/Challenge Star 3"
+					},
+					{
+						"name": "Challenge Star 4",
+						"ref": "Skurge Challenge/Challenge Star 4/Challenge Star 4"
+					},
+					{
+						"name": "Challenge Star 5",
+						"ref": "Skurge Challenge/Challenge Star 5/Challenge Star 5"
+					},
+					{
+						"name": "Challenge Star 6",
+						"ref": "Skurge Challenge/Challenge Star 6/Challenge Star 6"
+					},
+					{
+						"name": "Challenge Star 7",
+						"ref": "Skurge Challenge/Challenge Star 7/Challenge Star 7"
+					},
+					{
+						"name": "Challenge Star 8",
+						"ref": "Skurge Challenge/Challenge Star 8/Challenge Star 8"
+					},
+					{
+						"name": "Challenge Star 9",
+						"ref": "Skurge Challenge/Challenge Star 9/Challenge Star 9"
+					},
+					{
+						"name": "Complete",
+						"ref": "Skurge Challenge/Complete/Complete"
+					},
+					{
+						"name": "Secret 1",
+						"ref": "Skurge Challenge/Secret 1/Secret 1"
+					},
+					{
+						"name": "Secret 2",
+						"ref": "Skurge Challenge/Secret 2/Secret 2"
+					},
+					{
+						"name": "Secret 3",
+						"ref": "Skurge Challenge/Secret 3/Secret 3"
+					},
+					{
+						"name": "Secret 4",
+						"ref": "Skurge Challenge/Secret 4/Secret 4"
+					},
+					{
+						"name": "Secret 5",
+						"ref": "Skurge Challenge/Secret 5/Secret 5"
+					},
+					{
+						"name": "Secret 6",
+						"ref": "Skurge Challenge/Secret 6/Secret 6"
+					},
+					{
+						"name": "Secret 7",
+						"ref": "Skurge Challenge/Secret 7/Secret 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 220,
+						"y": 220
+					}
+				]
+			},
+			{
+				"name": "Bicorn Level",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Card Agrippa",
+						"ref": "Bicorn Level/Card Agrippa/Card Agrippa"
+					},
+					{
+						"name": "Card Cronk",
+						"ref": "Bicorn Level/Card Cronk/Card Cronk"
+					},
+					{
+						"name": "Card Goshawk",
+						"ref": "Bicorn Level/Card Goshawk/Card Goshawk"
+					},
+					{
+						"name": "Card Nutcombe",
+						"ref": "Bicorn Level/Card Nutcombe/Card Nutcombe"
+					},
+					{
+						"name": "Card Peakes",
+						"ref": "Bicorn Level/Card Peakes/Card Peakes"
+					},
+					{
+						"name": "Card Stump",
+						"ref": "Bicorn Level/Card Stump/Card Stump"
+					},
+					{
+						"name": "Complete",
+						"ref": "Bicorn Level/Complete/Complete"
+					},
+					{
+						"name": "Secret 1",
+						"ref": "Bicorn Level/Secret 1/Secret 1"
+					},
+					{
+						"name": "Secret 2",
+						"ref": "Bicorn Level/Secret 2/Secret 2"
+					},
+					{
+						"name": "Secret 3",
+						"ref": "Bicorn Level/Secret 3/Secret 3"
+					},
+					{
+						"name": "Secret 4",
+						"ref": "Bicorn Level/Secret 4/Secret 4"
+					},
+					{
+						"name": "Secret 5",
+						"ref": "Bicorn Level/Secret 5/Secret 5"
+					},
+					{
+						"name": "Secret 6",
+						"ref": "Bicorn Level/Secret 6/Secret 6"
+					},
+					{
+						"name": "Secret 7",
+						"ref": "Bicorn Level/Secret 7/Secret 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 280,
+						"y": 280
+					}
+				]
+			},
+			{
+				"name": "Goyle Level",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Card Bloxam",
+						"ref": "Goyle Level/Card Bloxam/Card Bloxam"
+					},
+					{
+						"name": "Card Circe",
+						"ref": "Goyle Level/Card Circe/Card Circe"
+					},
+					{
+						"name": "Card Plumpton",
+						"ref": "Goyle Level/Card Plumpton/Card Plumpton"
+					},
+					{
+						"name": "Card Stroulger",
+						"ref": "Goyle Level/Card Stroulger/Card Stroulger"
+					},
+					{
+						"name": "Card Whitehorn",
+						"ref": "Goyle Level/Card Whitehorn/Card Whitehorn"
+					},
+					{
+						"name": "Card Wildsmith",
+						"ref": "Goyle Level/Card Wildsmith/Card Wildsmith"
+					},
+					{
+						"name": "Complete",
+						"ref": "Goyle Level/Complete/Complete"
+					},
+					{
+						"name": "Secret 1",
+						"ref": "Goyle Level/Secret 1/Secret 1"
+					},
+					{
+						"name": "Secret 2",
+						"ref": "Goyle Level/Secret 2/Secret 2"
+					},
+					{
+						"name": "Secret 3",
+						"ref": "Goyle Level/Secret 3/Secret 3"
+					},
+					{
+						"name": "Secret 4",
+						"ref": "Goyle Level/Secret 4/Secret 4"
+					},
+					{
+						"name": "Secret 5",
+						"ref": "Goyle Level/Secret 5/Secret 5"
+					},
+					{
+						"name": "Secret 6",
+						"ref": "Goyle Level/Secret 6/Secret 6"
+					},
+					{
+						"name": "Secret 7",
+						"ref": "Goyle Level/Secret 7/Secret 7"
+					},
+					{
+						"name": "Secret 8",
+						"ref": "Goyle Level/Secret 8/Secret 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 340,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Slytherin Common Room",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Card Clagg",
+						"ref": "Slytherin Common Room/Card Clagg/Card Clagg"
+					},
+					{
+						"name": "Card Fay",
+						"ref": "Slytherin Common Room/Card Fay/Card Fay"
+					},
+					{
+						"name": "Card Pilliwickle",
+						"ref": "Slytherin Common Room/Card Pilliwickle/Card Pilliwickle"
+					},
+					{
+						"name": "Card Platt",
+						"ref": "Slytherin Common Room/Card Platt/Card Platt"
+					},
+					{
+						"name": "Card Waffling",
+						"ref": "Slytherin Common Room/Card Waffling/Card Waffling"
+					},
+					{
+						"name": "Complete",
+						"ref": "Slytherin Common Room/Complete/Complete"
+					},
+					{
+						"name": "Secret 1",
+						"ref": "Slytherin Common Room/Secret 1/Secret 1"
+					},
+					{
+						"name": "Secret 2",
+						"ref": "Slytherin Common Room/Secret 2/Secret 2"
+					},
+					{
+						"name": "Secret 3",
+						"ref": "Slytherin Common Room/Secret 3/Secret 3"
+					},
+					{
+						"name": "Secret 4",
+						"ref": "Slytherin Common Room/Secret 4/Secret 4"
+					},
+					{
+						"name": "Secret 5",
+						"ref": "Slytherin Common Room/Secret 5/Secret 5"
+					},
+					{
+						"name": "Secret 6",
+						"ref": "Slytherin Common Room/Secret 6/Secret 6"
+					},
+					{
+						"name": "Secret 7",
+						"ref": "Slytherin Common Room/Secret 7/Secret 7"
+					},
+					{
+						"name": "Secret 8",
+						"ref": "Slytherin Common Room/Secret 8/Secret 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 400,
+						"y": 400
+					}
+				]
+			},
+			{
+				"name": "Gryffindor Challenge",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Challenge Star 1",
+						"ref": "Gryffindor Challenge/Challenge Star 1/Challenge Star 1"
+					},
+					{
+						"name": "Challenge Star 10",
+						"ref": "Gryffindor Challenge/Challenge Star 10/Challenge Star 10"
+					},
+					{
+						"name": "Challenge Star 2",
+						"ref": "Gryffindor Challenge/Challenge Star 2/Challenge Star 2"
+					},
+					{
+						"name": "Challenge Star 3",
+						"ref": "Gryffindor Challenge/Challenge Star 3/Challenge Star 3"
+					},
+					{
+						"name": "Challenge Star 4",
+						"ref": "Gryffindor Challenge/Challenge Star 4/Challenge Star 4"
+					},
+					{
+						"name": "Challenge Star 5",
+						"ref": "Gryffindor Challenge/Challenge Star 5/Challenge Star 5"
+					},
+					{
+						"name": "Challenge Star 6",
+						"ref": "Gryffindor Challenge/Challenge Star 6/Challenge Star 6"
+					},
+					{
+						"name": "Challenge Star 7",
+						"ref": "Gryffindor Challenge/Challenge Star 7/Challenge Star 7"
+					},
+					{
+						"name": "Challenge Star 8",
+						"ref": "Gryffindor Challenge/Challenge Star 8/Challenge Star 8"
+					},
+					{
+						"name": "Challenge Star 9",
+						"ref": "Gryffindor Challenge/Challenge Star 9/Challenge Star 9"
+					},
+					{
+						"name": "Complete",
+						"ref": "Gryffindor Challenge/Complete/Complete"
+					},
+					{
+						"name": "Secret 1",
+						"ref": "Gryffindor Challenge/Secret 1/Secret 1"
+					},
+					{
+						"name": "Secret 2",
+						"ref": "Gryffindor Challenge/Secret 2/Secret 2"
+					},
+					{
+						"name": "Secret 3",
+						"ref": "Gryffindor Challenge/Secret 3/Secret 3"
+					},
+					{
+						"name": "Secret 4",
+						"ref": "Gryffindor Challenge/Secret 4/Secret 4"
+					},
+					{
+						"name": "Secret 5",
+						"ref": "Gryffindor Challenge/Secret 5/Secret 5"
+					},
+					{
+						"name": "Secret 6",
+						"ref": "Gryffindor Challenge/Secret 6/Secret 6"
+					},
+					{
+						"name": "Secret 7",
+						"ref": "Gryffindor Challenge/Secret 7/Secret 7"
+					},
+					{
+						"name": "Secret 8",
+						"ref": "Gryffindor Challenge/Secret 8/Secret 8"
+					},
+					{
+						"name": "Secret 9",
+						"ref": "Gryffindor Challenge/Secret 9/Secret 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 460,
+						"y": 460
+					}
+				]
+			}
+		]
 	}
 ]

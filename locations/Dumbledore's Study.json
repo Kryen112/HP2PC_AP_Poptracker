@@ -19,8 +19,8 @@
 				"map_locations": [
 					{
 						"map": "Grand Staircase",
-						"x": 0,
-						"y": 0
+						"x": 1128,
+						"y": 695
 					}
 				],
 				"visibility_rules": [
@@ -42,8 +42,8 @@
 				"map_locations": [
 					{
 						"map": "Grand Staircase",
-						"x": 0,
-						"y": 0
+						"x": 1212,
+						"y": 885
 					}
 				],
 				"visibility_rules": [
@@ -65,8 +65,8 @@
 				"map_locations": [
 					{
 						"map": "Grand Staircase",
-						"x": 0,
-						"y": 0
+						"x": 1200,
+						"y": 777
 					}
 				],
 				"visibility_rules": [
