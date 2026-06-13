@@ -685,7 +685,7 @@
 				"sections": [
 					{
 						"name": "Beat Par Time",
-						"ref": "Rictusempra Challenge/Beat Par Time/Beat Par Time"
+						"ref": "Rictusempra Challenge/Completion/Beat Par Time"
 					},
 					{
 						"name": "Card Barbary",
@@ -765,7 +765,7 @@
 					},
 					{
 						"name": "Complete",
-						"ref": "Rictusempra Challenge/Complete/Complete"
+						"ref": "Rictusempra Challenge/Completion/Complete"
 					},
 					{
 						"name": "Secret 1",
@@ -811,7 +811,7 @@
 				"sections": [
 					{
 						"name": "Beat Par Time",
-						"ref": "Spongify Challenge/Beat Par Time/Beat Par Time"
+						"ref": "Spongify Challenge/Completion/Beat Par Time"
 					},
 					{
 						"name": "Card Furmage",
@@ -887,7 +887,7 @@
 					},
 					{
 						"name": "Complete",
-						"ref": "Spongify Challenge/Complete/Complete"
+						"ref": "Spongify Challenge/Completion/Complete"
 					},
 					{
 						"name": "Secret 1",
@@ -969,7 +969,7 @@
 				"sections": [
 					{
 						"name": "Beat Par Time",
-						"ref": "Skurge Challenge/Beat Par Time/Beat Par Time"
+						"ref": "Skurge Challenge/Completion/Beat Par Time"
 					},
 					{
 						"name": "Card Belby",
@@ -1037,7 +1037,7 @@
 					},
 					{
 						"name": "Complete",
-						"ref": "Skurge Challenge/Complete/Complete"
+						"ref": "Skurge Challenge/Completion/Complete"
 					},
 					{
 						"name": "Secret 1",

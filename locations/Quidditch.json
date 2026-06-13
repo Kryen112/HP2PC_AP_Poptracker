@@ -5,15 +5,63 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
-				"name": "Match 1 (Hufflepuff)",
+				"name": "Quidditch Matches",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Quidditch_Match_1_Hufflepuff"
-				],
 				"sections": [
 					{
-						"name": "Match 1 (Hufflepuff)"
+						"name": "Match 1 (Hufflepuff)",
+						"access_rules": [
+							"$rule_Quidditch_Match_1_Hufflepuff"
+						],
+						"visibility_rules": [
+							"$visQuidMatch"
+						]
+					},
+					{
+						"name": "Match 2 (Ravenclaw)",
+						"access_rules": [
+							"$rule_Quidditch_Match_2_Ravenclaw"
+						],
+						"visibility_rules": [
+							"$visQuidMatch"
+						]
+					},
+					{
+						"name": "Match 3 (Slytherin)",
+						"access_rules": [
+							"$rule_Quidditch_Match_3_Slytherin"
+						],
+						"visibility_rules": [
+							"$visQuidMatch"
+						]
+					},
+					{
+						"name": "Match 4 (Hufflepuff)",
+						"access_rules": [
+							"$rule_Quidditch_Match_4_Hufflepuff"
+						],
+						"visibility_rules": [
+							"$visQuidMatch"
+						]
+					},
+					{
+						"name": "Match 5 (Ravenclaw)",
+						"access_rules": [
+							"$rule_Quidditch_Match_5_Ravenclaw"
+						],
+						"visibility_rules": [
+							"$visQuidMatch"
+						]
+					},
+					{
+						"name": "Match 6 (Slytherin)",
+						"access_rules": [
+							"$rule_Quidditch_Match_6_Slytherin"
+						],
+						"visibility_rules": [
+							"$visQuidMatch"
+						]
 					}
 				],
 				"map_locations": [
@@ -22,124 +70,6 @@
 						"x": 0,
 						"y": 0
 					}
-				],
-				"visibility_rules": [
-					"$visQuidMatch"
-				]
-			},
-			{
-				"name": "Match 2 (Ravenclaw)",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Quidditch_Match_2_Ravenclaw"
-				],
-				"sections": [
-					{
-						"name": "Match 2 (Ravenclaw)"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
-					}
-				],
-				"visibility_rules": [
-					"$visQuidMatch"
-				]
-			},
-			{
-				"name": "Match 3 (Slytherin)",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Quidditch_Match_3_Slytherin"
-				],
-				"sections": [
-					{
-						"name": "Match 3 (Slytherin)"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
-					}
-				],
-				"visibility_rules": [
-					"$visQuidMatch"
-				]
-			},
-			{
-				"name": "Match 4 (Hufflepuff)",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Quidditch_Match_4_Hufflepuff"
-				],
-				"sections": [
-					{
-						"name": "Match 4 (Hufflepuff)"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
-					}
-				],
-				"visibility_rules": [
-					"$visQuidMatch"
-				]
-			},
-			{
-				"name": "Match 5 (Ravenclaw)",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Quidditch_Match_5_Ravenclaw"
-				],
-				"sections": [
-					{
-						"name": "Match 5 (Ravenclaw)"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
-					}
-				],
-				"visibility_rules": [
-					"$visQuidMatch"
-				]
-			},
-			{
-				"name": "Match 6 (Slytherin)",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Quidditch_Match_6_Slytherin"
-				],
-				"sections": [
-					{
-						"name": "Match 6 (Slytherin)"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
-					}
-				],
-				"visibility_rules": [
-					"$visQuidMatch"
 				]
 			}
 		]

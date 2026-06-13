@@ -78,6 +78,40 @@ MENU_ROOMS = {
     ]),
 }
 
+# Checks that share one map pixel: emitted as multiple sections under a single
+# shared location node (one marker, popup lists each), instead of separate
+# overlapping nodes. Keyed by region → list of (group node name, [section
+# names]). The section path becomes @Region/<group>/<section>, so anything
+# referencing those sections (location_mapping, menu refs, goal_mapping.lua)
+# must use the group as the middle segment.
+COLOCATION = {
+    "RictusempraChallenge": [("Completion", ["Complete", "Beat Par Time"])],
+    "SkurgeChallenge": [("Completion", ["Complete", "Beat Par Time"])],
+    "SpongifyChallenge": [("Completion", ["Complete", "Beat Par Time"])],
+    "DiffindoChallenge": [
+        ("Completion", ["Complete", "Beat Par Time"]),
+        ("Challenge Stars 6 & 7", ["Challenge Star 6", "Challenge Star 7"]),
+        ("Secret 8 & Star 11", ["Secret 8", "Challenge Star 11"]),
+    ],
+    "Quidditch": [("Quidditch Matches", [
+        "Match 1 (Hufflepuff)", "Match 2 (Ravenclaw)", "Match 3 (Slytherin)",
+        "Match 4 (Hufflepuff)", "Match 5 (Ravenclaw)", "Match 6 (Slytherin)",
+    ])],
+    "DuellingClub": [("Duels", [
+        "Duel Rank 1", "Duel Rank 2", "Duel Rank 3", "Duel Rank 4", "Duel Rank 5",
+        "Duel Rank 6", "Duel Rank 7", "Duel Rank 8", "Duel Rank 9", "Duel Rank 10",
+    ])],
+}
+
+
+def colocation_parent(region: str, section_name: str) -> str:
+    """The location-node name holding this section: its colocation group, or
+    the section's own name when it stands alone."""
+    for group_name, members in COLOCATION.get(region, []):
+        if section_name in members:
+            return group_name
+    return section_name
+
 # Map LOCATION_GROUPS group → tracker visibility helper from logic.lua.
 # Groups not listed here are always visible.
 GROUP_TO_VIS = {
@@ -407,35 +441,74 @@ def build_region_locations_json(region: str, region_locs: list[str],
     so a fresh run doesn't wipe coordinates Stefan has already placed."""
     display = REGION_DISPLAY.get(region, region)
     map_name = REGION_MAP_OVERRIDE.get(region, display)
-    children = []
-    for loc_name in sorted(region_locs):
-        section_name = loc_section_ref(display, loc_name)
-        # Carry pin coordinates forward only while they belong to the current
-        # map. If a section moved to a different map (e.g. Dumbledore's Study
-        # pins relocating onto the Grand Staircase image), the old x/y are
-        # meaningless on the new picture, so reset to (0, 0) for re-placing.
-        prior = [ml for ml in (existing_map_locations.get(section_name) or [])
-                 if ml.get("map") == map_name]
-        map_locs = prior if prior else [{"map": map_name, "x": 0, "y": 0}]
-        entry = {
-            "name": section_name,
-            "chest_unopened_img": "images/items/item.png",
-            "chest_opened_img": "images/items/item_opened.png",
-            "access_rules": [f"${rule_fn_name(loc_name)}"],
-            "sections": [{"name": section_name}],
-            "map_locations": map_locs,
-        }
+
+    def vis_for(loc_name):
         group = loc_groups.get(loc_name)
         vis = GROUP_TO_VIS.get(group or "")
         # Classrooms locations only exist in vanilla; the open-castle-only
         # Gryffindor challenge region is the mirror image.
         if group == "Classrooms":
-            vis = "$visClassrooms"
-        elif region == "GryffindorChallenge":
-            vis = "$visOpenCastleOnly"
-        if vis is not None:
-            entry["visibility_rules"] = [vis]
-        children.append(entry)
+            return "$visClassrooms"
+        if region == "GryffindorChallenge":
+            return "$visOpenCastleOnly"
+        return vis
+
+    def map_locs_for(node_name):
+        # Carry pin coordinates forward only while they belong to the current
+        # map. If a section moved to a different map (e.g. Dumbledore's Study
+        # pins relocating onto the Grand Staircase image), the old x/y are
+        # meaningless on the new picture, so reset to (0, 0) for re-placing.
+        prior = [ml for ml in (existing_map_locations.get(node_name) or [])
+                 if ml.get("map") == map_name]
+        return prior if prior else [{"map": map_name, "x": 0, "y": 0}]
+
+    sec_to_loc = {loc_section_ref(display, ln): ln for ln in region_locs}
+    group_members = {g: ms for g, ms in COLOCATION.get(region, [])}
+    sec_to_group = {m: g for g, ms in group_members.items() for m in ms}
+
+    children = []
+    emitted_groups = set()
+    for loc_name in sorted(region_locs):
+        section_name = loc_section_ref(display, loc_name)
+        group_name = sec_to_group.get(section_name)
+        if group_name:
+            # Colocated: one shared node, each member a section with its own
+            # access / visibility rules, sharing a single marker.
+            if group_name in emitted_groups:
+                continue
+            emitted_groups.add(group_name)
+            sections = []
+            for member in group_members[group_name]:
+                member_loc = sec_to_loc.get(member)
+                if member_loc is None:
+                    continue
+                sec = {"name": member, "access_rules": [f"${rule_fn_name(member_loc)}"]}
+                vis = vis_for(member_loc)
+                if vis is not None:
+                    sec["visibility_rules"] = [vis]
+                sections.append(sec)
+            if not sections:
+                continue
+            children.append({
+                "name": group_name,
+                "chest_unopened_img": "images/items/item.png",
+                "chest_opened_img": "images/items/item_opened.png",
+                "sections": sections,
+                "map_locations": map_locs_for(group_name),
+            })
+        else:
+            entry = {
+                "name": section_name,
+                "chest_unopened_img": "images/items/item.png",
+                "chest_opened_img": "images/items/item_opened.png",
+                "access_rules": [f"${rule_fn_name(loc_name)}"],
+                "sections": [{"name": section_name}],
+                "map_locations": map_locs_for(section_name),
+            }
+            vis = vis_for(loc_name)
+            if vis is not None:
+                entry["visibility_rules"] = [vis]
+            children.append(entry)
     return [{
         "name": display,
         "chest_unopened_img": "images/items/item.png",
@@ -459,7 +532,7 @@ def build_menu_room_node(parent_name: str, target_map: str,
             section_name = loc_section_ref(src_display, loc_name)
             sections.append({
                 "name": section_name,
-                "ref": f"{src_display}/{section_name}/{section_name}",
+                "ref": f"{src_display}/{colocation_parent(src, section_name)}/{section_name}",
             })
         prior = [ml for ml in (existing_map_locations.get(src_display) or [])
                  if ml.get("map") == target_map]
@@ -584,11 +657,12 @@ def main() -> None:
         region = loc_regions.get(name, "TBD")
         display = REGION_DISPLAY.get(region, region)
         section = loc_section_ref(display, name)
-        # Full section path: region node / child location / section, all three
-        # segments. The child location and its section share the name, but the
-        # section segment is required — "@Region/Section" resolves against the
-        # region node, which has no direct sections, so the clear would no-op.
-        code = f"@{display}/{section}/{section}"
+        # Full section path: region node / location node / section. The middle
+        # segment is the colocation group when the section shares a marker,
+        # else the section's own node. The section segment is always required —
+        # "@Region/Section" resolves against the region node, which has no
+        # direct sections, so the clear would no-op.
+        code = f"@{display}/{colocation_parent(region, section)}/{section}"
         loc_rows.append((str(ap_id), f'{{"{_lua_escape(code)}"}}'))
     write_text(PACK / "scripts" / "autotracking" / "location_mapping.lua",
                "LOCATION_MAPPING = {\n" + lua_table_kv(loc_rows) + "\n}\n")

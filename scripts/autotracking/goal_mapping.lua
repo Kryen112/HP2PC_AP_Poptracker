@@ -23,31 +23,36 @@ GOAL_LEVEL_CODES = {
 	"@Chamber of Secrets/Complete/Complete",
 	"@Whomping Willow/Complete/Complete",
 	"@Slytherin Common Room/Complete/Complete",
-	"@Rictusempra Challenge/Complete/Complete",
-	"@Skurge Challenge/Complete/Complete",
-	"@Diffindo Challenge/Complete/Complete",
-	"@Spongify Challenge/Complete/Complete",
+	-- These four challenges colocate Complete with Beat Par Time under a
+	-- "Completion" group node, so the path's middle segment is the group.
+	"@Rictusempra Challenge/Completion/Complete",
+	"@Skurge Challenge/Completion/Complete",
+	"@Diffindo Challenge/Completion/Complete",
+	"@Spongify Challenge/Completion/Complete",
 	"@Gryffindor Challenge/Complete/Complete",
 }
 
+-- All ten duels colocate under a "Duels" group node, so the path's middle
+-- segment is the group.
 GOAL_DUEL_CODES = {
-	"@Duelling Club/Duel Rank 1/Duel Rank 1",
-	"@Duelling Club/Duel Rank 2/Duel Rank 2",
-	"@Duelling Club/Duel Rank 3/Duel Rank 3",
-	"@Duelling Club/Duel Rank 4/Duel Rank 4",
-	"@Duelling Club/Duel Rank 5/Duel Rank 5",
-	"@Duelling Club/Duel Rank 6/Duel Rank 6",
-	"@Duelling Club/Duel Rank 7/Duel Rank 7",
-	"@Duelling Club/Duel Rank 8/Duel Rank 8",
-	"@Duelling Club/Duel Rank 9/Duel Rank 9",
-	"@Duelling Club/Duel Rank 10/Duel Rank 10",
+	"@Duelling Club/Duels/Duel Rank 1",
+	"@Duelling Club/Duels/Duel Rank 2",
+	"@Duelling Club/Duels/Duel Rank 3",
+	"@Duelling Club/Duels/Duel Rank 4",
+	"@Duelling Club/Duels/Duel Rank 5",
+	"@Duelling Club/Duels/Duel Rank 6",
+	"@Duelling Club/Duels/Duel Rank 7",
+	"@Duelling Club/Duels/Duel Rank 8",
+	"@Duelling Club/Duels/Duel Rank 9",
+	"@Duelling Club/Duels/Duel Rank 10",
 }
 
+-- All six matches colocate under a "Quidditch Matches" group node.
 GOAL_QUID_CODES = {
-	"@Quidditch/Match 1 (Hufflepuff)/Match 1 (Hufflepuff)",
-	"@Quidditch/Match 2 (Ravenclaw)/Match 2 (Ravenclaw)",
-	"@Quidditch/Match 3 (Slytherin)/Match 3 (Slytherin)",
-	"@Quidditch/Match 4 (Hufflepuff)/Match 4 (Hufflepuff)",
-	"@Quidditch/Match 5 (Ravenclaw)/Match 5 (Ravenclaw)",
-	"@Quidditch/Match 6 (Slytherin)/Match 6 (Slytherin)",
+	"@Quidditch/Quidditch Matches/Match 1 (Hufflepuff)",
+	"@Quidditch/Quidditch Matches/Match 2 (Ravenclaw)",
+	"@Quidditch/Quidditch Matches/Match 3 (Slytherin)",
+	"@Quidditch/Quidditch Matches/Match 4 (Hufflepuff)",
+	"@Quidditch/Quidditch Matches/Match 5 (Ravenclaw)",
+	"@Quidditch/Quidditch Matches/Match 6 (Slytherin)",
 }

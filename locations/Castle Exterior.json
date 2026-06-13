@@ -570,7 +570,7 @@
 				"sections": [
 					{
 						"name": "Beat Par Time",
-						"ref": "Diffindo Challenge/Beat Par Time/Beat Par Time"
+						"ref": "Diffindo Challenge/Completion/Beat Par Time"
 					},
 					{
 						"name": "Card Ketteridge",
@@ -614,7 +614,7 @@
 					},
 					{
 						"name": "Challenge Star 11",
-						"ref": "Diffindo Challenge/Challenge Star 11/Challenge Star 11"
+						"ref": "Diffindo Challenge/Secret 8 & Star 11/Challenge Star 11"
 					},
 					{
 						"name": "Challenge Star 12",
@@ -646,11 +646,11 @@
 					},
 					{
 						"name": "Challenge Star 6",
-						"ref": "Diffindo Challenge/Challenge Star 6/Challenge Star 6"
+						"ref": "Diffindo Challenge/Challenge Stars 6 & 7/Challenge Star 6"
 					},
 					{
 						"name": "Challenge Star 7",
-						"ref": "Diffindo Challenge/Challenge Star 7/Challenge Star 7"
+						"ref": "Diffindo Challenge/Challenge Stars 6 & 7/Challenge Star 7"
 					},
 					{
 						"name": "Challenge Star 8",
@@ -662,7 +662,7 @@
 					},
 					{
 						"name": "Complete",
-						"ref": "Diffindo Challenge/Complete/Complete"
+						"ref": "Diffindo Challenge/Completion/Complete"
 					},
 					{
 						"name": "Secret 1",
@@ -702,7 +702,7 @@
 					},
 					{
 						"name": "Secret 8",
-						"ref": "Diffindo Challenge/Secret 8/Secret 8"
+						"ref": "Diffindo Challenge/Secret 8 & Star 11/Secret 8"
 					},
 					{
 						"name": "Secret 9",

@@ -5,26 +5,32 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
-				"name": "Beat Par Time",
+				"name": "Completion",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Rictusempra_Challenge_Beat_Par_Time"
-				],
 				"sections": [
 					{
-						"name": "Beat Par Time"
+						"name": "Complete",
+						"access_rules": [
+							"$rule_Rictusempra_Challenge_Complete"
+						]
+					},
+					{
+						"name": "Beat Par Time",
+						"access_rules": [
+							"$rule_Rictusempra_Challenge_Beat_Par_Time"
+						],
+						"visibility_rules": [
+							"$visSpellTimes"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Rictusempra Challenge",
-						"x": 1179,
+						"x": 1167,
 						"y": 495
 					}
-				],
-				"visibility_rules": [
-					"$visSpellTimes"
 				]
 			},
 			{
@@ -462,26 +468,6 @@
 				],
 				"visibility_rules": [
 					"$visStars"
-				]
-			},
-			{
-				"name": "Complete",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Rictusempra_Challenge_Complete"
-				],
-				"sections": [
-					{
-						"name": "Complete"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Rictusempra Challenge",
-						"x": 1155,
-						"y": 495
-					}
 				]
 			},
 			{

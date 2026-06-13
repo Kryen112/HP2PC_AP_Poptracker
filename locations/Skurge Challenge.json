@@ -5,26 +5,32 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
-				"name": "Beat Par Time",
+				"name": "Completion",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Skurge_Challenge_Beat_Par_Time"
-				],
 				"sections": [
 					{
-						"name": "Beat Par Time"
+						"name": "Complete",
+						"access_rules": [
+							"$rule_Skurge_Challenge_Complete"
+						]
+					},
+					{
+						"name": "Beat Par Time",
+						"access_rules": [
+							"$rule_Skurge_Challenge_Beat_Par_Time"
+						],
+						"visibility_rules": [
+							"$visSpellTimes"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Skurge Challenge",
-						"x": 594,
+						"x": 584,
 						"y": 271
 					}
-				],
-				"visibility_rules": [
-					"$visSpellTimes"
 				]
 			},
 			{
@@ -393,26 +399,6 @@
 				],
 				"visibility_rules": [
 					"$visStars"
-				]
-			},
-			{
-				"name": "Complete",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Skurge_Challenge_Complete"
-				],
-				"sections": [
-					{
-						"name": "Complete"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Skurge Challenge",
-						"x": 576,
-						"y": 271
-					}
 				]
 			},
 			{
