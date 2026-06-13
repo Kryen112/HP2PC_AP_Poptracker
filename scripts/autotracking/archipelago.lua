@@ -7,6 +7,21 @@ ScriptHost:LoadScript("scripts/autotracking/goal_mapping.lua")
 CUR_INDEX = -1
 SLOT_DATA = nil
 LEVEL_KEY = nil
+HINTS_KEY = nil
+
+-- AP HintStatus -> PopTracker Highlight enum for the coloured square drawn
+-- under a hinted location. Empty (and hint marking is skipped) on builds
+-- without hint support, where the Highlight global is absent.
+HINT_STATUS_MAPPING = {}
+if Highlight then
+    HINT_STATUS_MAPPING = {
+        [0]  = Highlight.Unspecified,
+        [10] = Highlight.NoPriority,
+        [20] = Highlight.Avoid,
+        [30] = Highlight.Priority,
+        [40] = Highlight.None,
+    }
+end
 -- Open-castle Great Hall goal targets, captured from slot_data in onClear.
 -- All zero in vanilla (no targets sent), which leaves the overall light off.
 GOAL_TARGETS = { cards = 0, spells = 0, levels = 0, duels = 0, quidditch = 0 }
@@ -93,12 +108,13 @@ function onClear(slot_data)
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
 
-    -- Map-follow: subscribe to this slot's current-level key (written by the
-    -- client) and fetch its current value, so the active map tab tracks the
-    -- player. Both calls must run from a ClearHandler.
+    -- Data-storage subscriptions (must run from a ClearHandler):
+    --   LEVEL_KEY  — the client mirrors the player's current map here (map-follow).
+    --   HINTS_KEY  — the server's read-only hints list for this slot.
     LEVEL_KEY = "HP2PC_AP_level:" .. TEAM_NUMBER .. ":" .. PLAYER_ID
-    Archipelago:Get({LEVEL_KEY})
-    Archipelago:SetNotify({LEVEL_KEY})
+    HINTS_KEY = "_read_hints_" .. TEAM_NUMBER .. "_" .. PLAYER_ID
+    Archipelago:Get({LEVEL_KEY, HINTS_KEY})
+    Archipelago:SetNotify({LEVEL_KEY, HINTS_KEY})
 
     -- Great Hall goal targets. cards/spells/levels are NamedRange counts;
     -- duels/quidditch are toggles meaning "win all" (10 / 6).
@@ -203,12 +219,56 @@ function activate_level_tab(level)
     end
 end
 
-function onLevelRetrieved(key, value)
-    if key == LEVEL_KEY then activate_level_tab(value) end
+-- Retrieved (Get reply) and SetReply share one dispatcher; old_value is nil
+-- for retrieved replies and for "_read"-prefixed keys.
+function onDataStorageUpdate(key, value, old_value)
+    if key == LEVEL_KEY then
+        activate_level_tab(value)
+    elseif key == HINTS_KEY then
+        onHintsUpdate(value)
+    end
 end
 
-function onLevelSetReply(key, value, old_value)
-    if key == LEVEL_KEY then activate_level_tab(value) end
+-- Mark every hinted location in our own world with its Highlight square.
+-- A hint sits in the finder's world regardless of who receives the item, so
+-- finding_player is the only filter (covers items destined for us and for
+-- others alike). Found hints carry status None, which clears the square.
+function onHintsUpdate(hints)
+    if type(hints) ~= "table" then return end
+    for _, hint in ipairs(hints) do
+        if hint.finding_player == PLAYER_ID then
+            updateHint(hint)
+        end
+    end
+end
+
+function updateHint(hint)
+    local highlight_code = hint.status and HINT_STATUS_MAPPING[hint.status]
+    if not highlight_code then
+        -- Older AP without hint.status: fall back to the found flag.
+        if hint.found == true then
+            highlight_code = Highlight and Highlight.None
+        elseif hint.found == false then
+            highlight_code = Highlight and Highlight.Unspecified
+        else
+            return
+        end
+    end
+    local codes = LOCATION_MAPPING[hint.location]
+    if not codes then
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("updateHint: no location mapping for id %s", hint.location))
+        end
+        return
+    end
+    for _, code in ipairs(codes) do
+        if code:sub(1, 1) == "@" then
+            local obj = Tracker:FindObjectForCode(code)
+            if obj and obj.Highlight ~= nil then
+                obj.Highlight = highlight_code
+            end
+        end
+    end
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -278,5 +338,5 @@ end
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
-Archipelago:AddRetrievedHandler("level retrieved handler", onLevelRetrieved)
-Archipelago:AddSetReplyHandler("level set handler", onLevelSetReply)
+Archipelago:AddRetrievedHandler("data retrieved handler", onDataStorageUpdate)
+Archipelago:AddSetReplyHandler("data set handler", onDataStorageUpdate)
