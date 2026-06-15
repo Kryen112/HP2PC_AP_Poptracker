@@ -63,6 +63,17 @@ REGION_MAP_OVERRIDE = {
     "Quidditch": "Castle Exterior",
 }
 
+# Regions with no map of their own, listed as real nodes inside a host region's
+# file instead of as their own top-level group + file. Their checks pin on the
+# host's map (via REGION_MAP_OVERRIDE) and their section path becomes
+# @HostDisplay/<node>/<section>, so location_mapping uses the host as the first
+# segment. No separate <Region>.json or locations_import line is emitted.
+REGION_FOLD_INTO = {
+    "Quidditch": "CastleExterior",
+    "DuellingClub": "EntryHall",
+    "DumbledoreStudy": "GrandStaircase",
+}
+
 # "Menu room" pins: a host region's map carries one aggregate pin per source
 # region, each listing all that region's checks via section refs. The pin
 # shares state with the region's own map while letting players reach a room's
@@ -85,6 +96,23 @@ MENU_ROOMS = {
 # referencing those sections (location_mapping, menu refs, goal_mapping.lua)
 # must use the group as the middle segment.
 COLOCATION = {
+    "GrandStaircase": [
+        ("Secret 16 & Card Maeve", ["Secret 16", "Card Maeve"]),
+        ("Secret 17 & Card Oldridge", ["Secret 17", "Card Oldridge"]),
+        ("Secret 18 & Card Lufkin", ["Secret 18", "Card Lufkin"]),
+    ],
+    "EntryHall": [
+        ("Secret 3 & Card Wendelin", ["Secret 3", "Card Wendelin"]),
+        ("Secret 9 & Card Jones", ["Secret 9", "Card Jones"]),
+    ],
+    "CastleExterior": [
+        ("Secret 1 & Card Twonk", ["Secret 1", "Card Twonk"]),
+        ("Secret 4 & Card Oglethorpe", ["Secret 4", "Card Oglethorpe"]),
+        ("Secret 5 & Card Sykes", ["Secret 5", "Card Sykes"]),
+        ("Secret 7 & Card Marjoribanks", ["Secret 7", "Card Marjoribanks"]),
+        ("Secret 8 & Card Wadcock", ["Secret 8", "Card Wadcock"]),
+        ("Nimbus 2001 & Quidditch Armour", ["Nimbus 2001", "Quidditch Armour"]),
+    ],
     "RictusempraChallenge": [("Completion", ["Complete", "Beat Par Time"])],
     "SkurgeChallenge": [("Completion", ["Complete", "Beat Par Time"])],
     "SpongifyChallenge": [("Completion", ["Complete", "Beat Par Time"])],
@@ -437,10 +465,10 @@ def loc_section_ref(region_display: str, loc_name: str) -> str:
     return short
 
 
-def build_region_locations_json(region: str, region_locs: list[str],
-                                 loc_groups: dict[str, str],
-                                 existing_map_locations: dict[str, list]) -> list:
-    """Build the locations/<Region>.json structure for a single region.
+def build_region_children(region: str, region_locs: list[str],
+                          loc_groups: dict[str, str],
+                          existing_map_locations: dict[str, list]) -> list:
+    """Build the child location nodes for a single region, pinned on its map.
 
     existing_map_locations: section name → previous map_locations list from
     the file on disk. Carries pin coordinates forward across regenerations
@@ -495,12 +523,22 @@ def build_region_locations_json(region: str, region_locs: list[str],
                 sections.append(sec)
             if not sections:
                 continue
+            # Prefer the group's own carried-forward pin; on a first merge that
+            # pin doesn't exist yet, so inherit a member's prior standalone pin
+            # (its old node name is the section name) instead of resetting to 0,0.
+            group_map_locs = map_locs_for(group_name)
+            if not _has_placed_pin(group_map_locs):
+                for member in group_members[group_name]:
+                    member_locs = map_locs_for(member)
+                    if _has_placed_pin(member_locs):
+                        group_map_locs = member_locs
+                        break
             children.append({
                 "name": group_name,
                 "chest_unopened_img": "images/items/item.png",
                 "chest_opened_img": "images/items/item_opened.png",
                 "sections": sections,
-                "map_locations": map_locs_for(group_name),
+                "map_locations": group_map_locs,
             })
         else:
             entry = {
@@ -515,6 +553,19 @@ def build_region_locations_json(region: str, region_locs: list[str],
             if vis is not None:
                 entry["visibility_rules"] = [vis]
             children.append(entry)
+    return children
+
+
+def build_region_locations_json(region: str, region_locs: list[str],
+                                 loc_groups: dict[str, str],
+                                 existing_map_locations: dict[str, list],
+                                 extra_children: list | None = None) -> list:
+    """Wrap a region's child nodes in its top-level group. extra_children holds
+    nodes from map-less regions folded into this one (see REGION_FOLD_INTO)."""
+    display = REGION_DISPLAY.get(region, region)
+    children = build_region_children(region, region_locs, loc_groups, existing_map_locations)
+    if extra_children:
+        children.extend(extra_children)
     return [{
         "name": display,
         "chest_unopened_img": "images/items/item.png",
@@ -556,6 +607,13 @@ def build_menu_room_node(parent_name: str, target_map: str,
         "chest_opened_img": "images/items/item_opened.png",
         "children": children,
     }
+
+
+def _has_placed_pin(map_locations: list | None) -> bool:
+    """True if any pin in the list sits somewhere other than the (0, 0)
+    placeholder — i.e. a coordinate someone actually placed."""
+    return any((ml.get("x") or 0) != 0 or (ml.get("y") or 0) != 0
+               for ml in (map_locations or []))
 
 
 def load_existing_map_locations(path: Path) -> dict[str, list]:
@@ -628,10 +686,35 @@ def main() -> None:
     for region, locs in by_region.items():
         if not locs:
             continue
+        if region in REGION_FOLD_INTO:
+            continue  # emitted as children of its host region instead
         display = REGION_DISPLAY.get(region, region)
         out_path = PACK / "locations" / f"{display}.json"
         prior = load_existing_map_locations(out_path)
-        region_json = build_region_locations_json(region, locs, loc_groups, prior)
+        extra_children = []
+        for folded, host in REGION_FOLD_INTO.items():
+            if host == region and by_region.get(folded):
+                # On the first fold the folded region's pins still live in its
+                # own (about-to-be-removed) file; read those coordinates too so
+                # hand-placed pins survive the move into the host file. Prefer
+                # whichever source has a real (non-placeholder) pin, so an
+                # earlier 0,0 already written into the host doesn't clobber a
+                # coordinate still recorded in the folded file.
+                folded_display = REGION_DISPLAY.get(folded, folded)
+                folded_prior = load_existing_map_locations(
+                    PACK / "locations" / f"{folded_display}.json")
+                merged_prior = dict(prior)
+                for node_name, mls in folded_prior.items():
+                    host_mls = merged_prior.get(node_name)
+                    if not _has_placed_pin(host_mls) and _has_placed_pin(mls):
+                        merged_prior[node_name] = mls
+                    elif node_name not in merged_prior:
+                        merged_prior[node_name] = mls
+                extra_children.extend(
+                    build_region_children(folded, by_region[folded], loc_groups, merged_prior)
+                )
+        region_json = build_region_locations_json(region, locs, loc_groups, prior,
+                                                  extra_children=extra_children)
         if region in MENU_ROOMS:
             parent_name, sources = MENU_ROOMS[region]
             target_map = REGION_MAP_OVERRIDE.get(region, display)
@@ -645,6 +728,8 @@ def main() -> None:
     for region in sorted(by_region):
         if not by_region[region]:
             continue
+        if region in REGION_FOLD_INTO:
+            continue  # no file of its own; folded into its host region
         display = REGION_DISPLAY.get(region, region)
         import_lines.append(f'Tracker:AddLocations("locations/{display}.json")')
     write_text(PACK / "scripts" / "locations_import.lua",
@@ -663,12 +748,15 @@ def main() -> None:
         region = loc_regions.get(name, "TBD")
         display = REGION_DISPLAY.get(region, region)
         section = loc_section_ref(display, name)
-        # Full section path: region node / location node / section. The middle
+        # Full section path: group node / location node / section. The middle
         # segment is the colocation group when the section shares a marker,
         # else the section's own node. The section segment is always required —
-        # "@Region/Section" resolves against the region node, which has no
-        # direct sections, so the clear would no-op.
-        code = f"@{display}/{colocation_parent(region, section)}/{section}"
+        # "@Group/Section" resolves against the group node, which has no
+        # direct sections, so the clear would no-op. A folded region's nodes
+        # live under their host's group, so the first segment is the host.
+        group_region = REGION_FOLD_INTO.get(region, region)
+        group_display = REGION_DISPLAY.get(group_region, group_region)
+        code = f"@{group_display}/{colocation_parent(region, section)}/{section}"
         loc_rows.append((str(ap_id), f'{{"{_lua_escape(code)}"}}'))
     write_text(PACK / "scripts" / "autotracking" / "location_mapping.lua",
                "LOCATION_MAPPING = {\n" + lua_table_kv(loc_rows) + "\n}\n")

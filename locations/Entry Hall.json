@@ -19,8 +19,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 952,
+						"y": 293
 					}
 				],
 				"visibility_rules": [
@@ -42,8 +42,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1158,
+						"y": 64
 					}
 				],
 				"visibility_rules": [
@@ -65,8 +65,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 887,
+						"y": 107
 					}
 				],
 				"visibility_rules": [
@@ -88,8 +88,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 82,
+						"y": 677
 					}
 				],
 				"visibility_rules": [
@@ -97,26 +97,35 @@
 				]
 			},
 			{
-				"name": "Card Jones",
+				"name": "Secret 9 & Card Jones",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Entry_Hall_Card_Jones"
-				],
 				"sections": [
 					{
-						"name": "Card Jones"
+						"name": "Secret 9",
+						"access_rules": [
+							"$rule_Entry_Hall_Secret_9"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Jones",
+						"access_rules": [
+							"$rule_Entry_Hall_Card_Jones"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1596,
+						"y": 361
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
@@ -134,8 +143,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 171,
+						"y": 450
 					}
 				],
 				"visibility_rules": [
@@ -157,8 +166,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 861,
+						"y": 507
 					}
 				],
 				"visibility_rules": [
@@ -180,8 +189,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1428,
+						"y": 298
 					}
 				],
 				"visibility_rules": [
@@ -203,8 +212,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 9,
+						"y": 368
 					}
 				],
 				"visibility_rules": [
@@ -226,8 +235,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 830,
+						"y": 117
 					}
 				],
 				"visibility_rules": [
@@ -249,8 +258,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1064,
+						"y": 468
 					}
 				],
 				"visibility_rules": [
@@ -272,8 +281,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 800,
+						"y": 232
 					}
 				],
 				"visibility_rules": [
@@ -281,26 +290,35 @@
 				]
 			},
 			{
-				"name": "Card Wendelin",
+				"name": "Secret 3 & Card Wendelin",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Entry_Hall_Card_Wendelin"
-				],
 				"sections": [
 					{
-						"name": "Card Wendelin"
+						"name": "Secret 3",
+						"access_rules": [
+							"$rule_Entry_Hall_Secret_3"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Wendelin",
+						"access_rules": [
+							"$rule_Entry_Hall_Card_Wendelin"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 655,
+						"y": 119
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
@@ -318,8 +336,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1054,
+						"y": 246
 					}
 				],
 				"visibility_rules": [
@@ -341,8 +359,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1038,
+						"y": 379
 					}
 				],
 				"visibility_rules": [
@@ -364,8 +382,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 386,
+						"y": 524
 					}
 				],
 				"visibility_rules": [
@@ -387,8 +405,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 351,
+						"y": 524
 					}
 				],
 				"visibility_rules": [
@@ -410,8 +428,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 37,
+						"y": 368
 					}
 				],
 				"visibility_rules": [
@@ -433,8 +451,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1174,
+						"y": 84
 					}
 				],
 				"visibility_rules": [
@@ -456,8 +474,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 887,
+						"y": 21
 					}
 				],
 				"visibility_rules": [
@@ -479,8 +497,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 996,
+						"y": 294
 					}
 				],
 				"visibility_rules": [
@@ -502,31 +520,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Entry_Hall_Secret_3"
-				],
-				"sections": [
-					{
-						"name": "Secret 3"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 225,
+						"y": 450
 					}
 				],
 				"visibility_rules": [
@@ -548,8 +543,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 586,
+						"y": 478
 					}
 				],
 				"visibility_rules": [
@@ -571,8 +566,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 862,
+						"y": 647
 					}
 				],
 				"visibility_rules": [
@@ -594,8 +589,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1179,
+						"y": 599
 					}
 				],
 				"visibility_rules": [
@@ -617,8 +612,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 873,
+						"y": 287
 					}
 				],
 				"visibility_rules": [
@@ -640,8 +635,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1118,
+						"y": 290
 					}
 				],
 				"visibility_rules": [
@@ -649,26 +644,107 @@
 				]
 			},
 			{
-				"name": "Secret 9",
+				"name": "Duels",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Entry_Hall_Secret_9"
-				],
 				"sections": [
 					{
-						"name": "Secret 9"
+						"name": "Duel Rank 1",
+						"access_rules": [
+							"$rule_Duelling_Club_Duel_Rank_1"
+						],
+						"visibility_rules": [
+							"$visDuels"
+						]
+					},
+					{
+						"name": "Duel Rank 2",
+						"access_rules": [
+							"$rule_Duelling_Club_Duel_Rank_2"
+						],
+						"visibility_rules": [
+							"$visDuels"
+						]
+					},
+					{
+						"name": "Duel Rank 3",
+						"access_rules": [
+							"$rule_Duelling_Club_Duel_Rank_3"
+						],
+						"visibility_rules": [
+							"$visDuels"
+						]
+					},
+					{
+						"name": "Duel Rank 4",
+						"access_rules": [
+							"$rule_Duelling_Club_Duel_Rank_4"
+						],
+						"visibility_rules": [
+							"$visDuels"
+						]
+					},
+					{
+						"name": "Duel Rank 5",
+						"access_rules": [
+							"$rule_Duelling_Club_Duel_Rank_5"
+						],
+						"visibility_rules": [
+							"$visDuels"
+						]
+					},
+					{
+						"name": "Duel Rank 6",
+						"access_rules": [
+							"$rule_Duelling_Club_Duel_Rank_6"
+						],
+						"visibility_rules": [
+							"$visDuels"
+						]
+					},
+					{
+						"name": "Duel Rank 7",
+						"access_rules": [
+							"$rule_Duelling_Club_Duel_Rank_7"
+						],
+						"visibility_rules": [
+							"$visDuels"
+						]
+					},
+					{
+						"name": "Duel Rank 8",
+						"access_rules": [
+							"$rule_Duelling_Club_Duel_Rank_8"
+						],
+						"visibility_rules": [
+							"$visDuels"
+						]
+					},
+					{
+						"name": "Duel Rank 9",
+						"access_rules": [
+							"$rule_Duelling_Club_Duel_Rank_9"
+						],
+						"visibility_rules": [
+							"$visDuels"
+						]
+					},
+					{
+						"name": "Duel Rank 10",
+						"access_rules": [
+							"$rule_Duelling_Club_Duel_Rank_10"
+						],
+						"visibility_rules": [
+							"$visDuels"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1251,
+						"y": 551
 					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
 				]
 			}
 		]
@@ -799,8 +875,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 100,
-						"y": 100
+						"x": 1216,
+						"y": 401
 					}
 				]
 			},
@@ -957,8 +1033,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 160,
-						"y": 160
+						"x": 726,
+						"y": 172
 					}
 				]
 			},
@@ -1071,8 +1147,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 220,
-						"y": 220
+						"x": 1272,
+						"y": 175
 					}
 				]
 			},
@@ -1141,8 +1217,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 280,
-						"y": 280
+						"x": 66,
+						"y": 471
 					}
 				]
 			},
@@ -1215,8 +1291,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 340,
-						"y": 340
+						"x": 52,
+						"y": 246
 					}
 				]
 			},
@@ -1285,8 +1361,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 400,
-						"y": 400
+						"x": 550,
+						"y": 87
 					}
 				]
 			},
@@ -1379,8 +1455,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 460,
-						"y": 460
+						"x": 1531,
+						"y": 302
 					}
 				]
 			}

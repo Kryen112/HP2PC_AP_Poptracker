@@ -120,72 +120,99 @@
 				]
 			},
 			{
-				"name": "Card Lufkin",
+				"name": "Secret 18 & Card Lufkin",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Grand_Staircase_Card_Lufkin"
-				],
 				"sections": [
 					{
-						"name": "Card Lufkin"
+						"name": "Secret 18",
+						"access_rules": [
+							"$rule_Grand_Staircase_Secret_18"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Lufkin",
+						"access_rules": [
+							"$rule_Grand_Staircase_Card_Lufkin"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Grand Staircase",
-						"x": 967,
+						"x": 956,
 						"y": 444
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
-				"name": "Card Maeve",
+				"name": "Secret 16 & Card Maeve",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Grand_Staircase_Card_Maeve"
-				],
 				"sections": [
 					{
-						"name": "Card Maeve"
+						"name": "Secret 16",
+						"access_rules": [
+							"$rule_Grand_Staircase_Secret_16"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Maeve",
+						"access_rules": [
+							"$rule_Grand_Staircase_Card_Maeve"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Grand Staircase",
 						"x": 553,
-						"y": 395
+						"y": 382
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
-				"name": "Card Oldridge",
+				"name": "Secret 17 & Card Oldridge",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Grand_Staircase_Card_Oldridge"
-				],
 				"sections": [
 					{
-						"name": "Card Oldridge"
+						"name": "Secret 17",
+						"access_rules": [
+							"$rule_Grand_Staircase_Secret_17"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Oldridge",
+						"access_rules": [
+							"$rule_Grand_Staircase_Card_Oldridge"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Grand Staircase",
 						"x": 628,
-						"y": 10
+						"y": 22
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
@@ -373,75 +400,6 @@
 				]
 			},
 			{
-				"name": "Secret 16",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Grand_Staircase_Secret_16"
-				],
-				"sections": [
-					{
-						"name": "Secret 16"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Grand Staircase",
-						"x": 553,
-						"y": 369
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 17",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Grand_Staircase_Secret_17"
-				],
-				"sections": [
-					{
-						"name": "Secret 17"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Grand Staircase",
-						"x": 628,
-						"y": 34
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 18",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Grand_Staircase_Secret_18"
-				],
-				"sections": [
-					{
-						"name": "Secret 18"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Grand Staircase",
-						"x": 944,
-						"y": 444
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
 				"name": "Secret 19",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -577,6 +535,75 @@
 				],
 				"visibility_rules": [
 					"$visClassrooms"
+				]
+			},
+			{
+				"name": "Card Beamish",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Dumbledore_s_Study_Card_Beamish"
+				],
+				"sections": [
+					{
+						"name": "Card Beamish"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 1128,
+						"y": 695
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Card Muldoon",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Dumbledore_s_Study_Card_Muldoon"
+				],
+				"sections": [
+					{
+						"name": "Card Muldoon"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 1212,
+						"y": 885
+					}
+				],
+				"visibility_rules": [
+					"$visCards"
+				]
+			},
+			{
+				"name": "Secret",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Dumbledore_s_Study_Secret"
+				],
+				"sections": [
+					{
+						"name": "Secret"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 1200,
+						"y": 777
+					}
+				],
+				"visibility_rules": [
+					"$visSecrets"
 				]
 			}
 		]

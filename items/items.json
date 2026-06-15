@@ -140,607 +140,607 @@
 	{
 		"name": "Bronze Card - Agrippa",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_agrippa.png",
+		"img": "images/items/cards/bronze/bronze_card_agrippa.png",
 		"codes": "Bronze Card - Agrippa"
 	},
 	{
 		"name": "Bronze Card - Alderton",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_alderton.png",
+		"img": "images/items/cards/bronze/bronze_card_alderton.png",
 		"codes": "Bronze Card - Alderton"
 	},
 	{
 		"name": "Bronze Card - Barbary",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_barbary.png",
+		"img": "images/items/cards/bronze/bronze_card_barbary.png",
 		"codes": "Bronze Card - Barbary"
 	},
 	{
 		"name": "Bronze Card - Barkwith",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_barkwith.png",
+		"img": "images/items/cards/bronze/bronze_card_barkwith.png",
 		"codes": "Bronze Card - Barkwith"
 	},
 	{
 		"name": "Bronze Card - Belby",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_belby.png",
+		"img": "images/items/cards/bronze/bronze_card_belby.png",
 		"codes": "Bronze Card - Belby"
 	},
 	{
 		"name": "Bronze Card - Blane",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_blane.png",
+		"img": "images/items/cards/bronze/bronze_card_blane.png",
 		"codes": "Bronze Card - Blane"
 	},
 	{
 		"name": "Bronze Card - Bloxam",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_bloxam.png",
+		"img": "images/items/cards/bronze/bronze_card_bloxam.png",
 		"codes": "Bronze Card - Bloxam"
 	},
 	{
 		"name": "Bronze Card - Bonham",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_bonham.png",
+		"img": "images/items/cards/bronze/bronze_card_bonham.png",
 		"codes": "Bronze Card - Bonham"
 	},
 	{
 		"name": "Bronze Card - Catchlove",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_catchlove.png",
+		"img": "images/items/cards/bronze/bronze_card_catchlove.png",
 		"codes": "Bronze Card - Catchlove"
 	},
 	{
 		"name": "Bronze Card - Elphick",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_elphick.png",
+		"img": "images/items/cards/bronze/bronze_card_elphick.png",
 		"codes": "Bronze Card - Elphick"
 	},
 	{
 		"name": "Bronze Card - Ethelred",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_ethelred.png",
+		"img": "images/items/cards/bronze/bronze_card_ethelred.png",
 		"codes": "Bronze Card - Ethelred"
 	},
 	{
 		"name": "Bronze Card - Fancourt",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_fancourt.png",
+		"img": "images/items/cards/bronze/bronze_card_fancourt.png",
 		"codes": "Bronze Card - Fancourt"
 	},
 	{
 		"name": "Bronze Card - Goshawk",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_goshawk.png",
+		"img": "images/items/cards/bronze/bronze_card_goshawk.png",
 		"codes": "Bronze Card - Goshawk"
 	},
 	{
 		"name": "Bronze Card - Graves",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_graves.png",
+		"img": "images/items/cards/bronze/bronze_card_graves.png",
 		"codes": "Bronze Card - Graves"
 	},
 	{
 		"name": "Bronze Card - Gunhilda",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_gunhilda.png",
+		"img": "images/items/cards/bronze/bronze_card_gunhilda.png",
 		"codes": "Bronze Card - Gunhilda"
 	},
 	{
 		"name": "Bronze Card - Hipworth",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_hipworth.png",
+		"img": "images/items/cards/bronze/bronze_card_hipworth.png",
 		"codes": "Bronze Card - Hipworth"
 	},
 	{
 		"name": "Bronze Card - Kegg",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_kegg.png",
+		"img": "images/items/cards/bronze/bronze_card_kegg.png",
 		"codes": "Bronze Card - Kegg"
 	},
 	{
 		"name": "Bronze Card - Ketteridge",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_ketteridge.png",
+		"img": "images/items/cards/bronze/bronze_card_ketteridge.png",
 		"codes": "Bronze Card - Ketteridge"
 	},
 	{
 		"name": "Bronze Card - Marjoribanks",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_marjoribanks.png",
+		"img": "images/items/cards/bronze/bronze_card_marjoribanks.png",
 		"codes": "Bronze Card - Marjoribanks"
 	},
 	{
 		"name": "Bronze Card - Merlin",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_merlin.png",
+		"img": "images/items/cards/bronze/bronze_card_merlin.png",
 		"codes": "Bronze Card - Merlin"
 	},
 	{
 		"name": "Bronze Card - Merwyn",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_merwyn.png",
+		"img": "images/items/cards/bronze/bronze_card_merwyn.png",
 		"codes": "Bronze Card - Merwyn"
 	},
 	{
 		"name": "Bronze Card - Muldoon",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_muldoon.png",
+		"img": "images/items/cards/bronze/bronze_card_muldoon.png",
 		"codes": "Bronze Card - Muldoon"
 	},
 	{
 		"name": "Bronze Card - Ollerton",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_ollerton.png",
+		"img": "images/items/cards/bronze/bronze_card_ollerton.png",
 		"codes": "Bronze Card - Ollerton"
 	},
 	{
 		"name": "Bronze Card - Peakes",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_peakes.png",
+		"img": "images/items/cards/bronze/bronze_card_peakes.png",
 		"codes": "Bronze Card - Peakes"
 	},
 	{
 		"name": "Bronze Card - Pilliwickle",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_pilliwickle.png",
+		"img": "images/items/cards/bronze/bronze_card_pilliwickle.png",
 		"codes": "Bronze Card - Pilliwickle"
 	},
 	{
 		"name": "Bronze Card - Platt",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_platt.png",
+		"img": "images/items/cards/bronze/bronze_card_platt.png",
 		"codes": "Bronze Card - Platt"
 	},
 	{
 		"name": "Bronze Card - Plumpton",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_plumpton.png",
+		"img": "images/items/cards/bronze/bronze_card_plumpton.png",
 		"codes": "Bronze Card - Plumpton"
 	},
 	{
 		"name": "Bronze Card - Po",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_po.png",
+		"img": "images/items/cards/bronze/bronze_card_po.png",
 		"codes": "Bronze Card - Po"
 	},
 	{
 		"name": "Bronze Card - Pokeby",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_pokeby.png",
+		"img": "images/items/cards/bronze/bronze_card_pokeby.png",
 		"codes": "Bronze Card - Pokeby"
 	},
 	{
 		"name": "Bronze Card - Sawbridge",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_sawbridge.png",
+		"img": "images/items/cards/bronze/bronze_card_sawbridge.png",
 		"codes": "Bronze Card - Sawbridge"
 	},
 	{
 		"name": "Bronze Card - Scamander",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_scamander.png",
+		"img": "images/items/cards/bronze/bronze_card_scamander.png",
 		"codes": "Bronze Card - Scamander"
 	},
 	{
 		"name": "Bronze Card - Starkey",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_starkey.png",
+		"img": "images/items/cards/bronze/bronze_card_starkey.png",
 		"codes": "Bronze Card - Starkey"
 	},
 	{
 		"name": "Bronze Card - Stroulger",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_stroulger.png",
+		"img": "images/items/cards/bronze/bronze_card_stroulger.png",
 		"codes": "Bronze Card - Stroulger"
 	},
 	{
 		"name": "Bronze Card - Stump",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_stump.png",
+		"img": "images/items/cards/bronze/bronze_card_stump.png",
 		"codes": "Bronze Card - Stump"
 	},
 	{
 		"name": "Bronze Card - Sweeting",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_sweeting.png",
+		"img": "images/items/cards/bronze/bronze_card_sweeting.png",
 		"codes": "Bronze Card - Sweeting"
 	},
 	{
 		"name": "Bronze Card - Sykes",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_sykes.png",
+		"img": "images/items/cards/bronze/bronze_card_sykes.png",
 		"codes": "Bronze Card - Sykes"
 	},
 	{
 		"name": "Bronze Card - Thruston",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_thruston.png",
+		"img": "images/items/cards/bronze/bronze_card_thruston.png",
 		"codes": "Bronze Card - Thruston"
 	},
 	{
 		"name": "Bronze Card - Toke",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_toke.png",
+		"img": "images/items/cards/bronze/bronze_card_toke.png",
 		"codes": "Bronze Card - Toke"
 	},
 	{
 		"name": "Bronze Card - Twonk",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_twonk.png",
+		"img": "images/items/cards/bronze/bronze_card_twonk.png",
 		"codes": "Bronze Card - Twonk"
 	},
 	{
 		"name": "Bronze Card - Ulric",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_ulric.png",
+		"img": "images/items/cards/bronze/bronze_card_ulric.png",
 		"codes": "Bronze Card - Ulric"
 	},
 	{
 		"name": "Bronze Card - Vablatsky",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_vablatsky.png",
+		"img": "images/items/cards/bronze/bronze_card_vablatsky.png",
 		"codes": "Bronze Card - Vablatsky"
 	},
 	{
 		"name": "Bronze Card - Waffling",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_waffling.png",
+		"img": "images/items/cards/bronze/bronze_card_waffling.png",
 		"codes": "Bronze Card - Waffling"
 	},
 	{
 		"name": "Bronze Card - Wagtail",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_wagtail.png",
+		"img": "images/items/cards/bronze/bronze_card_wagtail.png",
 		"codes": "Bronze Card - Wagtail"
 	},
 	{
 		"name": "Bronze Card - Warbeck",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_warbeck.png",
+		"img": "images/items/cards/bronze/bronze_card_warbeck.png",
 		"codes": "Bronze Card - Warbeck"
 	},
 	{
 		"name": "Bronze Card - Wellbeloved",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_wellbeloved.png",
+		"img": "images/items/cards/bronze/bronze_card_wellbeloved.png",
 		"codes": "Bronze Card - Wellbeloved"
 	},
 	{
 		"name": "Bronze Card - Wenlock",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_wenlock.png",
+		"img": "images/items/cards/bronze/bronze_card_wenlock.png",
 		"codes": "Bronze Card - Wenlock"
 	},
 	{
 		"name": "Bronze Card - Whitehorn",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_whitehorn.png",
+		"img": "images/items/cards/bronze/bronze_card_whitehorn.png",
 		"codes": "Bronze Card - Whitehorn"
 	},
 	{
 		"name": "Bronze Card - Wintringham",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_wintringham.png",
+		"img": "images/items/cards/bronze/bronze_card_wintringham.png",
 		"codes": "Bronze Card - Wintringham"
 	},
 	{
 		"name": "Bronze Card - Withers",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_withers.png",
+		"img": "images/items/cards/bronze/bronze_card_withers.png",
 		"codes": "Bronze Card - Withers"
 	},
 	{
 		"name": "Bronze Card - Woodcroft",
 		"type": "toggle",
-		"img": "images/items/cards/bronze_card_woodcroft.png",
+		"img": "images/items/cards/bronze/bronze_card_woodcroft.png",
 		"codes": "Bronze Card - Woodcroft"
 	},
 	{
 		"name": "Silver Card - Andros",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_andros.png",
+		"img": "images/items/cards/silver/silver_card_andros.png",
 		"codes": "Silver Card - Andros"
 	},
 	{
 		"name": "Silver Card - Beamish",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_beamish.png",
+		"img": "images/items/cards/silver/silver_card_beamish.png",
 		"codes": "Silver Card - Beamish"
 	},
 	{
 		"name": "Silver Card - Chittock",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_chittock.png",
+		"img": "images/items/cards/silver/silver_card_chittock.png",
 		"codes": "Silver Card - Chittock"
 	},
 	{
 		"name": "Silver Card - Circe",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_circe.png",
+		"img": "images/items/cards/silver/silver_card_circe.png",
 		"codes": "Silver Card - Circe"
 	},
 	{
 		"name": "Silver Card - Clagg",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_clagg.png",
+		"img": "images/items/cards/silver/silver_card_clagg.png",
 		"codes": "Silver Card - Clagg"
 	},
 	{
 		"name": "Silver Card - Cliodne",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_cliodne.png",
+		"img": "images/items/cards/silver/silver_card_cliodne.png",
 		"codes": "Silver Card - Cliodne"
 	},
 	{
 		"name": "Silver Card - Cronk",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_cronk.png",
+		"img": "images/items/cards/silver/silver_card_cronk.png",
 		"codes": "Silver Card - Cronk"
 	},
 	{
 		"name": "Silver Card - Crumb",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_crumb.png",
+		"img": "images/items/cards/silver/silver_card_crumb.png",
 		"codes": "Silver Card - Crumb"
 	},
 	{
 		"name": "Silver Card - Dodderidge",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_dodderidge.png",
+		"img": "images/items/cards/silver/silver_card_dodderidge.png",
 		"codes": "Silver Card - Dodderidge"
 	},
 	{
 		"name": "Silver Card - Duke",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_duke.png",
+		"img": "images/items/cards/silver/silver_card_duke.png",
 		"codes": "Silver Card - Duke"
 	},
 	{
 		"name": "Silver Card - Fay",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_fay.png",
+		"img": "images/items/cards/silver/silver_card_fay.png",
 		"codes": "Silver Card - Fay"
 	},
 	{
 		"name": "Silver Card - Fulbert",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_fulbert.png",
+		"img": "images/items/cards/silver/silver_card_fulbert.png",
 		"codes": "Silver Card - Fulbert"
 	},
 	{
 		"name": "Silver Card - Furmage",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_furmage.png",
+		"img": "images/items/cards/silver/silver_card_furmage.png",
 		"codes": "Silver Card - Furmage"
 	},
 	{
 		"name": "Silver Card - Gregory",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_gregory.png",
+		"img": "images/items/cards/silver/silver_card_gregory.png",
 		"codes": "Silver Card - Gregory"
 	},
 	{
 		"name": "Silver Card - Grunnion",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_grunnion.png",
+		"img": "images/items/cards/silver/silver_card_grunnion.png",
 		"codes": "Silver Card - Grunnion"
 	},
 	{
 		"name": "Silver Card - Jones",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_jones.png",
+		"img": "images/items/cards/silver/silver_card_jones.png",
 		"codes": "Silver Card - Jones"
 	},
 	{
 		"name": "Silver Card - Lufkin",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_lufkin.png",
+		"img": "images/items/cards/silver/silver_card_lufkin.png",
 		"codes": "Silver Card - Lufkin"
 	},
 	{
 		"name": "Silver Card - Maeve",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_maeve.png",
+		"img": "images/items/cards/silver/silver_card_maeve.png",
 		"codes": "Silver Card - Maeve"
 	},
 	{
 		"name": "Silver Card - Montmorency",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_montmorency.png",
+		"img": "images/items/cards/silver/silver_card_montmorency.png",
 		"codes": "Silver Card - Montmorency"
 	},
 	{
 		"name": "Silver Card - Mopsus",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_mopsus.png",
+		"img": "images/items/cards/silver/silver_card_mopsus.png",
 		"codes": "Silver Card - Mopsus"
 	},
 	{
 		"name": "Silver Card - Nutcombe",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_nutcombe.png",
+		"img": "images/items/cards/silver/silver_card_nutcombe.png",
 		"codes": "Silver Card - Nutcombe"
 	},
 	{
 		"name": "Silver Card - Oglethorpe",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_oglethorpe.png",
+		"img": "images/items/cards/silver/silver_card_oglethorpe.png",
 		"codes": "Silver Card - Oglethorpe"
 	},
 	{
 		"name": "Silver Card - Oldridge",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_oldridge.png",
+		"img": "images/items/cards/silver/silver_card_oldridge.png",
 		"codes": "Silver Card - Oldridge"
 	},
 	{
 		"name": "Silver Card - Oliphant",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_oliphant.png",
+		"img": "images/items/cards/silver/silver_card_oliphant.png",
 		"codes": "Silver Card - Oliphant"
 	},
 	{
 		"name": "Silver Card - Plunkett",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_plunkett.png",
+		"img": "images/items/cards/silver/silver_card_plunkett.png",
 		"codes": "Silver Card - Plunkett"
 	},
 	{
 		"name": "Silver Card - Rastrick",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_rastrick.png",
+		"img": "images/items/cards/silver/silver_card_rastrick.png",
 		"codes": "Silver Card - Rastrick"
 	},
 	{
 		"name": "Silver Card - Shimpling",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_shimpling.png",
+		"img": "images/items/cards/silver/silver_card_shimpling.png",
 		"codes": "Silver Card - Shimpling"
 	},
 	{
 		"name": "Silver Card - Shingleton",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_shingleton.png",
+		"img": "images/items/cards/silver/silver_card_shingleton.png",
 		"codes": "Silver Card - Shingleton"
 	},
 	{
 		"name": "Silver Card - Smethwyck",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_smethwyck.png",
+		"img": "images/items/cards/silver/silver_card_smethwyck.png",
 		"codes": "Silver Card - Smethwyck"
 	},
 	{
 		"name": "Silver Card - Stalk",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_stalk.png",
+		"img": "images/items/cards/silver/silver_card_stalk.png",
 		"codes": "Silver Card - Stalk"
 	},
 	{
 		"name": "Silver Card - Summerbee",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_summerbee.png",
+		"img": "images/items/cards/silver/silver_card_summerbee.png",
 		"codes": "Silver Card - Summerbee"
 	},
 	{
 		"name": "Silver Card - Thurkell",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_thurkell.png",
+		"img": "images/items/cards/silver/silver_card_thurkell.png",
 		"codes": "Silver Card - Thurkell"
 	},
 	{
 		"name": "Silver Card - Toothill",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_toothill.png",
+		"img": "images/items/cards/silver/silver_card_toothill.png",
 		"codes": "Silver Card - Toothill"
 	},
 	{
 		"name": "Silver Card - Tremlett",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_tremlett.png",
+		"img": "images/items/cards/silver/silver_card_tremlett.png",
 		"codes": "Silver Card - Tremlett"
 	},
 	{
 		"name": "Silver Card - Tugwood",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_tugwood.png",
+		"img": "images/items/cards/silver/silver_card_tugwood.png",
 		"codes": "Silver Card - Tugwood"
 	},
 	{
 		"name": "Silver Card - Wadcock",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_wadcock.png",
+		"img": "images/items/cards/silver/silver_card_wadcock.png",
 		"codes": "Silver Card - Wadcock"
 	},
 	{
 		"name": "Silver Card - Wendelin",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_wendelin.png",
+		"img": "images/items/cards/silver/silver_card_wendelin.png",
 		"codes": "Silver Card - Wendelin"
 	},
 	{
 		"name": "Silver Card - Wildsmith",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_wildsmith.png",
+		"img": "images/items/cards/silver/silver_card_wildsmith.png",
 		"codes": "Silver Card - Wildsmith"
 	},
 	{
 		"name": "Silver Card - Wright",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_wright.png",
+		"img": "images/items/cards/silver/silver_card_wright.png",
 		"codes": "Silver Card - Wright"
 	},
 	{
 		"name": "Silver Card - Youdle",
 		"type": "toggle",
-		"img": "images/items/cards/silver_card_youdle.png",
+		"img": "images/items/cards/silver/silver_card_youdle.png",
 		"codes": "Silver Card - Youdle"
 	},
 	{
 		"name": "Gold Card - Bott",
 		"type": "toggle",
-		"img": "images/items/cards/gold_card_bott.png",
+		"img": "images/items/cards/gold/gold_card_bott.png",
 		"codes": "Gold Card - Bott"
 	},
 	{
 		"name": "Gold Card - Dumbledore",
 		"type": "toggle",
-		"img": "images/items/cards/gold_card_dumbledore.png",
+		"img": "images/items/cards/gold/gold_card_dumbledore.png",
 		"codes": "Gold Card - Dumbledore"
 	},
 	{
 		"name": "Gold Card - Gryffindor",
 		"type": "toggle",
-		"img": "images/items/cards/gold_card_gryffindor.png",
+		"img": "images/items/cards/gold/gold_card_gryffindor.png",
 		"codes": "Gold Card - Gryffindor"
 	},
 	{
 		"name": "Gold Card - Herpo",
 		"type": "toggle",
-		"img": "images/items/cards/gold_card_herpo.png",
+		"img": "images/items/cards/gold/gold_card_herpo.png",
 		"codes": "Gold Card - Herpo"
 	},
 	{
 		"name": "Gold Card - Hufflepuff",
 		"type": "toggle",
-		"img": "images/items/cards/gold_card_hufflepuff.png",
+		"img": "images/items/cards/gold/gold_card_hufflepuff.png",
 		"codes": "Gold Card - Hufflepuff"
 	},
 	{
 		"name": "Gold Card - Knightley",
 		"type": "toggle",
-		"img": "images/items/cards/gold_card_knightley.png",
+		"img": "images/items/cards/gold/gold_card_knightley.png",
 		"codes": "Gold Card - Knightley"
 	},
 	{
 		"name": "Gold Card - Paracelsus",
 		"type": "toggle",
-		"img": "images/items/cards/gold_card_paracelsus.png",
+		"img": "images/items/cards/gold/gold_card_paracelsus.png",
 		"codes": "Gold Card - Paracelsus"
 	},
 	{
 		"name": "Gold Card - Pinkstone",
 		"type": "toggle",
-		"img": "images/items/cards/gold_card_pinkstone.png",
+		"img": "images/items/cards/gold/gold_card_pinkstone.png",
 		"codes": "Gold Card - Pinkstone"
 	},
 	{
 		"name": "Gold Card - Potter",
 		"type": "toggle",
-		"img": "images/items/cards/gold_card_potter.png",
+		"img": "images/items/cards/gold/gold_card_potter.png",
 		"codes": "Gold Card - Potter"
 	},
 	{
 		"name": "Gold Card - Ravenclaw",
 		"type": "toggle",
-		"img": "images/items/cards/gold_card_ravenclaw.png",
+		"img": "images/items/cards/gold/gold_card_ravenclaw.png",
 		"codes": "Gold Card - Ravenclaw"
 	},
 	{
 		"name": "Gold Card - Slytherin",
 		"type": "toggle",
-		"img": "images/items/cards/gold_card_slytherin.png",
+		"img": "images/items/cards/gold/gold_card_slytherin.png",
 		"codes": "Gold Card - Slytherin"
 	},
 	{
@@ -854,7 +854,7 @@
 	{
 		"name": "Bronze Cards",
 		"type": "consumable",
-		"img": "images/items/cards/bronze_cards.png",
+		"img": "images/items/cards/bronze/_count.png",
 		"codes": "bronze_cards",
 		"min_quantity": 0,
 		"max_quantity": 50,
@@ -864,7 +864,7 @@
 	{
 		"name": "Silver Cards",
 		"type": "consumable",
-		"img": "images/items/cards/silver_cards.png",
+		"img": "images/items/cards/silver/_count.png",
 		"codes": "silver_cards",
 		"min_quantity": 0,
 		"max_quantity": 40,
@@ -874,7 +874,7 @@
 	{
 		"name": "Gold Cards",
 		"type": "consumable",
-		"img": "images/items/cards/gold_cards.png",
+		"img": "images/items/cards/gold/_count.png",
 		"codes": "gold_cards",
 		"min_quantity": 0,
 		"max_quantity": 11,

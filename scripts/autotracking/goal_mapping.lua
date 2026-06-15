@@ -32,27 +32,28 @@ GOAL_LEVEL_CODES = {
 	"@Gryffindor Challenge/Complete/Complete",
 }
 
--- All ten duels colocate under a "Duels" group node, so the path's middle
--- segment is the group.
+-- All ten duels colocate under a "Duels" group node, which lives in the Entry
+-- Hall group (Duelling Club has no map of its own).
 GOAL_DUEL_CODES = {
-	"@Duelling Club/Duels/Duel Rank 1",
-	"@Duelling Club/Duels/Duel Rank 2",
-	"@Duelling Club/Duels/Duel Rank 3",
-	"@Duelling Club/Duels/Duel Rank 4",
-	"@Duelling Club/Duels/Duel Rank 5",
-	"@Duelling Club/Duels/Duel Rank 6",
-	"@Duelling Club/Duels/Duel Rank 7",
-	"@Duelling Club/Duels/Duel Rank 8",
-	"@Duelling Club/Duels/Duel Rank 9",
-	"@Duelling Club/Duels/Duel Rank 10",
+	"@Entry Hall/Duels/Duel Rank 1",
+	"@Entry Hall/Duels/Duel Rank 2",
+	"@Entry Hall/Duels/Duel Rank 3",
+	"@Entry Hall/Duels/Duel Rank 4",
+	"@Entry Hall/Duels/Duel Rank 5",
+	"@Entry Hall/Duels/Duel Rank 6",
+	"@Entry Hall/Duels/Duel Rank 7",
+	"@Entry Hall/Duels/Duel Rank 8",
+	"@Entry Hall/Duels/Duel Rank 9",
+	"@Entry Hall/Duels/Duel Rank 10",
 }
 
--- All six matches colocate under a "Quidditch Matches" group node.
+-- All six matches colocate under a "Quidditch Matches" group node, which lives
+-- in the Castle Exterior group (Quidditch has no map of its own).
 GOAL_QUID_CODES = {
-	"@Quidditch/Quidditch Matches/Match 1 (Hufflepuff)",
-	"@Quidditch/Quidditch Matches/Match 2 (Ravenclaw)",
-	"@Quidditch/Quidditch Matches/Match 3 (Slytherin)",
-	"@Quidditch/Quidditch Matches/Match 4 (Hufflepuff)",
-	"@Quidditch/Quidditch Matches/Match 5 (Ravenclaw)",
-	"@Quidditch/Quidditch Matches/Match 6 (Slytherin)",
+	"@Castle Exterior/Quidditch Matches/Match 1 (Hufflepuff)",
+	"@Castle Exterior/Quidditch Matches/Match 2 (Ravenclaw)",
+	"@Castle Exterior/Quidditch Matches/Match 3 (Slytherin)",
+	"@Castle Exterior/Quidditch Matches/Match 4 (Hufflepuff)",
+	"@Castle Exterior/Quidditch Matches/Match 5 (Ravenclaw)",
+	"@Castle Exterior/Quidditch Matches/Match 6 (Slytherin)",
 }
