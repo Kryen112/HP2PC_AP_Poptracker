@@ -2,7 +2,7 @@
 	{
 		"name": "Goal: Wizard cards",
 		"type": "toggle",
-		"img": "images/items/cards/gold/_count.png",
+		"img": "images/items/cards/cards_combined.png",
 		"codes": "goal_cards"
 	},
 	{
