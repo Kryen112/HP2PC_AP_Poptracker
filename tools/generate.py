@@ -298,19 +298,22 @@ def region_rule_fn_name(region: str) -> str:
 # Setting items injected on top of the AP items. Each one becomes a
 # progressive multi-stage item; stage codes are what slot_data mapping
 # resolves to, and what the logic helpers in logic.lua test via has().
+# "default" is the initial stage index shown before slot_data arrives (the
+# autotracker overwrites it on connect). Binary stages are [off=0, on=1];
+# game_mode is [vanilla=0, open_castle=1]. Omit to start at stage 0.
 SETTING_ITEMS = [
     {
-        "name": "Game mode", "key": "game_mode",
+        "name": "Game mode", "key": "game_mode", "default": 1,
         "stages": [
             ("vanilla", "Vanilla"),
             ("open_castle", "Open Castle"),
         ],
     },
-    {"name": "Vanilla gate levels", "key": "vanilla_gate_levels", "binary": True},
-    {"name": "Enable wizard cards", "key": "enable_wizard_cards", "binary": True},
-    {"name": "Enable secrets", "key": "enable_secrets", "binary": True},
+    {"name": "Vanilla gate levels", "key": "vanilla_gate_levels", "binary": True, "default": 1},
+    {"name": "Enable wizard cards", "key": "enable_wizard_cards", "binary": True, "default": 1},
+    {"name": "Enable secrets", "key": "enable_secrets", "binary": True, "default": 1},
     {"name": "Allow secrets progression", "key": "allow_secrets_progression", "binary": True},
-    {"name": "Enable challenge stars", "key": "enable_challenge_stars", "binary": True},
+    {"name": "Enable challenge stars", "key": "enable_challenge_stars", "binary": True, "default": 1},
     {"name": "Enable Quidditch upgrades", "key": "enable_quidditch_upgrades", "binary": True},
     {"name": "Enable Duelling", "key": "enable_duelling", "binary": True},
     {"name": "Enable Quidditch matches", "key": "enable_quidditch_matches", "binary": True},
@@ -406,14 +409,17 @@ def build_items_json(items: dict) -> list:
                 }
                 for stage_key, stage_label in s["stages"]
             ]
-        out.append({
+        entry = {
             "name": s["name"],
             "type": "progressive",
             "loop": False,
             "allow_disabled": False,
             "codes": s["key"],
             "stages": stages,
-        })
+        }
+        if s.get("default"):
+            entry["initial_stage_idx"] = s["default"]
+        out.append(entry)
     return out
 
 

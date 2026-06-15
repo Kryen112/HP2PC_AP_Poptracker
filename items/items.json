@@ -900,7 +900,8 @@
 				"codes": "game_mode,game_mode_open_castle",
 				"inherit_codes": false
 			}
-		]
+		],
+		"initial_stage_idx": 1
 	},
 	{
 		"name": "Vanilla gate levels",
@@ -921,7 +922,8 @@
 				"codes": "vanilla_gate_levels,vanilla_gate_levels_on",
 				"inherit_codes": false
 			}
-		]
+		],
+		"initial_stage_idx": 1
 	},
 	{
 		"name": "Enable wizard cards",
@@ -942,7 +944,8 @@
 				"codes": "enable_wizard_cards,enable_wizard_cards_on",
 				"inherit_codes": false
 			}
-		]
+		],
+		"initial_stage_idx": 1
 	},
 	{
 		"name": "Enable secrets",
@@ -963,7 +966,8 @@
 				"codes": "enable_secrets,enable_secrets_on",
 				"inherit_codes": false
 			}
-		]
+		],
+		"initial_stage_idx": 1
 	},
 	{
 		"name": "Allow secrets progression",
@@ -1005,7 +1009,8 @@
 				"codes": "enable_challenge_stars,enable_challenge_stars_on",
 				"inherit_codes": false
 			}
-		]
+		],
+		"initial_stage_idx": 1
 	},
 	{
 		"name": "Enable Quidditch upgrades",
