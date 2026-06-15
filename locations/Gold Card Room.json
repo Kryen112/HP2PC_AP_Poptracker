@@ -19,8 +19,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 0,
-						"y": 0
+						"x": 1046,
+						"y": 219
 					}
 				],
 				"visibility_rules": [
@@ -42,8 +42,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 0,
-						"y": 0
+						"x": 955,
+						"y": 220
 					}
 				],
 				"visibility_rules": [
@@ -65,8 +65,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 0,
-						"y": 0
+						"x": 769,
+						"y": 151
 					}
 				],
 				"visibility_rules": [
@@ -88,8 +88,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 0,
-						"y": 0
+						"x": 637,
+						"y": 169
 					}
 				],
 				"visibility_rules": [
@@ -111,8 +111,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 0,
-						"y": 0
+						"x": 499,
+						"y": 535
 					}
 				],
 				"visibility_rules": [
@@ -134,8 +134,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 0,
-						"y": 0
+						"x": 582,
+						"y": 493
 					}
 				],
 				"visibility_rules": [
@@ -157,8 +157,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 0,
-						"y": 0
+						"x": 635,
+						"y": 738
 					}
 				],
 				"visibility_rules": [
@@ -180,8 +180,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 0,
-						"y": 0
+						"x": 892,
+						"y": 788
 					}
 				],
 				"visibility_rules": [
@@ -203,8 +203,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 0,
-						"y": 0
+						"x": 1407,
+						"y": 945
 					}
 				],
 				"visibility_rules": [
@@ -226,8 +226,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 0,
-						"y": 0
+						"x": 1052,
+						"y": 894
 					}
 				],
 				"visibility_rules": [
@@ -249,8 +249,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 0,
-						"y": 0
+						"x": 500,
+						"y": 234
 					}
 				],
 				"visibility_rules": [
