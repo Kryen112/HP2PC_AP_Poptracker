@@ -773,11 +773,11 @@
 					},
 					{
 						"name": "Card Crumb",
-						"ref": "Rictusempra Challenge/Card Crumb/Card Crumb"
+						"ref": "Rictusempra Challenge/Secret 3 & Card Crumb/Card Crumb"
 					},
 					{
 						"name": "Card Duke",
-						"ref": "Rictusempra Challenge/Card Duke/Card Duke"
+						"ref": "Rictusempra Challenge/Secret 6 & Card Duke/Card Duke"
 					},
 					{
 						"name": "Card Graves",
@@ -821,7 +821,7 @@
 					},
 					{
 						"name": "Challenge Star 5",
-						"ref": "Rictusempra Challenge/Challenge Star 5/Challenge Star 5"
+						"ref": "Rictusempra Challenge/Secret 2 & Challenge Star 5/Challenge Star 5"
 					},
 					{
 						"name": "Challenge Star 6",
@@ -849,11 +849,11 @@
 					},
 					{
 						"name": "Secret 2",
-						"ref": "Rictusempra Challenge/Secret 2/Secret 2"
+						"ref": "Rictusempra Challenge/Secret 2 & Challenge Star 5/Secret 2"
 					},
 					{
 						"name": "Secret 3",
-						"ref": "Rictusempra Challenge/Secret 3/Secret 3"
+						"ref": "Rictusempra Challenge/Secret 3 & Card Crumb/Secret 3"
 					},
 					{
 						"name": "Secret 4",
@@ -865,7 +865,7 @@
 					},
 					{
 						"name": "Secret 6",
-						"ref": "Rictusempra Challenge/Secret 6/Secret 6"
+						"ref": "Rictusempra Challenge/Secret 6 & Card Duke/Secret 6"
 					},
 					{
 						"name": "Secret 7",
@@ -891,27 +891,27 @@
 					},
 					{
 						"name": "Card Furmage",
-						"ref": "Spongify Challenge/Card Furmage/Card Furmage"
+						"ref": "Spongify Challenge/Secret 6 & Card Furmage/Card Furmage"
 					},
 					{
 						"name": "Card Grunnion",
-						"ref": "Spongify Challenge/Card Grunnion/Card Grunnion"
+						"ref": "Spongify Challenge/Secret 10 & Card Grunnion/Card Grunnion"
 					},
 					{
 						"name": "Card Merlin",
-						"ref": "Spongify Challenge/Card Merlin/Card Merlin"
+						"ref": "Spongify Challenge/Secret 1 & Card Merlin/Card Merlin"
 					},
 					{
 						"name": "Card Po",
-						"ref": "Spongify Challenge/Card Po/Card Po"
+						"ref": "Spongify Challenge/Secret 5 & Card Po/Card Po"
 					},
 					{
 						"name": "Card Rastrick",
-						"ref": "Spongify Challenge/Card Rastrick/Card Rastrick"
+						"ref": "Spongify Challenge/Secret 2 & Card Rastrick/Card Rastrick"
 					},
 					{
 						"name": "Card Summerbee",
-						"ref": "Spongify Challenge/Card Summerbee/Card Summerbee"
+						"ref": "Spongify Challenge/Secret 8 & Card Summerbee/Card Summerbee"
 					},
 					{
 						"name": "Card Warbeck",
@@ -919,7 +919,7 @@
 					},
 					{
 						"name": "Card Woodcroft",
-						"ref": "Spongify Challenge/Card Woodcroft/Card Woodcroft"
+						"ref": "Spongify Challenge/Secret 15 & Card Woodcroft/Card Woodcroft"
 					},
 					{
 						"name": "Challenge Star 1",
@@ -931,7 +931,7 @@
 					},
 					{
 						"name": "Challenge Star 2",
-						"ref": "Spongify Challenge/Challenge Star 2/Challenge Star 2"
+						"ref": "Spongify Challenge/Secret 4 & Challenge Star 2/Challenge Star 2"
 					},
 					{
 						"name": "Challenge Star 3",
@@ -947,7 +947,7 @@
 					},
 					{
 						"name": "Challenge Star 6",
-						"ref": "Spongify Challenge/Challenge Star 6/Challenge Star 6"
+						"ref": "Spongify Challenge/Secret 9 & Challenge Star 6/Challenge Star 6"
 					},
 					{
 						"name": "Challenge Star 7",
@@ -967,11 +967,11 @@
 					},
 					{
 						"name": "Secret 1",
-						"ref": "Spongify Challenge/Secret 1/Secret 1"
+						"ref": "Spongify Challenge/Secret 1 & Card Merlin/Secret 1"
 					},
 					{
 						"name": "Secret 10",
-						"ref": "Spongify Challenge/Secret 10/Secret 10"
+						"ref": "Spongify Challenge/Secret 10 & Card Grunnion/Secret 10"
 					},
 					{
 						"name": "Secret 11",
@@ -991,7 +991,7 @@
 					},
 					{
 						"name": "Secret 15",
-						"ref": "Spongify Challenge/Secret 15/Secret 15"
+						"ref": "Spongify Challenge/Secret 15 & Card Woodcroft/Secret 15"
 					},
 					{
 						"name": "Secret 16",
@@ -999,7 +999,7 @@
 					},
 					{
 						"name": "Secret 2",
-						"ref": "Spongify Challenge/Secret 2/Secret 2"
+						"ref": "Spongify Challenge/Secret 2 & Card Rastrick/Secret 2"
 					},
 					{
 						"name": "Secret 3",
@@ -1007,15 +1007,15 @@
 					},
 					{
 						"name": "Secret 4",
-						"ref": "Spongify Challenge/Secret 4/Secret 4"
+						"ref": "Spongify Challenge/Secret 4 & Challenge Star 2/Secret 4"
 					},
 					{
 						"name": "Secret 5",
-						"ref": "Spongify Challenge/Secret 5/Secret 5"
+						"ref": "Spongify Challenge/Secret 5 & Card Po/Secret 5"
 					},
 					{
 						"name": "Secret 6",
-						"ref": "Spongify Challenge/Secret 6/Secret 6"
+						"ref": "Spongify Challenge/Secret 6 & Card Furmage/Secret 6"
 					},
 					{
 						"name": "Secret 7",
@@ -1023,11 +1023,11 @@
 					},
 					{
 						"name": "Secret 8",
-						"ref": "Spongify Challenge/Secret 8/Secret 8"
+						"ref": "Spongify Challenge/Secret 8 & Card Summerbee/Secret 8"
 					},
 					{
 						"name": "Secret 9",
-						"ref": "Spongify Challenge/Secret 9/Secret 9"
+						"ref": "Spongify Challenge/Secret 9 & Challenge Star 6/Secret 9"
 					}
 				],
 				"map_locations": [
@@ -1307,15 +1307,15 @@
 					},
 					{
 						"name": "Card Fay",
-						"ref": "Slytherin Common Room/Card Fay/Card Fay"
+						"ref": "Slytherin Common Room/Secret 7 & Card Fay/Card Fay"
 					},
 					{
 						"name": "Card Pilliwickle",
-						"ref": "Slytherin Common Room/Card Pilliwickle/Card Pilliwickle"
+						"ref": "Slytherin Common Room/Secret 5 & Card Pilliwickle/Card Pilliwickle"
 					},
 					{
 						"name": "Card Platt",
-						"ref": "Slytherin Common Room/Card Platt/Card Platt"
+						"ref": "Slytherin Common Room/Secret 6 & Card Platt/Card Platt"
 					},
 					{
 						"name": "Card Waffling",
@@ -1343,15 +1343,15 @@
 					},
 					{
 						"name": "Secret 5",
-						"ref": "Slytherin Common Room/Secret 5/Secret 5"
+						"ref": "Slytherin Common Room/Secret 5 & Card Pilliwickle/Secret 5"
 					},
 					{
 						"name": "Secret 6",
-						"ref": "Slytherin Common Room/Secret 6/Secret 6"
+						"ref": "Slytherin Common Room/Secret 6 & Card Platt/Secret 6"
 					},
 					{
 						"name": "Secret 7",
-						"ref": "Slytherin Common Room/Secret 7/Secret 7"
+						"ref": "Slytherin Common Room/Secret 7 & Card Fay/Secret 7"
 					},
 					{
 						"name": "Secret 8",

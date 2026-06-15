@@ -34,141 +34,195 @@
 				]
 			},
 			{
-				"name": "Card Furmage",
+				"name": "Secret 6 & Card Furmage",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Card_Furmage"
-				],
 				"sections": [
 					{
-						"name": "Card Furmage"
+						"name": "Secret 6",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Secret_6"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Furmage",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Card_Furmage"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
 						"x": 575,
-						"y": 576
+						"y": 599
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
-				"name": "Card Grunnion",
+				"name": "Secret 10 & Card Grunnion",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Card_Grunnion"
-				],
 				"sections": [
 					{
-						"name": "Card Grunnion"
+						"name": "Secret 10",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Secret_10"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Grunnion",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Card_Grunnion"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
-						"x": 1524,
+						"x": 1510,
 						"y": 356
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
-				"name": "Card Merlin",
+				"name": "Secret 1 & Card Merlin",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Card_Merlin"
-				],
 				"sections": [
 					{
-						"name": "Card Merlin"
+						"name": "Secret 1",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Secret_1"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Merlin",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Card_Merlin"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
 						"x": 195,
-						"y": 217
+						"y": 200
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
-				"name": "Card Po",
+				"name": "Secret 5 & Card Po",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Card_Po"
-				],
 				"sections": [
 					{
-						"name": "Card Po"
+						"name": "Secret 5",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Secret_5"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Po",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Card_Po"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
 						"x": 688,
-						"y": 427
+						"y": 416
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
-				"name": "Card Rastrick",
+				"name": "Secret 2 & Card Rastrick",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Card_Rastrick"
-				],
 				"sections": [
 					{
-						"name": "Card Rastrick"
+						"name": "Secret 2",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Secret_2"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Rastrick",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Card_Rastrick"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
-						"x": 132,
+						"x": 147,
 						"y": 201
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
-				"name": "Card Summerbee",
+				"name": "Secret 8 & Card Summerbee",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Card_Summerbee"
-				],
 				"sections": [
 					{
-						"name": "Card Summerbee"
+						"name": "Secret 8",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Secret_8"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Summerbee",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Card_Summerbee"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
 						"x": 473,
-						"y": 630
+						"y": 622
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
@@ -195,26 +249,35 @@
 				]
 			},
 			{
-				"name": "Card Woodcroft",
+				"name": "Secret 15 & Card Woodcroft",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Card_Woodcroft"
-				],
 				"sections": [
 					{
-						"name": "Card Woodcroft"
+						"name": "Secret 15",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Secret_15"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Woodcroft",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Card_Woodcroft"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
 						"x": 1152,
-						"y": 612
+						"y": 599
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
@@ -264,26 +327,35 @@
 				]
 			},
 			{
-				"name": "Challenge Star 2",
+				"name": "Secret 4 & Challenge Star 2",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Challenge_Star_2"
-				],
 				"sections": [
 					{
-						"name": "Challenge Star 2"
+						"name": "Secret 4",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Secret_4"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Challenge Star 2",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Challenge_Star_2"
+						],
+						"visibility_rules": [
+							"$visStars"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
-						"x": 554,
+						"x": 548,
 						"y": 180
 					}
-				],
-				"visibility_rules": [
-					"$visStars"
 				]
 			},
 			{
@@ -356,26 +428,35 @@
 				]
 			},
 			{
-				"name": "Challenge Star 6",
+				"name": "Secret 9 & Challenge Star 6",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Challenge_Star_6"
-				],
 				"sections": [
 					{
-						"name": "Challenge Star 6"
+						"name": "Secret 9",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Secret_9"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Challenge Star 6",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Challenge_Star_6"
+						],
+						"visibility_rules": [
+							"$visStars"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
-						"x": 288,
+						"x": 297,
 						"y": 396
 					}
-				],
-				"visibility_rules": [
-					"$visStars"
 				]
 			},
 			{
@@ -445,52 +526,6 @@
 				],
 				"visibility_rules": [
 					"$visStars"
-				]
-			},
-			{
-				"name": "Secret 1",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_1"
-				],
-				"sections": [
-					{
-						"name": "Secret 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 195,
-						"y": 183
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 10",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_10"
-				],
-				"sections": [
-					{
-						"name": "Secret 10"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 1496,
-						"y": 356
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
 				]
 			},
 			{
@@ -586,29 +621,6 @@
 				]
 			},
 			{
-				"name": "Secret 15",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_15"
-				],
-				"sections": [
-					{
-						"name": "Secret 15"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 1152,
-						"y": 585
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
 				"name": "Secret 16",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -625,29 +637,6 @@
 						"map": "Spongify Challenge",
 						"x": 1118,
 						"y": 659
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 2",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_2"
-				],
-				"sections": [
-					{
-						"name": "Secret 2"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 161,
-						"y": 201
 					}
 				],
 				"visibility_rules": [
@@ -678,75 +667,6 @@
 				]
 			},
 			{
-				"name": "Secret 4",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_4"
-				],
-				"sections": [
-					{
-						"name": "Secret 4"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 542,
-						"y": 180
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 5",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_5"
-				],
-				"sections": [
-					{
-						"name": "Secret 5"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 688,
-						"y": 404
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 6",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_6"
-				],
-				"sections": [
-					{
-						"name": "Secret 6"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 575,
-						"y": 622
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
 				"name": "Secret 7",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -763,52 +683,6 @@
 						"map": "Spongify Challenge",
 						"x": 444,
 						"y": 495
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 8",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_8"
-				],
-				"sections": [
-					{
-						"name": "Secret 8"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 473,
-						"y": 613
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 9",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_9"
-				],
-				"sections": [
-					{
-						"name": "Secret 9"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 306,
-						"y": 396
 					}
 				],
 				"visibility_rules": [

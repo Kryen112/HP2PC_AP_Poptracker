@@ -80,49 +80,67 @@
 				]
 			},
 			{
-				"name": "Card Crumb",
+				"name": "Secret 3 & Card Crumb",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Rictusempra_Challenge_Card_Crumb"
-				],
 				"sections": [
 					{
-						"name": "Card Crumb"
+						"name": "Secret 3",
+						"access_rules": [
+							"$rule_Rictusempra_Challenge_Secret_3"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Crumb",
+						"access_rules": [
+							"$rule_Rictusempra_Challenge_Card_Crumb"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Rictusempra Challenge",
-						"x": 367,
-						"y": 349
+						"x": 368,
+						"y": 358
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
-				"name": "Card Duke",
+				"name": "Secret 6 & Card Duke",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Rictusempra_Challenge_Card_Duke"
-				],
 				"sections": [
 					{
-						"name": "Card Duke"
+						"name": "Secret 6",
+						"access_rules": [
+							"$rule_Rictusempra_Challenge_Secret_6"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Duke",
+						"access_rules": [
+							"$rule_Rictusempra_Challenge_Card_Duke"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Rictusempra Challenge",
 						"x": 961,
-						"y": 540
+						"y": 533
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
@@ -356,26 +374,35 @@
 				]
 			},
 			{
-				"name": "Challenge Star 5",
+				"name": "Secret 2 & Challenge Star 5",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Rictusempra_Challenge_Challenge_Star_5"
-				],
 				"sections": [
 					{
-						"name": "Challenge Star 5"
+						"name": "Secret 2",
+						"access_rules": [
+							"$rule_Rictusempra_Challenge_Secret_2"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Challenge Star 5",
+						"access_rules": [
+							"$rule_Rictusempra_Challenge_Challenge_Star_5"
+						],
+						"visibility_rules": [
+							"$visStars"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Rictusempra Challenge",
 						"x": 147,
-						"y": 548
+						"y": 535
 					}
-				],
-				"visibility_rules": [
-					"$visStars"
 				]
 			},
 			{
@@ -494,52 +521,6 @@
 				]
 			},
 			{
-				"name": "Secret 2",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Rictusempra_Challenge_Secret_2"
-				],
-				"sections": [
-					{
-						"name": "Secret 2"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Rictusempra Challenge",
-						"x": 147,
-						"y": 522
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Rictusempra_Challenge_Secret_3"
-				],
-				"sections": [
-					{
-						"name": "Secret 3"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Rictusempra Challenge",
-						"x": 368,
-						"y": 366
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
 				"name": "Secret 4",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -579,29 +560,6 @@
 						"map": "Rictusempra Challenge",
 						"x": 497,
 						"y": 345
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 6",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Rictusempra_Challenge_Secret_6"
-				],
-				"sections": [
-					{
-						"name": "Secret 6"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Rictusempra Challenge",
-						"x": 961,
-						"y": 526
 					}
 				],
 				"visibility_rules": [

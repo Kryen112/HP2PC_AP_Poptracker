@@ -28,72 +28,99 @@
 				]
 			},
 			{
-				"name": "Card Fay",
+				"name": "Secret 7 & Card Fay",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Slytherin_Common_Room_Card_Fay"
-				],
 				"sections": [
 					{
-						"name": "Card Fay"
+						"name": "Secret 7",
+						"access_rules": [
+							"$rule_Slytherin_Common_Room_Secret_7"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Fay",
+						"access_rules": [
+							"$rule_Slytherin_Common_Room_Card_Fay"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Slytherin Common Room",
-						"x": 1294,
+						"x": 1305,
 						"y": 280
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
-				"name": "Card Pilliwickle",
+				"name": "Secret 5 & Card Pilliwickle",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Slytherin_Common_Room_Card_Pilliwickle"
-				],
 				"sections": [
 					{
-						"name": "Card Pilliwickle"
+						"name": "Secret 5",
+						"access_rules": [
+							"$rule_Slytherin_Common_Room_Secret_5"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Pilliwickle",
+						"access_rules": [
+							"$rule_Slytherin_Common_Room_Card_Pilliwickle"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Slytherin Common Room",
 						"x": 1258,
-						"y": 9
+						"y": 14
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
-				"name": "Card Platt",
+				"name": "Secret 6 & Card Platt",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Slytherin_Common_Room_Card_Platt"
-				],
 				"sections": [
 					{
-						"name": "Card Platt"
+						"name": "Secret 6",
+						"access_rules": [
+							"$rule_Slytherin_Common_Room_Secret_6"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Platt",
+						"access_rules": [
+							"$rule_Slytherin_Common_Room_Card_Platt"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Slytherin Common Room",
 						"x": 1286,
-						"y": 534
+						"y": 527
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
@@ -225,75 +252,6 @@
 						"map": "Slytherin Common Room",
 						"x": 1046,
 						"y": 205
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 5",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Slytherin_Common_Room_Secret_5"
-				],
-				"sections": [
-					{
-						"name": "Secret 5"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Slytherin Common Room",
-						"x": 1258,
-						"y": 19
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 6",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Slytherin_Common_Room_Secret_6"
-				],
-				"sections": [
-					{
-						"name": "Secret 6"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Slytherin Common Room",
-						"x": 1286,
-						"y": 520
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 7",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Slytherin_Common_Room_Secret_7"
-				],
-				"sections": [
-					{
-						"name": "Secret 7"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Slytherin Common Room",
-						"x": 1315,
-						"y": 280
 					}
 				],
 				"visibility_rules": [

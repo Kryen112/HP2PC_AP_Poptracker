@@ -80,26 +80,35 @@
 				]
 			},
 			{
-				"name": "Card Shimpling",
+				"name": "Secret 6 & Card Shimpling",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Card_Shimpling"
-				],
 				"sections": [
 					{
-						"name": "Card Shimpling"
+						"name": "Secret 6",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Secret_6"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Shimpling",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Card_Shimpling"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
 						"x": 1033,
-						"y": 97
+						"y": 120
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
@@ -457,10 +466,19 @@
 				]
 			},
 			{
-				"name": "Challenge Stars 6 & 7",
+				"name": "Secret 4 & Challenge Stars 6 & 7",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
+					{
+						"name": "Secret 4",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Secret_4"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
 					{
 						"name": "Challenge Star 6",
 						"access_rules": [
@@ -483,7 +501,7 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 846,
+						"x": 854,
 						"y": 230
 					}
 				]
@@ -650,29 +668,6 @@
 				]
 			},
 			{
-				"name": "Secret 4",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Secret_4"
-				],
-				"sections": [
-					{
-						"name": "Secret 4"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 862,
-						"y": 230
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
 				"name": "Secret 5",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -688,29 +683,6 @@
 					{
 						"map": "Diffindo Challenge",
 						"x": 847,
-						"y": 143
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 6",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Secret_6"
-				],
-				"sections": [
-					{
-						"name": "Secret 6"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 1033,
 						"y": 143
 					}
 				],

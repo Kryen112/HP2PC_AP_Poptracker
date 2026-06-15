@@ -566,7 +566,7 @@
 					},
 					{
 						"name": "Card Shimpling",
-						"ref": "Diffindo Challenge/Card Shimpling/Card Shimpling"
+						"ref": "Diffindo Challenge/Secret 6 & Card Shimpling/Card Shimpling"
 					},
 					{
 						"name": "Card Smethwyck",
@@ -630,11 +630,11 @@
 					},
 					{
 						"name": "Challenge Star 6",
-						"ref": "Diffindo Challenge/Challenge Stars 6 & 7/Challenge Star 6"
+						"ref": "Diffindo Challenge/Secret 4 & Challenge Stars 6 & 7/Challenge Star 6"
 					},
 					{
 						"name": "Challenge Star 7",
-						"ref": "Diffindo Challenge/Challenge Stars 6 & 7/Challenge Star 7"
+						"ref": "Diffindo Challenge/Secret 4 & Challenge Stars 6 & 7/Challenge Star 7"
 					},
 					{
 						"name": "Challenge Star 8",
@@ -670,7 +670,7 @@
 					},
 					{
 						"name": "Secret 4",
-						"ref": "Diffindo Challenge/Secret 4/Secret 4"
+						"ref": "Diffindo Challenge/Secret 4 & Challenge Stars 6 & 7/Secret 4"
 					},
 					{
 						"name": "Secret 5",
@@ -678,7 +678,7 @@
 					},
 					{
 						"name": "Secret 6",
-						"ref": "Diffindo Challenge/Secret 6/Secret 6"
+						"ref": "Diffindo Challenge/Secret 6 & Card Shimpling/Secret 6"
 					},
 					{
 						"name": "Secret 7",
