@@ -13,6 +13,18 @@ Full publish (bumps version, builds, releases, commits, pushes):
 --publish performs, in order: build zip + hash, update versions.json, commit
 manifest.json + versions.json, push, then `gh release create v<ver>` with the
 zip as an asset (so download_url resolves). Requires git and the gh CLI.
+
+Manual release (no gh CLI) -- do the GitHub release by hand:
+    1. py -3.12 tools/release.py --version <ver> --changelog "..."
+       (bumps manifest.json, builds dist/HP2PC_AP_Poptracker_v<ver>.zip, and
+       writes versions.json -- no git, no network)
+    2. git commit manifest.json versions.json -m "Release v<ver>"
+       git push
+    3. On GitHub, create a release at a new tag v<ver> targeting main, and
+       upload the built zip as the release asset. versions.json already points
+       download_url at releases/download/v<ver>/<zip>, so it resolves once the
+       asset is uploaded:
+         https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/new
 """
 from __future__ import annotations
 
@@ -139,9 +151,15 @@ def main() -> None:
         publish(version, zip_path, args.changelog)
         print(f"\nPublished v{version}.")
     else:
-        print(f"\nDry run (no --publish). To publish v{version}:")
-        print("  re-run with --publish (commits manifest+versions.json, pushes,")
-        print(f"  and creates GitHub release {('v' + version)!r} with the zip asset).")
+        tag = f"v{version}"
+        print(f"\nDry run (no --publish). Two ways to release {tag}:")
+        print("  A) re-run with --publish   (needs git + the gh CLI)")
+        print("  B) manual (no gh):")
+        print(f'       git commit manifest.json versions.json -m "Release {tag}"')
+        print("       git push")
+        print(f"       then create a GitHub release at a new tag {tag} (target main)")
+        print(f"       and upload the built zip ({zip_path.name}) as the asset:")
+        print(f"         https://github.com/{REPO}/releases/new")
 
 
 if __name__ == "__main__":
