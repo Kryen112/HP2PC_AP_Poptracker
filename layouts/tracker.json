@@ -12,11 +12,20 @@
 					"content": [
 						{
 							"type": "group",
-							"header": "Items and settings",
+							"header": "Items",
 							"dock": "top",
 							"content": {
 								"type": "layout",
-								"key": "items+settings"
+								"key": "items"
+							}
+						},
+						{
+							"type": "group",
+							"header": "Settings",
+							"dock": "top",
+							"content": {
+								"type": "layout",
+								"key": "settings"
 							}
 						},
 						{
