@@ -182,9 +182,9 @@ CLASS_TO_IMG_DIR = {
     "spell": "images/items/spells",
     "key": "images/items/keys",
     "equip": "images/items/equipment",
-    "card_bronze": "images/items/cards/bronze",
-    "card_silver": "images/items/cards/silver",
-    "card_gold": "images/items/cards/gold",
+    "card_bronze": "images/items/cards",
+    "card_silver": "images/items/cards",
+    "card_gold": "images/items/cards",
     "filler": "images/items/filler",
     "trap": "images/items/traps",
 }
@@ -426,7 +426,7 @@ def build_items_json(items: dict) -> list:
         out.append({
             "name": label,
             "type": "consumable",
-            "img": f"{CLASS_TO_IMG_DIR[kind]}/_count.png",
+            "img": f"{CLASS_TO_IMG_DIR[kind]}/{code}.png",
             "codes": code,
             "min_quantity": 0,
             "max_quantity": total,
