@@ -1,19 +1,17 @@
-# Harry Potter and the Chamber of Secrets (PC) Archipelago tracker
+# Harry Potter and the Chamber of Secrets (PC) Archipelago Tracker
 
-PopTracker pack for the HP2PC Archipelago world, with autotracking via the AP server connection.
+Harry Potter and the Chamber of Secrets (PC) Archipelago tracker pack for [PopTracker](https://github.com/black-sliver/PopTracker/) with Autotracking.
 
-Supports both `vanilla` and `open_castle` game modes; mode and category toggles are read from `slot_data` on connect, so the tracker reconfigures itself per seed.
+Requires PopTracker v0.31.0 or higher.
 
-## Status
+- Autotracks items, checks, and goal progress live over the AP server connection. Automatically follows Harry around the castle, showing the map he is currently in.
+- Per-floor maps (castle hubs, levels, and spell challenges) with a pin for every check.
+- Supports both `vanilla` and `open_castle` game modes. The mode and every category toggle (wizard cards, secrets, challenge stars, Quidditch upgrades/matches, duelling, spell-challenge times, tradersanity, traps, ring/death link) are read from `slot_data` on connect, so the tracker reconfigures itself per seed.
 
-Schema and logic are in place. Map images and pin coordinates are still being filled in.
+## Development
 
-## Regenerating
+The bulk pack data — `items/items.json`, `locations/<Region>.json`, the `scripts/autotracking/*_mapping.lua` tables, and `scripts/logic/access_rules.lua` — is generated from the HP2PC_AP world definition rather than edited by hand. After the apworld changes, regenerate from the pack root (with the `HP2PC_AP/apworld` package available at `../HP2PC_AP`):
 
-The bulk JSON/Lua (items, locations, autotracking mappings, access rules) is generated from the HP2PC_AP world definition. After the apworld changes, regenerate with:
+    py -3.12 tools/generate.py
 
-```
-py -3.12 tools/generate.py
-```
-
-It expects to be run from this folder with the `HP2PC_AP/apworld` package importable via `../HP2PC_AP`.
+It carries hand-placed map-pin coordinates forward across runs and leaves the hand-tuned `maps/maps.json` alone. Item icons are built from the game's own textures with `tools/make_icons.py`, and `tools/release.py` packages and publishes a release (see its module docstring).
