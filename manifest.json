@@ -3,7 +3,7 @@
 	"game_name": "Harry Potter 2 PC",
 	"platform": "pc",
 	"package_uid": "ap_harry_potter_2_pc",
-	"package_version": "1.0.0",
+	"package_version": "1.0.1",
 	"min_poptracker_version": "0.31.0",
 	"variants": {
 		"standard": {
