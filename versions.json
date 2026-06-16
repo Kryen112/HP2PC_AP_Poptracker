@@ -1,0 +1,12 @@
+{
+	"versions": [
+		{
+			"package_version": "1.0.0",
+			"download_url": "https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/download/v1.0.0/HP2PC_AP_Poptracker_v1.0.0.zip",
+			"sha256": "d9f5b00467f391d1e97ea134a5f5d1cac63e2b253ee70c7f485849d023553bb8",
+			"changelog": [
+				"First release"
+			]
+		}
+	]
+}
