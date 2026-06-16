@@ -118,6 +118,9 @@ COLOCATION = {
         ("Secret 7 & Card Fay", ["Secret 7", "Card Fay"]),
         ("Secret 6 & Card Platt", ["Secret 6", "Card Platt"]),
     ],
+    "ForbiddenForest": [
+        ("Secret 4 & Card Scamander", ["Secret 4", "Card Scamander"]),
+    ],
     "RictusempraChallenge": [
         ("Completion", ["Complete", "Beat Par Time"]),
         ("Secret 2 & Challenge Star 5", ["Secret 2", "Challenge Star 5"]),

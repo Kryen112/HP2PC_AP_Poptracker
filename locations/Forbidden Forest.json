@@ -19,8 +19,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 489,
+						"y": 340
 					}
 				],
 				"visibility_rules": [
@@ -42,8 +42,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 901,
+						"y": 269
 					}
 				],
 				"visibility_rules": [
@@ -65,8 +65,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 937,
+						"y": 62
 					}
 				],
 				"visibility_rules": [
@@ -88,8 +88,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 657,
+						"y": 253
 					}
 				],
 				"visibility_rules": [
@@ -97,26 +97,35 @@
 				]
 			},
 			{
-				"name": "Card Scamander",
+				"name": "Secret 4 & Card Scamander",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Forbidden_Forest_Card_Scamander"
-				],
 				"sections": [
 					{
-						"name": "Card Scamander"
+						"name": "Secret 4",
+						"access_rules": [
+							"$rule_Forbidden_Forest_Secret_4"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					},
+					{
+						"name": "Card Scamander",
+						"access_rules": [
+							"$rule_Forbidden_Forest_Card_Scamander"
+						],
+						"visibility_rules": [
+							"$visCards"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 1721,
+						"y": 476
 					}
-				],
-				"visibility_rules": [
-					"$visCards"
 				]
 			},
 			{
@@ -134,8 +143,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 1429,
+						"y": 182
 					}
 				],
 				"visibility_rules": [
@@ -157,8 +166,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 1722,
+						"y": 675
 					}
 				]
 			},
@@ -177,8 +186,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 489,
+						"y": 237
 					}
 				],
 				"visibility_rules": [
@@ -200,8 +209,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 937,
+						"y": 142
 					}
 				],
 				"visibility_rules": [
@@ -223,31 +232,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 4",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Forbidden_Forest_Secret_4"
-				],
-				"sections": [
-					{
-						"name": "Secret 4"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 1211,
+						"y": 276
 					}
 				],
 				"visibility_rules": [

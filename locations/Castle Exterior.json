@@ -724,7 +724,7 @@
 					},
 					{
 						"name": "Card Scamander",
-						"ref": "Forbidden Forest/Card Scamander/Card Scamander"
+						"ref": "Forbidden Forest/Secret 4 & Card Scamander/Card Scamander"
 					},
 					{
 						"name": "Card Wellbeloved",
@@ -748,7 +748,7 @@
 					},
 					{
 						"name": "Secret 4",
-						"ref": "Forbidden Forest/Secret 4/Secret 4"
+						"ref": "Forbidden Forest/Secret 4 & Card Scamander/Secret 4"
 					}
 				],
 				"map_locations": [
