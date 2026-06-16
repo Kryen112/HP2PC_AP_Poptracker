@@ -10,10 +10,37 @@
 				"item_margin": "1,1",
 				"item_size": 35,
 				"rows": [
-					[ "Lumos", "Flipendo", "Alohomora", "Rictusempra", "Skurge", "Diffindo", "Spongify" ],
-					[ "Chamber of Secrets Key", "Bicorn Level Key", "Boomslang Level Key", "Goyle Level Key", "Slytherin Common Room Key", "Forbidden Forest Key", "Whomping Willow Key" ],
-					[ "Duelling Key", "Quidditch Key", "Rictusempra Challenge Key", "Skurge Challenge Key", "Diffindo Challenge Key", "Spongify Challenge Key", "Gryffindor Challenge Key" ],
-					[ "Nimbus 2001", "Quidditch Armour" ]
+					[
+						"Lumos",
+						"Flipendo",
+						"Alohomora",
+						"Rictusempra",
+						"Skurge",
+						"Diffindo",
+						"Spongify"
+					],
+					[
+						"Chamber of Secrets Key",
+						"Bicorn Level Key",
+						"Boomslang Level Key",
+						"Goyle Level Key",
+						"Slytherin Common Room Key",
+						"Forbidden Forest Key",
+						"Whomping Willow Key"
+					],
+					[
+						"Duelling Key",
+						"Quidditch Key",
+						"Rictusempra Challenge Key",
+						"Skurge Challenge Key",
+						"Diffindo Challenge Key",
+						"Spongify Challenge Key",
+						"Gryffindor Challenge Key"
+					],
+					[
+						"Nimbus 2001",
+						"Quidditch Armour"
+					]
 				]
 			}
 		]
