@@ -21,7 +21,7 @@
 						},
 						{
 							"type": "group",
-							"header": "Great Hall goal",
+							"header": "Great Hall goal (Open castle only)",
 							"dock": "top",
 							"content": {
 								"type": "layout",

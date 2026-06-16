@@ -20,13 +20,13 @@
 	{
 		"name": "Goal: Duels won",
 		"type": "toggle",
-		"img": "images/items/keys/duelling_key.png",
+		"img": "images/items/settings/enable_duelling_on.png",
 		"codes": "goal_duels"
 	},
 	{
 		"name": "Goal: Quidditch matches won",
 		"type": "toggle",
-		"img": "images/items/keys/quidditch_key.png",
+		"img": "images/items/settings/enable_quidditch_matches_on.png",
 		"codes": "goal_quidditch"
 	},
 	{
