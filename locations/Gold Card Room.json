@@ -19,8 +19,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 1046,
-						"y": 219
+						"x": 603,
+						"y": 201
 					}
 				],
 				"visibility_rules": [
@@ -42,8 +42,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 955,
-						"y": 220
+						"x": 512,
+						"y": 202
 					}
 				],
 				"visibility_rules": [
@@ -65,8 +65,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 769,
-						"y": 151
+						"x": 325,
+						"y": 134
 					}
 				],
 				"visibility_rules": [
@@ -88,8 +88,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 637,
-						"y": 169
+						"x": 193,
+						"y": 152
 					}
 				],
 				"visibility_rules": [
@@ -111,8 +111,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 499,
-						"y": 535
+						"x": 55,
+						"y": 518
 					}
 				],
 				"visibility_rules": [
@@ -134,8 +134,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 582,
-						"y": 493
+						"x": 138,
+						"y": 476
 					}
 				],
 				"visibility_rules": [
@@ -157,8 +157,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 635,
-						"y": 738
+						"x": 191,
+						"y": 721
 					}
 				],
 				"visibility_rules": [
@@ -180,8 +180,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 892,
-						"y": 788
+						"x": 448,
+						"y": 771
 					}
 				],
 				"visibility_rules": [
@@ -203,8 +203,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 1407,
-						"y": 945
+						"x": 963,
+						"y": 928
 					}
 				],
 				"visibility_rules": [
@@ -226,8 +226,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 1052,
-						"y": 894
+						"x": 608,
+						"y": 877
 					}
 				],
 				"visibility_rules": [
@@ -249,8 +249,8 @@
 				"map_locations": [
 					{
 						"map": "Gold Card Room",
-						"x": 500,
-						"y": 234
+						"x": 56,
+						"y": 217
 					}
 				],
 				"visibility_rules": [
