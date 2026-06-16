@@ -1311,63 +1311,63 @@ function rule_Entry_Hall_Secret_12()
 		return (has("Lumos") and has("Flipendo")) and has("Spongify")
 	end
 end
-function rule_Grand_Staircase_Secret_13()
+function rule_Grand_Staircase_Secret_1()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Grand_Staircase_Secret_14()
+function rule_Grand_Staircase_Secret_2()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Grand_Staircase_Secret_15()
+function rule_Grand_Staircase_Secret_3()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Grand_Staircase_Secret_16()
+function rule_Grand_Staircase_Secret_4()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
 	end
 end
-function rule_Grand_Staircase_Secret_17()
+function rule_Grand_Staircase_Secret_5()
 	if isOpenCastle() then
 		return true and has("Spongify")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Spongify")
 	end
 end
-function rule_Grand_Staircase_Secret_18()
+function rule_Grand_Staircase_Secret_6()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Skurge") and has("Diffindo") and has("Spongify"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Diffindo") and has("Spongify"))
 	end
 end
-function rule_Grand_Staircase_Secret_19()
+function rule_Grand_Staircase_Secret_7()
 	if isOpenCastle() then
 		return true
 	else
 		return (has("Lumos") and has("Flipendo"))
 	end
 end
-function rule_Grand_Staircase_Secret_20()
+function rule_Grand_Staircase_Secret_8()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Grand_Staircase_Secret_21()
+function rule_Grand_Staircase_Secret_9()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else

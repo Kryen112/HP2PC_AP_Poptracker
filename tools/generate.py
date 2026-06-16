@@ -97,9 +97,9 @@ MENU_ROOMS = {
 # must use the group as the middle segment.
 COLOCATION = {
     "GrandStaircase": [
-        ("Secret 16 & Card Maeve", ["Secret 16", "Card Maeve"]),
-        ("Secret 17 & Card Oldridge", ["Secret 17", "Card Oldridge"]),
-        ("Secret 18 & Card Lufkin", ["Secret 18", "Card Lufkin"]),
+        ("Secret 4 & Card Maeve", ["Secret 4", "Card Maeve"]),
+        ("Secret 5 & Card Oldridge", ["Secret 5", "Card Oldridge"]),
+        ("Secret 6 & Card Lufkin", ["Secret 6", "Card Lufkin"]),
     ],
     "EntryHall": [
         ("Secret 3 & Card Wendelin", ["Secret 3", "Card Wendelin"]),
