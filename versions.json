@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.2",
+			"download_url": "https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/download/v1.0.2/HP2PC_AP_Poptracker_v1.0.2.zip",
+			"sha256": "a18363f4291c77de26221e71adc93cee8599a7915e444aeee756701db01a54ab",
+			"changelog": [
+				"Updated Grand staircase map and pins"
+			]
+		},
+		{
 			"package_version": "1.0.1",
 			"download_url": "https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/download/v1.0.1/HP2PC_AP_Poptracker_v1.0.1.zip",
 			"sha256": "190767509192803abed608d96f83594b21641afcf54db651ca6223de89da91ac",
