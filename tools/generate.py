@@ -287,6 +287,19 @@ def load_rule_dicts(path: Path) -> dict[str, dict[str, ast.AST]]:
 # atLeast() helper from logic.lua.
 LIST_CONSTANTS: dict[str, list] = {}
 
+# Card-tier list constants → their items.json consumable counter code. A
+# has_from_list over a whole card tier compiles to a counter test
+# (count("silver_cards") >= n) rather than atLeast over the individual codes,
+# so the items-menu counter is the live control for those rules (toggling it
+# re-evaluates the gated checks) and it mirrors both the apworld threshold and
+# the in-game count-based door. The per-card codes are still set by the
+# autotracker; they're just not what the rule reads.
+CARD_LIST_TO_COUNTER = {
+    "_BRONZE_CARD_NAMES": "bronze_cards",
+    "_SILVER_CARD_NAMES": "silver_cards",
+    "_GOLD_CARD_NAMES": "gold_cards",
+}
+
 
 def lambda_to_lua(node) -> str:
     if isinstance(node, ast.Constant):
@@ -306,18 +319,26 @@ def lambda_to_lua(node) -> str:
                 and len(node.args) >= 1 and isinstance(node.args[0], ast.Constant)):
             item = node.args[0].value
             return f'has("{_lua_escape(item)}")'
-        # state.has_from_list_unique(_LIST, player, n) -> atLeast(n, has("a"), ...)
+        # state.has_from_list_unique(_LIST, player, n)
+        # Card-tier lists compile to a counter test so the items-menu counter is
+        # the live control: count("silver_cards") >= n. Other lists fall back to
+        # atLeast over bare codes (any/all/atLeast all take codes and call has()
+        # internally, so pass the codes, not has() results).
         if (isinstance(node.func, ast.Attribute)
                 and node.func.attr in ("has_from_list_unique", "has_from_list")
                 and len(node.args) >= 3
                 and isinstance(node.args[0], ast.Name)
                 and isinstance(node.args[2], ast.Constant)):
-            names = LIST_CONSTANTS.get(node.args[0].id)
-            if names is None:
-                raise ValueError(f"unknown item-list constant: {node.args[0].id}")
+            list_name = node.args[0].id
             n = node.args[2].value
-            haves = ", ".join(f'has("{_lua_escape(name)}")' for name in names)
-            return f"atLeast({n}, {haves})"
+            counter = CARD_LIST_TO_COUNTER.get(list_name)
+            if counter is not None:
+                return f'(count("{counter}") >= {n})'
+            names = LIST_CONSTANTS.get(list_name)
+            if names is None:
+                raise ValueError(f"unknown item-list constant: {list_name}")
+            codes = ", ".join(f'"{_lua_escape(name)}"' for name in names)
+            return f"atLeast({n}, {codes})"
     raise ValueError(f"unsupported expr node: {ast.dump(node)}")
 
 
