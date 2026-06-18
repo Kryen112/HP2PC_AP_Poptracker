@@ -387,6 +387,12 @@ SETTING_ITEMS = [
     {"name": "Enable wizard cards", "key": "enable_wizard_cards", "binary": True, "default": 1},
     {"name": "Enable secrets", "key": "enable_secrets", "binary": True, "default": 1},
     {"name": "Allow secrets progression", "key": "allow_secrets_progression", "binary": True},
+    # Logic-flag toggles. `logic_code` is the bare rule token (state.has("X") ->
+    # has("X") in access_rules.lua); it rides only the ON stage's codes so a
+    # `... | Running` / `... | Glitched` clause resolves true exactly when the
+    # toggle is on. Default off (no `default`), matching the apworld default.
+    {"name": "Allow running logic", "key": "allow_running_logic", "binary": True, "logic_code": "Running"},
+    {"name": "Allow glitched logic", "key": "allow_glitched_logic", "binary": True, "logic_code": "Glitched"},
     {"name": "Enable challenge stars", "key": "enable_challenge_stars", "binary": True, "default": 1},
     {"name": "Enable Quidditch upgrades", "key": "enable_quidditch_upgrades", "binary": True},
     {"name": "Enable Duelling", "key": "enable_duelling", "binary": True},
@@ -459,6 +465,12 @@ def build_items_json(items: dict) -> list:
         })
     for s in SETTING_ITEMS:
         if s.get("binary"):
+            # A logic-flag setting also carries its rule token on the ON stage
+            # only, so has("<logic_code>") in access_rules.lua is true exactly
+            # when the toggle is on.
+            on_codes = f"{s['key']},{s['key']}_on"
+            if s.get("logic_code"):
+                on_codes += f",{s['logic_code']}"
             stages = [
                 {
                     "img": f"images/items/settings/{s['key']}_off.png",
@@ -469,7 +481,7 @@ def build_items_json(items: dict) -> list:
                 {
                     "img": f"images/items/settings/{s['key']}_on.png",
                     "name": f"{s['name']}: on",
-                    "codes": f"{s['key']},{s['key']}_on",
+                    "codes": on_codes,
                     "inherit_codes": False,
                 },
             ]
