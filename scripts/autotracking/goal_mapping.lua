@@ -14,7 +14,7 @@ GOAL_SPELL_CODES = {
 
 GOAL_CARD_COUNTERS = { "bronze_cards", "silver_cards", "gold_cards" }
 
--- The 12 level objectives (apworld LevelCompletions, ids 5760700..5760711).
+-- The 13 level objectives (apworld LevelCompletions, ids 5760700..5760712).
 GOAL_LEVEL_CODES = {
 	"@Boomslang Level/Complete/Complete",
 	"@Bicorn Level/Complete/Complete",
@@ -30,6 +30,8 @@ GOAL_LEVEL_CODES = {
 	"@Diffindo Challenge/Completion/Complete",
 	"@Spongify Challenge/Completion/Complete",
 	"@Gryffindor Challenge/Complete/Complete",
+	-- Gold Card Room: reaching the far-end trigger (needs >= 20 silver cards).
+	"@Gold Card Room/Complete/Complete",
 }
 
 -- All ten duels colocate under a "Duels" group node, which lives in the Entry

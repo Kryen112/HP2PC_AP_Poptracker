@@ -310,6 +310,7 @@ LOCATION_MAPPING = {
 	[5760709] = {"@Diffindo Challenge/Completion/Complete"},
 	[5760710] = {"@Spongify Challenge/Completion/Complete"},
 	[5760711] = {"@Gryffindor Challenge/Complete/Complete"},
+	[5760712] = {"@Gold Card Room/Complete/Complete"},
 	[5760800] = {"@Entry Hall/Card Vendor 1/Card Vendor 1"},
 	[5760801] = {"@Entry Hall/Card Vendor 2/Card Vendor 2"},
 	[5760802] = {"@Entry Hall/Card Vendor 3/Card Vendor 3"},
