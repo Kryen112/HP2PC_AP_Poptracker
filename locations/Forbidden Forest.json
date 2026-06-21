@@ -152,6 +152,46 @@
 				]
 			},
 			{
+				"name": "Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Chest_2"
+				],
+				"sections": [
+					{
+						"name": "Chest 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Complete",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -168,6 +208,46 @@
 						"map": "Forbidden Forest",
 						"x": 1722,
 						"y": 675
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Mucus_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Mucus_Spawner_2"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
 					}
 				]
 			},
@@ -238,6 +318,26 @@
 				],
 				"visibility_rules": [
 					"$visSecrets"
+				]
+			},
+			{
+				"name": "Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 0,
+						"y": 0
+					}
 				]
 			}
 		]

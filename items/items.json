@@ -864,12 +864,6 @@
 		"codes": "Levicorpus Trap"
 	},
 	{
-		"name": "Jelly-Legs Jinx Trap",
-		"type": "toggle",
-		"img": "images/items/traps/jelly_legs_jinx_trap.png",
-		"codes": "Jelly-Legs Jinx Trap"
-	},
-	{
 		"name": "Bronze Cards",
 		"type": "consumable",
 		"img": "images/items/cards/bronze_cards.png",
@@ -1004,6 +998,48 @@
 				"img": "images/items/settings/allow_secrets_progression_on.png",
 				"name": "Allow secrets progression: on",
 				"codes": "allow_secrets_progression,allow_secrets_progression_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Allow running logic",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "allow_running_logic",
+		"stages": [
+			{
+				"img": "images/items/settings/allow_running_logic_off.png",
+				"name": "Allow running logic: off",
+				"codes": "allow_running_logic,allow_running_logic_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/allow_running_logic_on.png",
+				"name": "Allow running logic: on",
+				"codes": "allow_running_logic,allow_running_logic_on,Running",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Allow glitched logic",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "allow_glitched_logic",
+		"stages": [
+			{
+				"img": "images/items/settings/allow_glitched_logic_off.png",
+				"name": "Allow glitched logic: off",
+				"codes": "allow_glitched_logic,allow_glitched_logic_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/allow_glitched_logic_on.png",
+				"name": "Allow glitched logic: on",
+				"codes": "allow_glitched_logic,allow_glitched_logic_on,Glitched",
 				"inherit_codes": false
 			}
 		]

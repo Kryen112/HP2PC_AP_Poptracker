@@ -303,6 +303,186 @@
 				]
 			},
 			{
+				"name": "Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Chest_2"
+				],
+				"sections": [
+					{
+						"name": "Chest 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Chest_3"
+				],
+				"sections": [
+					{
+						"name": "Chest 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Chest_4"
+				],
+				"sections": [
+					{
+						"name": "Chest 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Chest_5"
+				],
+				"sections": [
+					{
+						"name": "Chest 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Chest_6"
+				],
+				"sections": [
+					{
+						"name": "Chest 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Chest_7"
+				],
+				"sections": [
+					{
+						"name": "Chest 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Chest_8"
+				],
+				"sections": [
+					{
+						"name": "Chest 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 9",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Chest_9"
+				],
+				"sections": [
+					{
+						"name": "Chest 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Ingredient Vendor 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -589,6 +769,34 @@
 						"ref": "Diffindo Challenge/Card Withers/Card Withers"
 					},
 					{
+						"name": "Cauldron 1",
+						"ref": "Diffindo Challenge/Cauldron 1/Cauldron 1"
+					},
+					{
+						"name": "Cauldron 2",
+						"ref": "Diffindo Challenge/Cauldron 2/Cauldron 2"
+					},
+					{
+						"name": "Cauldron 3",
+						"ref": "Diffindo Challenge/Cauldron 3/Cauldron 3"
+					},
+					{
+						"name": "Cauldron 4",
+						"ref": "Diffindo Challenge/Cauldron 4/Cauldron 4"
+					},
+					{
+						"name": "Cauldron 5",
+						"ref": "Diffindo Challenge/Cauldron 5/Cauldron 5"
+					},
+					{
+						"name": "Cauldron 6",
+						"ref": "Diffindo Challenge/Cauldron 6/Cauldron 6"
+					},
+					{
+						"name": "Cauldron 7",
+						"ref": "Diffindo Challenge/Cauldron 7/Cauldron 7"
+					},
+					{
 						"name": "Challenge Star 1",
 						"ref": "Diffindo Challenge/Challenge Star 1/Challenge Star 1"
 					},
@@ -645,8 +853,120 @@
 						"ref": "Diffindo Challenge/Challenge Star 9/Challenge Star 9"
 					},
 					{
+						"name": "Chest 1",
+						"ref": "Diffindo Challenge/Chest 1/Chest 1"
+					},
+					{
+						"name": "Chest 2",
+						"ref": "Diffindo Challenge/Chest 2/Chest 2"
+					},
+					{
+						"name": "Chest 3",
+						"ref": "Diffindo Challenge/Chest 3/Chest 3"
+					},
+					{
+						"name": "Chest 4",
+						"ref": "Diffindo Challenge/Chest 4/Chest 4"
+					},
+					{
+						"name": "Chest 5",
+						"ref": "Diffindo Challenge/Chest 5/Chest 5"
+					},
+					{
 						"name": "Complete",
 						"ref": "Diffindo Challenge/Completion/Complete"
+					},
+					{
+						"name": "Jewel Box 1",
+						"ref": "Diffindo Challenge/Jewel Box 1/Jewel Box 1"
+					},
+					{
+						"name": "Knight 1",
+						"ref": "Diffindo Challenge/Knight 1/Knight 1"
+					},
+					{
+						"name": "Knight 2",
+						"ref": "Diffindo Challenge/Knight 2/Knight 2"
+					},
+					{
+						"name": "Mucus Spawner 1",
+						"ref": "Diffindo Challenge/Mucus Spawner 1/Mucus Spawner 1"
+					},
+					{
+						"name": "Mucus Spawner 2",
+						"ref": "Diffindo Challenge/Mucus Spawner 2/Mucus Spawner 2"
+					},
+					{
+						"name": "Mucus Spawner 3",
+						"ref": "Diffindo Challenge/Mucus Spawner 3/Mucus Spawner 3"
+					},
+					{
+						"name": "Mucus Spawner 4",
+						"ref": "Diffindo Challenge/Mucus Spawner 4/Mucus Spawner 4"
+					},
+					{
+						"name": "Oil Can 1",
+						"ref": "Diffindo Challenge/Oil Can 1/Oil Can 1"
+					},
+					{
+						"name": "Oil Can 2",
+						"ref": "Diffindo Challenge/Oil Can 2/Oil Can 2"
+					},
+					{
+						"name": "Oil Can 3",
+						"ref": "Diffindo Challenge/Oil Can 3/Oil Can 3"
+					},
+					{
+						"name": "Oil Can 4",
+						"ref": "Diffindo Challenge/Oil Can 4/Oil Can 4"
+					},
+					{
+						"name": "Peeves Chest 1",
+						"ref": "Diffindo Challenge/Peeves Chest 1/Peeves Chest 1"
+					},
+					{
+						"name": "Plant Pot 1",
+						"ref": "Diffindo Challenge/Plant Pot 1/Plant Pot 1"
+					},
+					{
+						"name": "Plant Pot 10",
+						"ref": "Diffindo Challenge/Plant Pot 10/Plant Pot 10"
+					},
+					{
+						"name": "Plant Pot 11",
+						"ref": "Diffindo Challenge/Plant Pot 11/Plant Pot 11"
+					},
+					{
+						"name": "Plant Pot 2",
+						"ref": "Diffindo Challenge/Plant Pot 2/Plant Pot 2"
+					},
+					{
+						"name": "Plant Pot 3",
+						"ref": "Diffindo Challenge/Plant Pot 3/Plant Pot 3"
+					},
+					{
+						"name": "Plant Pot 4",
+						"ref": "Diffindo Challenge/Plant Pot 4/Plant Pot 4"
+					},
+					{
+						"name": "Plant Pot 5",
+						"ref": "Diffindo Challenge/Plant Pot 5/Plant Pot 5"
+					},
+					{
+						"name": "Plant Pot 6",
+						"ref": "Diffindo Challenge/Plant Pot 6/Plant Pot 6"
+					},
+					{
+						"name": "Plant Pot 7",
+						"ref": "Diffindo Challenge/Plant Pot 7/Plant Pot 7"
+					},
+					{
+						"name": "Plant Pot 8",
+						"ref": "Diffindo Challenge/Plant Pot 8/Plant Pot 8"
+					},
+					{
+						"name": "Plant Pot 9",
+						"ref": "Diffindo Challenge/Plant Pot 9/Plant Pot 9"
 					},
 					{
 						"name": "Secret 1",
@@ -731,8 +1051,24 @@
 						"ref": "Forbidden Forest/Card Wellbeloved/Card Wellbeloved"
 					},
 					{
+						"name": "Chest 1",
+						"ref": "Forbidden Forest/Chest 1/Chest 1"
+					},
+					{
+						"name": "Chest 2",
+						"ref": "Forbidden Forest/Chest 2/Chest 2"
+					},
+					{
 						"name": "Complete",
 						"ref": "Forbidden Forest/Complete/Complete"
+					},
+					{
+						"name": "Mucus Spawner 1",
+						"ref": "Forbidden Forest/Mucus Spawner 1/Mucus Spawner 1"
+					},
+					{
+						"name": "Mucus Spawner 2",
+						"ref": "Forbidden Forest/Mucus Spawner 2/Mucus Spawner 2"
 					},
 					{
 						"name": "Secret 1",
@@ -749,6 +1085,10 @@
 					{
 						"name": "Secret 4",
 						"ref": "Forbidden Forest/Secret 4 & Card Scamander/Secret 4"
+					},
+					{
+						"name": "Spawner 1",
+						"ref": "Forbidden Forest/Spawner 1/Spawner 1"
 					}
 				],
 				"map_locations": [
@@ -773,8 +1113,52 @@
 						"ref": "Boomslang Level/Card Tugwood/Card Tugwood"
 					},
 					{
+						"name": "Chest 1",
+						"ref": "Boomslang Level/Chest 1/Chest 1"
+					},
+					{
 						"name": "Complete",
 						"ref": "Boomslang Level/Complete/Complete"
+					},
+					{
+						"name": "Mucus Spawner 1",
+						"ref": "Boomslang Level/Mucus Spawner 1/Mucus Spawner 1"
+					},
+					{
+						"name": "Oil Can 1",
+						"ref": "Boomslang Level/Oil Can 1/Oil Can 1"
+					},
+					{
+						"name": "Oil Can 2",
+						"ref": "Boomslang Level/Oil Can 2/Oil Can 2"
+					},
+					{
+						"name": "Oil Can 3",
+						"ref": "Boomslang Level/Oil Can 3/Oil Can 3"
+					},
+					{
+						"name": "Plant Pot 1",
+						"ref": "Boomslang Level/Plant Pot 1/Plant Pot 1"
+					},
+					{
+						"name": "Plant Pot 2",
+						"ref": "Boomslang Level/Plant Pot 2/Plant Pot 2"
+					},
+					{
+						"name": "Plant Pot 3",
+						"ref": "Boomslang Level/Plant Pot 3/Plant Pot 3"
+					},
+					{
+						"name": "Plant Pot 4",
+						"ref": "Boomslang Level/Plant Pot 4/Plant Pot 4"
+					},
+					{
+						"name": "Plant Pot 5",
+						"ref": "Boomslang Level/Plant Pot 5/Plant Pot 5"
+					},
+					{
+						"name": "Plant Pot 6",
+						"ref": "Boomslang Level/Plant Pot 6/Plant Pot 6"
 					},
 					{
 						"name": "Secret 1",
@@ -807,8 +1191,36 @@
 						"ref": "Whomping Willow/Card Starkey/Card Starkey"
 					},
 					{
+						"name": "Chest 1",
+						"ref": "Whomping Willow/Chest 1/Chest 1"
+					},
+					{
+						"name": "Chest 2",
+						"ref": "Whomping Willow/Chest 2/Chest 2"
+					},
+					{
+						"name": "Chest 3",
+						"ref": "Whomping Willow/Chest 3/Chest 3"
+					},
+					{
+						"name": "Chest 4",
+						"ref": "Whomping Willow/Chest 4/Chest 4"
+					},
+					{
+						"name": "Chest 5",
+						"ref": "Whomping Willow/Chest 5/Chest 5"
+					},
+					{
 						"name": "Complete",
 						"ref": "Whomping Willow/Complete/Complete"
+					},
+					{
+						"name": "Knight 1",
+						"ref": "Whomping Willow/Knight 1/Knight 1"
+					},
+					{
+						"name": "Knight 2",
+						"ref": "Whomping Willow/Knight 2/Knight 2"
 					},
 					{
 						"name": "Secret 1",

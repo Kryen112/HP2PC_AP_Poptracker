@@ -143,5 +143,4 @@ ITEM_MAPPING = {
 	[5750408] = {"Confundus Trap", "toggle"},
 	[5750409] = {"Overcompensation Trap", "toggle"},
 	[5750410] = {"Levicorpus Trap", "toggle"},
-	[5750411] = {"Jelly-Legs Jinx Trap", "toggle"},
 }

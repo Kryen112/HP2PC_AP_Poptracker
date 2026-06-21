@@ -34,6 +34,20 @@ SLOT_CODES = {
 			[false] = 0, [true] = 1,
 		},
 	},
+	allow_running_logic = {
+		code = "allow_running_logic",
+		mapping = {
+			[0] = 0, [1] = 1,
+			[false] = 0, [true] = 1,
+		},
+	},
+	allow_glitched_logic = {
+		code = "allow_glitched_logic",
+		mapping = {
+			[0] = 0, [1] = 1,
+			[false] = 0, [true] = 1,
+		},
+	},
 	enable_challenge_stars = {
 		code = "enable_challenge_stars",
 		mapping = {

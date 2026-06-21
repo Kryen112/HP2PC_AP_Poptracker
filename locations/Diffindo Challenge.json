@@ -227,6 +227,146 @@
 				]
 			},
 			{
+				"name": "Cauldron 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Cauldron_1"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Cauldron_2"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Cauldron_3"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Cauldron_4"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Cauldron_5"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Cauldron_6"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Cauldron_7"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Challenge Star 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -550,6 +690,566 @@
 				],
 				"visibility_rules": [
 					"$visStars"
+				]
+			},
+			{
+				"name": "Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Chest_2"
+				],
+				"sections": [
+					{
+						"name": "Chest 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Chest_3"
+				],
+				"sections": [
+					{
+						"name": "Chest 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Chest_4"
+				],
+				"sections": [
+					{
+						"name": "Chest 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Chest_5"
+				],
+				"sections": [
+					{
+						"name": "Chest 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Jewel Box 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Jewel_Box_1"
+				],
+				"sections": [
+					{
+						"name": "Jewel Box 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Knight 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Knight_1"
+				],
+				"sections": [
+					{
+						"name": "Knight 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Knight 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Knight_2"
+				],
+				"sections": [
+					{
+						"name": "Knight 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Mucus_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Mucus_Spawner_2"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Mucus_Spawner_3"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Mucus_Spawner_4"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Oil Can 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Oil_Can_1"
+				],
+				"sections": [
+					{
+						"name": "Oil Can 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Oil Can 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Oil_Can_2"
+				],
+				"sections": [
+					{
+						"name": "Oil Can 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Oil Can 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Oil_Can_3"
+				],
+				"sections": [
+					{
+						"name": "Oil Can 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Oil Can 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Oil_Can_4"
+				],
+				"sections": [
+					{
+						"name": "Oil Can 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Peeves Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Peeves_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Peeves Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Plant_Pot_1"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 10",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Plant_Pot_10"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 10"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 11",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Plant_Pot_11"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 11"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Plant_Pot_2"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Plant_Pot_3"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Plant_Pot_4"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Plant_Pot_5"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Plant_Pot_6"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Plant_Pot_7"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Plant_Pot_8"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 9",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Plant_Pot_9"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 0,
+						"y": 0
+					}
 				]
 			},
 			{

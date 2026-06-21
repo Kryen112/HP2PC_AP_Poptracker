@@ -256,26 +256,6 @@
 				"visibility_rules": [
 					"$visCards"
 				]
-			},
-			{
-				"name": "Complete",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Gold_Card_Room_Complete"
-				],
-				"sections": [
-					{
-						"name": "Complete"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Gold Card Room",
-						"x": 992,
-						"y": 928
-					}
-				]
 			}
 		]
 	}

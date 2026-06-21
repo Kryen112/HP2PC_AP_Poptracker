@@ -5,6 +5,46 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
+				"name": "Bark Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Bark_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Bark Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Bark Spawner 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Bark_Spawner_2"
+				],
+				"sections": [
+					{
+						"name": "Bark Spawner 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Card Agrippa",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -143,6 +183,286 @@
 				]
 			},
 			{
+				"name": "Cauldron 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Cauldron_1"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Cauldron_2"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Cauldron_3"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Cauldron_4"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Cauldron_5"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Cauldron_6"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Chest_2"
+				],
+				"sections": [
+					{
+						"name": "Chest 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Chest_3"
+				],
+				"sections": [
+					{
+						"name": "Chest 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Chest_4"
+				],
+				"sections": [
+					{
+						"name": "Chest 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Chest_5"
+				],
+				"sections": [
+					{
+						"name": "Chest 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Chest_6"
+				],
+				"sections": [
+					{
+						"name": "Chest 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Chest_7"
+				],
+				"sections": [
+					{
+						"name": "Chest 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Chest_8"
+				],
+				"sections": [
+					{
+						"name": "Chest 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Complete",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -159,6 +479,66 @@
 						"map": "Bicorn Level",
 						"x": 306,
 						"y": 281
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Mucus_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Mucus_Spawner_2"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Peeves Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Peeves_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Peeves Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
+						"x": 0,
+						"y": 0
 					}
 				]
 			},

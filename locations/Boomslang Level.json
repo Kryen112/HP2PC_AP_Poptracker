@@ -51,6 +51,26 @@
 				]
 			},
 			{
+				"name": "Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Boomslang_Level_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Boomslang Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Complete",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -67,6 +87,206 @@
 						"map": "Boomslang Level",
 						"x": 304,
 						"y": 230
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Boomslang_Level_Mucus_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Boomslang Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Oil Can 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Boomslang_Level_Oil_Can_1"
+				],
+				"sections": [
+					{
+						"name": "Oil Can 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Boomslang Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Oil Can 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Boomslang_Level_Oil_Can_2"
+				],
+				"sections": [
+					{
+						"name": "Oil Can 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Boomslang Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Oil Can 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Boomslang_Level_Oil_Can_3"
+				],
+				"sections": [
+					{
+						"name": "Oil Can 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Boomslang Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Boomslang_Level_Plant_Pot_1"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Boomslang Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Boomslang_Level_Plant_Pot_2"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Boomslang Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Boomslang_Level_Plant_Pot_3"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Boomslang Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Boomslang_Level_Plant_Pot_4"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Boomslang Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Boomslang_Level_Plant_Pot_5"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Boomslang Level",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Plant Pot 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Boomslang_Level_Plant_Pot_6"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Boomslang Level",
+						"x": 0,
+						"y": 0
 					}
 				]
 			},

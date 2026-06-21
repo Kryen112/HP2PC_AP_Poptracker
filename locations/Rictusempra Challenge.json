@@ -259,6 +259,106 @@
 				]
 			},
 			{
+				"name": "Cauldron 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Rictusempra_Challenge_Cauldron_1"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Rictusempra Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Rictusempra_Challenge_Cauldron_2"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Rictusempra Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Rictusempra_Challenge_Cauldron_3"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Rictusempra Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Rictusempra_Challenge_Cauldron_4"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Rictusempra Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Rictusempra_Challenge_Cauldron_5"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Rictusempra Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Challenge Star 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -495,6 +595,126 @@
 				],
 				"visibility_rules": [
 					"$visStars"
+				]
+			},
+			{
+				"name": "Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Rictusempra_Challenge_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Rictusempra Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Rictusempra_Challenge_Chest_2"
+				],
+				"sections": [
+					{
+						"name": "Chest 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Rictusempra Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Rictusempra_Challenge_Chest_3"
+				],
+				"sections": [
+					{
+						"name": "Chest 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Rictusempra Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Rictusempra_Challenge_Chest_4"
+				],
+				"sections": [
+					{
+						"name": "Chest 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Rictusempra Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Rictusempra_Challenge_Chest_5"
+				],
+				"sections": [
+					{
+						"name": "Chest 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Rictusempra Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Rictusempra_Challenge_Chest_6"
+				],
+				"sections": [
+					{
+						"name": "Chest 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Rictusempra Challenge",
+						"x": 0,
+						"y": 0
+					}
 				]
 			},
 			{

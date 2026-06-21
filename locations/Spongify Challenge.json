@@ -5,6 +5,66 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
+				"name": "Bark Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Bark_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Bark Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Bark Spawner 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Bark_Spawner_2"
+				],
+				"sections": [
+					{
+						"name": "Bark Spawner 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Bark Spawner 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Bark_Spawner_3"
+				],
+				"sections": [
+					{
+						"name": "Bark Spawner 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Completion",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -281,6 +341,86 @@
 				]
 			},
 			{
+				"name": "Cauldron 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Cauldron_1"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Cauldron_2"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Cauldron_3"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Cauldron_4"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Challenge Star 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -526,6 +666,326 @@
 				],
 				"visibility_rules": [
 					"$visStars"
+				]
+			},
+			{
+				"name": "Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Chest_2"
+				],
+				"sections": [
+					{
+						"name": "Chest 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Chest_3"
+				],
+				"sections": [
+					{
+						"name": "Chest 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Chest_4"
+				],
+				"sections": [
+					{
+						"name": "Chest 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Chest_5"
+				],
+				"sections": [
+					{
+						"name": "Chest 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Chest_6"
+				],
+				"sections": [
+					{
+						"name": "Chest 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Chest_7"
+				],
+				"sections": [
+					{
+						"name": "Chest 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Chest_8"
+				],
+				"sections": [
+					{
+						"name": "Chest 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cigar Box 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Cigar_Box_1"
+				],
+				"sections": [
+					{
+						"name": "Cigar Box 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Decanter 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Decanter_1"
+				],
+				"sections": [
+					{
+						"name": "Decanter 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Decanter 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Decanter_2"
+				],
+				"sections": [
+					{
+						"name": "Decanter 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Mucus_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Mucus_Spawner_2"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Mucus_Spawner_3"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Music Box 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Music_Box_1"
+				],
+				"sections": [
+					{
+						"name": "Music Box 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Peeves Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Peeves_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Peeves Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 0,
+						"y": 0
+					}
 				]
 			},
 			{

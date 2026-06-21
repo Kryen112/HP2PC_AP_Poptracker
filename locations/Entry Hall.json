@@ -5,6 +5,26 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
+				"name": "Bark Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Bark_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Bark Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Card Alderton",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -345,6 +365,146 @@
 				]
 			},
 			{
+				"name": "Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Chest_2"
+				],
+				"sections": [
+					{
+						"name": "Chest 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Chest_3"
+				],
+				"sections": [
+					{
+						"name": "Chest 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Chest_4"
+				],
+				"sections": [
+					{
+						"name": "Chest 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Chest_5"
+				],
+				"sections": [
+					{
+						"name": "Chest 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Chest_6"
+				],
+				"sections": [
+					{
+						"name": "Chest 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Chest_7"
+				],
+				"sections": [
+					{
+						"name": "Chest 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Ingredient Vendor 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -411,6 +571,106 @@
 				],
 				"visibility_rules": [
 					"$visTraders"
+				]
+			},
+			{
+				"name": "Knight 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Knight_1"
+				],
+				"sections": [
+					{
+						"name": "Knight 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Knight 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Knight_2"
+				],
+				"sections": [
+					{
+						"name": "Knight 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Knight 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Knight_3"
+				],
+				"sections": [
+					{
+						"name": "Knight 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Knight 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Knight_4"
+				],
+				"sections": [
+					{
+						"name": "Knight 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Mucus_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
 				]
 			},
 			{
@@ -644,6 +904,26 @@
 				]
 			},
 			{
+				"name": "Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Duels",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -800,6 +1080,26 @@
 						"ref": "Rictusempra Challenge/Card Wintringham/Card Wintringham"
 					},
 					{
+						"name": "Cauldron 1",
+						"ref": "Rictusempra Challenge/Cauldron 1/Cauldron 1"
+					},
+					{
+						"name": "Cauldron 2",
+						"ref": "Rictusempra Challenge/Cauldron 2/Cauldron 2"
+					},
+					{
+						"name": "Cauldron 3",
+						"ref": "Rictusempra Challenge/Cauldron 3/Cauldron 3"
+					},
+					{
+						"name": "Cauldron 4",
+						"ref": "Rictusempra Challenge/Cauldron 4/Cauldron 4"
+					},
+					{
+						"name": "Cauldron 5",
+						"ref": "Rictusempra Challenge/Cauldron 5/Cauldron 5"
+					},
+					{
 						"name": "Challenge Star 1",
 						"ref": "Rictusempra Challenge/Challenge Star 1/Challenge Star 1"
 					},
@@ -838,6 +1138,30 @@
 					{
 						"name": "Challenge Star 9",
 						"ref": "Rictusempra Challenge/Challenge Star 9/Challenge Star 9"
+					},
+					{
+						"name": "Chest 1",
+						"ref": "Rictusempra Challenge/Chest 1/Chest 1"
+					},
+					{
+						"name": "Chest 2",
+						"ref": "Rictusempra Challenge/Chest 2/Chest 2"
+					},
+					{
+						"name": "Chest 3",
+						"ref": "Rictusempra Challenge/Chest 3/Chest 3"
+					},
+					{
+						"name": "Chest 4",
+						"ref": "Rictusempra Challenge/Chest 4/Chest 4"
+					},
+					{
+						"name": "Chest 5",
+						"ref": "Rictusempra Challenge/Chest 5/Chest 5"
+					},
+					{
+						"name": "Chest 6",
+						"ref": "Rictusempra Challenge/Chest 6/Chest 6"
 					},
 					{
 						"name": "Complete",
@@ -886,6 +1210,18 @@
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
 					{
+						"name": "Bark Spawner 1",
+						"ref": "Spongify Challenge/Bark Spawner 1/Bark Spawner 1"
+					},
+					{
+						"name": "Bark Spawner 2",
+						"ref": "Spongify Challenge/Bark Spawner 2/Bark Spawner 2"
+					},
+					{
+						"name": "Bark Spawner 3",
+						"ref": "Spongify Challenge/Bark Spawner 3/Bark Spawner 3"
+					},
+					{
 						"name": "Beat Par Time",
 						"ref": "Spongify Challenge/Completion/Beat Par Time"
 					},
@@ -920,6 +1256,22 @@
 					{
 						"name": "Card Woodcroft",
 						"ref": "Spongify Challenge/Secret 15 & Card Woodcroft/Card Woodcroft"
+					},
+					{
+						"name": "Cauldron 1",
+						"ref": "Spongify Challenge/Cauldron 1/Cauldron 1"
+					},
+					{
+						"name": "Cauldron 2",
+						"ref": "Spongify Challenge/Cauldron 2/Cauldron 2"
+					},
+					{
+						"name": "Cauldron 3",
+						"ref": "Spongify Challenge/Cauldron 3/Cauldron 3"
+					},
+					{
+						"name": "Cauldron 4",
+						"ref": "Spongify Challenge/Cauldron 4/Cauldron 4"
 					},
 					{
 						"name": "Challenge Star 1",
@@ -962,8 +1314,72 @@
 						"ref": "Spongify Challenge/Challenge Star 9/Challenge Star 9"
 					},
 					{
+						"name": "Chest 1",
+						"ref": "Spongify Challenge/Chest 1/Chest 1"
+					},
+					{
+						"name": "Chest 2",
+						"ref": "Spongify Challenge/Chest 2/Chest 2"
+					},
+					{
+						"name": "Chest 3",
+						"ref": "Spongify Challenge/Chest 3/Chest 3"
+					},
+					{
+						"name": "Chest 4",
+						"ref": "Spongify Challenge/Chest 4/Chest 4"
+					},
+					{
+						"name": "Chest 5",
+						"ref": "Spongify Challenge/Chest 5/Chest 5"
+					},
+					{
+						"name": "Chest 6",
+						"ref": "Spongify Challenge/Chest 6/Chest 6"
+					},
+					{
+						"name": "Chest 7",
+						"ref": "Spongify Challenge/Chest 7/Chest 7"
+					},
+					{
+						"name": "Chest 8",
+						"ref": "Spongify Challenge/Chest 8/Chest 8"
+					},
+					{
+						"name": "Cigar Box 1",
+						"ref": "Spongify Challenge/Cigar Box 1/Cigar Box 1"
+					},
+					{
 						"name": "Complete",
 						"ref": "Spongify Challenge/Completion/Complete"
+					},
+					{
+						"name": "Decanter 1",
+						"ref": "Spongify Challenge/Decanter 1/Decanter 1"
+					},
+					{
+						"name": "Decanter 2",
+						"ref": "Spongify Challenge/Decanter 2/Decanter 2"
+					},
+					{
+						"name": "Mucus Spawner 1",
+						"ref": "Spongify Challenge/Mucus Spawner 1/Mucus Spawner 1"
+					},
+					{
+						"name": "Mucus Spawner 2",
+						"ref": "Spongify Challenge/Mucus Spawner 2/Mucus Spawner 2"
+					},
+					{
+						"name": "Mucus Spawner 3",
+						"ref": "Spongify Challenge/Mucus Spawner 3/Mucus Spawner 3"
+					},
+					{
+						"name": "Music Box 1",
+						"ref": "Spongify Challenge/Music Box 1/Music Box 1"
+					},
+					{
+						"name": "Peeves Chest 1",
+						"ref": "Spongify Challenge/Peeves Chest 1/Peeves Chest 1"
 					},
 					{
 						"name": "Secret 1",
@@ -1044,6 +1460,10 @@
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
 					{
+						"name": "Bark Spawner 1",
+						"ref": "Skurge Challenge/Bark Spawner 1/Bark Spawner 1"
+					},
+					{
 						"name": "Beat Par Time",
 						"ref": "Skurge Challenge/Completion/Beat Par Time"
 					},
@@ -1070,6 +1490,50 @@
 					{
 						"name": "Card Wenlock",
 						"ref": "Skurge Challenge/Card Wenlock/Card Wenlock"
+					},
+					{
+						"name": "Cauldron 1",
+						"ref": "Skurge Challenge/Cauldron 1/Cauldron 1"
+					},
+					{
+						"name": "Cauldron 10",
+						"ref": "Skurge Challenge/Cauldron 10/Cauldron 10"
+					},
+					{
+						"name": "Cauldron 11",
+						"ref": "Skurge Challenge/Cauldron 11/Cauldron 11"
+					},
+					{
+						"name": "Cauldron 2",
+						"ref": "Skurge Challenge/Cauldron 2/Cauldron 2"
+					},
+					{
+						"name": "Cauldron 3",
+						"ref": "Skurge Challenge/Cauldron 3/Cauldron 3"
+					},
+					{
+						"name": "Cauldron 4",
+						"ref": "Skurge Challenge/Cauldron 4/Cauldron 4"
+					},
+					{
+						"name": "Cauldron 5",
+						"ref": "Skurge Challenge/Cauldron 5/Cauldron 5"
+					},
+					{
+						"name": "Cauldron 6",
+						"ref": "Skurge Challenge/Cauldron 6/Cauldron 6"
+					},
+					{
+						"name": "Cauldron 7",
+						"ref": "Skurge Challenge/Cauldron 7/Cauldron 7"
+					},
+					{
+						"name": "Cauldron 8",
+						"ref": "Skurge Challenge/Cauldron 8/Cauldron 8"
+					},
+					{
+						"name": "Cauldron 9",
+						"ref": "Skurge Challenge/Cauldron 9/Cauldron 9"
 					},
 					{
 						"name": "Challenge Star 1",
@@ -1112,8 +1576,64 @@
 						"ref": "Skurge Challenge/Challenge Star 9/Challenge Star 9"
 					},
 					{
+						"name": "Chest 1",
+						"ref": "Skurge Challenge/Chest 1/Chest 1"
+					},
+					{
+						"name": "Chest 2",
+						"ref": "Skurge Challenge/Chest 2/Chest 2"
+					},
+					{
+						"name": "Chest 3",
+						"ref": "Skurge Challenge/Chest 3/Chest 3"
+					},
+					{
+						"name": "Chest 4",
+						"ref": "Skurge Challenge/Chest 4/Chest 4"
+					},
+					{
+						"name": "Chest 5",
+						"ref": "Skurge Challenge/Chest 5/Chest 5"
+					},
+					{
+						"name": "Cigar Box 1",
+						"ref": "Skurge Challenge/Cigar Box 1/Cigar Box 1"
+					},
+					{
 						"name": "Complete",
 						"ref": "Skurge Challenge/Completion/Complete"
+					},
+					{
+						"name": "Decanter 1",
+						"ref": "Skurge Challenge/Decanter 1/Decanter 1"
+					},
+					{
+						"name": "Decanter 2",
+						"ref": "Skurge Challenge/Decanter 2/Decanter 2"
+					},
+					{
+						"name": "Jewel Box 1",
+						"ref": "Skurge Challenge/Jewel Box 1/Jewel Box 1"
+					},
+					{
+						"name": "Knight 1",
+						"ref": "Skurge Challenge/Knight 1/Knight 1"
+					},
+					{
+						"name": "Knight 2",
+						"ref": "Skurge Challenge/Knight 2/Knight 2"
+					},
+					{
+						"name": "Mucus Spawner 1",
+						"ref": "Skurge Challenge/Mucus Spawner 1/Mucus Spawner 1"
+					},
+					{
+						"name": "Music Box 1",
+						"ref": "Skurge Challenge/Music Box 1/Music Box 1"
+					},
+					{
+						"name": "Peeves Chest 1",
+						"ref": "Skurge Challenge/Peeves Chest 1/Peeves Chest 1"
 					},
 					{
 						"name": "Secret 1",
@@ -1158,6 +1678,14 @@
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
 					{
+						"name": "Bark Spawner 1",
+						"ref": "Bicorn Level/Bark Spawner 1/Bark Spawner 1"
+					},
+					{
+						"name": "Bark Spawner 2",
+						"ref": "Bicorn Level/Bark Spawner 2/Bark Spawner 2"
+					},
+					{
 						"name": "Card Agrippa",
 						"ref": "Bicorn Level/Card Agrippa/Card Agrippa"
 					},
@@ -1182,8 +1710,76 @@
 						"ref": "Bicorn Level/Card Stump/Card Stump"
 					},
 					{
+						"name": "Cauldron 1",
+						"ref": "Bicorn Level/Cauldron 1/Cauldron 1"
+					},
+					{
+						"name": "Cauldron 2",
+						"ref": "Bicorn Level/Cauldron 2/Cauldron 2"
+					},
+					{
+						"name": "Cauldron 3",
+						"ref": "Bicorn Level/Cauldron 3/Cauldron 3"
+					},
+					{
+						"name": "Cauldron 4",
+						"ref": "Bicorn Level/Cauldron 4/Cauldron 4"
+					},
+					{
+						"name": "Cauldron 5",
+						"ref": "Bicorn Level/Cauldron 5/Cauldron 5"
+					},
+					{
+						"name": "Cauldron 6",
+						"ref": "Bicorn Level/Cauldron 6/Cauldron 6"
+					},
+					{
+						"name": "Chest 1",
+						"ref": "Bicorn Level/Chest 1/Chest 1"
+					},
+					{
+						"name": "Chest 2",
+						"ref": "Bicorn Level/Chest 2/Chest 2"
+					},
+					{
+						"name": "Chest 3",
+						"ref": "Bicorn Level/Chest 3/Chest 3"
+					},
+					{
+						"name": "Chest 4",
+						"ref": "Bicorn Level/Chest 4/Chest 4"
+					},
+					{
+						"name": "Chest 5",
+						"ref": "Bicorn Level/Chest 5/Chest 5"
+					},
+					{
+						"name": "Chest 6",
+						"ref": "Bicorn Level/Chest 6/Chest 6"
+					},
+					{
+						"name": "Chest 7",
+						"ref": "Bicorn Level/Chest 7/Chest 7"
+					},
+					{
+						"name": "Chest 8",
+						"ref": "Bicorn Level/Chest 8/Chest 8"
+					},
+					{
 						"name": "Complete",
 						"ref": "Bicorn Level/Complete/Complete"
+					},
+					{
+						"name": "Mucus Spawner 1",
+						"ref": "Bicorn Level/Mucus Spawner 1/Mucus Spawner 1"
+					},
+					{
+						"name": "Mucus Spawner 2",
+						"ref": "Bicorn Level/Mucus Spawner 2/Mucus Spawner 2"
+					},
+					{
+						"name": "Peeves Chest 1",
+						"ref": "Bicorn Level/Peeves Chest 1/Peeves Chest 1"
 					},
 					{
 						"name": "Secret 1",
@@ -1252,8 +1848,72 @@
 						"ref": "Goyle Level/Card Wildsmith/Card Wildsmith"
 					},
 					{
+						"name": "Cauldron 1",
+						"ref": "Goyle Level/Cauldron 1/Cauldron 1"
+					},
+					{
+						"name": "Cauldron 2",
+						"ref": "Goyle Level/Cauldron 2/Cauldron 2"
+					},
+					{
+						"name": "Cauldron 3",
+						"ref": "Goyle Level/Cauldron 3/Cauldron 3"
+					},
+					{
+						"name": "Cauldron 4",
+						"ref": "Goyle Level/Cauldron 4/Cauldron 4"
+					},
+					{
+						"name": "Chest 1",
+						"ref": "Goyle Level/Chest 1/Chest 1"
+					},
+					{
+						"name": "Chest 10",
+						"ref": "Goyle Level/Chest 10/Chest 10"
+					},
+					{
+						"name": "Chest 2",
+						"ref": "Goyle Level/Chest 2/Chest 2"
+					},
+					{
+						"name": "Chest 3",
+						"ref": "Goyle Level/Chest 3/Chest 3"
+					},
+					{
+						"name": "Chest 4",
+						"ref": "Goyle Level/Chest 4/Chest 4"
+					},
+					{
+						"name": "Chest 5",
+						"ref": "Goyle Level/Chest 5/Chest 5"
+					},
+					{
+						"name": "Chest 6",
+						"ref": "Goyle Level/Chest 6/Chest 6"
+					},
+					{
+						"name": "Chest 7",
+						"ref": "Goyle Level/Chest 7/Chest 7"
+					},
+					{
+						"name": "Chest 8",
+						"ref": "Goyle Level/Chest 8/Chest 8"
+					},
+					{
+						"name": "Chest 9",
+						"ref": "Goyle Level/Chest 9/Chest 9"
+					},
+					{
 						"name": "Complete",
 						"ref": "Goyle Level/Complete/Complete"
+					},
+					{
+						"name": "Mucus Spawner 1",
+						"ref": "Goyle Level/Mucus Spawner 1/Mucus Spawner 1"
+					},
+					{
+						"name": "Peeves Chest 1",
+						"ref": "Goyle Level/Peeves Chest 1/Peeves Chest 1"
 					},
 					{
 						"name": "Secret 1",
@@ -1302,6 +1962,10 @@
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
 					{
+						"name": "Bark Spawner 1",
+						"ref": "Slytherin Common Room/Bark Spawner 1/Bark Spawner 1"
+					},
+					{
 						"name": "Card Clagg",
 						"ref": "Slytherin Common Room/Card Clagg/Card Clagg"
 					},
@@ -1322,8 +1986,64 @@
 						"ref": "Slytherin Common Room/Card Waffling/Card Waffling"
 					},
 					{
+						"name": "Cauldron 1",
+						"ref": "Slytherin Common Room/Cauldron 1/Cauldron 1"
+					},
+					{
+						"name": "Cauldron 2",
+						"ref": "Slytherin Common Room/Cauldron 2/Cauldron 2"
+					},
+					{
+						"name": "Chest 1",
+						"ref": "Slytherin Common Room/Chest 1/Chest 1"
+					},
+					{
+						"name": "Chest 2",
+						"ref": "Slytherin Common Room/Chest 2/Chest 2"
+					},
+					{
+						"name": "Chest 3",
+						"ref": "Slytherin Common Room/Chest 3/Chest 3"
+					},
+					{
+						"name": "Chest 4",
+						"ref": "Slytherin Common Room/Chest 4/Chest 4"
+					},
+					{
 						"name": "Complete",
 						"ref": "Slytherin Common Room/Complete/Complete"
+					},
+					{
+						"name": "Knight 1",
+						"ref": "Slytherin Common Room/Knight 1/Knight 1"
+					},
+					{
+						"name": "Knight 2",
+						"ref": "Slytherin Common Room/Knight 2/Knight 2"
+					},
+					{
+						"name": "Knight 3",
+						"ref": "Slytherin Common Room/Knight 3/Knight 3"
+					},
+					{
+						"name": "Knight 4",
+						"ref": "Slytherin Common Room/Knight 4/Knight 4"
+					},
+					{
+						"name": "Knight 5",
+						"ref": "Slytherin Common Room/Knight 5/Knight 5"
+					},
+					{
+						"name": "Knight 6",
+						"ref": "Slytherin Common Room/Knight 6/Knight 6"
+					},
+					{
+						"name": "Knight 7",
+						"ref": "Slytherin Common Room/Knight 7/Knight 7"
+					},
+					{
+						"name": "Mucus Spawner 1",
+						"ref": "Slytherin Common Room/Mucus Spawner 1/Mucus Spawner 1"
 					},
 					{
 						"name": "Secret 1",
@@ -1372,6 +2092,26 @@
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
 					{
+						"name": "Cauldron 1",
+						"ref": "Gryffindor Challenge/Cauldron 1/Cauldron 1"
+					},
+					{
+						"name": "Cauldron 2",
+						"ref": "Gryffindor Challenge/Cauldron 2/Cauldron 2"
+					},
+					{
+						"name": "Cauldron 3",
+						"ref": "Gryffindor Challenge/Cauldron 3/Cauldron 3"
+					},
+					{
+						"name": "Cauldron 4",
+						"ref": "Gryffindor Challenge/Cauldron 4/Cauldron 4"
+					},
+					{
+						"name": "Cauldron 5",
+						"ref": "Gryffindor Challenge/Cauldron 5/Cauldron 5"
+					},
+					{
 						"name": "Challenge Star 1",
 						"ref": "Gryffindor Challenge/Challenge Star 1/Challenge Star 1"
 					},
@@ -1410,6 +2150,94 @@
 					{
 						"name": "Challenge Star 9",
 						"ref": "Gryffindor Challenge/Challenge Star 9/Challenge Star 9"
+					},
+					{
+						"name": "Chest 1",
+						"ref": "Gryffindor Challenge/Chest 1/Chest 1"
+					},
+					{
+						"name": "Chest 10",
+						"ref": "Gryffindor Challenge/Chest 10/Chest 10"
+					},
+					{
+						"name": "Chest 11",
+						"ref": "Gryffindor Challenge/Chest 11/Chest 11"
+					},
+					{
+						"name": "Chest 12",
+						"ref": "Gryffindor Challenge/Chest 12/Chest 12"
+					},
+					{
+						"name": "Chest 13",
+						"ref": "Gryffindor Challenge/Chest 13/Chest 13"
+					},
+					{
+						"name": "Chest 14",
+						"ref": "Gryffindor Challenge/Chest 14/Chest 14"
+					},
+					{
+						"name": "Chest 15",
+						"ref": "Gryffindor Challenge/Chest 15/Chest 15"
+					},
+					{
+						"name": "Chest 16",
+						"ref": "Gryffindor Challenge/Chest 16/Chest 16"
+					},
+					{
+						"name": "Chest 17",
+						"ref": "Gryffindor Challenge/Chest 17/Chest 17"
+					},
+					{
+						"name": "Chest 18",
+						"ref": "Gryffindor Challenge/Chest 18/Chest 18"
+					},
+					{
+						"name": "Chest 19",
+						"ref": "Gryffindor Challenge/Chest 19/Chest 19"
+					},
+					{
+						"name": "Chest 2",
+						"ref": "Gryffindor Challenge/Chest 2/Chest 2"
+					},
+					{
+						"name": "Chest 20",
+						"ref": "Gryffindor Challenge/Chest 20/Chest 20"
+					},
+					{
+						"name": "Chest 21",
+						"ref": "Gryffindor Challenge/Chest 21/Chest 21"
+					},
+					{
+						"name": "Chest 22",
+						"ref": "Gryffindor Challenge/Chest 22/Chest 22"
+					},
+					{
+						"name": "Chest 3",
+						"ref": "Gryffindor Challenge/Chest 3/Chest 3"
+					},
+					{
+						"name": "Chest 4",
+						"ref": "Gryffindor Challenge/Chest 4/Chest 4"
+					},
+					{
+						"name": "Chest 5",
+						"ref": "Gryffindor Challenge/Chest 5/Chest 5"
+					},
+					{
+						"name": "Chest 6",
+						"ref": "Gryffindor Challenge/Chest 6/Chest 6"
+					},
+					{
+						"name": "Chest 7",
+						"ref": "Gryffindor Challenge/Chest 7/Chest 7"
+					},
+					{
+						"name": "Chest 8",
+						"ref": "Gryffindor Challenge/Chest 8/Chest 8"
+					},
+					{
+						"name": "Chest 9",
+						"ref": "Gryffindor Challenge/Chest 9/Chest 9"
 					},
 					{
 						"name": "Complete",

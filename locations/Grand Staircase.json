@@ -308,6 +308,446 @@
 				]
 			},
 			{
+				"name": "Cauldron 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Cauldron_1"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Cauldron_2"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Cauldron_3"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Cauldron_4"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Cauldron_5"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Cauldron_6"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Cauldron_7"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Cauldron_8"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Chest_2"
+				],
+				"sections": [
+					{
+						"name": "Chest 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Chest_3"
+				],
+				"sections": [
+					{
+						"name": "Chest 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Chest_4"
+				],
+				"sections": [
+					{
+						"name": "Chest 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Chest_5"
+				],
+				"sections": [
+					{
+						"name": "Chest 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Chest_6"
+				],
+				"sections": [
+					{
+						"name": "Chest 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Chest_7"
+				],
+				"sections": [
+					{
+						"name": "Chest 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Chest_8"
+				],
+				"sections": [
+					{
+						"name": "Chest 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cigar Box 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Cigar_Box_1"
+				],
+				"sections": [
+					{
+						"name": "Cigar Box 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cigar Box 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Cigar_Box_2"
+				],
+				"sections": [
+					{
+						"name": "Cigar Box 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cigar Box 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Cigar_Box_3"
+				],
+				"sections": [
+					{
+						"name": "Cigar Box 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Decanter 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Decanter_1"
+				],
+				"sections": [
+					{
+						"name": "Decanter 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Decanter 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Decanter_2"
+				],
+				"sections": [
+					{
+						"name": "Decanter 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Decanter 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Decanter_3"
+				],
+				"sections": [
+					{
+						"name": "Decanter 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Ingredient Vendor 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -328,6 +768,86 @@
 				],
 				"visibility_rules": [
 					"$visTraders"
+				]
+			},
+			{
+				"name": "Jewel Box 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Jewel_Box_1"
+				],
+				"sections": [
+					{
+						"name": "Jewel Box 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Jewel Box 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Jewel_Box_2"
+				],
+				"sections": [
+					{
+						"name": "Jewel Box 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Knight 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Knight_1"
+				],
+				"sections": [
+					{
+						"name": "Knight 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Music Box 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Music_Box_1"
+				],
+				"sections": [
+					{
+						"name": "Music Box 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
 				]
 			},
 			{
@@ -619,12 +1139,104 @@
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
 					{
+						"name": "Bark Spawner 1",
+						"ref": "Chamber of Secrets/Bark Spawner 1/Bark Spawner 1"
+					},
+					{
+						"name": "Bark Spawner 2",
+						"ref": "Chamber of Secrets/Bark Spawner 2/Bark Spawner 2"
+					},
+					{
+						"name": "Bark Spawner 3",
+						"ref": "Chamber of Secrets/Bark Spawner 3/Bark Spawner 3"
+					},
+					{
 						"name": "Card Elphick",
 						"ref": "Chamber of Secrets/Card Elphick/Card Elphick"
 					},
 					{
+						"name": "Cauldron 1",
+						"ref": "Chamber of Secrets/Cauldron 1/Cauldron 1"
+					},
+					{
+						"name": "Cauldron 10",
+						"ref": "Chamber of Secrets/Cauldron 10/Cauldron 10"
+					},
+					{
+						"name": "Cauldron 2",
+						"ref": "Chamber of Secrets/Cauldron 2/Cauldron 2"
+					},
+					{
+						"name": "Cauldron 3",
+						"ref": "Chamber of Secrets/Cauldron 3/Cauldron 3"
+					},
+					{
+						"name": "Cauldron 4",
+						"ref": "Chamber of Secrets/Cauldron 4/Cauldron 4"
+					},
+					{
+						"name": "Cauldron 5",
+						"ref": "Chamber of Secrets/Cauldron 5/Cauldron 5"
+					},
+					{
+						"name": "Cauldron 6",
+						"ref": "Chamber of Secrets/Cauldron 6/Cauldron 6"
+					},
+					{
+						"name": "Cauldron 7",
+						"ref": "Chamber of Secrets/Cauldron 7/Cauldron 7"
+					},
+					{
+						"name": "Cauldron 8",
+						"ref": "Chamber of Secrets/Cauldron 8/Cauldron 8"
+					},
+					{
+						"name": "Cauldron 9",
+						"ref": "Chamber of Secrets/Cauldron 9/Cauldron 9"
+					},
+					{
+						"name": "Chest 1",
+						"ref": "Chamber of Secrets/Chest 1/Chest 1"
+					},
+					{
+						"name": "Chest 2",
+						"ref": "Chamber of Secrets/Chest 2/Chest 2"
+					},
+					{
+						"name": "Chest 3",
+						"ref": "Chamber of Secrets/Chest 3/Chest 3"
+					},
+					{
+						"name": "Chest 4",
+						"ref": "Chamber of Secrets/Chest 4/Chest 4"
+					},
+					{
+						"name": "Chest 5",
+						"ref": "Chamber of Secrets/Chest 5/Chest 5"
+					},
+					{
+						"name": "Chest 6",
+						"ref": "Chamber of Secrets/Chest 6/Chest 6"
+					},
+					{
+						"name": "Chest 7",
+						"ref": "Chamber of Secrets/Chest 7/Chest 7"
+					},
+					{
 						"name": "Complete",
 						"ref": "Chamber of Secrets/Complete/Complete"
+					},
+					{
+						"name": "Mucus Spawner 1",
+						"ref": "Chamber of Secrets/Mucus Spawner 1/Mucus Spawner 1"
+					},
+					{
+						"name": "Mucus Spawner 2",
+						"ref": "Chamber of Secrets/Mucus Spawner 2/Mucus Spawner 2"
+					},
+					{
+						"name": "Mucus Spawner 3",
+						"ref": "Chamber of Secrets/Mucus Spawner 3/Mucus Spawner 3"
 					},
 					{
 						"name": "Secret 1",
@@ -707,10 +1319,6 @@
 					{
 						"name": "Card Slytherin",
 						"ref": "Gold Card Room/Card Slytherin/Card Slytherin"
-					},
-					{
-						"name": "Complete",
-						"ref": "Gold Card Room/Complete/Complete"
 					}
 				],
 				"map_locations": [

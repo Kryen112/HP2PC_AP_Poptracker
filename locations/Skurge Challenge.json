@@ -5,6 +5,26 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
+				"name": "Bark Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Bark_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Bark Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Completion",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -169,6 +189,226 @@
 				],
 				"visibility_rules": [
 					"$visCards"
+				]
+			},
+			{
+				"name": "Cauldron 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cauldron_1"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 10",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cauldron_10"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 10"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 11",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cauldron_11"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 11"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cauldron_2"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cauldron_3"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cauldron_4"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cauldron_5"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cauldron_6"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 7",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cauldron_7"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 7"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cauldron_8"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cauldron 9",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cauldron_9"
+				],
+				"sections": [
+					{
+						"name": "Cauldron 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
 				]
 			},
 			{
@@ -399,6 +639,286 @@
 				],
 				"visibility_rules": [
 					"$visStars"
+				]
+			},
+			{
+				"name": "Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Chest_2"
+				],
+				"sections": [
+					{
+						"name": "Chest 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Chest_3"
+				],
+				"sections": [
+					{
+						"name": "Chest 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Chest_4"
+				],
+				"sections": [
+					{
+						"name": "Chest 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Chest 5",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Chest_5"
+				],
+				"sections": [
+					{
+						"name": "Chest 5"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Cigar Box 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Cigar_Box_1"
+				],
+				"sections": [
+					{
+						"name": "Cigar Box 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Decanter 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Decanter_1"
+				],
+				"sections": [
+					{
+						"name": "Decanter 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Decanter 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Decanter_2"
+				],
+				"sections": [
+					{
+						"name": "Decanter 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Jewel Box 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Jewel_Box_1"
+				],
+				"sections": [
+					{
+						"name": "Jewel Box 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Knight 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Knight_1"
+				],
+				"sections": [
+					{
+						"name": "Knight 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Knight 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Knight_2"
+				],
+				"sections": [
+					{
+						"name": "Knight 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Mucus Spawner 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Mucus_Spawner_1"
+				],
+				"sections": [
+					{
+						"name": "Mucus Spawner 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Music Box 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Music_Box_1"
+				],
+				"sections": [
+					{
+						"name": "Music Box 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Peeves Chest 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Peeves_Chest_1"
+				],
+				"sections": [
+					{
+						"name": "Peeves Chest 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 0,
+						"y": 0
+					}
 				]
 			},
 			{
