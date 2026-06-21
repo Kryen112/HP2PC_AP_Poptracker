@@ -852,6 +852,24 @@
 		"codes": "Confundus Trap"
 	},
 	{
+		"name": "Overcompensation Trap",
+		"type": "toggle",
+		"img": "images/items/traps/overcompensation_trap.png",
+		"codes": "Overcompensation Trap"
+	},
+	{
+		"name": "Levicorpus Trap",
+		"type": "toggle",
+		"img": "images/items/traps/levicorpus_trap.png",
+		"codes": "Levicorpus Trap"
+	},
+	{
+		"name": "Jelly-Legs Jinx Trap",
+		"type": "toggle",
+		"img": "images/items/traps/jelly_legs_jinx_trap.png",
+		"codes": "Jelly-Legs Jinx Trap"
+	},
+	{
 		"name": "Bronze Cards",
 		"type": "consumable",
 		"img": "images/items/cards/bronze_cards.png",

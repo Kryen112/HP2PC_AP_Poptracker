@@ -707,6 +707,10 @@
 					{
 						"name": "Card Slytherin",
 						"ref": "Gold Card Room/Card Slytherin/Card Slytherin"
+					},
+					{
+						"name": "Complete",
+						"ref": "Gold Card Room/Complete/Complete"
 					}
 				],
 				"map_locations": [
