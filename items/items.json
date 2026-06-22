@@ -864,6 +864,12 @@
 		"codes": "Levicorpus Trap"
 	},
 	{
+		"name": "Jelly-Legs Jinx Trap",
+		"type": "toggle",
+		"img": "images/items/traps/jelly_legs_jinx_trap.png",
+		"codes": "Jelly-Legs Jinx Trap"
+	},
+	{
 		"name": "Bronze Cards",
 		"type": "consumable",
 		"img": "images/items/cards/bronze_cards.png",
@@ -982,22 +988,22 @@
 		"initial_stage_idx": 1
 	},
 	{
-		"name": "Allow secrets progression",
+		"name": "Allow missable progression",
 		"type": "progressive",
 		"loop": false,
 		"allow_disabled": false,
-		"codes": "allow_secrets_progression",
+		"codes": "allow_missable_progression",
 		"stages": [
 			{
-				"img": "images/items/settings/allow_secrets_progression_off.png",
-				"name": "Allow secrets progression: off",
-				"codes": "allow_secrets_progression,allow_secrets_progression_off",
+				"img": "images/items/settings/allow_missable_progression_off.png",
+				"name": "Allow missable progression: off",
+				"codes": "allow_missable_progression,allow_missable_progression_off",
 				"inherit_codes": false
 			},
 			{
-				"img": "images/items/settings/allow_secrets_progression_on.png",
-				"name": "Allow secrets progression: on",
-				"codes": "allow_secrets_progression,allow_secrets_progression_on",
+				"img": "images/items/settings/allow_missable_progression_on.png",
+				"name": "Allow missable progression: on",
+				"codes": "allow_missable_progression,allow_missable_progression_on",
 				"inherit_codes": false
 			}
 		]

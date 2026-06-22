@@ -386,7 +386,7 @@ SETTING_ITEMS = [
     {"name": "Vanilla gate levels", "key": "vanilla_gate_levels", "binary": True, "default": 1},
     {"name": "Enable wizard cards", "key": "enable_wizard_cards", "binary": True, "default": 1},
     {"name": "Enable secrets", "key": "enable_secrets", "binary": True, "default": 1},
-    {"name": "Allow secrets progression", "key": "allow_secrets_progression", "binary": True},
+    {"name": "Allow missable progression", "key": "allow_missable_progression", "binary": True},
     # Logic-flag toggles. `logic_code` is the bare rule token (state.has("X") ->
     # has("X") in access_rules.lua); it rides only the ON stage's codes so a
     # `... | Running` / `... | Glitched` clause resolves true exactly when the

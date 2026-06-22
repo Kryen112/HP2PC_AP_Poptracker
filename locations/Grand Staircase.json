@@ -668,26 +668,6 @@
 				]
 			},
 			{
-				"name": "Cigar Box 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Grand_Staircase_Cigar_Box_3"
-				],
-				"sections": [
-					{
-						"name": "Cigar Box 3"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Grand Staircase",
-						"x": 0,
-						"y": 0
-					}
-				]
-			},
-			{
 				"name": "Decanter 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -717,26 +697,6 @@
 				"sections": [
 					{
 						"name": "Decanter 2"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Grand Staircase",
-						"x": 0,
-						"y": 0
-					}
-				]
-			},
-			{
-				"name": "Decanter 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Grand_Staircase_Decanter_3"
-				],
-				"sections": [
-					{
-						"name": "Decanter 3"
 					}
 				],
 				"map_locations": [
@@ -1104,6 +1064,46 @@
 				]
 			},
 			{
+				"name": "Cigar Box",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Dumbledore_s_Study_Cigar_Box"
+				],
+				"sections": [
+					{
+						"name": "Cigar Box"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
+				"name": "Decanter",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Dumbledore_s_Study_Decanter"
+				],
+				"sections": [
+					{
+						"name": "Decanter"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 0,
+						"y": 0
+					}
+				]
+			},
+			{
 				"name": "Secret",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -1319,6 +1319,10 @@
 					{
 						"name": "Card Slytherin",
 						"ref": "Gold Card Room/Card Slytherin/Card Slytherin"
+					},
+					{
+						"name": "Complete",
+						"ref": "Gold Card Room/Complete/Complete"
 					}
 				],
 				"map_locations": [

@@ -34,7 +34,7 @@ function rule_Bicorn_Level_Card_Agrippa()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	end
 end
 function rule_Entry_Hall_Card_Alderton()
@@ -48,7 +48,7 @@ function rule_Rictusempra_Challenge_Card_Barbary()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Grand_Staircase_Card_Barkwith()
@@ -60,9 +60,9 @@ function rule_Grand_Staircase_Card_Barkwith()
 end
 function rule_Skurge_Challenge_Card_Belby()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos") and has("Alohomora"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora"))
 	end
 end
 function rule_Grand_Staircase_Card_Blane()
@@ -76,7 +76,7 @@ function rule_Goyle_Level_Card_Bloxam()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Grand_Staircase_Card_Bonham()
@@ -88,16 +88,16 @@ function rule_Grand_Staircase_Card_Bonham()
 end
 function rule_Skurge_Challenge_Card_Catchlove()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos") and has("Alohomora"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Chamber_of_Secrets_Card_Elphick()
 	if isOpenCastle() then
 		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Grand_Staircase_Card_Ethelred()
@@ -111,21 +111,21 @@ function rule_Forbidden_Forest_Card_Fancourt()
 	if isOpenCastle() then
 		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Bicorn_Level_Card_Goshawk()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	end
 end
 function rule_Rictusempra_Challenge_Card_Graves()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Entry_Hall_Card_Gunhilda()
@@ -144,37 +144,37 @@ function rule_Grand_Staircase_Card_Hipworth()
 end
 function rule_Skurge_Challenge_Card_Kegg()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos") and has("Alohomora"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Card_Ketteridge()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Castle_Exterior_Card_Marjoribanks()
 	if isOpenCastle() then
 		return true and (has("Diffindo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and ((has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) or has("Running")))
 	end
 end
 function rule_Spongify_Challenge_Card_Merlin()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Card_Merwyn()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Dumbledore_s_Study_Card_Muldoon()
@@ -188,49 +188,49 @@ function rule_Forbidden_Forest_Card_Ollerton()
 	if isOpenCastle() then
 		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Diffindo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Lumos") and has("Spongify") and has("Diffindo"))
 	end
 end
 function rule_Bicorn_Level_Card_Peakes()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and (has("Flipendo") or has("Running")) and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and (has("Flipendo") or has("Running")) and has("Skurge"))
 	end
 end
 function rule_Slytherin_Common_Room_Card_Pilliwickle()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and has("Alohomora"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Slytherin_Common_Room_Card_Platt()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and has("Alohomora"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Goyle_Level_Card_Plumpton()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and has("Alohomora")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and has("Alohomora")
 	end
 end
 function rule_Spongify_Challenge_Card_Po()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Lumos") and has("Alohomora") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Lumos") and has("Alohomora") and has("Flipendo"))
 	end
 end
 function rule_Castle_Exterior_Card_Pokeby()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and ((has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) or has("Running")))
 	end
 end
 function rule_Entry_Hall_Card_Sawbridge()
@@ -244,7 +244,7 @@ function rule_Forbidden_Forest_Card_Scamander()
 	if isOpenCastle() then
 		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Whomping_Willow_Card_Starkey()
@@ -258,14 +258,14 @@ function rule_Goyle_Level_Card_Stroulger()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Bicorn_Level_Card_Stump()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	end
 end
 function rule_Castle_Exterior_Card_Sweeting()
@@ -286,14 +286,14 @@ function rule_Rictusempra_Challenge_Card_Thruston()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Boomslang_Level_Card_Toke()
 	if isOpenCastle() then
-		return (has("Boomslang Level Key") and has("Diffindo")) and has("Alohomora")
+		return (has("Boomslang Level Key") and has("Diffindo")) and (has("Diffindo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Castle_Exterior_Card_Twonk()
@@ -305,9 +305,9 @@ function rule_Castle_Exterior_Card_Twonk()
 end
 function rule_Diffindo_Challenge_Card_Ulric()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Grand_Staircase_Card_Vablatsky()
@@ -319,65 +319,65 @@ function rule_Grand_Staircase_Card_Vablatsky()
 end
 function rule_Slytherin_Common_Room_Card_Waffling()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and has("Alohomora"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Rictusempra_Challenge_Card_Wagtail()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Spongify_Challenge_Card_Warbeck()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Forbidden_Forest_Card_Wellbeloved()
 	if isOpenCastle() then
 		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Skurge_Challenge_Card_Wenlock()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and has("Alohomora")
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Goyle_Level_Card_Whitehorn()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Rictusempra_Challenge_Card_Wintringham()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Card_Withers()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Spongify_Challenge_Card_Woodcroft()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Entry_Hall_Card_Andros()
@@ -398,42 +398,42 @@ function rule_Rictusempra_Challenge_Card_Chittock()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Goyle_Level_Card_Circe()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Slytherin_Common_Room_Card_Clagg()
 	if isOpenCastle() then
 		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Forbidden_Forest_Card_Cliodne()
 	if isOpenCastle() then
-		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Alohomora"))
+		return has("Forbidden Forest Key") and (((has("Lumos") and has("Spongify")) or has("Running")) and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (((has("Lumos") and has("Spongify")) or has("Running")) and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Bicorn_Level_Card_Cronk()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and (has("Flipendo") or has("Running")) and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and (has("Flipendo") or has("Running")) and has("Skurge"))
 	end
 end
 function rule_Rictusempra_Challenge_Card_Crumb()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Entry_Hall_Card_Dodderidge()
@@ -447,42 +447,42 @@ function rule_Rictusempra_Challenge_Card_Duke()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Slytherin_Common_Room_Card_Fay()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and has("Alohomora"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Skurge_Challenge_Card_Fulbert()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos") and has("Rictusempra") and has("Alohomora"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Rictusempra") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Rictusempra") and has("Alohomora"))
 	end
 end
 function rule_Spongify_Challenge_Card_Furmage()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Rictusempra") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Rictusempra") and has("Alohomora"))
 	end
 end
 function rule_Skurge_Challenge_Card_Gregory()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	end
 end
 function rule_Spongify_Challenge_Card_Grunnion()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Entry_Hall_Card_Jones()
@@ -494,9 +494,9 @@ function rule_Entry_Hall_Card_Jones()
 end
 function rule_Grand_Staircase_Card_Lufkin()
 	if isOpenCastle() then
-		return true and (has("Alohomora") and has("Skurge") and has("Diffindo") and has("Spongify"))
+		return true and (has("Alohomora") and has("Skurge") and has("Diffindo"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Diffindo") and has("Spongify"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Diffindo"))
 	end
 end
 function rule_Grand_Staircase_Card_Maeve()
@@ -524,7 +524,7 @@ function rule_Bicorn_Level_Card_Nutcombe()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	end
 end
 function rule_Castle_Exterior_Card_Oglethorpe()
@@ -545,7 +545,7 @@ function rule_Forbidden_Forest_Card_Oliphant()
 	if isOpenCastle() then
 		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Rictusempra") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Rictusempra") and has("Alohomora"))
 	end
 end
 function rule_Castle_Exterior_Card_Plunkett()
@@ -559,14 +559,14 @@ function rule_Spongify_Challenge_Card_Rastrick()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Card_Shimpling()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Entry_Hall_Card_Shingleton()
@@ -580,28 +580,28 @@ function rule_Diffindo_Challenge_Card_Smethwyck()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Card_Stalk()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")) and has("Alohomora"))
 	end
 end
 function rule_Spongify_Challenge_Card_Summerbee()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Card_Thurkell()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Grand_Staircase_Card_Toothill()
@@ -615,14 +615,14 @@ function rule_Rictusempra_Challenge_Card_Tremlett()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Boomslang_Level_Card_Tugwood()
 	if isOpenCastle() then
-		return (has("Boomslang Level Key") and has("Diffindo")) and (has("Flipendo") and has("Lumos") and has("Alohomora"))
+		return (has("Boomslang Level Key") and has("Diffindo")) and (has("Diffindo") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Diffindo") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Castle_Exterior_Card_Wadcock()
@@ -634,16 +634,16 @@ function rule_Castle_Exterior_Card_Wadcock()
 end
 function rule_Entry_Hall_Card_Wendelin()
 	if isOpenCastle() then
-		return true and (has("Skurge") and has("Lumos") and has("Diffindo") and has("Alohomora"))
+		return true and (has("Lumos") and has("Diffindo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Diffindo") and has("Rictusempra") and has("Lumos"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Diffindo") and has("Rictusempra") and has("Lumos"))
 	end
 end
 function rule_Goyle_Level_Card_Wildsmith()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Entry_Hall_Card_Wright()
@@ -655,9 +655,9 @@ function rule_Entry_Hall_Card_Wright()
 end
 function rule_Castle_Exterior_Card_Youdle()
 	if isOpenCastle() then
-		return true and ((has("Flipendo") or has("Spongify")) and has("Alohomora"))
+		return true and ((has("Flipendo") or has("Spongify") or has("Running")) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Flipendo") and has("Spongify"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and ((has("Rictusempra") and has("Skurge") and has("Flipendo") and has("Spongify") and has("Bicorn Level Key")) or has("Running")))
 	end
 end
 function rule_Gold_Card_Room_Card_Bott()
@@ -755,110 +755,110 @@ function rule_Duelling_Club_Duel_Rank_1()
 	if isOpenCastle() then
 		return has("Duelling Key")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key"))
 	end
 end
 function rule_Duelling_Club_Duel_Rank_2()
 	if isOpenCastle() then
 		return has("Duelling Key")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key"))
 	end
 end
 function rule_Duelling_Club_Duel_Rank_3()
 	if isOpenCastle() then
 		return has("Duelling Key")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key"))
 	end
 end
 function rule_Duelling_Club_Duel_Rank_4()
 	if isOpenCastle() then
 		return has("Duelling Key")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key"))
 	end
 end
 function rule_Duelling_Club_Duel_Rank_5()
 	if isOpenCastle() then
 		return has("Duelling Key")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key"))
 	end
 end
 function rule_Duelling_Club_Duel_Rank_6()
 	if isOpenCastle() then
 		return has("Duelling Key")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key"))
 	end
 end
 function rule_Duelling_Club_Duel_Rank_7()
 	if isOpenCastle() then
 		return has("Duelling Key")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key"))
 	end
 end
 function rule_Duelling_Club_Duel_Rank_8()
 	if isOpenCastle() then
 		return has("Duelling Key")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key"))
 	end
 end
 function rule_Duelling_Club_Duel_Rank_9()
 	if isOpenCastle() then
 		return has("Duelling Key")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key"))
 	end
 end
 function rule_Duelling_Club_Duel_Rank_10()
 	if isOpenCastle() then
 		return has("Duelling Key")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key") and has("Duelling Key"))
 	end
 end
 function rule_Quidditch_Match_1_Hufflepuff()
 	if isOpenCastle() then
-		return has("Quidditch Key")
+		return (has("Quidditch Key") or has("Running"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Quidditch Key")) and has("Rictusempra")
 	end
 end
 function rule_Quidditch_Match_2_Ravenclaw()
 	if isOpenCastle() then
-		return has("Quidditch Key")
+		return (has("Quidditch Key") or has("Running"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Quidditch Key")) and (has("Rictusempra") and has("Skurge"))
 	end
 end
 function rule_Quidditch_Match_3_Slytherin()
 	if isOpenCastle() then
-		return has("Quidditch Key")
+		return (has("Quidditch Key") or has("Running"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Quidditch Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Quidditch_Match_4_Hufflepuff()
 	if isOpenCastle() then
-		return has("Quidditch Key")
+		return (has("Quidditch Key") or has("Running"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Quidditch Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora") and has("Bicorn Level Key"))
 	end
 end
 function rule_Quidditch_Match_5_Ravenclaw()
 	if isOpenCastle() then
-		return has("Quidditch Key")
+		return (has("Quidditch Key") or has("Running"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Quidditch Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key"))
 	end
 end
 function rule_Quidditch_Match_6_Slytherin()
 	if isOpenCastle() then
-		return has("Quidditch Key")
+		return (has("Quidditch Key") or has("Running"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Quidditch Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key"))
 	end
@@ -867,98 +867,98 @@ function rule_Rictusempra_Challenge_Beat_Par_Time()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora") and has("Lumos"))
 	end
 end
 function rule_Skurge_Challenge_Beat_Par_Time()
 	if isOpenCastle() then
 		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Beat_Par_Time()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Diffindo") and has("Lumos") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Spongify_Challenge_Beat_Par_Time()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Skurge") and has("Flipendo") and has("Alohomora") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Skurge") and has("Flipendo") and has("Alohomora") and has("Lumos"))
 	end
 end
 function rule_Bicorn_Level_Secret_2()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	end
 end
 function rule_Bicorn_Level_Secret_1()
 	if isOpenCastle() then
-		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge"))
+		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and (has("Flipendo") or has("Running")) and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and (has("Flipendo") or has("Running")) and has("Skurge"))
 	end
 end
 function rule_Bicorn_Level_Secret_6()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Lumos") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Lumos") and has("Rictusempra"))
 	end
 end
 function rule_Bicorn_Level_Secret_3()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	end
 end
 function rule_Bicorn_Level_Secret_4()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	end
 end
 function rule_Bicorn_Level_Secret_5()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	end
 end
 function rule_Bicorn_Level_Secret_7()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	end
 end
 function rule_Boomslang_Level_Secret_3()
 	if isOpenCastle() then
-		return (has("Boomslang Level Key") and has("Diffindo")) and has("Alohomora")
+		return (has("Boomslang Level Key") and has("Diffindo")) and (has("Diffindo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Boomslang_Level_Secret_2()
 	if isOpenCastle() then
-		return (has("Boomslang Level Key") and has("Diffindo")) and (has("Flipendo") and has("Lumos"))
+		return (has("Boomslang Level Key") and has("Diffindo")) and (has("Diffindo") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Diffindo") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Boomslang_Level_Secret_1()
 	if isOpenCastle() then
-		return (has("Boomslang Level Key") and has("Diffindo")) and has("Flipendo")
+		return (has("Boomslang Level Key") and has("Diffindo")) and (has("Diffindo") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Diffindo") and has("Flipendo"))
 	end
 end
 function rule_Castle_Exterior_Secret_1()
@@ -998,16 +998,16 @@ function rule_Castle_Exterior_Secret_5()
 end
 function rule_Castle_Exterior_Secret_6()
 	if isOpenCastle() then
-		return true and (has("Flipendo") or has("Spongify"))
+		return true and (has("Flipendo") or has("Spongify") or has("Running"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Rictusempra") and has("Flipendo") and has("Bicorn Level Key"))
+		return (has("Lumos") and has("Flipendo")) and ((has("Alohomora") and has("Skurge") and has("Rictusempra") and has("Flipendo") and has("Bicorn Level Key")) or has("Running"))
 	end
 end
 function rule_Castle_Exterior_Secret_7()
 	if isOpenCastle() then
 		return true and has("Diffindo")
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Rictusempra") and has("Diffindo") and has("Bicorn Level Key"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and ((has("Skurge") and has("Rictusempra") and has("Diffindo") and has("Bicorn Level Key")) or has("Running")))
 	end
 end
 function rule_Castle_Exterior_Secret_8()
@@ -1019,219 +1019,219 @@ function rule_Castle_Exterior_Secret_8()
 end
 function rule_Chamber_of_Secrets_Secret_3()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Flipendo"))
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and (has("Flipendo") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Diffindo") and has("Skurge") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Chamber_of_Secrets_Secret_2()
 	if isOpenCastle() then
 		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Diffindo") and has("Skurge"))
 	end
 end
 function rule_Chamber_of_Secrets_Secret_1()
 	if isOpenCastle() then
 		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Skurge") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Skurge") and has("Lumos"))
 	end
 end
 function rule_Chamber_of_Secrets_Secret_5()
 	if isOpenCastle() then
 		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Chamber_of_Secrets_Secret_4()
 	if isOpenCastle() then
 		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Chamber_of_Secrets_Secret_6()
 	if isOpenCastle() then
 		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Dumbledore_s_Study_Secret()
 	if isOpenCastle() then
 		return has("Alohomora") and (has("Alohomora") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora") and has("Bicorn Level Key") and has("Boomslang Level Key"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora") and has("Flipendo") and has("Bicorn Level Key") and has("Boomslang Level Key"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_1()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and has("Alohomora")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and has("Alohomora")
 	end
 end
 function rule_Diffindo_Challenge_Secret_2()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and has("Flipendo")
 	end
 end
 function rule_Diffindo_Challenge_Secret_3()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_5()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_6()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_4()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_7()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")) and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_8()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")) and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_9()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_10()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Secret_11()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora") and has("Lumos"))
 	end
 end
 function rule_Forbidden_Forest_Secret_4()
 	if isOpenCastle() then
 		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Diffindo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Lumos") and has("Spongify") and has("Diffindo"))
 	end
 end
 function rule_Forbidden_Forest_Secret_3()
 	if isOpenCastle() then
 		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Diffindo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Lumos") and has("Spongify") and has("Diffindo"))
 	end
 end
 function rule_Forbidden_Forest_Secret_2()
 	if isOpenCastle() then
 		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Rictusempra"))
 	end
 end
 function rule_Forbidden_Forest_Secret_1()
 	if isOpenCastle() then
-		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Flipendo"))
+		return has("Forbidden Forest Key") and (((has("Lumos") and has("Spongify")) or has("Running")) and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (((has("Lumos") and has("Spongify")) or has("Running")) and has("Flipendo"))
 	end
 end
 function rule_Goyle_Level_Secret_5()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Goyle_Level_Secret_6()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Goyle_Level_Secret_8()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora") and has("Lumos"))
 	end
 end
 function rule_Goyle_Level_Secret_7()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Goyle_Level_Secret_1()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Lumos"))
 	end
 end
 function rule_Goyle_Level_Secret_3()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Goyle_Level_Secret_4()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Goyle_Level_Secret_2()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Entry_Hall_Secret_1()
 	if isOpenCastle() then
-		return true and (has("Alohomora") and has("Lumos") and has("Skurge"))
+		return true and (has("Lumos") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and has("Skurge") and has("Alohomora") and has("Lumos"))
+		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and has("Skurge") and has("Lumos"))
 	end
 end
 function rule_Entry_Hall_Secret_2()
@@ -1243,9 +1243,9 @@ function rule_Entry_Hall_Secret_2()
 end
 function rule_Entry_Hall_Secret_3()
 	if isOpenCastle() then
-		return true and (has("Skurge") and has("Lumos") and has("Diffindo"))
+		return true and ((has("Skurge") or has("Alohomora")) and has("Lumos") and has("Diffindo"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Lumos"))
+		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and (has("Skurge") or has("Alohomora")) and has("Diffindo") and has("Lumos"))
 	end
 end
 function rule_Entry_Hall_Secret_4()
@@ -1348,9 +1348,9 @@ function rule_Grand_Staircase_Secret_5()
 end
 function rule_Grand_Staircase_Secret_6()
 	if isOpenCastle() then
-		return true and (has("Alohomora") and has("Skurge") and has("Diffindo") and has("Spongify"))
+		return true and (has("Alohomora") and has("Skurge") and has("Diffindo"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Diffindo") and has("Spongify"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Diffindo"))
 	end
 end
 function rule_Grand_Staircase_Secret_7()
@@ -1378,672 +1378,672 @@ function rule_Rictusempra_Challenge_Secret_1()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Rictusempra_Challenge_Secret_3()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Rictusempra_Challenge_Secret_5()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Rictusempra_Challenge_Secret_4()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Rictusempra_Challenge_Secret_6()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Rictusempra_Challenge_Secret_7()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Rictusempra_Challenge_Secret_2()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora") and has("Lumos"))
 	end
 end
 function rule_Skurge_Challenge_Secret_1()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and has("Alohomora")
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Skurge_Challenge_Secret_2()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Alohomora"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and (has("Flipendo") or has("Running")) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and (has("Flipendo") or has("Running")) and has("Alohomora"))
 	end
 end
 function rule_Skurge_Challenge_Secret_3()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Skurge_Challenge_Secret_4()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos") and has("Rictusempra"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Rictusempra"))
 	end
 end
 function rule_Skurge_Challenge_Secret_5()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos") and has("Alohomora"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora"))
 	end
 end
 function rule_Skurge_Challenge_Secret_6()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	end
 end
 function rule_Skurge_Challenge_Secret_7()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos") and has("Alohomora"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Slytherin_Common_Room_Secret_7()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and has("Alohomora"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Slytherin_Common_Room_Secret_6()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and has("Alohomora"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Slytherin_Common_Room_Secret_5()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	end
 end
 function rule_Slytherin_Common_Room_Secret_8()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	end
 end
 function rule_Slytherin_Common_Room_Secret_4()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and has("Alohomora"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Slytherin_Common_Room_Secret_3()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	end
 end
 function rule_Slytherin_Common_Room_Secret_2()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	end
 end
 function rule_Slytherin_Common_Room_Secret_1()
 	if isOpenCastle() then
 		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo"))
 	end
 end
 function rule_Spongify_Challenge_Secret_1()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Spongify_Challenge_Secret_2()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Spongify_Challenge_Secret_3()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo"))
 	end
 end
 function rule_Spongify_Challenge_Secret_4()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Alohomora"))
 	end
 end
 function rule_Spongify_Challenge_Secret_5()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Lumos") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Lumos") and has("Flipendo"))
 	end
 end
 function rule_Spongify_Challenge_Secret_6()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Rictusempra"))
 	end
 end
 function rule_Spongify_Challenge_Secret_7()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Spongify_Challenge_Secret_8()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Spongify_Challenge_Secret_9()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora") and has("Lumos"))
 	end
 end
 function rule_Spongify_Challenge_Secret_10()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Spongify_Challenge_Secret_11()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	end
 end
 function rule_Spongify_Challenge_Secret_12()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Spongify_Challenge_Secret_13()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Lumos"))
 	end
 end
 function rule_Spongify_Challenge_Secret_14()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Spongify_Challenge_Secret_15()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Spongify_Challenge_Secret_16()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Whomping_Willow_Secret_1()
 	if isOpenCastle() then
 		return (has("Whomping Willow Key") and has("Spongify")) and (has("Lumos") and has("Alohomora"))
 	else
-		return true and (has("Alohomora") and has("Lumos"))
+		return true and (has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Whomping_Willow_Secret_2()
 	if isOpenCastle() then
 		return (has("Whomping Willow Key") and has("Spongify")) and (has("Lumos") and has("Flipendo") and has("Alohomora"))
 	else
-		return true and (has("Alohomora") and has("Lumos") and has("Flipendo"))
+		return true and (has("Lumos") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Gryffindor_Challenge_Secret_1()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return has("Gryffindor Challenge Key") and ((has("Diffindo") or has("Running")) and has("Spongify") and has("Alohomora"))
 	else
-		return false
+		return false and ((has("Diffindo") or has("Running")) and has("Spongify") and has("Alohomora"))
 	end
 end
 function rule_Gryffindor_Challenge_Secret_2()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return has("Gryffindor Challenge Key") and ((has("Diffindo") or has("Running")) and has("Spongify") and has("Alohomora"))
 	else
-		return false
+		return false and ((has("Diffindo") or has("Running")) and has("Spongify") and has("Alohomora"))
 	end
 end
 function rule_Gryffindor_Challenge_Secret_3()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Secret_4()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Secret_5()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Secret_6()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Secret_7()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Secret_8()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Secret_9()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Rictusempra_Challenge_Challenge_Star_3()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Rictusempra_Challenge_Challenge_Star_10()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Rictusempra_Challenge_Challenge_Star_2()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Rictusempra_Challenge_Challenge_Star_6()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Rictusempra_Challenge_Challenge_Star_1()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Rictusempra_Challenge_Challenge_Star_4()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Rictusempra_Challenge_Challenge_Star_8()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Rictusempra_Challenge_Challenge_Star_5()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo") and has("Alohomora") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo") and has("Alohomora") and has("Lumos"))
 	end
 end
 function rule_Rictusempra_Challenge_Challenge_Star_7()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Rictusempra_Challenge_Challenge_Star_9()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Skurge_Challenge_Challenge_Star_1()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and has("Flipendo")
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and (has("Flipendo") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Skurge_Challenge_Challenge_Star_2()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and has("Flipendo")
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and (has("Flipendo") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Skurge_Challenge_Challenge_Star_3()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Alohomora"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and (has("Flipendo") or has("Running")) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and (has("Flipendo") or has("Running")) and has("Alohomora"))
 	end
 end
 function rule_Skurge_Challenge_Challenge_Star_4()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	end
 end
 function rule_Skurge_Challenge_Challenge_Star_5()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	end
 end
 function rule_Skurge_Challenge_Challenge_Star_6()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos") and has("Alohomora"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Skurge_Challenge_Challenge_Star_7()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	end
 end
 function rule_Skurge_Challenge_Challenge_Star_10()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos") and has("Alohomora"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Skurge_Challenge_Challenge_Star_9()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	end
 end
 function rule_Skurge_Challenge_Challenge_Star_8()
 	if isOpenCastle() then
-		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Flipendo") and has("Lumos"))
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Rictusempra") and has("Skurge"))
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_8()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_14()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Lumos"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Lumos"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_9()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_12()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_2()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_4()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_5()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_6()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Lumos"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_11()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")) and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_10()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge") and has("Alohomora"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and (has("Skurge") or has("Running")) and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_3()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_7()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_13()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Skurge"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Diffindo_Challenge_Challenge_Star_1()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_1()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and has("Spongify")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and has("Spongify")
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_3()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and has("Spongify")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and has("Spongify")
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_2()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Alohomora"))
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_4()
 	if isOpenCastle() then
-		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo"))
+		return has("Spongify Challenge Key") and (has("Spongify") and (has("Flipendo") or has("Running")))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_5()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo"))
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_6()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora") and has("Lumos"))
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_7()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_8()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_9()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_10()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
 function rule_Gryffindor_Challenge_Challenge_Star_7()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Challenge_Star_8()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Challenge_Star_9()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Challenge_Star_1()
@@ -2055,79 +2055,79 @@ function rule_Gryffindor_Challenge_Challenge_Star_1()
 end
 function rule_Gryffindor_Challenge_Challenge_Star_2()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify"))
+		return has("Gryffindor Challenge Key") and ((has("Diffindo") or has("Running")) and has("Spongify"))
 	else
-		return false
+		return false and ((has("Diffindo") or has("Running")) and has("Spongify"))
 	end
 end
 function rule_Gryffindor_Challenge_Challenge_Star_3()
 	if isOpenCastle() then
 		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora"))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora"))
 	end
 end
 function rule_Gryffindor_Challenge_Challenge_Star_6()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Challenge_Star_4()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Challenge_Star_5()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Gryffindor_Challenge_Challenge_Star_10()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
 function rule_Boomslang_Level_Complete()
 	if isOpenCastle() then
 		return (has("Boomslang Level Key") and has("Diffindo")) and has("Diffindo")
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and has("Diffindo")
 	end
 end
 function rule_Bicorn_Level_Complete()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Skurge") and has("Rictusempra"))
 	end
 end
 function rule_Goyle_Level_Complete()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
 function rule_Forbidden_Forest_Complete()
 	if isOpenCastle() then
 		return has("Forbidden Forest Key") and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Flipendo") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Flipendo") and has("Rictusempra"))
 	end
 end
 function rule_Chamber_of_Secrets_Complete()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Skurge") and has("Flipendo") and has("Diffindo") and has("Rictusempra"))
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Whomping_Willow_Complete()
@@ -2139,44 +2139,51 @@ function rule_Whomping_Willow_Complete()
 end
 function rule_Slytherin_Common_Room_Complete()
 	if isOpenCastle() then
-		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos"))
+		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	end
 end
 function rule_Rictusempra_Challenge_Complete()
 	if isOpenCastle() then
 		return has("Rictusempra Challenge Key") and (has("Flipendo") and has("Rictusempra"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Flipendo") and has("Rictusempra"))
 	end
 end
 function rule_Skurge_Challenge_Complete()
 	if isOpenCastle() then
 		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and has("Skurge")
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos"))
 	end
 end
 function rule_Diffindo_Challenge_Complete()
 	if isOpenCastle() then
-		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Rictusempra") and has("Flipendo") and has("Diffindo") and has("Lumos") and has("Skurge"))
+		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Skurge"))
 	end
 end
 function rule_Spongify_Challenge_Complete()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Skurge") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Skurge") and has("Flipendo"))
 	end
 end
 function rule_Gryffindor_Challenge_Complete()
 	if isOpenCastle() then
-		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and has("Flipendo"))
+		return has("Gryffindor Challenge Key") and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	else
-		return false
+		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
+	end
+end
+function rule_Gold_Card_Room_Complete()
+	if isOpenCastle() then
+		return (count("silver_cards") >= 20) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
+	else
+		return (has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify")))
 	end
 end
 function rule_Entry_Hall_Card_Vendor_1()
@@ -2246,7 +2253,7 @@ function rule_Castle_Exterior_Card_Vendor_1()
 	if isOpenCastle() then
 		return true
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Rictusempra") and has("Flipendo") and has("Bicorn Level Key"))
+		return (has("Lumos") and has("Flipendo")) and ((has("Alohomora") and has("Skurge") and has("Rictusempra") and has("Flipendo") and has("Bicorn Level Key")) or has("Running"))
 	end
 end
 function rule_Castle_Exterior_Card_Vendor_2()
@@ -2431,14 +2438,14 @@ function rule_Chamber_of_Secrets_Cauldron_10()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and has("Flipendo")
 	end
 end
-function rule_Whomping_Willow_Chest_1()
+function rule_Whomping_Willow_Chest_4()
 	if isOpenCastle() then
 		return (has("Whomping Willow Key") and has("Spongify")) and has("Alohomora")
 	else
 		return true and has("Alohomora")
 	end
 end
-function rule_Whomping_Willow_Chest_2()
+function rule_Whomping_Willow_Chest_1()
 	if isOpenCastle() then
 		return (has("Whomping Willow Key") and has("Spongify")) and has("Alohomora")
 	else
@@ -2452,14 +2459,7 @@ function rule_Whomping_Willow_Chest_3()
 		return true and has("Alohomora")
 	end
 end
-function rule_Whomping_Willow_Chest_4()
-	if isOpenCastle() then
-		return (has("Whomping Willow Key") and has("Spongify")) and has("Alohomora")
-	else
-		return true and has("Alohomora")
-	end
-end
-function rule_Whomping_Willow_Chest_5()
+function rule_Whomping_Willow_Chest_2()
 	if isOpenCastle() then
 		return (has("Whomping Willow Key") and has("Spongify")) and has("Alohomora")
 	else
@@ -3999,6 +3999,13 @@ function rule_Grand_Staircase_Chest_8()
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
+function rule_Dumbledore_s_Study_Cigar_Box()
+	if isOpenCastle() then
+		return has("Alohomora") and has("Alohomora")
+	else
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and has("Alohomora")
+	end
+end
 function rule_Grand_Staircase_Cigar_Box_1()
 	if isOpenCastle() then
 		return true and has("Alohomora")
@@ -4013,13 +4020,6 @@ function rule_Grand_Staircase_Cigar_Box_2()
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Grand_Staircase_Cigar_Box_3()
-	if isOpenCastle() then
-		return true and has("Alohomora")
-	else
-		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
-	end
-end
 function rule_Grand_Staircase_Decanter_1()
 	if isOpenCastle() then
 		return true and has("Flipendo")
@@ -4027,14 +4027,14 @@ function rule_Grand_Staircase_Decanter_1()
 		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
 	end
 end
-function rule_Grand_Staircase_Decanter_2()
+function rule_Dumbledore_s_Study_Decanter()
 	if isOpenCastle() then
-		return true and has("Flipendo")
+		return has("Alohomora") and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and has("Flipendo")
 	end
 end
-function rule_Grand_Staircase_Decanter_3()
+function rule_Grand_Staircase_Decanter_2()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else

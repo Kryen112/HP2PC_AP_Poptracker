@@ -27,8 +27,8 @@ SLOT_CODES = {
 			[false] = 0, [true] = 1,
 		},
 	},
-	allow_secrets_progression = {
-		code = "allow_secrets_progression",
+	allow_missable_progression = {
+		code = "allow_missable_progression",
 		mapping = {
 			[0] = 0, [1] = 1,
 			[false] = 0, [true] = 1,

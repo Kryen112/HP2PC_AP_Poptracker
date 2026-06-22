@@ -53,7 +53,7 @@
 				"tradersanity",
 				"enable_wizard_cards",
 				"enable_secrets",
-				"allow_secrets_progression",
+				"allow_missable_progression",
 				"enable_challenge_stars"
 			],
 			[

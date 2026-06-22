@@ -51,8 +51,8 @@ function enableSecrets()
     return has("enable_secrets_on")
 end
 
-function allowSecretsProgression()
-    return has("allow_secrets_progression_on")
+function allowMissableProgression()
+    return has("allow_missable_progression_on")
 end
 
 function enableChallengeStars()
