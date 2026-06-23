@@ -317,8 +317,8 @@
 				"map_locations": [
 					{
 						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
+						"x": 826,
+						"y": 118
 					}
 				]
 			},
@@ -337,8 +337,8 @@
 				"map_locations": [
 					{
 						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
+						"x": 557,
+						"y": 119
 					}
 				]
 			},
@@ -357,8 +357,8 @@
 				"map_locations": [
 					{
 						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
+						"x": 346,
+						"y": 66
 					}
 				]
 			},
@@ -377,8 +377,8 @@
 				"map_locations": [
 					{
 						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
+						"x": 437,
+						"y": 211
 					}
 				]
 			},
@@ -397,8 +397,8 @@
 				"map_locations": [
 					{
 						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
+						"x": 499,
+						"y": 292
 					}
 				]
 			},
@@ -417,8 +417,8 @@
 				"map_locations": [
 					{
 						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
+						"x": 800,
+						"y": 396
 					}
 				]
 			},
@@ -437,8 +437,8 @@
 				"map_locations": [
 					{
 						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
+						"x": 1104,
+						"y": 963
 					}
 				]
 			},
@@ -457,8 +457,8 @@
 				"map_locations": [
 					{
 						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
+						"x": 483,
+						"y": 343
 					}
 				]
 			},
@@ -477,8 +477,8 @@
 				"map_locations": [
 					{
 						"map": "Castle Exterior",
-						"x": 0,
-						"y": 0
+						"x": 167,
+						"y": 340
 					}
 				]
 			},
