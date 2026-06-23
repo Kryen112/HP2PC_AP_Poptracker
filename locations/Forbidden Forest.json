@@ -166,8 +166,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 233,
+						"y": 420
 					}
 				]
 			},
@@ -186,8 +186,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 1221,
+						"y": 276
 					}
 				]
 			},
@@ -335,8 +335,8 @@
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 0,
-						"y": 0
+						"x": 1601,
+						"y": 250
 					}
 				]
 			}
