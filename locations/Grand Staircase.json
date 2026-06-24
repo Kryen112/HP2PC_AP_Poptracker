@@ -1217,18 +1217,6 @@
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
 					{
-						"name": "Bark Spawner 1",
-						"ref": "Chamber of Secrets/Bark Spawner 1/Bark Spawner 1"
-					},
-					{
-						"name": "Bark Spawner 2",
-						"ref": "Chamber of Secrets/Bark Spawner 2/Bark Spawner 2"
-					},
-					{
-						"name": "Bark Spawner 3",
-						"ref": "Chamber of Secrets/Bark Spawner 3/Bark Spawner 3"
-					},
-					{
 						"name": "Card Elphick",
 						"ref": "Chamber of Secrets/Card Elphick/Card Elphick"
 					},
@@ -1305,16 +1293,16 @@
 						"ref": "Chamber of Secrets/Complete/Complete"
 					},
 					{
-						"name": "Mucus Spawner 1",
-						"ref": "Chamber of Secrets/Mucus Spawner 1/Mucus Spawner 1"
+						"name": "Flobberworm Mucous Jar 1",
+						"ref": "Chamber of Secrets/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
 					},
 					{
-						"name": "Mucus Spawner 2",
-						"ref": "Chamber of Secrets/Mucus Spawner 2/Mucus Spawner 2"
+						"name": "Flobberworm Mucous Jar 2",
+						"ref": "Chamber of Secrets/Flobberworm Mucous Jar 2/Flobberworm Mucous Jar 2"
 					},
 					{
-						"name": "Mucus Spawner 3",
-						"ref": "Chamber of Secrets/Mucus Spawner 3/Mucus Spawner 3"
+						"name": "Flobberworm Mucous Jar 3",
+						"ref": "Chamber of Secrets/Flobberworm Mucous Jar 3/Flobberworm Mucous Jar 3"
 					},
 					{
 						"name": "Secret 1",
@@ -1339,6 +1327,18 @@
 					{
 						"name": "Secret 6",
 						"ref": "Chamber of Secrets/Secret 6/Secret 6"
+					},
+					{
+						"name": "Wiggentree Bark Jar 1",
+						"ref": "Chamber of Secrets/Wiggentree Bark Jar 1/Wiggentree Bark Jar 1"
+					},
+					{
+						"name": "Wiggentree Bark Jar 2",
+						"ref": "Chamber of Secrets/Wiggentree Bark Jar 2/Wiggentree Bark Jar 2"
+					},
+					{
+						"name": "Wiggentree Bark Jar 3",
+						"ref": "Chamber of Secrets/Wiggentree Bark Jar 3/Wiggentree Bark Jar 3"
 					}
 				],
 				"map_locations": [

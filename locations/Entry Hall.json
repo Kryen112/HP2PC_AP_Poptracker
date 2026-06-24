@@ -5,29 +5,6 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
-				"name": "Bark Spawner 1",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Entry_Hall_Bark_Spawner_1"
-				],
-				"sections": [
-					{
-						"name": "Bark Spawner 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Entry Hall",
-						"x": 138,
-						"y": 643
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
 				"name": "Card Alderton",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -552,6 +529,29 @@
 				]
 			},
 			{
+				"name": "Flobberworm Mucous Jar 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Flobberworm_Mucous_Jar_1"
+				],
+				"sections": [
+					{
+						"name": "Flobberworm Mucous Jar 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 165,
+						"y": 650
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
 				"name": "Ingredient Vendor 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -706,29 +706,6 @@
 						"map": "Entry Hall",
 						"x": 289,
 						"y": 332
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Mucus Spawner 1",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Entry_Hall_Mucus_Spawner_1"
-				],
-				"sections": [
-					{
-						"name": "Mucus Spawner 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Entry Hall",
-						"x": 165,
-						"y": 650
 					}
 				],
 				"visibility_rules": [
@@ -963,6 +940,29 @@
 				],
 				"visibility_rules": [
 					"$visSecrets"
+				]
+			},
+			{
+				"name": "Wiggentree Bark Jar 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Wiggentree_Bark_Jar_1"
+				],
+				"sections": [
+					{
+						"name": "Wiggentree Bark Jar 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 138,
+						"y": 643
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -1252,18 +1252,6 @@
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
 					{
-						"name": "Bark Spawner 1",
-						"ref": "Spongify Challenge/Bark Spawner 1/Bark Spawner 1"
-					},
-					{
-						"name": "Bark Spawner 2",
-						"ref": "Spongify Challenge/Bark Spawner 2/Bark Spawner 2"
-					},
-					{
-						"name": "Bark Spawner 3",
-						"ref": "Spongify Challenge/Bark Spawner 3/Bark Spawner 3"
-					},
-					{
 						"name": "Beat Par Time",
 						"ref": "Spongify Challenge/Completion/Beat Par Time"
 					},
@@ -1404,16 +1392,16 @@
 						"ref": "Spongify Challenge/Decanter 2/Decanter 2"
 					},
 					{
-						"name": "Mucus Spawner 1",
-						"ref": "Spongify Challenge/Mucus Spawner 1/Mucus Spawner 1"
+						"name": "Flobberworm Mucous Jar 1",
+						"ref": "Spongify Challenge/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
 					},
 					{
-						"name": "Mucus Spawner 2",
-						"ref": "Spongify Challenge/Mucus Spawner 2/Mucus Spawner 2"
+						"name": "Flobberworm Mucous Jar 2",
+						"ref": "Spongify Challenge/Flobberworm Mucous Jar 2/Flobberworm Mucous Jar 2"
 					},
 					{
-						"name": "Mucus Spawner 3",
-						"ref": "Spongify Challenge/Mucus Spawner 3/Mucus Spawner 3"
+						"name": "Flobberworm Mucous Jar 3",
+						"ref": "Spongify Challenge/Flobberworm Mucous Jar 3/Flobberworm Mucous Jar 3"
 					},
 					{
 						"name": "Music Box 1",
@@ -1486,6 +1474,18 @@
 					{
 						"name": "Secret 9",
 						"ref": "Spongify Challenge/Secret 9 & Challenge Star 6/Secret 9"
+					},
+					{
+						"name": "Wiggentree Bark Jar 1",
+						"ref": "Spongify Challenge/Wiggentree Bark Jar 1/Wiggentree Bark Jar 1"
+					},
+					{
+						"name": "Wiggentree Bark Jar 2",
+						"ref": "Spongify Challenge/Wiggentree Bark Jar 2/Wiggentree Bark Jar 2"
+					},
+					{
+						"name": "Wiggentree Bark Jar 3",
+						"ref": "Spongify Challenge/Wiggentree Bark Jar 3/Wiggentree Bark Jar 3"
 					}
 				],
 				"map_locations": [
@@ -1501,10 +1501,6 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
-					{
-						"name": "Bark Spawner 1",
-						"ref": "Skurge Challenge/Bark Spawner 1/Bark Spawner 1"
-					},
 					{
 						"name": "Beat Par Time",
 						"ref": "Skurge Challenge/Completion/Beat Par Time"
@@ -1654,6 +1650,10 @@
 						"ref": "Skurge Challenge/Decanter 2/Decanter 2"
 					},
 					{
+						"name": "Flobberworm Mucous Jar 1",
+						"ref": "Skurge Challenge/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
+					},
+					{
 						"name": "Jewel Box 1",
 						"ref": "Skurge Challenge/Jewel Box 1/Jewel Box 1"
 					},
@@ -1664,10 +1664,6 @@
 					{
 						"name": "Knight 2",
 						"ref": "Skurge Challenge/Knight 2/Knight 2"
-					},
-					{
-						"name": "Mucus Spawner 1",
-						"ref": "Skurge Challenge/Mucus Spawner 1/Mucus Spawner 1"
 					},
 					{
 						"name": "Music Box 1",
@@ -1704,6 +1700,10 @@
 					{
 						"name": "Secret 7",
 						"ref": "Skurge Challenge/Secret 7/Secret 7"
+					},
+					{
+						"name": "Wiggentree Bark Jar 1",
+						"ref": "Skurge Challenge/Wiggentree Bark Jar 1/Wiggentree Bark Jar 1"
 					}
 				],
 				"map_locations": [
@@ -1719,14 +1719,6 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
-					{
-						"name": "Bark Spawner 1",
-						"ref": "Bicorn Level/Bark Spawner 1/Bark Spawner 1"
-					},
-					{
-						"name": "Bark Spawner 2",
-						"ref": "Bicorn Level/Bark Spawner 2/Bark Spawner 2"
-					},
 					{
 						"name": "Card Agrippa",
 						"ref": "Bicorn Level/Card Agrippa/Card Agrippa"
@@ -1812,12 +1804,12 @@
 						"ref": "Bicorn Level/Complete/Complete"
 					},
 					{
-						"name": "Mucus Spawner 1",
-						"ref": "Bicorn Level/Mucus Spawner 1/Mucus Spawner 1"
+						"name": "Flobberworm Mucous Jar 1",
+						"ref": "Bicorn Level/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
 					},
 					{
-						"name": "Mucus Spawner 2",
-						"ref": "Bicorn Level/Mucus Spawner 2/Mucus Spawner 2"
+						"name": "Flobberworm Mucous Jar 2",
+						"ref": "Bicorn Level/Flobberworm Mucous Jar 2/Flobberworm Mucous Jar 2"
 					},
 					{
 						"name": "Peeves Chest 1",
@@ -1850,6 +1842,14 @@
 					{
 						"name": "Secret 7",
 						"ref": "Bicorn Level/Secret 7/Secret 7"
+					},
+					{
+						"name": "Wiggentree Bark Jar 1",
+						"ref": "Bicorn Level/Wiggentree Bark Jar 1/Wiggentree Bark Jar 1"
+					},
+					{
+						"name": "Wiggentree Bark Jar 2",
+						"ref": "Bicorn Level/Wiggentree Bark Jar 2/Wiggentree Bark Jar 2"
 					}
 				],
 				"map_locations": [
@@ -1950,8 +1950,8 @@
 						"ref": "Goyle Level/Complete/Complete"
 					},
 					{
-						"name": "Mucus Spawner 1",
-						"ref": "Goyle Level/Mucus Spawner 1/Mucus Spawner 1"
+						"name": "Flobberworm Mucous Jar 1",
+						"ref": "Goyle Level/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
 					},
 					{
 						"name": "Peeves Chest 1",
@@ -2004,10 +2004,6 @@
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
 					{
-						"name": "Bark Spawner 1",
-						"ref": "Slytherin Common Room/Bark Spawner 1/Bark Spawner 1"
-					},
-					{
 						"name": "Card Clagg",
 						"ref": "Slytherin Common Room/Card Clagg/Card Clagg"
 					},
@@ -2056,6 +2052,10 @@
 						"ref": "Slytherin Common Room/Complete/Complete"
 					},
 					{
+						"name": "Flobberworm Mucous Jar 1",
+						"ref": "Slytherin Common Room/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
+					},
+					{
 						"name": "Knight 1",
 						"ref": "Slytherin Common Room/Knight 1/Knight 1"
 					},
@@ -2082,10 +2082,6 @@
 					{
 						"name": "Knight 7",
 						"ref": "Slytherin Common Room/Knight 7/Knight 7"
-					},
-					{
-						"name": "Mucus Spawner 1",
-						"ref": "Slytherin Common Room/Mucus Spawner 1/Mucus Spawner 1"
 					},
 					{
 						"name": "Secret 1",
@@ -2118,6 +2114,10 @@
 					{
 						"name": "Secret 8",
 						"ref": "Slytherin Common Room/Secret 8/Secret 8"
+					},
+					{
+						"name": "Wiggentree Bark Jar 1",
+						"ref": "Slytherin Common Room/Wiggentree Bark Jar 1/Wiggentree Bark Jar 1"
 					}
 				],
 				"map_locations": [

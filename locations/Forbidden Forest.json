@@ -241,15 +241,15 @@
 				]
 			},
 			{
-				"name": "Mucus Spawner 1",
+				"name": "Flobberworm Mucous Jar 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Forbidden_Forest_Mucus_Spawner_1"
+					"$rule_Forbidden_Forest_Flobberworm_Mucous_Jar_1"
 				],
 				"sections": [
 					{
-						"name": "Mucus Spawner 1"
+						"name": "Flobberworm Mucous Jar 1"
 					}
 				],
 				"map_locations": [
@@ -264,15 +264,15 @@
 				]
 			},
 			{
-				"name": "Mucus Spawner 2",
+				"name": "Flobberworm Mucous Jar 2",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Forbidden_Forest_Mucus_Spawner_2"
+					"$rule_Forbidden_Forest_Flobberworm_Mucous_Jar_2"
 				],
 				"sections": [
 					{
-						"name": "Mucus Spawner 2"
+						"name": "Flobberworm Mucous Jar 2"
 					}
 				],
 				"map_locations": [

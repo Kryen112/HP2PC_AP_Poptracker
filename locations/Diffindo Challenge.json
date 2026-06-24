@@ -829,6 +829,98 @@
 				]
 			},
 			{
+				"name": "Flobberworm Mucous Jar 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Flobberworm_Mucous_Jar_1"
+				],
+				"sections": [
+					{
+						"name": "Flobberworm Mucous Jar 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 1477,
+						"y": 437
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
+				"name": "Flobberworm Mucous Jar 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Flobberworm_Mucous_Jar_2"
+				],
+				"sections": [
+					{
+						"name": "Flobberworm Mucous Jar 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 313,
+						"y": 930
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
+				"name": "Flobberworm Mucous Jar 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Flobberworm_Mucous_Jar_3"
+				],
+				"sections": [
+					{
+						"name": "Flobberworm Mucous Jar 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 128,
+						"y": 401
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
+				"name": "Flobberworm Mucous Jar 4",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Diffindo_Challenge_Flobberworm_Mucous_Jar_4"
+				],
+				"sections": [
+					{
+						"name": "Flobberworm Mucous Jar 4"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 1096,
+						"y": 882
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
 				"name": "Jewel Box 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -891,98 +983,6 @@
 						"map": "Diffindo Challenge",
 						"x": 1184,
 						"y": 278
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Mucus Spawner 1",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Mucus_Spawner_1"
-				],
-				"sections": [
-					{
-						"name": "Mucus Spawner 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 1477,
-						"y": 437
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Mucus Spawner 2",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Mucus_Spawner_2"
-				],
-				"sections": [
-					{
-						"name": "Mucus Spawner 2"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 313,
-						"y": 930
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Mucus Spawner 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Mucus_Spawner_3"
-				],
-				"sections": [
-					{
-						"name": "Mucus Spawner 3"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 128,
-						"y": 401
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Mucus Spawner 4",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Mucus_Spawner_4"
-				],
-				"sections": [
-					{
-						"name": "Mucus Spawner 4"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 1096,
-						"y": 882
 					}
 				],
 				"visibility_rules": [

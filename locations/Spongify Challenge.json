@@ -5,75 +5,6 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
-				"name": "Bark Spawner 1",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Bark_Spawner_1"
-				],
-				"sections": [
-					{
-						"name": "Bark Spawner 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 435,
-						"y": 415
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Bark Spawner 2",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Bark_Spawner_2"
-				],
-				"sections": [
-					{
-						"name": "Bark Spawner 2"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 1061,
-						"y": 156
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Bark Spawner 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Bark_Spawner_3"
-				],
-				"sections": [
-					{
-						"name": "Bark Spawner 3"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 1199,
-						"y": 675
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
 				"name": "Completion",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -943,15 +874,15 @@
 				]
 			},
 			{
-				"name": "Mucus Spawner 1",
+				"name": "Flobberworm Mucous Jar 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Mucus_Spawner_1"
+					"$rule_Spongify_Challenge_Flobberworm_Mucous_Jar_1"
 				],
 				"sections": [
 					{
-						"name": "Mucus Spawner 1"
+						"name": "Flobberworm Mucous Jar 1"
 					}
 				],
 				"map_locations": [
@@ -966,15 +897,15 @@
 				]
 			},
 			{
-				"name": "Mucus Spawner 2",
+				"name": "Flobberworm Mucous Jar 2",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Mucus_Spawner_2"
+					"$rule_Spongify_Challenge_Flobberworm_Mucous_Jar_2"
 				],
 				"sections": [
 					{
-						"name": "Mucus Spawner 2"
+						"name": "Flobberworm Mucous Jar 2"
 					}
 				],
 				"map_locations": [
@@ -989,15 +920,15 @@
 				]
 			},
 			{
-				"name": "Mucus Spawner 3",
+				"name": "Flobberworm Mucous Jar 3",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Mucus_Spawner_3"
+					"$rule_Spongify_Challenge_Flobberworm_Mucous_Jar_3"
 				],
 				"sections": [
 					{
-						"name": "Mucus Spawner 3"
+						"name": "Flobberworm Mucous Jar 3"
 					}
 				],
 				"map_locations": [
@@ -1216,6 +1147,75 @@
 				],
 				"visibility_rules": [
 					"$visSecrets"
+				]
+			},
+			{
+				"name": "Wiggentree Bark Jar 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Wiggentree_Bark_Jar_1"
+				],
+				"sections": [
+					{
+						"name": "Wiggentree Bark Jar 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 435,
+						"y": 415
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
+				"name": "Wiggentree Bark Jar 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Wiggentree_Bark_Jar_2"
+				],
+				"sections": [
+					{
+						"name": "Wiggentree Bark Jar 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 1061,
+						"y": 156
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
+				"name": "Wiggentree Bark Jar 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Wiggentree_Bark_Jar_3"
+				],
+				"sections": [
+					{
+						"name": "Wiggentree Bark Jar 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
+						"x": 1199,
+						"y": 675
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			}
 		]

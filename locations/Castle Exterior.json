@@ -904,6 +904,22 @@
 						"ref": "Diffindo Challenge/Completion/Complete"
 					},
 					{
+						"name": "Flobberworm Mucous Jar 1",
+						"ref": "Diffindo Challenge/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
+					},
+					{
+						"name": "Flobberworm Mucous Jar 2",
+						"ref": "Diffindo Challenge/Flobberworm Mucous Jar 2/Flobberworm Mucous Jar 2"
+					},
+					{
+						"name": "Flobberworm Mucous Jar 3",
+						"ref": "Diffindo Challenge/Flobberworm Mucous Jar 3/Flobberworm Mucous Jar 3"
+					},
+					{
+						"name": "Flobberworm Mucous Jar 4",
+						"ref": "Diffindo Challenge/Flobberworm Mucous Jar 4/Flobberworm Mucous Jar 4"
+					},
+					{
 						"name": "Jewel Box 1",
 						"ref": "Diffindo Challenge/Jewel Box 1/Jewel Box 1"
 					},
@@ -914,22 +930,6 @@
 					{
 						"name": "Knight 2",
 						"ref": "Diffindo Challenge/Knight 2/Knight 2"
-					},
-					{
-						"name": "Mucus Spawner 1",
-						"ref": "Diffindo Challenge/Mucus Spawner 1/Mucus Spawner 1"
-					},
-					{
-						"name": "Mucus Spawner 2",
-						"ref": "Diffindo Challenge/Mucus Spawner 2/Mucus Spawner 2"
-					},
-					{
-						"name": "Mucus Spawner 3",
-						"ref": "Diffindo Challenge/Mucus Spawner 3/Mucus Spawner 3"
-					},
-					{
-						"name": "Mucus Spawner 4",
-						"ref": "Diffindo Challenge/Mucus Spawner 4/Mucus Spawner 4"
 					},
 					{
 						"name": "Oil Can 1",
@@ -1090,12 +1090,12 @@
 						"ref": "Forbidden Forest/Complete/Complete"
 					},
 					{
-						"name": "Mucus Spawner 1",
-						"ref": "Forbidden Forest/Mucus Spawner 1/Mucus Spawner 1"
+						"name": "Flobberworm Mucous Jar 1",
+						"ref": "Forbidden Forest/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
 					},
 					{
-						"name": "Mucus Spawner 2",
-						"ref": "Forbidden Forest/Mucus Spawner 2/Mucus Spawner 2"
+						"name": "Flobberworm Mucous Jar 2",
+						"ref": "Forbidden Forest/Flobberworm Mucous Jar 2/Flobberworm Mucous Jar 2"
 					},
 					{
 						"name": "Secret 1",
@@ -1144,8 +1144,8 @@
 						"ref": "Boomslang Level/Complete/Complete"
 					},
 					{
-						"name": "Mucus Spawner 1",
-						"ref": "Boomslang Level/Mucus Spawner 1/Mucus Spawner 1"
+						"name": "Flobberworm Mucous Jar 1",
+						"ref": "Boomslang Level/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
 					},
 					{
 						"name": "Oil Can 1",

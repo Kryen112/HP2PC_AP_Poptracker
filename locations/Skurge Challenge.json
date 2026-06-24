@@ -5,29 +5,6 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
-				"name": "Bark Spawner 1",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Skurge_Challenge_Bark_Spawner_1"
-				],
-				"sections": [
-					{
-						"name": "Bark Spawner 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Skurge Challenge",
-						"x": 864,
-						"y": 252
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
 				"name": "Completion",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -862,6 +839,29 @@
 				]
 			},
 			{
+				"name": "Flobberworm Mucous Jar 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Flobberworm_Mucous_Jar_1"
+				],
+				"sections": [
+					{
+						"name": "Flobberworm Mucous Jar 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 385,
+						"y": 664
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
 				"name": "Jewel Box 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -924,29 +924,6 @@
 						"map": "Skurge Challenge",
 						"x": 495,
 						"y": 759
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Mucus Spawner 1",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Skurge_Challenge_Mucus_Spawner_1"
-				],
-				"sections": [
-					{
-						"name": "Mucus Spawner 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Skurge Challenge",
-						"x": 385,
-						"y": 664
 					}
 				],
 				"visibility_rules": [
@@ -1158,6 +1135,29 @@
 				],
 				"visibility_rules": [
 					"$visSecrets"
+				]
+			},
+			{
+				"name": "Wiggentree Bark Jar 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Wiggentree_Bark_Jar_1"
+				],
+				"sections": [
+					{
+						"name": "Wiggentree Bark Jar 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 864,
+						"y": 252
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			}
 		]

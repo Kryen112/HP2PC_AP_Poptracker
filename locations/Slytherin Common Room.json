@@ -5,29 +5,6 @@
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
-				"name": "Bark Spawner 1",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Slytherin_Common_Room_Bark_Spawner_1"
-				],
-				"sections": [
-					{
-						"name": "Bark Spawner 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Slytherin Common Room",
-						"x": 1663,
-						"y": 274
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
 				"name": "Card Clagg",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -328,6 +305,29 @@
 				]
 			},
 			{
+				"name": "Flobberworm Mucous Jar 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Slytherin_Common_Room_Flobberworm_Mucous_Jar_1"
+				],
+				"sections": [
+					{
+						"name": "Flobberworm Mucous Jar 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Slytherin Common Room",
+						"x": 1588,
+						"y": 310
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
 				"name": "Knight 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -489,29 +489,6 @@
 				]
 			},
 			{
-				"name": "Mucus Spawner 1",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Slytherin_Common_Room_Mucus_Spawner_1"
-				],
-				"sections": [
-					{
-						"name": "Mucus Spawner 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Slytherin Common Room",
-						"x": 1588,
-						"y": 310
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
 				"name": "Secret 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -624,6 +601,29 @@
 				],
 				"visibility_rules": [
 					"$visSecrets"
+				]
+			},
+			{
+				"name": "Wiggentree Bark Jar 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Slytherin_Common_Room_Wiggentree_Bark_Jar_1"
+				],
+				"sections": [
+					{
+						"name": "Wiggentree Bark Jar 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Slytherin Common Room",
+						"x": 1663,
+						"y": 274
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			}
 		]
