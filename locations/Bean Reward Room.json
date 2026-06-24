@@ -1,11 +1,11 @@
 [
 	{
-		"name": "BeanRewardRoom",
+		"name": "Bean Reward Room",
 		"chest_unopened_img": "images/items/item.png",
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
 			{
-				"name": "Bean Reward Room - Chest 1",
+				"name": "Chest 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
@@ -13,19 +13,19 @@
 				],
 				"sections": [
 					{
-						"name": "Bean Reward Room - Chest 1"
+						"name": "Chest 1"
 					}
 				],
 				"map_locations": [
 					{
-						"map": "BeanRewardRoom",
+						"map": "Bean Reward Room",
 						"x": 0,
 						"y": 0
 					}
 				]
 			},
 			{
-				"name": "Bean Reward Room - Chest 2",
+				"name": "Chest 2",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
@@ -33,19 +33,19 @@
 				],
 				"sections": [
 					{
-						"name": "Bean Reward Room - Chest 2"
+						"name": "Chest 2"
 					}
 				],
 				"map_locations": [
 					{
-						"map": "BeanRewardRoom",
+						"map": "Bean Reward Room",
 						"x": 0,
 						"y": 0
 					}
 				]
 			},
 			{
-				"name": "Bean Reward Room - Chest 3",
+				"name": "Chest 3",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
@@ -53,19 +53,19 @@
 				],
 				"sections": [
 					{
-						"name": "Bean Reward Room - Chest 3"
+						"name": "Chest 3"
 					}
 				],
 				"map_locations": [
 					{
-						"map": "BeanRewardRoom",
+						"map": "Bean Reward Room",
 						"x": 0,
 						"y": 0
 					}
 				]
 			},
 			{
-				"name": "Bean Reward Room - Chest 4",
+				"name": "Chest 4",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
@@ -73,19 +73,19 @@
 				],
 				"sections": [
 					{
-						"name": "Bean Reward Room - Chest 4"
+						"name": "Chest 4"
 					}
 				],
 				"map_locations": [
 					{
-						"map": "BeanRewardRoom",
+						"map": "Bean Reward Room",
 						"x": 0,
 						"y": 0
 					}
 				]
 			},
 			{
-				"name": "Bean Reward Room - Chest 5",
+				"name": "Chest 5",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
@@ -93,19 +93,19 @@
 				],
 				"sections": [
 					{
-						"name": "Bean Reward Room - Chest 5"
+						"name": "Chest 5"
 					}
 				],
 				"map_locations": [
 					{
-						"map": "BeanRewardRoom",
+						"map": "Bean Reward Room",
 						"x": 0,
 						"y": 0
 					}
 				]
 			},
 			{
-				"name": "Bean Reward Room - Chest 6",
+				"name": "Chest 6",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
@@ -113,19 +113,19 @@
 				],
 				"sections": [
 					{
-						"name": "Bean Reward Room - Chest 6"
+						"name": "Chest 6"
 					}
 				],
 				"map_locations": [
 					{
-						"map": "BeanRewardRoom",
+						"map": "Bean Reward Room",
 						"x": 0,
 						"y": 0
 					}
 				]
 			},
 			{
-				"name": "Bean Reward Room - Spawner 1",
+				"name": "Spawner 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
@@ -133,12 +133,12 @@
 				],
 				"sections": [
 					{
-						"name": "Bean Reward Room - Spawner 1"
+						"name": "Spawner 1"
 					}
 				],
 				"map_locations": [
 					{
-						"map": "BeanRewardRoom",
+						"map": "Bean Reward Room",
 						"x": 0,
 						"y": 0
 					}

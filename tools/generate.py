@@ -32,6 +32,7 @@ PACK = HERE.parent
 APWORLD = PACK.parent / "HP2PC_AP" / "apworld"
 
 REGION_DISPLAY = {
+    "BeanRewardRoom": "Bean Reward Room",
     "BicornLevel": "Bicorn Level",
     "BoomslangLevel": "Boomslang Level",
     "CastleExterior": "Castle Exterior",
@@ -86,6 +87,7 @@ MENU_ROOMS = {
     "EntryHall": ("Entry Hall Rooms", [
         "RictusempraChallenge", "SpongifyChallenge", "SkurgeChallenge",
         "BicornLevel", "GoyleLevel", "SlytherinCommon", "GryffindorChallenge",
+        "BeanRewardRoom",
     ]),
 }
 

@@ -1,4 +1,4 @@
-Tracker:AddLocations("locations/BeanRewardRoom.json")
+Tracker:AddLocations("locations/Bean Reward Room.json")
 Tracker:AddLocations("locations/Bicorn Level.json")
 Tracker:AddLocations("locations/Boomslang Level.json")
 Tracker:AddLocations("locations/Castle Exterior.json")
