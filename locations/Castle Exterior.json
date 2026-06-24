@@ -960,10 +960,6 @@
 						"ref": "Diffindo Challenge/Plant Pot 10/Plant Pot 10"
 					},
 					{
-						"name": "Plant Pot 11",
-						"ref": "Diffindo Challenge/Plant Pot 11/Plant Pot 11"
-					},
-					{
 						"name": "Plant Pot 2",
 						"ref": "Diffindo Challenge/Plant Pot 2/Plant Pot 2"
 					},
@@ -1086,6 +1082,10 @@
 						"ref": "Forbidden Forest/Chest 2/Chest 2"
 					},
 					{
+						"name": "Chest 3",
+						"ref": "Forbidden Forest/Chest 3/Chest 3"
+					},
+					{
 						"name": "Complete",
 						"ref": "Forbidden Forest/Complete/Complete"
 					},
@@ -1112,10 +1112,6 @@
 					{
 						"name": "Secret 4",
 						"ref": "Forbidden Forest/Secret 4 & Card Scamander/Secret 4"
-					},
-					{
-						"name": "Spawner 1",
-						"ref": "Forbidden Forest/Spawner 1/Spawner 1"
 					}
 				],
 				"map_locations": [

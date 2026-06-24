@@ -198,6 +198,29 @@
 				]
 			},
 			{
+				"name": "Chest 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Forbidden_Forest_Chest_3"
+				],
+				"sections": [
+					{
+						"name": "Chest 3"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Forbidden Forest",
+						"x": 1601,
+						"y": 250
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
 				"name": "Complete",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -330,29 +353,6 @@
 				],
 				"visibility_rules": [
 					"$visSecrets"
-				]
-			},
-			{
-				"name": "Spawner 1",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Forbidden_Forest_Spawner_1"
-				],
-				"sections": [
-					{
-						"name": "Spawner 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Forbidden Forest",
-						"x": 1601,
-						"y": 250
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			}
 		]

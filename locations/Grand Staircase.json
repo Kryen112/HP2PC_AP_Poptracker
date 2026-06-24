@@ -653,29 +653,6 @@
 				]
 			},
 			{
-				"name": "Chest 8",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Grand_Staircase_Chest_8"
-				],
-				"sections": [
-					{
-						"name": "Chest 8"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Grand Staircase",
-						"x": 701,
-						"y": 623
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
 				"name": "Cigar Box 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -1133,6 +1110,29 @@
 				],
 				"visibility_rules": [
 					"$visCards"
+				]
+			},
+			{
+				"name": "Chest",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Dumbledore_s_Study_Chest"
+				],
+				"sections": [
+					{
+						"name": "Chest"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 701,
+						"y": 623
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{

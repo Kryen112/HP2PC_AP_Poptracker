@@ -483,6 +483,29 @@
 				]
 			},
 			{
+				"name": "Chest 6",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Chest_6"
+				],
+				"sections": [
+					{
+						"name": "Chest 6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 256,
+						"y": 655
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
 				"name": "Chest 7",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -940,29 +963,6 @@
 				],
 				"visibility_rules": [
 					"$visSecrets"
-				]
-			},
-			{
-				"name": "Spawner 1",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Entry_Hall_Spawner_1"
-				],
-				"sections": [
-					{
-						"name": "Spawner 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Entry Hall",
-						"x": 256,
-						"y": 655
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
