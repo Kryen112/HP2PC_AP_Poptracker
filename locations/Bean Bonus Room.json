@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Bean Reward Room",
+		"name": "Bean Bonus Room",
 		"chest_unopened_img": "images/items/item.png",
 		"chest_opened_img": "images/items/item_opened.png",
 		"children": [
@@ -18,7 +18,7 @@
 				],
 				"map_locations": [
 					{
-						"map": "Bean Reward Room",
+						"map": "Bean Bonus Room",
 						"x": 0,
 						"y": 0
 					}
@@ -41,7 +41,7 @@
 				],
 				"map_locations": [
 					{
-						"map": "Bean Reward Room",
+						"map": "Bean Bonus Room",
 						"x": 0,
 						"y": 0
 					}
@@ -64,7 +64,7 @@
 				],
 				"map_locations": [
 					{
-						"map": "Bean Reward Room",
+						"map": "Bean Bonus Room",
 						"x": 0,
 						"y": 0
 					}
@@ -87,7 +87,7 @@
 				],
 				"map_locations": [
 					{
-						"map": "Bean Reward Room",
+						"map": "Bean Bonus Room",
 						"x": 0,
 						"y": 0
 					}
@@ -110,7 +110,7 @@
 				],
 				"map_locations": [
 					{
-						"map": "Bean Reward Room",
+						"map": "Bean Bonus Room",
 						"x": 0,
 						"y": 0
 					}
@@ -133,7 +133,7 @@
 				],
 				"map_locations": [
 					{
-						"map": "Bean Reward Room",
+						"map": "Bean Bonus Room",
 						"x": 0,
 						"y": 0
 					}
@@ -156,7 +156,7 @@
 				],
 				"map_locations": [
 					{
-						"map": "Bean Reward Room",
+						"map": "Bean Bonus Room",
 						"x": 0,
 						"y": 0
 					}
