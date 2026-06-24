@@ -531,15 +531,15 @@
 				]
 			},
 			{
-				"name": "Peeves Chest 1",
+				"name": "Peeves Chest",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Bicorn_Level_Peeves_Chest_1"
+					"$rule_Bicorn_Level_Peeves_Chest"
 				],
 				"sections": [
 					{
-						"name": "Peeves Chest 1"
+						"name": "Peeves Chest"
 					}
 				],
 				"map_locations": [

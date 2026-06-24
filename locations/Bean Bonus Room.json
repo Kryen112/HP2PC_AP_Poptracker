@@ -143,15 +143,15 @@
 				]
 			},
 			{
-				"name": "Spawner 1",
+				"name": "Spawner",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Bean_Bonus_Room_Spawner_1"
+					"$rule_Bean_Bonus_Room_Spawner"
 				],
 				"sections": [
 					{
-						"name": "Spawner 1"
+						"name": "Spawner"
 					}
 				],
 				"map_locations": [

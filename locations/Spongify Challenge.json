@@ -805,15 +805,15 @@
 				]
 			},
 			{
-				"name": "Cigar Box 1",
+				"name": "Cigar Box",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Cigar_Box_1"
+					"$rule_Spongify_Challenge_Cigar_Box"
 				],
 				"sections": [
 					{
-						"name": "Cigar Box 1"
+						"name": "Cigar Box"
 					}
 				],
 				"map_locations": [
@@ -943,15 +943,15 @@
 				]
 			},
 			{
-				"name": "Music Box 1",
+				"name": "Music Box",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Music_Box_1"
+					"$rule_Spongify_Challenge_Music_Box"
 				],
 				"sections": [
 					{
-						"name": "Music Box 1"
+						"name": "Music Box"
 					}
 				],
 				"map_locations": [
@@ -966,15 +966,15 @@
 				]
 			},
 			{
-				"name": "Peeves Chest 1",
+				"name": "Peeves Chest",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Peeves_Chest_1"
+					"$rule_Spongify_Challenge_Peeves_Chest"
 				],
 				"sections": [
 					{
-						"name": "Peeves Chest 1"
+						"name": "Peeves Chest"
 					}
 				],
 				"map_locations": [

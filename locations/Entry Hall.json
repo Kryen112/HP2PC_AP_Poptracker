@@ -529,15 +529,15 @@
 				]
 			},
 			{
-				"name": "Flobberworm Mucous Jar 1",
+				"name": "Flobberworm Mucous Jar",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Flobberworm_Mucous_Jar_1"
+					"$rule_Entry_Hall_Flobberworm_Mucous_Jar"
 				],
 				"sections": [
 					{
-						"name": "Flobberworm Mucous Jar 1"
+						"name": "Flobberworm Mucous Jar"
 					}
 				],
 				"map_locations": [
@@ -943,15 +943,15 @@
 				]
 			},
 			{
-				"name": "Wiggentree Bark Jar 1",
+				"name": "Wiggentree Bark Jar",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Wiggentree_Bark_Jar_1"
+					"$rule_Entry_Hall_Wiggentree_Bark_Jar"
 				],
 				"sections": [
 					{
-						"name": "Wiggentree Bark Jar 1"
+						"name": "Wiggentree Bark Jar"
 					}
 				],
 				"map_locations": [
@@ -1376,8 +1376,8 @@
 						"ref": "Spongify Challenge/Chest 8/Chest 8"
 					},
 					{
-						"name": "Cigar Box 1",
-						"ref": "Spongify Challenge/Cigar Box 1/Cigar Box 1"
+						"name": "Cigar Box",
+						"ref": "Spongify Challenge/Cigar Box/Cigar Box"
 					},
 					{
 						"name": "Complete",
@@ -1404,12 +1404,12 @@
 						"ref": "Spongify Challenge/Flobberworm Mucous Jar 3/Flobberworm Mucous Jar 3"
 					},
 					{
-						"name": "Music Box 1",
-						"ref": "Spongify Challenge/Music Box 1/Music Box 1"
+						"name": "Music Box",
+						"ref": "Spongify Challenge/Music Box/Music Box"
 					},
 					{
-						"name": "Peeves Chest 1",
-						"ref": "Spongify Challenge/Peeves Chest 1/Peeves Chest 1"
+						"name": "Peeves Chest",
+						"ref": "Spongify Challenge/Peeves Chest/Peeves Chest"
 					},
 					{
 						"name": "Secret 1",
@@ -1634,8 +1634,8 @@
 						"ref": "Skurge Challenge/Chest 5/Chest 5"
 					},
 					{
-						"name": "Cigar Box 1",
-						"ref": "Skurge Challenge/Cigar Box 1/Cigar Box 1"
+						"name": "Cigar Box",
+						"ref": "Skurge Challenge/Cigar Box/Cigar Box"
 					},
 					{
 						"name": "Complete",
@@ -1650,12 +1650,12 @@
 						"ref": "Skurge Challenge/Decanter 2/Decanter 2"
 					},
 					{
-						"name": "Flobberworm Mucous Jar 1",
-						"ref": "Skurge Challenge/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
+						"name": "Flobberworm Mucous Jar",
+						"ref": "Skurge Challenge/Flobberworm Mucous Jar/Flobberworm Mucous Jar"
 					},
 					{
-						"name": "Jewel Box 1",
-						"ref": "Skurge Challenge/Jewel Box 1/Jewel Box 1"
+						"name": "Jewel Box",
+						"ref": "Skurge Challenge/Jewel Box/Jewel Box"
 					},
 					{
 						"name": "Knight 1",
@@ -1666,12 +1666,12 @@
 						"ref": "Skurge Challenge/Knight 2/Knight 2"
 					},
 					{
-						"name": "Music Box 1",
-						"ref": "Skurge Challenge/Music Box 1/Music Box 1"
+						"name": "Music Box",
+						"ref": "Skurge Challenge/Music Box/Music Box"
 					},
 					{
-						"name": "Peeves Chest 1",
-						"ref": "Skurge Challenge/Peeves Chest 1/Peeves Chest 1"
+						"name": "Peeves Chest",
+						"ref": "Skurge Challenge/Peeves Chest/Peeves Chest"
 					},
 					{
 						"name": "Secret 1",
@@ -1702,8 +1702,8 @@
 						"ref": "Skurge Challenge/Secret 7/Secret 7"
 					},
 					{
-						"name": "Wiggentree Bark Jar 1",
-						"ref": "Skurge Challenge/Wiggentree Bark Jar 1/Wiggentree Bark Jar 1"
+						"name": "Wiggentree Bark Jar",
+						"ref": "Skurge Challenge/Wiggentree Bark Jar/Wiggentree Bark Jar"
 					}
 				],
 				"map_locations": [
@@ -1812,8 +1812,8 @@
 						"ref": "Bicorn Level/Flobberworm Mucous Jar 2/Flobberworm Mucous Jar 2"
 					},
 					{
-						"name": "Peeves Chest 1",
-						"ref": "Bicorn Level/Peeves Chest 1/Peeves Chest 1"
+						"name": "Peeves Chest",
+						"ref": "Bicorn Level/Peeves Chest/Peeves Chest"
 					},
 					{
 						"name": "Secret 1",
@@ -1950,12 +1950,12 @@
 						"ref": "Goyle Level/Complete/Complete"
 					},
 					{
-						"name": "Flobberworm Mucous Jar 1",
-						"ref": "Goyle Level/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
+						"name": "Flobberworm Mucous Jar",
+						"ref": "Goyle Level/Flobberworm Mucous Jar/Flobberworm Mucous Jar"
 					},
 					{
-						"name": "Peeves Chest 1",
-						"ref": "Goyle Level/Peeves Chest 1/Peeves Chest 1"
+						"name": "Peeves Chest",
+						"ref": "Goyle Level/Peeves Chest/Peeves Chest"
 					},
 					{
 						"name": "Secret 1",
@@ -2052,8 +2052,8 @@
 						"ref": "Slytherin Common Room/Complete/Complete"
 					},
 					{
-						"name": "Flobberworm Mucous Jar 1",
-						"ref": "Slytherin Common Room/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
+						"name": "Flobberworm Mucous Jar",
+						"ref": "Slytherin Common Room/Flobberworm Mucous Jar/Flobberworm Mucous Jar"
 					},
 					{
 						"name": "Knight 1",
@@ -2116,8 +2116,8 @@
 						"ref": "Slytherin Common Room/Secret 8/Secret 8"
 					},
 					{
-						"name": "Wiggentree Bark Jar 1",
-						"ref": "Slytherin Common Room/Wiggentree Bark Jar 1/Wiggentree Bark Jar 1"
+						"name": "Wiggentree Bark Jar",
+						"ref": "Slytherin Common Room/Wiggentree Bark Jar/Wiggentree Bark Jar"
 					}
 				],
 				"map_locations": [
@@ -2363,8 +2363,8 @@
 						"ref": "Bean Bonus Room/Chest 6/Chest 6"
 					},
 					{
-						"name": "Spawner 1",
-						"ref": "Bean Bonus Room/Spawner 1/Spawner 1"
+						"name": "Spawner",
+						"ref": "Bean Bonus Room/Spawner/Spawner"
 					}
 				],
 				"map_locations": [

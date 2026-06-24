@@ -921,15 +921,15 @@
 				]
 			},
 			{
-				"name": "Jewel Box 1",
+				"name": "Jewel Box",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Diffindo_Challenge_Jewel_Box_1"
+					"$rule_Diffindo_Challenge_Jewel_Box"
 				],
 				"sections": [
 					{
-						"name": "Jewel Box 1"
+						"name": "Jewel Box"
 					}
 				],
 				"map_locations": [
@@ -1082,15 +1082,15 @@
 				]
 			},
 			{
-				"name": "Peeves Chest 1",
+				"name": "Peeves Chest",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Diffindo_Challenge_Peeves_Chest_1"
+					"$rule_Diffindo_Challenge_Peeves_Chest"
 				],
 				"sections": [
 					{
-						"name": "Peeves Chest 1"
+						"name": "Peeves Chest"
 					}
 				],
 				"map_locations": [

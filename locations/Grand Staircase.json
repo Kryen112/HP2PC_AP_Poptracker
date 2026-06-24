@@ -814,15 +814,15 @@
 				]
 			},
 			{
-				"name": "Knight 1",
+				"name": "Knight",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Knight_1"
+					"$rule_Grand_Staircase_Knight"
 				],
 				"sections": [
 					{
-						"name": "Knight 1"
+						"name": "Knight"
 					}
 				],
 				"map_locations": [
@@ -837,15 +837,15 @@
 				]
 			},
 			{
-				"name": "Music Box 1",
+				"name": "Music Box",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Music_Box_1"
+					"$rule_Grand_Staircase_Music_Box"
 				],
 				"sections": [
 					{
-						"name": "Music Box 1"
+						"name": "Music Box"
 					}
 				],
 				"map_locations": [

@@ -305,15 +305,15 @@
 				]
 			},
 			{
-				"name": "Flobberworm Mucous Jar 1",
+				"name": "Flobberworm Mucous Jar",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Flobberworm_Mucous_Jar_1"
+					"$rule_Slytherin_Common_Room_Flobberworm_Mucous_Jar"
 				],
 				"sections": [
 					{
-						"name": "Flobberworm Mucous Jar 1"
+						"name": "Flobberworm Mucous Jar"
 					}
 				],
 				"map_locations": [
@@ -604,15 +604,15 @@
 				]
 			},
 			{
-				"name": "Wiggentree Bark Jar 1",
+				"name": "Wiggentree Bark Jar",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Wiggentree_Bark_Jar_1"
+					"$rule_Slytherin_Common_Room_Wiggentree_Bark_Jar"
 				],
 				"sections": [
 					{
-						"name": "Wiggentree Bark Jar 1"
+						"name": "Wiggentree Bark Jar"
 					}
 				],
 				"map_locations": [

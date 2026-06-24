@@ -2501,7 +2501,7 @@ function rule_Bicorn_Level_Chest_7()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge"))
 	end
 end
-function rule_Bicorn_Level_Peeves_Chest_1()
+function rule_Bicorn_Level_Peeves_Chest()
 	if isOpenCastle() then
 		return (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge"))
 	else
@@ -2613,14 +2613,14 @@ function rule_Bicorn_Level_Cauldron_6()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge"))
 	end
 end
-function rule_Boomslang_Level_Chest_1()
+function rule_Boomslang_Level_Chest()
 	if isOpenCastle() then
 		return (has("Boomslang Level Key") and has("Diffindo")) and (has("Diffindo") and has("Alohomora"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Diffindo") and has("Alohomora"))
 	end
 end
-function rule_Boomslang_Level_Flobberworm_Mucous_Jar_1()
+function rule_Boomslang_Level_Flobberworm_Mucous_Jar()
 	if isOpenCastle() then
 		return (has("Boomslang Level Key") and has("Diffindo")) and (has("Diffindo") and has("Flipendo"))
 	else
@@ -2690,7 +2690,7 @@ function rule_Boomslang_Level_Plant_Pot_3()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and (has("Diffindo") and has("Flipendo"))
 	end
 end
-function rule_Goyle_Level_Peeves_Chest_1()
+function rule_Goyle_Level_Peeves_Chest()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
@@ -2767,7 +2767,7 @@ function rule_Goyle_Level_Chest_4()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
-function rule_Goyle_Level_Flobberworm_Mucous_Jar_1()
+function rule_Goyle_Level_Flobberworm_Mucous_Jar()
 	if isOpenCastle() then
 		return has("Goyle Level Key") and (has("Diffindo") and has("Rictusempra") and has("Flipendo"))
 	else
@@ -2802,7 +2802,7 @@ function rule_Goyle_Level_Cauldron_4()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
-function rule_Slytherin_Common_Room_Wiggentree_Bark_Jar_1()
+function rule_Slytherin_Common_Room_Wiggentree_Bark_Jar()
 	if isOpenCastle() then
 		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	else
@@ -2879,7 +2879,7 @@ function rule_Slytherin_Common_Room_Knight_4()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	end
 end
-function rule_Slytherin_Common_Room_Flobberworm_Mucous_Jar_1()
+function rule_Slytherin_Common_Room_Flobberworm_Mucous_Jar()
 	if isOpenCastle() then
 		return has("Slytherin Common Room Key") and (has("Flipendo") and has("Diffindo") and (has("Skurge") or has("Running")) and has("Lumos"))
 	else
@@ -2984,7 +2984,7 @@ function rule_Bean_Bonus_Room_Chest_3()
 		return false
 	end
 end
-function rule_Bean_Bonus_Room_Spawner_1()
+function rule_Bean_Bonus_Room_Spawner()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
@@ -3068,7 +3068,7 @@ function rule_Rictusempra_Challenge_Cauldron_5()
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and (has("Rictusempra") and has("Flipendo"))
 	end
 end
-function rule_Skurge_Challenge_Wiggentree_Bark_Jar_1()
+function rule_Skurge_Challenge_Wiggentree_Bark_Jar()
 	if isOpenCastle() then
 		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
@@ -3096,14 +3096,14 @@ function rule_Skurge_Challenge_Chest_1()
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
-function rule_Skurge_Challenge_Peeves_Chest_1()
+function rule_Skurge_Challenge_Peeves_Chest()
 	if isOpenCastle() then
 		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Alohomora"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Alohomora"))
 	end
 end
-function rule_Skurge_Challenge_Cigar_Box_1()
+function rule_Skurge_Challenge_Cigar_Box()
 	if isOpenCastle() then
 		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora"))
 	else
@@ -3124,7 +3124,7 @@ function rule_Skurge_Challenge_Decanter_2()
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	end
 end
-function rule_Skurge_Challenge_Jewel_Box_1()
+function rule_Skurge_Challenge_Jewel_Box()
 	if isOpenCastle() then
 		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora"))
 	else
@@ -3145,14 +3145,14 @@ function rule_Skurge_Challenge_Knight_1()
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and has("Flipendo")
 	end
 end
-function rule_Skurge_Challenge_Flobberworm_Mucous_Jar_1()
+function rule_Skurge_Challenge_Flobberworm_Mucous_Jar()
 	if isOpenCastle() then
 		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")))
 	end
 end
-function rule_Skurge_Challenge_Music_Box_1()
+function rule_Skurge_Challenge_Music_Box()
 	if isOpenCastle() then
 		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora"))
 	else
@@ -3285,14 +3285,14 @@ function rule_Diffindo_Challenge_Chest_1()
 		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and has("Alohomora")
 	end
 end
-function rule_Diffindo_Challenge_Peeves_Chest_1()
+function rule_Diffindo_Challenge_Peeves_Chest()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
 		return (has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	end
 end
-function rule_Diffindo_Challenge_Jewel_Box_1()
+function rule_Diffindo_Challenge_Jewel_Box()
 	if isOpenCastle() then
 		return (has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Flipendo") and has("Alohomora"))
 	else
@@ -3530,7 +3530,7 @@ function rule_Spongify_Challenge_Chest_6()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Lumos") and has("Alohomora"))
 	end
 end
-function rule_Spongify_Challenge_Peeves_Chest_1()
+function rule_Spongify_Challenge_Peeves_Chest()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
@@ -3572,7 +3572,7 @@ function rule_Spongify_Challenge_Chest_4()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	end
 end
-function rule_Spongify_Challenge_Cigar_Box_1()
+function rule_Spongify_Challenge_Cigar_Box()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
@@ -3614,7 +3614,7 @@ function rule_Spongify_Challenge_Flobberworm_Mucous_Jar_3()
 		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and (has("Spongify") and has("Flipendo") and has("Skurge"))
 	end
 end
-function rule_Spongify_Challenge_Music_Box_1()
+function rule_Spongify_Challenge_Music_Box()
 	if isOpenCastle() then
 		return has("Spongify Challenge Key") and (has("Spongify") and has("Flipendo") and has("Skurge") and has("Alohomora"))
 	else
@@ -3838,7 +3838,7 @@ function rule_Gryffindor_Challenge_Chest_12()
 		return false and (has("Diffindo") and has("Spongify") and has("Alohomora") and (has("Flipendo") or has("Running")))
 	end
 end
-function rule_Entry_Hall_Wiggentree_Bark_Jar_1()
+function rule_Entry_Hall_Wiggentree_Bark_Jar()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
@@ -3929,7 +3929,7 @@ function rule_Entry_Hall_Knight_3()
 		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
 	end
 end
-function rule_Entry_Hall_Flobberworm_Mucous_Jar_1()
+function rule_Entry_Hall_Flobberworm_Mucous_Jar()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
@@ -4048,14 +4048,14 @@ function rule_Grand_Staircase_Jewel_Box_2()
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Grand_Staircase_Knight_1()
+function rule_Grand_Staircase_Knight()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
 	end
 end
-function rule_Grand_Staircase_Music_Box_1()
+function rule_Grand_Staircase_Music_Box()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else

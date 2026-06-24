@@ -485,15 +485,15 @@
 				]
 			},
 			{
-				"name": "Flobberworm Mucous Jar 1",
+				"name": "Flobberworm Mucous Jar",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Goyle_Level_Flobberworm_Mucous_Jar_1"
+					"$rule_Goyle_Level_Flobberworm_Mucous_Jar"
 				],
 				"sections": [
 					{
-						"name": "Flobberworm Mucous Jar 1"
+						"name": "Flobberworm Mucous Jar"
 					}
 				],
 				"map_locations": [
@@ -508,15 +508,15 @@
 				]
 			},
 			{
-				"name": "Peeves Chest 1",
+				"name": "Peeves Chest",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Goyle_Level_Peeves_Chest_1"
+					"$rule_Goyle_Level_Peeves_Chest"
 				],
 				"sections": [
 					{
-						"name": "Peeves Chest 1"
+						"name": "Peeves Chest"
 					}
 				],
 				"map_locations": [

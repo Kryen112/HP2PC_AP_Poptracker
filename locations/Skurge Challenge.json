@@ -770,15 +770,15 @@
 				]
 			},
 			{
-				"name": "Cigar Box 1",
+				"name": "Cigar Box",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Skurge_Challenge_Cigar_Box_1"
+					"$rule_Skurge_Challenge_Cigar_Box"
 				],
 				"sections": [
 					{
-						"name": "Cigar Box 1"
+						"name": "Cigar Box"
 					}
 				],
 				"map_locations": [
@@ -839,15 +839,15 @@
 				]
 			},
 			{
-				"name": "Flobberworm Mucous Jar 1",
+				"name": "Flobberworm Mucous Jar",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Skurge_Challenge_Flobberworm_Mucous_Jar_1"
+					"$rule_Skurge_Challenge_Flobberworm_Mucous_Jar"
 				],
 				"sections": [
 					{
-						"name": "Flobberworm Mucous Jar 1"
+						"name": "Flobberworm Mucous Jar"
 					}
 				],
 				"map_locations": [
@@ -862,15 +862,15 @@
 				]
 			},
 			{
-				"name": "Jewel Box 1",
+				"name": "Jewel Box",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Skurge_Challenge_Jewel_Box_1"
+					"$rule_Skurge_Challenge_Jewel_Box"
 				],
 				"sections": [
 					{
-						"name": "Jewel Box 1"
+						"name": "Jewel Box"
 					}
 				],
 				"map_locations": [
@@ -931,15 +931,15 @@
 				]
 			},
 			{
-				"name": "Music Box 1",
+				"name": "Music Box",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Skurge_Challenge_Music_Box_1"
+					"$rule_Skurge_Challenge_Music_Box"
 				],
 				"sections": [
 					{
-						"name": "Music Box 1"
+						"name": "Music Box"
 					}
 				],
 				"map_locations": [
@@ -954,15 +954,15 @@
 				]
 			},
 			{
-				"name": "Peeves Chest 1",
+				"name": "Peeves Chest",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Skurge_Challenge_Peeves_Chest_1"
+					"$rule_Skurge_Challenge_Peeves_Chest"
 				],
 				"sections": [
 					{
-						"name": "Peeves Chest 1"
+						"name": "Peeves Chest"
 					}
 				],
 				"map_locations": [
@@ -1138,15 +1138,15 @@
 				]
 			},
 			{
-				"name": "Wiggentree Bark Jar 1",
+				"name": "Wiggentree Bark Jar",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Skurge_Challenge_Wiggentree_Bark_Jar_1"
+					"$rule_Skurge_Challenge_Wiggentree_Bark_Jar"
 				],
 				"sections": [
 					{
-						"name": "Wiggentree Bark Jar 1"
+						"name": "Wiggentree Bark Jar"
 					}
 				],
 				"map_locations": [

@@ -51,15 +51,15 @@
 				]
 			},
 			{
-				"name": "Chest 1",
+				"name": "Chest",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Chest_1"
+					"$rule_Boomslang_Level_Chest"
 				],
 				"sections": [
 					{
-						"name": "Chest 1"
+						"name": "Chest"
 					}
 				],
 				"map_locations": [
@@ -94,15 +94,15 @@
 				]
 			},
 			{
-				"name": "Flobberworm Mucous Jar 1",
+				"name": "Flobberworm Mucous Jar",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Flobberworm_Mucous_Jar_1"
+					"$rule_Boomslang_Level_Flobberworm_Mucous_Jar"
 				],
 				"sections": [
 					{
-						"name": "Flobberworm Mucous Jar 1"
+						"name": "Flobberworm Mucous Jar"
 					}
 				],
 				"map_locations": [
