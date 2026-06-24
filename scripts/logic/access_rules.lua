@@ -3887,14 +3887,14 @@ function rule_Entry_Hall_Chest_5()
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Entry_Hall_Chest_6()
+function rule_Entry_Hall_Chest_7()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
 	end
 end
-function rule_Entry_Hall_Chest_7()
+function rule_Entry_Hall_Chest_8()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else

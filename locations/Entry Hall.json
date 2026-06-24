@@ -19,8 +19,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 138,
+						"y": 643
 					}
 				]
 			},
@@ -379,8 +379,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 954,
+						"y": 350
 					}
 				]
 			},
@@ -399,8 +399,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 954,
+						"y": 240
 					}
 				]
 			},
@@ -419,8 +419,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1180,
+						"y": 490
 					}
 				]
 			},
@@ -439,8 +439,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 499,
+						"y": 569
 					}
 				]
 			},
@@ -459,28 +459,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
-					}
-				]
-			},
-			{
-				"name": "Chest 6",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Entry_Hall_Chest_6"
-				],
-				"sections": [
-					{
-						"name": "Chest 6"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 181,
+						"y": 405
 					}
 				]
 			},
@@ -499,8 +479,28 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1666,
+						"y": 604
+					}
+				]
+			},
+			{
+				"name": "Chest 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Chest_8"
+				],
+				"sections": [
+					{
+						"name": "Chest 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 1666,
+						"y": 745
 					}
 				]
 			},
@@ -588,8 +588,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 961,
+						"y": 308
 					}
 				]
 			},
@@ -608,8 +608,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 1025,
+						"y": 308
 					}
 				]
 			},
@@ -628,8 +628,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 289,
+						"y": 407
 					}
 				]
 			},
@@ -648,8 +648,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 289,
+						"y": 332
 					}
 				]
 			},
@@ -668,8 +668,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 165,
+						"y": 650
 					}
 				]
 			},
@@ -918,8 +918,8 @@
 				"map_locations": [
 					{
 						"map": "Entry Hall",
-						"x": 0,
-						"y": 0
+						"x": 256,
+						"y": 655
 					}
 				]
 			},
