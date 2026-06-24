@@ -320,6 +320,9 @@
 						"x": 826,
 						"y": 118
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -340,6 +343,9 @@
 						"x": 557,
 						"y": 119
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -360,6 +366,9 @@
 						"x": 346,
 						"y": 66
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -380,6 +389,9 @@
 						"x": 437,
 						"y": 211
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -400,6 +412,9 @@
 						"x": 499,
 						"y": 292
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -420,6 +435,9 @@
 						"x": 800,
 						"y": 396
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -440,6 +458,9 @@
 						"x": 1104,
 						"y": 963
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -460,6 +481,9 @@
 						"x": 483,
 						"y": 343
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -480,6 +504,9 @@
 						"x": 167,
 						"y": 340
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{

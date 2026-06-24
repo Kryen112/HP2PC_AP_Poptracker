@@ -83,6 +83,10 @@ function tradersanityOn()
     return not has("tradersanity_off")
 end
 
+function containersanityOn()
+    return has("containersanity_on")
+end
+
 -- Group visibility helpers. Each returns true iff that group's locations should
 -- appear on the map this seed. Used by location JSON visibility_rules.
 function visCards()      return enableWizardCards() end
@@ -93,6 +97,7 @@ function visDuels()      return enableDuelling() end
 function visQuidMatch()  return enableQuidditchMatches() end
 function visSpellTimes() return enableSpellChallengeTimes() end
 function visTraders()    return tradersanityOn() end
+function visContainers() return containersanityOn() end
 -- Classroom (Learned X) checks only exist in vanilla — open castle skips the
 -- spell-teaching cutscenes entirely.
 function visClassrooms()        return isVanilla() end

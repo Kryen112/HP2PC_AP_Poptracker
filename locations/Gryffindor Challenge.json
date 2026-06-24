@@ -24,7 +24,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -47,7 +48,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -70,7 +72,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -93,7 +96,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -116,7 +120,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -139,7 +144,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visStars"
 				]
 			},
 			{
@@ -162,7 +168,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visStars"
 				]
 			},
 			{
@@ -185,7 +192,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visStars"
 				]
 			},
 			{
@@ -208,7 +216,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visStars"
 				]
 			},
 			{
@@ -231,7 +240,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visStars"
 				]
 			},
 			{
@@ -254,7 +264,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visStars"
 				]
 			},
 			{
@@ -277,7 +288,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visStars"
 				]
 			},
 			{
@@ -300,7 +312,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visStars"
 				]
 			},
 			{
@@ -323,7 +336,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visStars"
 				]
 			},
 			{
@@ -346,7 +360,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visStars"
 				]
 			},
 			{
@@ -369,7 +384,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -392,7 +408,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -415,7 +432,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -438,7 +456,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -461,7 +480,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -484,7 +504,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -507,7 +528,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -530,7 +552,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -553,7 +576,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -576,7 +600,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -599,7 +624,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -622,7 +648,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -645,7 +672,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -668,7 +696,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -691,7 +720,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -714,7 +744,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -737,7 +768,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -760,7 +792,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -783,7 +816,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -806,7 +840,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -829,7 +864,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -852,7 +888,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visContainers"
 				]
 			},
 			{
@@ -898,7 +935,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visSecrets"
 				]
 			},
 			{
@@ -921,7 +959,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visSecrets"
 				]
 			},
 			{
@@ -944,7 +983,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visSecrets"
 				]
 			},
 			{
@@ -967,7 +1007,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visSecrets"
 				]
 			},
 			{
@@ -990,7 +1031,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visSecrets"
 				]
 			},
 			{
@@ -1013,7 +1055,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visSecrets"
 				]
 			},
 			{
@@ -1036,7 +1079,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visSecrets"
 				]
 			},
 			{
@@ -1059,7 +1103,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visSecrets"
 				]
 			},
 			{
@@ -1082,7 +1127,8 @@
 					}
 				],
 				"visibility_rules": [
-					"$visOpenCastleOnly"
+					"$visOpenCastleOnly",
+					"$visSecrets"
 				]
 			}
 		]

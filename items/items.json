@@ -1157,6 +1157,27 @@
 		]
 	},
 	{
+		"name": "Containersanity",
+		"type": "progressive",
+		"loop": false,
+		"allow_disabled": false,
+		"codes": "containersanity",
+		"stages": [
+			{
+				"img": "images/items/settings/containersanity_off.png",
+				"name": "Containersanity: off",
+				"codes": "containersanity,containersanity_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/containersanity_on.png",
+				"name": "Containersanity: on",
+				"codes": "containersanity,containersanity_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
 		"name": "Enable traps",
 		"type": "progressive",
 		"loop": false,

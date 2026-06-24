@@ -22,6 +22,9 @@
 						"x": 864,
 						"y": 252
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -209,6 +212,9 @@
 						"x": 855,
 						"y": 806
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -229,6 +235,9 @@
 						"x": 704,
 						"y": 8
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -249,6 +258,9 @@
 						"x": 704,
 						"y": 152
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -269,6 +281,9 @@
 						"x": 1141,
 						"y": 799
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -289,6 +304,9 @@
 						"x": 1230,
 						"y": 433
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -309,6 +327,9 @@
 						"x": 491,
 						"y": 468
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -329,6 +350,9 @@
 						"x": 185,
 						"y": 469
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -349,6 +373,9 @@
 						"x": 279,
 						"y": 289
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -369,6 +396,9 @@
 						"x": 351,
 						"y": 66
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -389,6 +419,9 @@
 						"x": 239,
 						"y": 106
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -409,6 +442,9 @@
 						"x": 593,
 						"y": 8
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -659,6 +695,9 @@
 						"x": 1119,
 						"y": 551
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -679,6 +718,9 @@
 						"x": 908,
 						"y": 739
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -699,6 +741,9 @@
 						"x": 516,
 						"y": 711
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -719,6 +764,9 @@
 						"x": 363,
 						"y": 236
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -739,6 +787,9 @@
 						"x": 412,
 						"y": 290
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -759,6 +810,9 @@
 						"x": 163,
 						"y": 386
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -779,6 +833,9 @@
 						"x": 1064,
 						"y": 573
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -799,6 +856,9 @@
 						"x": 729,
 						"y": 16
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -819,6 +879,9 @@
 						"x": 170,
 						"y": 556
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -839,6 +902,9 @@
 						"x": 450,
 						"y": 849
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -859,6 +925,9 @@
 						"x": 495,
 						"y": 759
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -879,6 +948,9 @@
 						"x": 385,
 						"y": 664
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -899,6 +971,9 @@
 						"x": 671,
 						"y": 13
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -919,6 +994,9 @@
 						"x": 728,
 						"y": 333
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{

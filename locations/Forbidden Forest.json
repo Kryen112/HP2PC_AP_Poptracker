@@ -169,6 +169,9 @@
 						"x": 233,
 						"y": 420
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -189,6 +192,9 @@
 						"x": 1221,
 						"y": 276
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -229,6 +235,9 @@
 						"x": 0,
 						"y": 0
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -249,6 +258,9 @@
 						"x": 0,
 						"y": 0
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -338,6 +350,9 @@
 						"x": 1601,
 						"y": 250
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			}
 		]

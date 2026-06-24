@@ -178,6 +178,7 @@ GROUP_TO_VIS = {
     "QuidditchMatches": "$visQuidMatch",
     "SpellChallengeTimes": "$visSpellTimes",
     "Tradersanity": "$visTraders",
+    "Containers": "$visContainers",
     # "Classrooms" / "LevelCompletions" handled below by mode rather than group.
 }
 
@@ -400,6 +401,7 @@ SETTING_ITEMS = [
     {"name": "Enable Duelling", "key": "enable_duelling", "binary": True},
     {"name": "Enable Quidditch matches", "key": "enable_quidditch_matches", "binary": True},
     {"name": "Enable spell challenge times", "key": "enable_spell_challenge_times", "binary": True},
+    {"name": "Containersanity", "key": "containersanity", "binary": True},
     {"name": "Enable traps", "key": "enable_traps", "binary": True},
     {"name": "Ring Link", "key": "ring_link", "binary": True},
     {"name": "Death Link", "key": "death_link", "binary": True},
@@ -525,6 +527,27 @@ def loc_section_ref(region_display: str, loc_name: str) -> str:
     return short
 
 
+def vis_rules_for(region: str, loc_name: str, loc_groups: dict[str, str]) -> list[str]:
+    """Visibility helpers gating a location's pin, ANDed by PopTracker — the pin
+    shows only when every listed helper returns true. A location can be gated by
+    both its region (the open-castle-only Gryffindor challenge) and its group
+    (cards, secrets, containers, ...), so a Gryffindor container pin carries
+    both $visOpenCastleOnly and $visContainers."""
+    rules: list[str] = []
+    # The Gryffindor challenge level only exists in the open-castle build.
+    if region == "GryffindorChallenge":
+        rules.append("$visOpenCastleOnly")
+    group = loc_groups.get(loc_name)
+    if group == "Classrooms":
+        # Classroom (Learned X) checks only exist in vanilla.
+        rules.append("$visClassrooms")
+    else:
+        gv = GROUP_TO_VIS.get(group or "")
+        if gv is not None:
+            rules.append(gv)
+    return rules
+
+
 def build_region_children(region: str, region_locs: list[str],
                           loc_groups: dict[str, str],
                           existing_map_locations: dict[str, list]) -> list:
@@ -535,17 +558,6 @@ def build_region_children(region: str, region_locs: list[str],
     so a fresh run doesn't wipe coordinates Stefan has already placed."""
     display = REGION_DISPLAY.get(region, region)
     map_name = REGION_MAP_OVERRIDE.get(region, display)
-
-    def vis_for(loc_name):
-        group = loc_groups.get(loc_name)
-        vis = GROUP_TO_VIS.get(group or "")
-        # Classrooms locations only exist in vanilla; the open-castle-only
-        # Gryffindor challenge region is the mirror image.
-        if group == "Classrooms":
-            return "$visClassrooms"
-        if region == "GryffindorChallenge":
-            return "$visOpenCastleOnly"
-        return vis
 
     def map_locs_for(node_name):
         # Carry pin coordinates forward only while they belong to the current
@@ -577,9 +589,9 @@ def build_region_children(region: str, region_locs: list[str],
                 if member_loc is None:
                     continue
                 sec = {"name": member, "access_rules": [f"${rule_fn_name(member_loc)}"]}
-                vis = vis_for(member_loc)
-                if vis is not None:
-                    sec["visibility_rules"] = [vis]
+                vis = vis_rules_for(region, member_loc, loc_groups)
+                if vis:
+                    sec["visibility_rules"] = vis
                 sections.append(sec)
             if not sections:
                 continue
@@ -609,9 +621,9 @@ def build_region_children(region: str, region_locs: list[str],
                 "sections": [{"name": section_name}],
                 "map_locations": map_locs_for(section_name),
             }
-            vis = vis_for(loc_name)
-            if vis is not None:
-                entry["visibility_rules"] = [vis]
+            vis = vis_rules_for(region, loc_name, loc_groups)
+            if vis:
+                entry["visibility_rules"] = vis
             children.append(entry)
     return children
 
@@ -636,7 +648,8 @@ def build_region_locations_json(region: str, region_locs: list[str],
 
 def build_menu_room_node(parent_name: str, target_map: str,
                          source_regions: list[str], by_region: dict[str, list[str]],
-                         existing_map_locations: dict[str, list]) -> dict:
+                         existing_map_locations: dict[str, list],
+                         loc_groups: dict[str, str]) -> dict:
     """Build an aggregate menu node placed on target_map: one pin per source
     region, each pin's sections being refs to every check in that region, so it
     mirrors the region's own map. Pin coordinates carry forward like checks —
@@ -654,13 +667,25 @@ def build_menu_room_node(parent_name: str, target_map: str,
         prior = [ml for ml in (existing_map_locations.get(src_display) or [])
                  if ml.get("map") == target_map]
         map_locs = prior if prior else [{"map": target_map, "x": 0, "y": 0}]
-        children.append({
+        child = {
             "name": src_display,
             "chest_unopened_img": "images/items/item.png",
             "chest_opened_img": "images/items/item_opened.png",
             "sections": sections,
             "map_locations": map_locs,
-        })
+        }
+        # Visibility helpers shared by every check in the room gate the whole
+        # pin: a room whose checks are all containers (the bean room) carries
+        # $visContainers and so vanishes without containersanity. A mixed room
+        # (e.g. a level whose Complete check is always shown) keeps an empty
+        # intersection, so the pin stays visible and its sections gate one by
+        # one via the referenced nodes.
+        rule_sets = [set(vis_rules_for(src, ln, loc_groups))
+                     for ln in by_region.get(src, [])]
+        common = set.intersection(*rule_sets) if rule_sets else set()
+        if common:
+            child["visibility_rules"] = sorted(common)
+        children.append(child)
     return {
         "name": parent_name,
         "chest_unopened_img": "images/items/item.png",
@@ -779,7 +804,7 @@ def main() -> None:
             parent_name, sources = MENU_ROOMS[region]
             target_map = REGION_MAP_OVERRIDE.get(region, display)
             region_json.append(
-                build_menu_room_node(parent_name, target_map, sources, by_region, prior)
+                build_menu_room_node(parent_name, target_map, sources, by_region, prior, loc_groups)
             )
         write_json(out_path, region_json)
 

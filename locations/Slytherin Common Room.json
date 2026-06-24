@@ -22,6 +22,9 @@
 						"x": 1663,
 						"y": 274
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -184,6 +187,9 @@
 						"x": 609,
 						"y": 518
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -204,6 +210,9 @@
 						"x": 592,
 						"y": 414
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -224,6 +233,9 @@
 						"x": 303,
 						"y": 598
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -244,6 +256,9 @@
 						"x": 656,
 						"y": 620
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -264,6 +279,9 @@
 						"x": 875,
 						"y": 388
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -284,6 +302,9 @@
 						"x": 1461,
 						"y": 535
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -324,6 +345,9 @@
 						"x": 200,
 						"y": 619
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -344,6 +368,9 @@
 						"x": 126,
 						"y": 619
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -364,6 +391,9 @@
 						"x": 667,
 						"y": 655
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -384,6 +414,9 @@
 						"x": 667,
 						"y": 681
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -404,6 +437,9 @@
 						"x": 875,
 						"y": 313
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -424,6 +460,9 @@
 						"x": 1327,
 						"y": 472
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -444,6 +483,9 @@
 						"x": 1245,
 						"y": 472
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -464,6 +506,9 @@
 						"x": 1588,
 						"y": 310
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{

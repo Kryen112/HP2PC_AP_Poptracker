@@ -83,6 +83,13 @@ SLOT_CODES = {
 			[false] = 0, [true] = 1,
 		},
 	},
+	containersanity = {
+		code = "containersanity",
+		mapping = {
+			[0] = 0, [1] = 1,
+			[false] = 0, [true] = 1,
+		},
+	},
 	enable_traps = {
 		code = "enable_traps",
 		mapping = {

@@ -22,6 +22,9 @@
 						"x": 1430,
 						"y": 330
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -42,6 +45,9 @@
 						"x": 1038,
 						"y": 480
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -200,6 +206,9 @@
 						"x": 1310,
 						"y": 13
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -220,6 +229,9 @@
 						"x": 1455,
 						"y": 426
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -240,6 +252,9 @@
 						"x": 1443,
 						"y": 94
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -260,6 +275,9 @@
 						"x": 1135,
 						"y": 423
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -280,6 +298,9 @@
 						"x": 742,
 						"y": 308
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -300,6 +321,9 @@
 						"x": 624,
 						"y": 144
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -320,6 +344,9 @@
 						"x": 1417,
 						"y": 49
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -340,6 +367,9 @@
 						"x": 1417,
 						"y": 124
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -360,6 +390,9 @@
 						"x": 1511,
 						"y": 457
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -380,6 +413,9 @@
 						"x": 428,
 						"y": 255
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -400,6 +436,9 @@
 						"x": 1185,
 						"y": 825
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -420,6 +459,9 @@
 						"x": 970,
 						"y": 707
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -440,6 +482,9 @@
 						"x": 1185,
 						"y": 444
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -460,6 +505,9 @@
 						"x": 411,
 						"y": 67
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -500,6 +548,9 @@
 						"x": 1080,
 						"y": 349
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -520,6 +571,9 @@
 						"x": 354,
 						"y": 173
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -540,6 +594,9 @@
 						"x": 1337,
 						"y": 718
 					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{

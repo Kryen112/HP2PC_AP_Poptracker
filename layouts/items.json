@@ -64,6 +64,9 @@
 				"enable_traps",
 				"ring_link",
 				"death_link"
+			],
+			[
+				"containersanity"
 			]
 		]
 	},
