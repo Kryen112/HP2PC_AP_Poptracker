@@ -13,6 +13,7 @@ LEVEL_TO_TAB = {
 	["GROUNDS_NIGHT"]      = { "Castle", "Castle Exterior" },
 
 	["ADV1WILLOW"]         = { "Levels", "Whomping Willow" },
+	["BEANREWARDROOM"]     = { "Levels", "Bean Bonus Room" },
 	["ADV3DUNGEONQUEST"]   = { "Levels", "Bicorn Level" },
 	["ADV4GREENHOUSE"]     = { "Levels", "Boomslang Level" },
 	["ADV6GOYLE"]          = { "Levels", "Goyle Level" },
