@@ -933,7 +933,7 @@
 					},
 					{
 						"name": "Oil Can 1",
-						"ref": "Diffindo Challenge/Oil Can 1/Oil Can 1"
+						"ref": "Diffindo Challenge/Oil Can 1 & Plant Pot 2/Oil Can 1"
 					},
 					{
 						"name": "Oil Can 2",
@@ -941,7 +941,7 @@
 					},
 					{
 						"name": "Oil Can 3",
-						"ref": "Diffindo Challenge/Oil Can 3/Oil Can 3"
+						"ref": "Diffindo Challenge/Oil Can 3 & Plant Pot 7/Oil Can 3"
 					},
 					{
 						"name": "Oil Can 4",
@@ -949,7 +949,7 @@
 					},
 					{
 						"name": "Peeves Chest",
-						"ref": "Diffindo Challenge/Peeves Chest/Peeves Chest"
+						"ref": "Diffindo Challenge/Peeves Chest & Secret 3/Peeves Chest"
 					},
 					{
 						"name": "Plant Pot 1",
@@ -961,7 +961,7 @@
 					},
 					{
 						"name": "Plant Pot 2",
-						"ref": "Diffindo Challenge/Plant Pot 2/Plant Pot 2"
+						"ref": "Diffindo Challenge/Oil Can 1 & Plant Pot 2/Plant Pot 2"
 					},
 					{
 						"name": "Plant Pot 3",
@@ -981,7 +981,7 @@
 					},
 					{
 						"name": "Plant Pot 7",
-						"ref": "Diffindo Challenge/Plant Pot 7/Plant Pot 7"
+						"ref": "Diffindo Challenge/Oil Can 3 & Plant Pot 7/Plant Pot 7"
 					},
 					{
 						"name": "Plant Pot 8",
@@ -1009,7 +1009,7 @@
 					},
 					{
 						"name": "Secret 3",
-						"ref": "Diffindo Challenge/Secret 3/Secret 3"
+						"ref": "Diffindo Challenge/Peeves Chest & Secret 3/Secret 3"
 					},
 					{
 						"name": "Secret 4",
@@ -1079,7 +1079,7 @@
 					},
 					{
 						"name": "Chest 2",
-						"ref": "Forbidden Forest/Chest 2/Chest 2"
+						"ref": "Forbidden Forest/Chest 2 & Secret 3/Chest 2"
 					},
 					{
 						"name": "Chest 3",
@@ -1091,11 +1091,11 @@
 					},
 					{
 						"name": "Flobberworm Mucous Jar 1",
-						"ref": "Forbidden Forest/Flobberworm Mucous Jar 1/Flobberworm Mucous Jar 1"
+						"ref": "Forbidden Forest/Flobberworm Mucous Jar 1 & Flobberworm Mucous Jar 2/Flobberworm Mucous Jar 1"
 					},
 					{
 						"name": "Flobberworm Mucous Jar 2",
-						"ref": "Forbidden Forest/Flobberworm Mucous Jar 2/Flobberworm Mucous Jar 2"
+						"ref": "Forbidden Forest/Flobberworm Mucous Jar 1 & Flobberworm Mucous Jar 2/Flobberworm Mucous Jar 2"
 					},
 					{
 						"name": "Secret 1",
@@ -1107,7 +1107,7 @@
 					},
 					{
 						"name": "Secret 3",
-						"ref": "Forbidden Forest/Secret 3/Secret 3"
+						"ref": "Forbidden Forest/Chest 2 & Secret 3/Secret 3"
 					},
 					{
 						"name": "Secret 4",
@@ -1165,11 +1165,11 @@
 					},
 					{
 						"name": "Plant Pot 2",
-						"ref": "Boomslang Level/Plant Pot 2/Plant Pot 2"
+						"ref": "Boomslang Level/Plant Pot 2 & Plant Pot 3/Plant Pot 2"
 					},
 					{
 						"name": "Plant Pot 3",
-						"ref": "Boomslang Level/Plant Pot 3/Plant Pot 3"
+						"ref": "Boomslang Level/Plant Pot 2 & Plant Pot 3/Plant Pot 3"
 					},
 					{
 						"name": "Plant Pot 4",

@@ -998,26 +998,35 @@
 				]
 			},
 			{
-				"name": "Learned Rictusempra",
+				"name": "Learned Rictusempra & Learned Spongify",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Learned_Rictusempra"
-				],
 				"sections": [
 					{
-						"name": "Learned Rictusempra"
+						"name": "Learned Rictusempra",
+						"access_rules": [
+							"$rule_Learned_Rictusempra"
+						],
+						"visibility_rules": [
+							"$visClassrooms"
+						]
+					},
+					{
+						"name": "Learned Spongify",
+						"access_rules": [
+							"$rule_Learned_Spongify"
+						],
+						"visibility_rules": [
+							"$visClassrooms"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Grand Staircase",
-						"x": 795,
+						"x": 803,
 						"y": 954
 					}
-				],
-				"visibility_rules": [
-					"$visClassrooms"
 				]
 			},
 			{
@@ -1037,29 +1046,6 @@
 						"map": "Grand Staircase",
 						"x": 171,
 						"y": 706
-					}
-				],
-				"visibility_rules": [
-					"$visClassrooms"
-				]
-			},
-			{
-				"name": "Learned Spongify",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Learned_Spongify"
-				],
-				"sections": [
-					{
-						"name": "Learned Spongify"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Grand Staircase",
-						"x": 811,
-						"y": 954
 					}
 				],
 				"visibility_rules": [
@@ -1262,7 +1248,7 @@
 					},
 					{
 						"name": "Chest 1",
-						"ref": "Chamber of Secrets/Chest 1/Chest 1"
+						"ref": "Chamber of Secrets/Chest 1 & Secret 1/Chest 1"
 					},
 					{
 						"name": "Chest 2",
@@ -1274,7 +1260,7 @@
 					},
 					{
 						"name": "Chest 4",
-						"ref": "Chamber of Secrets/Chest 4/Chest 4"
+						"ref": "Chamber of Secrets/Chest 4 & Secret 2/Chest 4"
 					},
 					{
 						"name": "Chest 5",
@@ -1282,7 +1268,7 @@
 					},
 					{
 						"name": "Chest 6",
-						"ref": "Chamber of Secrets/Chest 6/Chest 6"
+						"ref": "Chamber of Secrets/Chest 6 & Secret 3/Chest 6"
 					},
 					{
 						"name": "Chest 7",
@@ -1298,27 +1284,27 @@
 					},
 					{
 						"name": "Flobberworm Mucous Jar 2",
-						"ref": "Chamber of Secrets/Flobberworm Mucous Jar 2/Flobberworm Mucous Jar 2"
+						"ref": "Chamber of Secrets/Flobberworm Mucous Jar 2 & Secret 4 & Wiggentree Bark Jar 2/Flobberworm Mucous Jar 2"
 					},
 					{
 						"name": "Flobberworm Mucous Jar 3",
-						"ref": "Chamber of Secrets/Flobberworm Mucous Jar 3/Flobberworm Mucous Jar 3"
+						"ref": "Chamber of Secrets/Flobberworm Mucous Jar 3 & Wiggentree Bark Jar 3/Flobberworm Mucous Jar 3"
 					},
 					{
 						"name": "Secret 1",
-						"ref": "Chamber of Secrets/Secret 1/Secret 1"
+						"ref": "Chamber of Secrets/Chest 1 & Secret 1/Secret 1"
 					},
 					{
 						"name": "Secret 2",
-						"ref": "Chamber of Secrets/Secret 2/Secret 2"
+						"ref": "Chamber of Secrets/Chest 4 & Secret 2/Secret 2"
 					},
 					{
 						"name": "Secret 3",
-						"ref": "Chamber of Secrets/Secret 3/Secret 3"
+						"ref": "Chamber of Secrets/Chest 6 & Secret 3/Secret 3"
 					},
 					{
 						"name": "Secret 4",
-						"ref": "Chamber of Secrets/Secret 4/Secret 4"
+						"ref": "Chamber of Secrets/Flobberworm Mucous Jar 2 & Secret 4 & Wiggentree Bark Jar 2/Secret 4"
 					},
 					{
 						"name": "Secret 5",
@@ -1334,11 +1320,11 @@
 					},
 					{
 						"name": "Wiggentree Bark Jar 2",
-						"ref": "Chamber of Secrets/Wiggentree Bark Jar 2/Wiggentree Bark Jar 2"
+						"ref": "Chamber of Secrets/Flobberworm Mucous Jar 2 & Secret 4 & Wiggentree Bark Jar 2/Wiggentree Bark Jar 2"
 					},
 					{
 						"name": "Wiggentree Bark Jar 3",
-						"ref": "Chamber of Secrets/Wiggentree Bark Jar 3/Wiggentree Bark Jar 3"
+						"ref": "Chamber of Secrets/Flobberworm Mucous Jar 3 & Wiggentree Bark Jar 3/Wiggentree Bark Jar 3"
 					}
 				],
 				"map_locations": [

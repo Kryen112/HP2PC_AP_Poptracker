@@ -175,26 +175,35 @@
 				]
 			},
 			{
-				"name": "Chest 2",
+				"name": "Chest 2 & Secret 3",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Forbidden_Forest_Chest_2"
-				],
 				"sections": [
 					{
-						"name": "Chest 2"
+						"name": "Chest 2",
+						"access_rules": [
+							"$rule_Forbidden_Forest_Chest_2"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Secret 3",
+						"access_rules": [
+							"$rule_Forbidden_Forest_Secret_3"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 1221,
+						"x": 1216,
 						"y": 276
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
@@ -241,49 +250,35 @@
 				]
 			},
 			{
-				"name": "Flobberworm Mucous Jar 1",
+				"name": "Flobberworm Mucous Jar 1 & Flobberworm Mucous Jar 2",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Forbidden_Forest_Flobberworm_Mucous_Jar_1"
-				],
 				"sections": [
 					{
-						"name": "Flobberworm Mucous Jar 1"
+						"name": "Flobberworm Mucous Jar 1",
+						"access_rules": [
+							"$rule_Forbidden_Forest_Flobberworm_Mucous_Jar_1"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Flobberworm Mucous Jar 2",
+						"access_rules": [
+							"$rule_Forbidden_Forest_Flobberworm_Mucous_Jar_2"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Forbidden Forest",
-						"x": 1665,
-						"y": 633
+						"x": 1660,
+						"y": 629
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Flobberworm Mucous Jar 2",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Forbidden_Forest_Flobberworm_Mucous_Jar_2"
-				],
-				"sections": [
-					{
-						"name": "Flobberworm Mucous Jar 2"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Forbidden Forest",
-						"x": 1655,
-						"y": 626
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
@@ -326,29 +321,6 @@
 						"map": "Forbidden Forest",
 						"x": 937,
 						"y": 142
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Forbidden_Forest_Secret_3"
-				],
-				"sections": [
-					{
-						"name": "Secret 3"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Forbidden Forest",
-						"x": 1211,
-						"y": 276
 					}
 				],
 				"visibility_rules": [

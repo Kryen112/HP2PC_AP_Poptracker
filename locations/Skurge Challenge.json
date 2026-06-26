@@ -448,26 +448,35 @@
 				]
 			},
 			{
-				"name": "Challenge Star 10",
+				"name": "Challenge Star 10 & Peeves Chest",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Skurge_Challenge_Challenge_Star_10"
-				],
 				"sections": [
 					{
-						"name": "Challenge Star 10"
+						"name": "Challenge Star 10",
+						"access_rules": [
+							"$rule_Skurge_Challenge_Challenge_Star_10"
+						],
+						"visibility_rules": [
+							"$visStars"
+						]
+					},
+					{
+						"name": "Peeves Chest",
+						"access_rules": [
+							"$rule_Skurge_Challenge_Peeves_Chest"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Skurge Challenge",
-						"x": 707,
+						"x": 717,
 						"y": 333
 					}
-				],
-				"visibility_rules": [
-					"$visStars"
 				]
 			},
 			{
@@ -563,26 +572,35 @@
 				]
 			},
 			{
-				"name": "Challenge Star 6",
+				"name": "Challenge Star 6 & Cigar Box",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Skurge_Challenge_Challenge_Star_6"
-				],
 				"sections": [
 					{
-						"name": "Challenge Star 6"
+						"name": "Challenge Star 6",
+						"access_rules": [
+							"$rule_Skurge_Challenge_Challenge_Star_6"
+						],
+						"visibility_rules": [
+							"$visStars"
+						]
+					},
+					{
+						"name": "Cigar Box",
+						"access_rules": [
+							"$rule_Skurge_Challenge_Cigar_Box"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Skurge Challenge",
 						"x": 163,
-						"y": 374
+						"y": 380
 					}
-				],
-				"visibility_rules": [
-					"$visStars"
 				]
 			},
 			{
@@ -678,26 +696,35 @@
 				]
 			},
 			{
-				"name": "Chest 2",
+				"name": "Chest 2 & Secret 3",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Skurge_Challenge_Chest_2"
-				],
 				"sections": [
 					{
-						"name": "Chest 2"
+						"name": "Chest 2",
+						"access_rules": [
+							"$rule_Skurge_Challenge_Chest_2"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Secret 3",
+						"access_rules": [
+							"$rule_Skurge_Challenge_Secret_3"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Skurge Challenge",
-						"x": 908,
+						"x": 897,
 						"y": 739
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
@@ -763,29 +790,6 @@
 						"map": "Skurge Challenge",
 						"x": 412,
 						"y": 290
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Cigar Box",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Skurge_Challenge_Cigar_Box"
-				],
-				"sections": [
-					{
-						"name": "Cigar Box"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Skurge Challenge",
-						"x": 163,
-						"y": 386
 					}
 				],
 				"visibility_rules": [
@@ -954,29 +958,6 @@
 				]
 			},
 			{
-				"name": "Peeves Chest",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Skurge_Challenge_Peeves_Chest"
-				],
-				"sections": [
-					{
-						"name": "Peeves Chest"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Skurge Challenge",
-						"x": 728,
-						"y": 333
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
 				"name": "Secret 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -1016,29 +997,6 @@
 						"map": "Skurge Challenge",
 						"x": 898,
 						"y": 499
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Skurge_Challenge_Secret_3"
-				],
-				"sections": [
-					{
-						"name": "Secret 3"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Skurge Challenge",
-						"x": 886,
-						"y": 739
 					}
 				],
 				"visibility_rules": [

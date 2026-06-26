@@ -258,26 +258,35 @@
 				]
 			},
 			{
-				"name": "Chest 10",
+				"name": "Chest 10 & Secret 8",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Goyle_Level_Chest_10"
-				],
 				"sections": [
 					{
-						"name": "Chest 10"
+						"name": "Chest 10",
+						"access_rules": [
+							"$rule_Goyle_Level_Chest_10"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Secret 8",
+						"access_rules": [
+							"$rule_Goyle_Level_Secret_8"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Goyle Level",
 						"x": 1048,
-						"y": 1219
+						"y": 1210
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
@@ -304,26 +313,35 @@
 				]
 			},
 			{
-				"name": "Chest 3",
+				"name": "Chest 3 & Secret 3",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Goyle_Level_Chest_3"
-				],
 				"sections": [
 					{
-						"name": "Chest 3"
+						"name": "Chest 3",
+						"access_rules": [
+							"$rule_Goyle_Level_Chest_3"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Secret 3",
+						"access_rules": [
+							"$rule_Goyle_Level_Secret_3"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Goyle Level",
 						"x": 404,
-						"y": 883
+						"y": 871
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
@@ -577,29 +595,6 @@
 				]
 			},
 			{
-				"name": "Secret 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Goyle_Level_Secret_3"
-				],
-				"sections": [
-					{
-						"name": "Secret 3"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Goyle Level",
-						"x": 404,
-						"y": 859
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
 				"name": "Secret 4",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -684,29 +679,6 @@
 					{
 						"map": "Goyle Level",
 						"x": 1258,
-						"y": 1201
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 8",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Goyle_Level_Secret_8"
-				],
-				"sections": [
-					{
-						"name": "Secret 8"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Goyle Level",
-						"x": 1048,
 						"y": 1201
 					}
 				],

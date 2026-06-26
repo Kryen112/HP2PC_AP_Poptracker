@@ -442,26 +442,35 @@
 				]
 			},
 			{
-				"name": "Chest 8",
+				"name": "Chest 8 & Secret 7",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Bicorn_Level_Chest_8"
-				],
 				"sections": [
 					{
-						"name": "Chest 8"
+						"name": "Chest 8",
+						"access_rules": [
+							"$rule_Bicorn_Level_Chest_8"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Secret 7",
+						"access_rules": [
+							"$rule_Bicorn_Level_Secret_7"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
 						"x": 411,
-						"y": 67
+						"y": 74
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
@@ -685,29 +694,6 @@
 						"map": "Bicorn Level",
 						"x": 489,
 						"y": 234
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 7",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Bicorn_Level_Secret_7"
-				],
-				"sections": [
-					{
-						"name": "Secret 7"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Bicorn Level",
-						"x": 412,
-						"y": 82
 					}
 				],
 				"visibility_rules": [

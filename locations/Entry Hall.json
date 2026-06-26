@@ -1337,7 +1337,7 @@
 					},
 					{
 						"name": "Challenge Star 8",
-						"ref": "Spongify Challenge/Challenge Star 8/Challenge Star 8"
+						"ref": "Spongify Challenge/Challenge Star 8 & Music Box/Challenge Star 8"
 					},
 					{
 						"name": "Challenge Star 9",
@@ -1345,7 +1345,7 @@
 					},
 					{
 						"name": "Chest 1",
-						"ref": "Spongify Challenge/Chest 1/Chest 1"
+						"ref": "Spongify Challenge/Chest 1 & Secret 3/Chest 1"
 					},
 					{
 						"name": "Chest 2",
@@ -1405,7 +1405,7 @@
 					},
 					{
 						"name": "Music Box",
-						"ref": "Spongify Challenge/Music Box/Music Box"
+						"ref": "Spongify Challenge/Challenge Star 8 & Music Box/Music Box"
 					},
 					{
 						"name": "Peeves Chest",
@@ -1449,7 +1449,7 @@
 					},
 					{
 						"name": "Secret 3",
-						"ref": "Spongify Challenge/Secret 3/Secret 3"
+						"ref": "Spongify Challenge/Chest 1 & Secret 3/Secret 3"
 					},
 					{
 						"name": "Secret 4",
@@ -1579,7 +1579,7 @@
 					},
 					{
 						"name": "Challenge Star 10",
-						"ref": "Skurge Challenge/Challenge Star 10/Challenge Star 10"
+						"ref": "Skurge Challenge/Challenge Star 10 & Peeves Chest/Challenge Star 10"
 					},
 					{
 						"name": "Challenge Star 2",
@@ -1599,7 +1599,7 @@
 					},
 					{
 						"name": "Challenge Star 6",
-						"ref": "Skurge Challenge/Challenge Star 6/Challenge Star 6"
+						"ref": "Skurge Challenge/Challenge Star 6 & Cigar Box/Challenge Star 6"
 					},
 					{
 						"name": "Challenge Star 7",
@@ -1619,7 +1619,7 @@
 					},
 					{
 						"name": "Chest 2",
-						"ref": "Skurge Challenge/Chest 2/Chest 2"
+						"ref": "Skurge Challenge/Chest 2 & Secret 3/Chest 2"
 					},
 					{
 						"name": "Chest 3",
@@ -1635,7 +1635,7 @@
 					},
 					{
 						"name": "Cigar Box",
-						"ref": "Skurge Challenge/Cigar Box/Cigar Box"
+						"ref": "Skurge Challenge/Challenge Star 6 & Cigar Box/Cigar Box"
 					},
 					{
 						"name": "Complete",
@@ -1671,7 +1671,7 @@
 					},
 					{
 						"name": "Peeves Chest",
-						"ref": "Skurge Challenge/Peeves Chest/Peeves Chest"
+						"ref": "Skurge Challenge/Challenge Star 10 & Peeves Chest/Peeves Chest"
 					},
 					{
 						"name": "Secret 1",
@@ -1683,7 +1683,7 @@
 					},
 					{
 						"name": "Secret 3",
-						"ref": "Skurge Challenge/Secret 3/Secret 3"
+						"ref": "Skurge Challenge/Chest 2 & Secret 3/Secret 3"
 					},
 					{
 						"name": "Secret 4",
@@ -1797,7 +1797,7 @@
 					},
 					{
 						"name": "Chest 8",
-						"ref": "Bicorn Level/Chest 8/Chest 8"
+						"ref": "Bicorn Level/Chest 8 & Secret 7/Chest 8"
 					},
 					{
 						"name": "Complete",
@@ -1841,7 +1841,7 @@
 					},
 					{
 						"name": "Secret 7",
-						"ref": "Bicorn Level/Secret 7/Secret 7"
+						"ref": "Bicorn Level/Chest 8 & Secret 7/Secret 7"
 					},
 					{
 						"name": "Wiggentree Bark Jar 1",
@@ -1911,7 +1911,7 @@
 					},
 					{
 						"name": "Chest 10",
-						"ref": "Goyle Level/Chest 10/Chest 10"
+						"ref": "Goyle Level/Chest 10 & Secret 8/Chest 10"
 					},
 					{
 						"name": "Chest 2",
@@ -1919,7 +1919,7 @@
 					},
 					{
 						"name": "Chest 3",
-						"ref": "Goyle Level/Chest 3/Chest 3"
+						"ref": "Goyle Level/Chest 3 & Secret 3/Chest 3"
 					},
 					{
 						"name": "Chest 4",
@@ -1967,7 +1967,7 @@
 					},
 					{
 						"name": "Secret 3",
-						"ref": "Goyle Level/Secret 3/Secret 3"
+						"ref": "Goyle Level/Chest 3 & Secret 3/Secret 3"
 					},
 					{
 						"name": "Secret 4",
@@ -1987,7 +1987,7 @@
 					},
 					{
 						"name": "Secret 8",
-						"ref": "Goyle Level/Secret 8/Secret 8"
+						"ref": "Goyle Level/Chest 10 & Secret 8/Secret 8"
 					}
 				],
 				"map_locations": [
@@ -2045,7 +2045,7 @@
 					},
 					{
 						"name": "Chest 4",
-						"ref": "Slytherin Common Room/Chest 4/Chest 4"
+						"ref": "Slytherin Common Room/Chest 4 & Secret 8/Chest 4"
 					},
 					{
 						"name": "Complete",
@@ -2113,7 +2113,7 @@
 					},
 					{
 						"name": "Secret 8",
-						"ref": "Slytherin Common Room/Secret 8/Secret 8"
+						"ref": "Slytherin Common Room/Chest 4 & Secret 8/Secret 8"
 					},
 					{
 						"name": "Wiggentree Bark Jar",

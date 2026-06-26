@@ -209,49 +209,35 @@
 				]
 			},
 			{
-				"name": "Plant Pot 2",
+				"name": "Plant Pot 2 & Plant Pot 3",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Boomslang_Level_Plant_Pot_2"
-				],
 				"sections": [
 					{
-						"name": "Plant Pot 2"
+						"name": "Plant Pot 2",
+						"access_rules": [
+							"$rule_Boomslang_Level_Plant_Pot_2"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Plant Pot 3",
+						"access_rules": [
+							"$rule_Boomslang_Level_Plant_Pot_3"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Boomslang Level",
 						"x": 164,
-						"y": 151
+						"y": 158
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Plant Pot 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Boomslang_Level_Plant_Pot_3"
-				],
-				"sections": [
-					{
-						"name": "Plant Pot 3"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Boomslang Level",
-						"x": 164,
-						"y": 165
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{

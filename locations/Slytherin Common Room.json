@@ -262,26 +262,35 @@
 				]
 			},
 			{
-				"name": "Chest 4",
+				"name": "Chest 4 & Secret 8",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Slytherin_Common_Room_Chest_4"
-				],
 				"sections": [
 					{
-						"name": "Chest 4"
+						"name": "Chest 4",
+						"access_rules": [
+							"$rule_Slytherin_Common_Room_Chest_4"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Secret 8",
+						"access_rules": [
+							"$rule_Slytherin_Common_Room_Secret_8"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Slytherin Common Room",
-						"x": 1461,
-						"y": 535
+						"x": 1460,
+						"y": 546
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
@@ -574,29 +583,6 @@
 						"map": "Slytherin Common Room",
 						"x": 1046,
 						"y": 205
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 8",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Slytherin_Common_Room_Secret_8"
-				],
-				"sections": [
-					{
-						"name": "Secret 8"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Slytherin Common Room",
-						"x": 1460,
-						"y": 558
 					}
 				],
 				"visibility_rules": [

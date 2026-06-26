@@ -990,15 +990,27 @@
 				]
 			},
 			{
-				"name": "Oil Can 1",
+				"name": "Oil Can 1 & Plant Pot 2",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Oil_Can_1"
-				],
 				"sections": [
 					{
-						"name": "Oil Can 1"
+						"name": "Oil Can 1",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Oil_Can_1"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Plant Pot 2",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Plant_Pot_2"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
 					}
 				],
 				"map_locations": [
@@ -1007,9 +1019,6 @@
 						"x": 1277,
 						"y": 705
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
@@ -1036,26 +1045,35 @@
 				]
 			},
 			{
-				"name": "Oil Can 3",
+				"name": "Oil Can 3 & Plant Pot 7",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Oil_Can_3"
-				],
 				"sections": [
 					{
-						"name": "Oil Can 3"
+						"name": "Oil Can 3",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Oil_Can_3"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Plant Pot 7",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Plant_Pot_7"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 316,
+						"x": 320,
 						"y": 894
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
@@ -1082,26 +1100,35 @@
 				]
 			},
 			{
-				"name": "Peeves Chest",
+				"name": "Peeves Chest & Secret 3",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Peeves_Chest"
-				],
 				"sections": [
 					{
-						"name": "Peeves Chest"
+						"name": "Peeves Chest",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Peeves_Chest"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Secret 3",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Secret_3"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 1309,
+						"x": 1301,
 						"y": 502
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
@@ -1144,29 +1171,6 @@
 						"map": "Diffindo Challenge",
 						"x": 978,
 						"y": 736
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Plant Pot 2",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Plant_Pot_2"
-				],
-				"sections": [
-					{
-						"name": "Plant Pot 2"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 1277,
-						"y": 705
 					}
 				],
 				"visibility_rules": [
@@ -1259,29 +1263,6 @@
 						"map": "Diffindo Challenge",
 						"x": 345,
 						"y": 1000
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Plant Pot 7",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Plant_Pot_7"
-				],
-				"sections": [
-					{
-						"name": "Plant Pot 7"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 324,
-						"y": 894
 					}
 				],
 				"visibility_rules": [
@@ -1420,29 +1401,6 @@
 						"map": "Diffindo Challenge",
 						"x": 1331,
 						"y": 688
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Diffindo_Challenge_Secret_3"
-				],
-				"sections": [
-					{
-						"name": "Secret 3"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 1293,
-						"y": 502
 					}
 				],
 				"visibility_rules": [

@@ -575,26 +575,35 @@
 				]
 			},
 			{
-				"name": "Challenge Star 8",
+				"name": "Challenge Star 8 & Music Box",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Challenge_Star_8"
-				],
 				"sections": [
 					{
-						"name": "Challenge Star 8"
+						"name": "Challenge Star 8",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Challenge_Star_8"
+						],
+						"visibility_rules": [
+							"$visStars"
+						]
+					},
+					{
+						"name": "Music Box",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Music_Box"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
-						"x": 1410,
-						"y": 459
+						"x": 1417,
+						"y": 465
 					}
-				],
-				"visibility_rules": [
-					"$visStars"
 				]
 			},
 			{
@@ -621,26 +630,35 @@
 				]
 			},
 			{
-				"name": "Chest 1",
+				"name": "Chest 1 & Secret 3",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Chest_1"
-				],
 				"sections": [
 					{
-						"name": "Chest 1"
+						"name": "Chest 1",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Chest_1"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Secret 3",
+						"access_rules": [
+							"$rule_Spongify_Challenge_Secret_3"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
 					}
 				],
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
 						"x": 380,
-						"y": 16
+						"y": 26
 					}
-				],
-				"visibility_rules": [
-					"$visContainers"
 				]
 			},
 			{
@@ -943,29 +961,6 @@
 				]
 			},
 			{
-				"name": "Music Box",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Music_Box"
-				],
-				"sections": [
-					{
-						"name": "Music Box"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 1424,
-						"y": 472
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
 				"name": "Peeves Chest",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -1097,29 +1092,6 @@
 						"map": "Spongify Challenge",
 						"x": 1118,
 						"y": 659
-					}
-				],
-				"visibility_rules": [
-					"$visSecrets"
-				]
-			},
-			{
-				"name": "Secret 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_3"
-				],
-				"sections": [
-					{
-						"name": "Secret 3"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 380,
-						"y": 37
 					}
 				],
 				"visibility_rules": [
