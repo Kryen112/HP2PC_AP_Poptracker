@@ -118,7 +118,7 @@
 				"map_locations": [
 					{
 						"map": "Slytherin Common Room",
-						"x": 1286,
+						"x": 1287,
 						"y": 527
 					}
 				]
@@ -253,7 +253,7 @@
 				"map_locations": [
 					{
 						"map": "Slytherin Common Room",
-						"x": 875,
+						"x": 878,
 						"y": 388
 					}
 				],
@@ -288,7 +288,7 @@
 				"map_locations": [
 					{
 						"map": "Slytherin Common Room",
-						"x": 1460,
+						"x": 1462,
 						"y": 546
 					}
 				]
@@ -351,8 +351,8 @@
 				"map_locations": [
 					{
 						"map": "Slytherin Common Room",
-						"x": 200,
-						"y": 619
+						"x": 203,
+						"y": 621
 					}
 				],
 				"visibility_rules": [
@@ -375,7 +375,7 @@
 					{
 						"map": "Slytherin Common Room",
 						"x": 126,
-						"y": 619
+						"y": 621
 					}
 				],
 				"visibility_rules": [
@@ -421,7 +421,7 @@
 					{
 						"map": "Slytherin Common Room",
 						"x": 667,
-						"y": 681
+						"y": 581
 					}
 				],
 				"visibility_rules": [
@@ -443,7 +443,7 @@
 				"map_locations": [
 					{
 						"map": "Slytherin Common Room",
-						"x": 875,
+						"x": 878,
 						"y": 313
 					}
 				],
