@@ -24,7 +24,6 @@ from __future__ import annotations
 
 import ast
 import json
-import os
 import re
 from pathlib import Path
 
@@ -168,6 +167,7 @@ def colocation_parent(region: str, section_name: str) -> str:
             return group_name
     return section_name
 
+
 # Map LOCATION_GROUPS group → tracker visibility helper from logic.lua.
 # Groups not listed here are always visible.
 GROUP_TO_VIS = {
@@ -195,10 +195,6 @@ CLASS_TO_IMG_DIR = {
     "filler": "images/items/filler",
     "trap": "images/items/traps",
 }
-
-# Display order for the layouts/items.json grid — driven from the items list,
-# but grouped for clarity. The handwritten layouts/items.json references item
-# codes directly, so changing this dict only affects re-emission, not layout.
 
 
 # ---------------------------------------------------------------------------
@@ -271,13 +267,9 @@ def load_rule_dicts(path: Path) -> dict[str, dict[str, ast.AST]]:
                     key = _eval_literal(k) if isinstance(k, ast.Constant) else None
                     if key is None:
                         continue
-                    # value is either Lambda(args, body) or a literal (True/False)
-                    if isinstance(v, ast.Lambda):
-                        d[key] = v.body
-                    elif isinstance(v, ast.Constant):
-                        d[key] = v
-                    else:
-                        d[key] = v
+                    # _Access expression node (Name / BinOp / _silver_cards Call);
+                    # a stray lambda body is unwrapped for tolerance.
+                    d[key] = v.body if isinstance(v, ast.Lambda) else v
                 out[t.id] = d
     return out
 
@@ -300,31 +292,13 @@ def load_item_predicates(path: Path) -> dict[str, str]:
 
 
 # ---------------------------------------------------------------------------
-# Access rule (lambda body or _Access DSL) to Lua expression
+# _Access DSL to Lua expression
 # ---------------------------------------------------------------------------
-
-# Module-level list constants from regions.py (e.g. _SILVER_CARD_NAMES),
-# populated in main(). Lets lambda_to_lua expand has_from_list_unique into the
-# atLeast() helper from logic.lua.
-LIST_CONSTANTS: dict[str, list] = {}
 
 # Item-predicate name from access.py (`alohomora = _item('Alohomora')`) to item
 # name. Lets the translator turn a bare predicate Name in the _Access DSL into
 # has("Item").
 ITEM_PREDICATES: dict[str, str] = {}
-
-# Card-tier list constants → their items.json consumable counter code. A
-# has_from_list over a whole card tier compiles to a counter test
-# (count("silver_cards") >= n) rather than atLeast over the individual codes,
-# so the items-menu counter is the live control for those rules (toggling it
-# re-evaluates the gated checks) and it mirrors both the apworld threshold and
-# the in-game count-based door. The per-card codes are still set by the
-# autotracker; they're just not what the rule reads.
-CARD_LIST_TO_COUNTER = {
-    "_BRONZE_CARD_NAMES": "bronze_cards",
-    "_SILVER_CARD_NAMES": "silver_cards",
-    "_GOLD_CARD_NAMES": "gold_cards",
-}
 
 
 def _flatten_binop(node, op_type) -> list:
@@ -335,13 +309,7 @@ def _flatten_binop(node, op_type) -> list:
     return [node]
 
 
-def lambda_to_lua(node) -> str:
-    if isinstance(node, ast.Constant):
-        if node.value is True:
-            return "true"
-        if node.value is False:
-            return "false"
-        raise ValueError(f"unexpected constant: {node.value!r}")
+def rule_to_lua(node) -> str:
     # _Access DSL: a bare item predicate, or never / always.
     if isinstance(node, ast.Name):
         if node.id == "never":
@@ -356,48 +324,17 @@ def lambda_to_lua(node) -> str:
     if isinstance(node, ast.BinOp):
         if isinstance(node.op, ast.BitAnd):
             parts = _flatten_binop(node, ast.BitAnd)
-            return "(" + " and ".join(lambda_to_lua(p) for p in parts) + ")"
+            return "(" + " and ".join(rule_to_lua(p) for p in parts) + ")"
         if isinstance(node.op, ast.BitOr):
             parts = _flatten_binop(node, ast.BitOr)
-            return "(" + " or ".join(lambda_to_lua(p) for p in parts) + ")"
+            return "(" + " or ".join(rule_to_lua(p) for p in parts) + ")"
         raise ValueError(f"unsupported BinOp op: {ast.dump(node.op)}")
-    if isinstance(node, ast.BoolOp):
-        op = " and " if isinstance(node.op, ast.And) else " or "
-        return "(" + op.join(lambda_to_lua(v) for v in node.values) + ")"
-    if isinstance(node, ast.UnaryOp) and isinstance(node.op, ast.Not):
-        return "(not " + lambda_to_lua(node.operand) + ")"
-    if isinstance(node, ast.Call):
-        # _Access DSL: _silver_cards(n) -> count("silver_cards") >= n, the same
-        # counter test the has_from_list path below produces.
-        if (isinstance(node.func, ast.Name) and node.func.id == "_silver_cards"
-                and len(node.args) == 1 and isinstance(node.args[0], ast.Constant)):
-            return f'(count("silver_cards") >= {node.args[0].value})'
-        # state.has('X', player)
-        if (isinstance(node.func, ast.Attribute) and node.func.attr == "has"
-                and len(node.args) >= 1 and isinstance(node.args[0], ast.Constant)):
-            item = node.args[0].value
-            return f'has("{_lua_escape(item)}")'
-        # state.has_from_list_unique(_LIST, player, n)
-        # Card-tier lists compile to a counter test so the items-menu counter is
-        # the live control: count("silver_cards") >= n. Other lists fall back to
-        # atLeast over bare codes (any/all/atLeast all take codes and call has()
-        # internally, so pass the codes, not has() results).
-        if (isinstance(node.func, ast.Attribute)
-                and node.func.attr in ("has_from_list_unique", "has_from_list")
-                and len(node.args) >= 3
-                and isinstance(node.args[0], ast.Name)
-                and isinstance(node.args[2], ast.Constant)):
-            list_name = node.args[0].id
-            n = node.args[2].value
-            counter = CARD_LIST_TO_COUNTER.get(list_name)
-            if counter is not None:
-                return f'(count("{counter}") >= {n})'
-            names = LIST_CONSTANTS.get(list_name)
-            if names is None:
-                raise ValueError(f"unknown item-list constant: {list_name}")
-            codes = ", ".join(f'"{_lua_escape(name)}"' for name in names)
-            return f"atLeast({n}, {codes})"
-    raise ValueError(f"unsupported expr node: {ast.dump(node)}")
+    # _Access DSL: _silver_cards(n) -> count("silver_cards") >= n.
+    if (isinstance(node, ast.Call) and isinstance(node.func, ast.Name)
+            and node.func.id == "_silver_cards" and len(node.args) == 1
+            and isinstance(node.args[0], ast.Constant)):
+        return f'(count("silver_cards") >= {node.args[0].value})'
+    raise ValueError(f"unsupported _Access node: {ast.dump(node)}")
 
 
 def _lua_escape(s: str) -> str:
@@ -683,10 +620,10 @@ def build_region_children(region: str, region_locs: list[str],
     return children
 
 
-def build_region_locations_json(region: str, region_locs: list[str],
-                                 loc_groups: dict[str, str],
-                                 existing_map_locations: dict[str, list],
-                                 extra_children: list | None = None) -> list:
+def build_region_locations_json(
+    region: str, region_locs: list[str], loc_groups: dict[str, str],
+    existing_map_locations: dict[str, list], extra_children: list | None = None,
+) -> list:
     """Wrap a region's child nodes in its top-level group. extra_children holds
     nodes from map-less regions folded into this one (see REGION_FOLD_INTO)."""
     display = REGION_DISPLAY.get(region, region)
@@ -775,6 +712,53 @@ def load_existing_map_locations(path: Path) -> dict[str, list]:
     return out
 
 
+def load_existing_colocation(path: Path) -> list:
+    """Colocation groups already present in an existing locations file: each
+    top-level child node bundling more than one real (non-ref) section under one
+    shared pin, as (node name, [section names]). Lets a regen preserve groupings
+    added by hand beyond the COLOCATION defaults so their shared pins survive."""
+    if not path.exists():
+        return []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    groups = []
+    for region_entry in data:
+        for child in region_entry.get("children", []):
+            secs = [s for s in (child.get("sections") or [])
+                    if s.get("name") and "ref" not in s]
+            if len(secs) > 1:
+                groups.append((child.get("name"), [s["name"] for s in secs]))
+    return groups
+
+
+def merge_discovered_colocation(by_region: dict) -> None:
+    """Augment COLOCATION with the groups already in the locations/*.json on
+    disk, so regenerating preserves hand-added groupings (and, via their node
+    names, their placed pins) instead of flattening them to single nodes."""
+    region_sections = {
+        region: {loc_section_ref(REGION_DISPLAY.get(region, region), ln) for ln in locs}
+        for region, locs in by_region.items()
+    }
+    for region, locs in by_region.items():
+        if not locs or region in REGION_FOLD_INTO:
+            continue  # folded regions have no file of their own; found in the host's
+        display = REGION_DISPLAY.get(region, region)
+        path = PACK / "locations" / f"{display}.json"
+        # A group's pin lives on the host map, but its sections belong to the
+        # host region or a region folded into it; assign to whichever owns them.
+        candidates = [region] + [f for f, h in REGION_FOLD_INTO.items() if h == region]
+        for group_name, members in load_existing_colocation(path):
+            owner = next((c for c in candidates
+                          if all(m in region_sections.get(c, set()) for m in members)), region)
+            existing = COLOCATION.setdefault(owner, [])
+            grouped = {m for _, ms in existing for m in ms}
+            if any(m in grouped for m in members):
+                continue  # already a COLOCATION default or duplicate; leave it
+            existing.append((group_name, members))
+
+
 # ---------------------------------------------------------------------------
 # Output writers
 # ---------------------------------------------------------------------------
@@ -802,15 +786,14 @@ def lua_table_kv(items, key_quote=False) -> str:
 # Generation entry point
 # ---------------------------------------------------------------------------
 
-def main() -> None:
+# Linear top-to-bottom orchestration; the complexity is inherent, not accidental.
+def main() -> None:  # noqa: C901
     items = load_assignments(APWORLD / "items.py")
     locations = load_assignments(APWORLD / "locations.py")
     regions = load_assignments(APWORLD / "regions.py")
-    LIST_CONSTANTS.update({k: v for k, v in regions.items() if isinstance(v, list)})
     region_rules = load_rule_dicts(APWORLD / "regions.py")
     location_rules = load_rule_dicts(APWORLD / "rules.py")
     ITEM_PREDICATES.update(load_item_predicates(APWORLD / "access.py"))
-    LIST_CONSTANTS.update({k: v for k, v in load_assignments(APWORLD / "access.py").items() if isinstance(v, list)})
 
     name_to_id_items = items["ITEM_NAME_TO_ID"]
     name_to_id_locs = locations["LOCATION_NAME_TO_ID"]
@@ -825,6 +808,7 @@ def main() -> None:
     by_region: dict[str, list[str]] = {r: [] for r in region_names}
     for loc, region in loc_regions.items():
         by_region.setdefault(region, []).append(loc)
+    merge_discovered_colocation(by_region)
     for region, locs in by_region.items():
         if not locs:
             continue
@@ -936,10 +920,10 @@ def main() -> None:
         parts = []
         rnode = region_tbl.get(region)
         if rnode is not None:
-            parts.append(lambda_to_lua(rnode))
+            parts.append(rule_to_lua(rnode))
         lnode = loc_tbl.get(loc_name)
         if lnode is not None:
-            parts.append(lambda_to_lua(lnode))
+            parts.append(rule_to_lua(lnode))
         if not parts:
             return "true"
         return " and ".join(parts)

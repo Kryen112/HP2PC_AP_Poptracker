@@ -6,28 +6,6 @@ function count(item)
     return Tracker:ProviderCountForCode(item)
 end
 
-function any(...)
-    for _, code in ipairs({...}) do
-        if has(code) then return true end
-    end
-    return false
-end
-
-function all(...)
-    for _, code in ipairs({...}) do
-        if not has(code) then return false end
-    end
-    return true
-end
-
-function atLeast(n, ...)
-    local got = 0
-    for _, code in ipairs({...}) do
-        if has(code) then got = got + 1 end
-    end
-    return got >= n
-end
-
 -- Mode / setting helpers driven by the slot_data-backed setting items in items.json.
 -- The setting items use multi-stage codes (e.g. "game_mode_vanilla" / "game_mode_open_castle")
 -- so we can test the current stage with has(stage_code).
