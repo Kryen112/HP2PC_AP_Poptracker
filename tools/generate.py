@@ -13,8 +13,9 @@ Reads ../HP2PC_AP/apworld/{items,locations,regions,rules}.py and emits:
 
 Pure-AST: never imports the apworld package (it pulls in BaseClasses /
 ItemClassification / AutoWorld, which only resolve inside an Archipelago
-checkout). The lambdas in regions.py / rules.py follow a small,
-regular grammar so parsing them with ast is straightforward.
+checkout). The rule values in regions.py / rules.py are the access.py _Access
+DSL (predicate names combined with & and |, plus never / always / _silver_cards),
+a small regular grammar that ast parses directly.
 
 Run from the pack root:
     py -3.12 tools/generate.py
@@ -281,14 +282,36 @@ def load_rule_dicts(path: Path) -> dict[str, dict[str, ast.AST]]:
     return out
 
 
+def load_item_predicates(path: Path) -> dict[str, str]:
+    """Parse access.py: `name = _item('Item Name')` to {name: 'Item Name'}. These
+    are the boolean predicates the _Access DSL composes with & and |."""
+    tree = ast.parse(path.read_text(encoding="utf-8"))
+    out: dict[str, str] = {}
+    for stmt in tree.body:
+        if not isinstance(stmt, ast.Assign) or len(stmt.targets) != 1:
+            continue
+        target = stmt.targets[0]
+        v = stmt.value
+        if (isinstance(target, ast.Name) and isinstance(v, ast.Call)
+                and isinstance(v.func, ast.Name) and v.func.id == "_item"
+                and len(v.args) == 1 and isinstance(v.args[0], ast.Constant)):
+            out[target.id] = v.args[0].value
+    return out
+
+
 # ---------------------------------------------------------------------------
-# Lambda body → Lua expression
+# Access rule (lambda body or _Access DSL) to Lua expression
 # ---------------------------------------------------------------------------
 
 # Module-level list constants from regions.py (e.g. _SILVER_CARD_NAMES),
 # populated in main(). Lets lambda_to_lua expand has_from_list_unique into the
 # atLeast() helper from logic.lua.
 LIST_CONSTANTS: dict[str, list] = {}
+
+# Item-predicate name from access.py (`alohomora = _item('Alohomora')`) to item
+# name. Lets the translator turn a bare predicate Name in the _Access DSL into
+# has("Item").
+ITEM_PREDICATES: dict[str, str] = {}
 
 # Card-tier list constants → their items.json consumable counter code. A
 # has_from_list over a whole card tier compiles to a counter test
@@ -304,6 +327,14 @@ CARD_LIST_TO_COUNTER = {
 }
 
 
+def _flatten_binop(node, op_type) -> list:
+    """Collapse a left-associative chain of the same & / | op into a flat operand
+    list, so a & b & c emits (a and b and c) rather than nested parens."""
+    if isinstance(node, ast.BinOp) and isinstance(node.op, op_type):
+        return _flatten_binop(node.left, op_type) + _flatten_binop(node.right, op_type)
+    return [node]
+
+
 def lambda_to_lua(node) -> str:
     if isinstance(node, ast.Constant):
         if node.value is True:
@@ -311,12 +342,36 @@ def lambda_to_lua(node) -> str:
         if node.value is False:
             return "false"
         raise ValueError(f"unexpected constant: {node.value!r}")
+    # _Access DSL: a bare item predicate, or never / always.
+    if isinstance(node, ast.Name):
+        if node.id == "never":
+            return "false"
+        if node.id == "always":
+            return "true"
+        item = ITEM_PREDICATES.get(node.id)
+        if item is None:
+            raise ValueError(f"unknown predicate name: {node.id}")
+        return f'has("{_lua_escape(item)}")'
+    # _Access DSL: a & b (and), a | b (or). Flatten same-op chains to one paren.
+    if isinstance(node, ast.BinOp):
+        if isinstance(node.op, ast.BitAnd):
+            parts = _flatten_binop(node, ast.BitAnd)
+            return "(" + " and ".join(lambda_to_lua(p) for p in parts) + ")"
+        if isinstance(node.op, ast.BitOr):
+            parts = _flatten_binop(node, ast.BitOr)
+            return "(" + " or ".join(lambda_to_lua(p) for p in parts) + ")"
+        raise ValueError(f"unsupported BinOp op: {ast.dump(node.op)}")
     if isinstance(node, ast.BoolOp):
         op = " and " if isinstance(node.op, ast.And) else " or "
         return "(" + op.join(lambda_to_lua(v) for v in node.values) + ")"
     if isinstance(node, ast.UnaryOp) and isinstance(node.op, ast.Not):
         return "(not " + lambda_to_lua(node.operand) + ")"
     if isinstance(node, ast.Call):
+        # _Access DSL: _silver_cards(n) -> count("silver_cards") >= n, the same
+        # counter test the has_from_list path below produces.
+        if (isinstance(node.func, ast.Name) and node.func.id == "_silver_cards"
+                and len(node.args) == 1 and isinstance(node.args[0], ast.Constant)):
+            return f'(count("silver_cards") >= {node.args[0].value})'
         # state.has('X', player)
         if (isinstance(node.func, ast.Attribute) and node.func.attr == "has"
                 and len(node.args) >= 1 and isinstance(node.args[0], ast.Constant)):
@@ -754,6 +809,8 @@ def main() -> None:
     LIST_CONSTANTS.update({k: v for k, v in regions.items() if isinstance(v, list)})
     region_rules = load_rule_dicts(APWORLD / "regions.py")
     location_rules = load_rule_dicts(APWORLD / "rules.py")
+    ITEM_PREDICATES.update(load_item_predicates(APWORLD / "access.py"))
+    LIST_CONSTANTS.update({k: v for k, v in load_assignments(APWORLD / "access.py").items() if isinstance(v, list)})
 
     name_to_id_items = items["ITEM_NAME_TO_ID"]
     name_to_id_locs = locations["LOCATION_NAME_TO_ID"]
