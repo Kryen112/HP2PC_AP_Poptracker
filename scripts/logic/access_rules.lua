@@ -2984,7 +2984,7 @@ function rule_Bean_Bonus_Room_Chest_3()
 		return false
 	end
 end
-function rule_Bean_Bonus_Room_Spawner()
+function rule_Bean_Bonus_Room_Gargoyle()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else

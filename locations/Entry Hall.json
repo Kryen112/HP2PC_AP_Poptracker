@@ -2363,8 +2363,8 @@
 						"ref": "Bean Bonus Room/Chest 6/Chest 6"
 					},
 					{
-						"name": "Spawner",
-						"ref": "Bean Bonus Room/Spawner/Spawner"
+						"name": "Gargoyle",
+						"ref": "Bean Bonus Room/Gargoyle/Gargoyle"
 					}
 				],
 				"map_locations": [

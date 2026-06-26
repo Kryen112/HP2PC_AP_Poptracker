@@ -143,15 +143,15 @@
 				]
 			},
 			{
-				"name": "Spawner",
+				"name": "Gargoyle",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Bean_Bonus_Room_Spawner"
+					"$rule_Bean_Bonus_Room_Gargoyle"
 				],
 				"sections": [
 					{
-						"name": "Spawner"
+						"name": "Gargoyle"
 					}
 				],
 				"map_locations": [
