@@ -1,5 +1,11 @@
 [
 	{
+		"name": "Bean Bonus Room",
+		"location_size": 24,
+		"location_border_thickness": 1,
+		"img": "images/maps/bean_bonus_room.png"
+	},
+	{
 		"name": "Bicorn Level",
 		"location_size": 24,
 		"location_border_thickness": 1,

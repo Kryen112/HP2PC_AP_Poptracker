@@ -52,6 +52,15 @@
 							}
 						},
 						{
+							"title": "Bean Bonus Room",
+							"content": {
+								"type": "map",
+								"maps": [
+									"Bean Bonus Room"
+								]
+							}
+						},
+						{
 							"title": "Bicorn Level",
 							"content": {
 								"type": "map",
