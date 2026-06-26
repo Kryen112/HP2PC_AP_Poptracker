@@ -2279,9 +2279,9 @@ function rule_Castle_Exterior_Ingredient_Vendor_2()
 end
 function rule_Chamber_of_Secrets_Wiggentree_Bark_Jar_1()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Flipendo"))
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Flipendo"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo"))
 	end
 end
 function rule_Chamber_of_Secrets_Chest_1()
@@ -2314,37 +2314,37 @@ function rule_Chamber_of_Secrets_Chest_4()
 end
 function rule_Chamber_of_Secrets_Chest_3()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Alohomora"))
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Alohomora"))
 	end
 end
 function rule_Chamber_of_Secrets_Chest_2()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Alohomora"))
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Alohomora"))
 	end
 end
 function rule_Chamber_of_Secrets_Flobberworm_Mucous_Jar_1()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Flipendo"))
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Flipendo"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo"))
 	end
 end
 function rule_Chamber_of_Secrets_Cauldron_1()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Flipendo"))
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Flipendo"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo"))
 	end
 end
 function rule_Chamber_of_Secrets_Cauldron_2()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Flipendo"))
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Flipendo"))
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo"))
 	end
 end
 function rule_Chamber_of_Secrets_Cauldron_4()
@@ -2946,49 +2946,49 @@ function rule_Bean_Bonus_Room_Chest_6()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return false
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Alohomora")
 	end
 end
 function rule_Bean_Bonus_Room_Chest_5()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return false
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Alohomora")
 	end
 end
 function rule_Bean_Bonus_Room_Chest_1()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return false
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Alohomora")
 	end
 end
 function rule_Bean_Bonus_Room_Chest_2()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return false
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Alohomora")
 	end
 end
 function rule_Bean_Bonus_Room_Chest_4()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return false
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Alohomora")
 	end
 end
 function rule_Bean_Bonus_Room_Chest_3()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return false
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Alohomora")
 	end
 end
 function rule_Bean_Bonus_Room_Gargoyle()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return false
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra")) and has("Alohomora")
 	end
 end
 function rule_Rictusempra_Challenge_Chest_2()

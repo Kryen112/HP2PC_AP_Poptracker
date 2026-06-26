@@ -291,6 +291,27 @@ def load_item_predicates(path: Path) -> dict[str, str]:
     return out
 
 
+def load_rule_aliases(path: Path) -> dict[str, ast.AST]:
+    """Module-level _Access aliases in rules.py (e.g.
+    `chamber_first_fall = spongify | _bronze_cards(20)`): a bare lowercase name
+    bound to an _Access expression and reused across rule values. Kept as AST so
+    rule_to_lua can inline the body wherever a rule references the name."""
+    tree = ast.parse(path.read_text(encoding="utf-8"))
+    out: dict[str, ast.AST] = {}
+    for stmt in tree.body:
+        if not isinstance(stmt, ast.Assign) or len(stmt.targets) != 1:
+            continue
+        target = stmt.targets[0]
+        if not isinstance(target, ast.Name) or not target.id.islower():
+            continue
+        # The UPPER_CASE rule tables (Dict) and any data collections are handled
+        # elsewhere; only scalar _Access expressions belong here.
+        if isinstance(stmt.value, (ast.Dict, ast.List, ast.Tuple, ast.Set)):
+            continue
+        out[target.id] = stmt.value
+    return out
+
+
 # ---------------------------------------------------------------------------
 # _Access DSL to Lua expression
 # ---------------------------------------------------------------------------
@@ -299,6 +320,10 @@ def load_item_predicates(path: Path) -> dict[str, str]:
 # name. Lets the translator turn a bare predicate Name in the _Access DSL into
 # has("Item").
 ITEM_PREDICATES: dict[str, str] = {}
+
+# Module-level _Access aliases from rules.py (name -> expression AST), inlined by
+# rule_to_lua when a rule references the name (e.g. chamber_first_fall).
+RULE_ALIASES: dict[str, ast.AST] = {}
 
 
 def _flatten_binop(node, op_type) -> list:
@@ -317,9 +342,13 @@ def rule_to_lua(node) -> str:
         if node.id == "always":
             return "true"
         item = ITEM_PREDICATES.get(node.id)
-        if item is None:
-            raise ValueError(f"unknown predicate name: {node.id}")
-        return f'has("{_lua_escape(item)}")'
+        if item is not None:
+            return f'has("{_lua_escape(item)}")'
+        # Module-level _Access alias (e.g. chamber_first_fall): inline its body.
+        alias = RULE_ALIASES.get(node.id)
+        if alias is not None:
+            return rule_to_lua(alias)
+        raise ValueError(f"unknown predicate name: {node.id}")
     # _Access DSL: a & b (and), a | b (or). Flatten same-op chains to one paren.
     if isinstance(node, ast.BinOp):
         if isinstance(node.op, ast.BitAnd):
@@ -329,11 +358,12 @@ def rule_to_lua(node) -> str:
             parts = _flatten_binop(node, ast.BitOr)
             return "(" + " or ".join(rule_to_lua(p) for p in parts) + ")"
         raise ValueError(f"unsupported BinOp op: {ast.dump(node.op)}")
-    # _Access DSL: _silver_cards(n) -> count("silver_cards") >= n.
+    # _Access DSL: _silver_cards(n) / _bronze_cards(n) -> count(tier) >= n.
     if (isinstance(node, ast.Call) and isinstance(node.func, ast.Name)
-            and node.func.id == "_silver_cards" and len(node.args) == 1
+            and node.func.id in ("_silver_cards", "_bronze_cards") and len(node.args) == 1
             and isinstance(node.args[0], ast.Constant)):
-        return f'(count("silver_cards") >= {node.args[0].value})'
+        tier = "silver_cards" if node.func.id == "_silver_cards" else "bronze_cards"
+        return f'(count("{tier}") >= {node.args[0].value})'
     raise ValueError(f"unsupported _Access node: {ast.dump(node)}")
 
 
@@ -794,6 +824,7 @@ def main() -> None:  # noqa: C901
     region_rules = load_rule_dicts(APWORLD / "regions.py")
     location_rules = load_rule_dicts(APWORLD / "rules.py")
     ITEM_PREDICATES.update(load_item_predicates(APWORLD / "access.py"))
+    RULE_ALIASES.update(load_rule_aliases(APWORLD / "rules.py"))
 
     name_to_id_items = items["ITEM_NAME_TO_ID"]
     name_to_id_locs = locations["LOCATION_NAME_TO_ID"]
