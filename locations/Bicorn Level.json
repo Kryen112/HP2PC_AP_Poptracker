@@ -364,8 +364,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 1185,
-						"y": 825
+						"x": 1337,
+						"y": 718
 					}
 				],
 				"visibility_rules": [
@@ -387,8 +387,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 970,
-						"y": 707
+						"x": 1185,
+						"y": 825
 					}
 				],
 				"visibility_rules": [
@@ -410,8 +410,8 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
-						"x": 1185,
-						"y": 444
+						"x": 970,
+						"y": 707
 					}
 				],
 				"visibility_rules": [
@@ -433,6 +433,29 @@
 				"map_locations": [
 					{
 						"map": "Bicorn Level",
+						"x": 1185,
+						"y": 444
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
+				"name": "Chest 8",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Bicorn_Level_Chest_8"
+				],
+				"sections": [
+					{
+						"name": "Chest 8"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Bicorn Level",
 						"x": 428,
 						"y": 255
 					}
@@ -442,14 +465,14 @@
 				]
 			},
 			{
-				"name": "Chest 8 & Secret 7",
+				"name": "Chest 9 & Secret 7",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
 					{
-						"name": "Chest 8",
+						"name": "Chest 9",
 						"access_rules": [
-							"$rule_Bicorn_Level_Chest_8"
+							"$rule_Bicorn_Level_Chest_9"
 						],
 						"visibility_rules": [
 							"$visContainers"
@@ -533,29 +556,6 @@
 						"map": "Bicorn Level",
 						"x": 354,
 						"y": 173
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Peeves Chest",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Bicorn_Level_Peeves_Chest"
-				],
-				"sections": [
-					{
-						"name": "Peeves Chest"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Bicorn Level",
-						"x": 1337,
-						"y": 718
 					}
 				],
 				"visibility_rules": [

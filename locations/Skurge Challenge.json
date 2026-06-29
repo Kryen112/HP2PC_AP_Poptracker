@@ -448,7 +448,7 @@
 				]
 			},
 			{
-				"name": "Challenge Star 10 & Peeves Chest",
+				"name": "Challenge Star 10 & Chest 6",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
@@ -462,9 +462,9 @@
 						]
 					},
 					{
-						"name": "Peeves Chest",
+						"name": "Chest 6",
 						"access_rules": [
-							"$rule_Skurge_Challenge_Peeves_Chest"
+							"$rule_Skurge_Challenge_Chest_6"
 						],
 						"visibility_rules": [
 							"$visContainers"

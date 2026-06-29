@@ -1376,6 +1376,10 @@
 						"ref": "Spongify Challenge/Chest 8/Chest 8"
 					},
 					{
+						"name": "Chest 9",
+						"ref": "Spongify Challenge/Chest 9/Chest 9"
+					},
+					{
 						"name": "Cigar Box",
 						"ref": "Spongify Challenge/Cigar Box/Cigar Box"
 					},
@@ -1406,10 +1410,6 @@
 					{
 						"name": "Music Box",
 						"ref": "Spongify Challenge/Challenge Star 8 & Music Box/Music Box"
-					},
-					{
-						"name": "Peeves Chest",
-						"ref": "Spongify Challenge/Peeves Chest/Peeves Chest"
 					},
 					{
 						"name": "Secret 1",
@@ -1579,7 +1579,7 @@
 					},
 					{
 						"name": "Challenge Star 10",
-						"ref": "Skurge Challenge/Challenge Star 10 & Peeves Chest/Challenge Star 10"
+						"ref": "Skurge Challenge/Challenge Star 10 & Chest 6/Challenge Star 10"
 					},
 					{
 						"name": "Challenge Star 2",
@@ -1634,6 +1634,10 @@
 						"ref": "Skurge Challenge/Chest 5/Chest 5"
 					},
 					{
+						"name": "Chest 6",
+						"ref": "Skurge Challenge/Challenge Star 10 & Chest 6/Chest 6"
+					},
+					{
 						"name": "Cigar Box",
 						"ref": "Skurge Challenge/Challenge Star 6 & Cigar Box/Cigar Box"
 					},
@@ -1668,10 +1672,6 @@
 					{
 						"name": "Music Box",
 						"ref": "Skurge Challenge/Music Box/Music Box"
-					},
-					{
-						"name": "Peeves Chest",
-						"ref": "Skurge Challenge/Challenge Star 10 & Peeves Chest/Peeves Chest"
 					},
 					{
 						"name": "Secret 1",
@@ -1797,7 +1797,11 @@
 					},
 					{
 						"name": "Chest 8",
-						"ref": "Bicorn Level/Chest 8 & Secret 7/Chest 8"
+						"ref": "Bicorn Level/Chest 8/Chest 8"
+					},
+					{
+						"name": "Chest 9",
+						"ref": "Bicorn Level/Chest 9 & Secret 7/Chest 9"
 					},
 					{
 						"name": "Complete",
@@ -1810,10 +1814,6 @@
 					{
 						"name": "Flobberworm Mucous Jar 2",
 						"ref": "Bicorn Level/Flobberworm Mucous Jar 2/Flobberworm Mucous Jar 2"
-					},
-					{
-						"name": "Peeves Chest",
-						"ref": "Bicorn Level/Peeves Chest/Peeves Chest"
 					},
 					{
 						"name": "Secret 1",
@@ -1841,7 +1841,7 @@
 					},
 					{
 						"name": "Secret 7",
-						"ref": "Bicorn Level/Chest 8 & Secret 7/Secret 7"
+						"ref": "Bicorn Level/Chest 9 & Secret 7/Secret 7"
 					},
 					{
 						"name": "Wiggentree Bark Jar 1",
@@ -1911,7 +1911,11 @@
 					},
 					{
 						"name": "Chest 10",
-						"ref": "Goyle Level/Chest 10 & Secret 8/Chest 10"
+						"ref": "Goyle Level/Chest 10/Chest 10"
+					},
+					{
+						"name": "Chest 11",
+						"ref": "Goyle Level/Chest 11 & Secret 8/Chest 11"
 					},
 					{
 						"name": "Chest 2",
@@ -1954,10 +1958,6 @@
 						"ref": "Goyle Level/Flobberworm Mucous Jar/Flobberworm Mucous Jar"
 					},
 					{
-						"name": "Peeves Chest",
-						"ref": "Goyle Level/Peeves Chest/Peeves Chest"
-					},
-					{
 						"name": "Secret 1",
 						"ref": "Goyle Level/Secret 1/Secret 1"
 					},
@@ -1987,7 +1987,7 @@
 					},
 					{
 						"name": "Secret 8",
-						"ref": "Goyle Level/Chest 10 & Secret 8/Secret 8"
+						"ref": "Goyle Level/Chest 11 & Secret 8/Secret 8"
 					}
 				],
 				"map_locations": [

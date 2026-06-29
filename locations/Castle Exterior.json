@@ -893,11 +893,15 @@
 					},
 					{
 						"name": "Chest 4",
-						"ref": "Diffindo Challenge/Chest 4/Chest 4"
+						"ref": "Diffindo Challenge/Chest 4 & Secret 3/Chest 4"
 					},
 					{
 						"name": "Chest 5",
 						"ref": "Diffindo Challenge/Chest 5/Chest 5"
+					},
+					{
+						"name": "Chest 6",
+						"ref": "Diffindo Challenge/Chest 6/Chest 6"
 					},
 					{
 						"name": "Complete",
@@ -946,10 +950,6 @@
 					{
 						"name": "Oil Can 4",
 						"ref": "Diffindo Challenge/Oil Can 4/Oil Can 4"
-					},
-					{
-						"name": "Peeves Chest",
-						"ref": "Diffindo Challenge/Peeves Chest & Secret 3/Peeves Chest"
 					},
 					{
 						"name": "Plant Pot 1",
@@ -1009,7 +1009,7 @@
 					},
 					{
 						"name": "Secret 3",
-						"ref": "Diffindo Challenge/Peeves Chest & Secret 3/Secret 3"
+						"ref": "Diffindo Challenge/Chest 4 & Secret 3/Secret 3"
 					},
 					{
 						"name": "Secret 4",

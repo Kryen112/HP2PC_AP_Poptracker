@@ -258,14 +258,37 @@
 				]
 			},
 			{
-				"name": "Chest 10 & Secret 8",
+				"name": "Chest 10",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Goyle_Level_Chest_10"
+				],
+				"sections": [
+					{
+						"name": "Chest 10"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Goyle Level",
+						"x": 1311,
+						"y": 793
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
+				"name": "Chest 11 & Secret 8",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"sections": [
 					{
-						"name": "Chest 10",
+						"name": "Chest 11",
 						"access_rules": [
-							"$rule_Goyle_Level_Chest_10"
+							"$rule_Goyle_Level_Chest_11"
 						],
 						"visibility_rules": [
 							"$visContainers"
@@ -428,8 +451,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 853,
-						"y": 163
+						"x": 761,
+						"y": 277
 					}
 				],
 				"visibility_rules": [
@@ -451,8 +474,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 1003,
-						"y": 697
+						"x": 853,
+						"y": 163
 					}
 				],
 				"visibility_rules": [
@@ -474,8 +497,8 @@
 				"map_locations": [
 					{
 						"map": "Goyle Level",
-						"x": 1311,
-						"y": 793
+						"x": 1003,
+						"y": 697
 					}
 				],
 				"visibility_rules": [
@@ -519,29 +542,6 @@
 						"map": "Goyle Level",
 						"x": 155,
 						"y": 911
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Peeves Chest",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Goyle_Level_Peeves_Chest"
-				],
-				"sections": [
-					{
-						"name": "Peeves Chest"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Goyle Level",
-						"x": 761,
-						"y": 277
 					}
 				],
 				"visibility_rules": [

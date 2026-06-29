@@ -783,15 +783,47 @@
 				]
 			},
 			{
-				"name": "Chest 4",
+				"name": "Chest 4 & Secret 3",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"sections": [
+					{
+						"name": "Chest 4",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Chest_4"
+						],
+						"visibility_rules": [
+							"$visContainers"
+						]
+					},
+					{
+						"name": "Secret 3",
+						"access_rules": [
+							"$rule_Diffindo_Challenge_Secret_3"
+						],
+						"visibility_rules": [
+							"$visSecrets"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
+						"x": 1301,
+						"y": 502
+					}
+				]
+			},
+			{
+				"name": "Chest 5",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Diffindo_Challenge_Chest_4"
+					"$rule_Diffindo_Challenge_Chest_5"
 				],
 				"sections": [
 					{
-						"name": "Chest 4"
+						"name": "Chest 5"
 					}
 				],
 				"map_locations": [
@@ -806,15 +838,15 @@
 				]
 			},
 			{
-				"name": "Chest 5",
+				"name": "Chest 6",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Diffindo_Challenge_Chest_5"
+					"$rule_Diffindo_Challenge_Chest_6"
 				],
 				"sections": [
 					{
-						"name": "Chest 5"
+						"name": "Chest 6"
 					}
 				],
 				"map_locations": [
@@ -1097,38 +1129,6 @@
 				],
 				"visibility_rules": [
 					"$visContainers"
-				]
-			},
-			{
-				"name": "Peeves Chest & Secret 3",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"sections": [
-					{
-						"name": "Peeves Chest",
-						"access_rules": [
-							"$rule_Diffindo_Challenge_Peeves_Chest"
-						],
-						"visibility_rules": [
-							"$visContainers"
-						]
-					},
-					{
-						"name": "Secret 3",
-						"access_rules": [
-							"$rule_Diffindo_Challenge_Secret_3"
-						],
-						"visibility_rules": [
-							"$visSecrets"
-						]
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Diffindo Challenge",
-						"x": 1301,
-						"y": 502
-					}
 				]
 			},
 			{

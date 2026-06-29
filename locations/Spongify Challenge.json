@@ -814,6 +814,29 @@
 				"map_locations": [
 					{
 						"map": "Spongify Challenge",
+						"x": 883,
+						"y": 254
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
+				"name": "Chest 9",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Spongify_Challenge_Chest_9"
+				],
+				"sections": [
+					{
+						"name": "Chest 9"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Spongify Challenge",
 						"x": 1088,
 						"y": 660
 					}
@@ -954,29 +977,6 @@
 						"map": "Spongify Challenge",
 						"x": 1199,
 						"y": 645
-					}
-				],
-				"visibility_rules": [
-					"$visContainers"
-				]
-			},
-			{
-				"name": "Peeves Chest",
-				"chest_unopened_img": "images/items/item.png",
-				"chest_opened_img": "images/items/item_opened.png",
-				"access_rules": [
-					"$rule_Spongify_Challenge_Peeves_Chest"
-				],
-				"sections": [
-					{
-						"name": "Peeves Chest"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "Spongify Challenge",
-						"x": 883,
-						"y": 254
 					}
 				],
 				"visibility_rules": [
