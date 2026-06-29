@@ -31,6 +31,13 @@ HERE = Path(__file__).resolve().parent
 PACK = HERE.parent
 APWORLD = PACK.parent / "HP2PC_AP" / "apworld"
 
+# Placeholder chest art every emitted location/group node carries. One source so
+# a renamed image or a typo can't drift across the node builders.
+CHEST_IMGS = {
+    "chest_unopened_img": "images/items/item.png",
+    "chest_opened_img": "images/items/item_opened.png",
+}
+
 REGION_DISPLAY = {
     "BeanBonusRoom": "Bean Bonus Room",
     "BicornLevel": "Bicorn Level",
@@ -274,6 +281,22 @@ def load_rule_dicts(path: Path) -> dict[str, dict[str, ast.AST]]:
     return out
 
 
+def load_int_constants(path: Path) -> dict[str, int]:
+    """Top-level `NAME = <int>` assignments, so a rule can reference a named
+    count (e.g. _bronze_cards(CHAMBER_FALL_BRONZE_COUNT)) instead of a literal."""
+    tree = ast.parse(path.read_text(encoding="utf-8"))
+    out: dict[str, int] = {}
+    for stmt in tree.body:
+        if not isinstance(stmt, (ast.Assign, ast.AnnAssign)):
+            continue
+        targets = stmt.targets if isinstance(stmt, ast.Assign) else [stmt.target]
+        if (isinstance(stmt.value, ast.Constant) and isinstance(stmt.value.value, int)):
+            for t in targets:
+                if isinstance(t, ast.Name):
+                    out[t.id] = stmt.value.value
+    return out
+
+
 def load_item_predicates(path: Path) -> dict[str, str]:
     """Parse access.py: `name = _item('Item Name')` to {name: 'Item Name'}. These
     are the boolean predicates the _Access DSL composes with & and |."""
@@ -325,6 +348,10 @@ ITEM_PREDICATES: dict[str, str] = {}
 # rule_to_lua when a rule references the name (e.g. chamber_first_fall).
 RULE_ALIASES: dict[str, ast.AST] = {}
 
+# Top-level int constants from rules.py (e.g. CHAMBER_FALL_BRONZE_COUNT), so a
+# card-count helper can take a named count instead of a bare literal.
+INT_CONSTANTS: dict[str, int] = {}
+
 
 def _flatten_binop(node, op_type) -> list:
     """Collapse a left-associative chain of the same & / | op into a flat operand
@@ -358,12 +385,19 @@ def rule_to_lua(node) -> str:
             parts = _flatten_binop(node, ast.BitOr)
             return "(" + " or ".join(rule_to_lua(p) for p in parts) + ")"
         raise ValueError(f"unsupported BinOp op: {ast.dump(node.op)}")
-    # _Access DSL: _silver_cards(n) / _bronze_cards(n) -> count(tier) >= n.
+    # _Access DSL: _silver_cards(n) / _bronze_cards(n) -> count(tier) >= n. The
+    # count is a literal or a named int constant (INT_CONSTANTS) from rules.py.
     if (isinstance(node, ast.Call) and isinstance(node.func, ast.Name)
-            and node.func.id in ("_silver_cards", "_bronze_cards") and len(node.args) == 1
-            and isinstance(node.args[0], ast.Constant)):
+            and node.func.id in ("_silver_cards", "_bronze_cards") and len(node.args) == 1):
+        arg = node.args[0]
+        if isinstance(arg, ast.Constant):
+            count = arg.value
+        elif isinstance(arg, ast.Name) and arg.id in INT_CONSTANTS:
+            count = INT_CONSTANTS[arg.id]
+        else:
+            raise ValueError(f"unsupported card-count arg: {ast.dump(node)}")
         tier = "silver_cards" if node.func.id == "_silver_cards" else "bronze_cards"
-        return f'(count("{tier}") >= {node.args[0].value})'
+        return f'(count("{tier}") >= {count})'
     raise ValueError(f"unsupported _Access node: {ast.dump(node)}")
 
 
@@ -570,6 +604,17 @@ def vis_rules_for(region: str, loc_name: str, loc_groups: dict[str, str]) -> lis
     return rules
 
 
+def carry_pins(existing_map_locations: dict[str, list], node_name: str,
+               map_name: str) -> list:
+    """Carry a node's prior pin coordinates forward only while they belong to
+    map_name. A section that moved to a different map (e.g. Dumbledore's Study
+    pins relocating onto the Grand Staircase image) has meaningless old x/y on
+    the new picture, so reset to (0, 0) for re-placing."""
+    prior = [ml for ml in (existing_map_locations.get(node_name) or [])
+             if ml.get("map") == map_name]
+    return prior if prior else [{"map": map_name, "x": 0, "y": 0}]
+
+
 def build_region_children(region: str, region_locs: list[str],
                           loc_groups: dict[str, str],
                           existing_map_locations: dict[str, list]) -> list:
@@ -582,13 +627,7 @@ def build_region_children(region: str, region_locs: list[str],
     map_name = REGION_MAP_OVERRIDE.get(region, display)
 
     def map_locs_for(node_name):
-        # Carry pin coordinates forward only while they belong to the current
-        # map. If a section moved to a different map (e.g. Dumbledore's Study
-        # pins relocating onto the Grand Staircase image), the old x/y are
-        # meaningless on the new picture, so reset to (0, 0) for re-placing.
-        prior = [ml for ml in (existing_map_locations.get(node_name) or [])
-                 if ml.get("map") == map_name]
-        return prior if prior else [{"map": map_name, "x": 0, "y": 0}]
+        return carry_pins(existing_map_locations, node_name, map_name)
 
     sec_to_loc = {loc_section_ref(display, ln): ln for ln in region_locs}
     group_members = {g: ms for g, ms in COLOCATION.get(region, [])}
@@ -629,16 +668,14 @@ def build_region_children(region: str, region_locs: list[str],
                         break
             children.append({
                 "name": group_name,
-                "chest_unopened_img": "images/items/item.png",
-                "chest_opened_img": "images/items/item_opened.png",
+                **CHEST_IMGS,
                 "sections": sections,
                 "map_locations": group_map_locs,
             })
         else:
             entry = {
                 "name": section_name,
-                "chest_unopened_img": "images/items/item.png",
-                "chest_opened_img": "images/items/item_opened.png",
+                **CHEST_IMGS,
                 "access_rules": [f"${rule_fn_name(loc_name)}"],
                 "sections": [{"name": section_name}],
                 "map_locations": map_locs_for(section_name),
@@ -662,8 +699,7 @@ def build_region_locations_json(
         children.extend(extra_children)
     return [{
         "name": display,
-        "chest_unopened_img": "images/items/item.png",
-        "chest_opened_img": "images/items/item_opened.png",
+        **CHEST_IMGS,
         "children": children,
     }]
 
@@ -686,13 +722,10 @@ def build_menu_room_node(parent_name: str, target_map: str,
                 "name": section_name,
                 "ref": f"{src_display}/{colocation_parent(src, section_name)}/{section_name}",
             })
-        prior = [ml for ml in (existing_map_locations.get(src_display) or [])
-                 if ml.get("map") == target_map]
-        map_locs = prior if prior else [{"map": target_map, "x": 0, "y": 0}]
+        map_locs = carry_pins(existing_map_locations, src_display, target_map)
         child = {
             "name": src_display,
-            "chest_unopened_img": "images/items/item.png",
-            "chest_opened_img": "images/items/item_opened.png",
+            **CHEST_IMGS,
             "sections": sections,
             "map_locations": map_locs,
         }
@@ -710,8 +743,7 @@ def build_menu_room_node(parent_name: str, target_map: str,
         children.append(child)
     return {
         "name": parent_name,
-        "chest_unopened_img": "images/items/item.png",
-        "chest_opened_img": "images/items/item_opened.png",
+        **CHEST_IMGS,
         "children": children,
     }
 
@@ -823,8 +855,21 @@ def main() -> None:  # noqa: C901
     regions = load_assignments(APWORLD / "regions.py")
     region_rules = load_rule_dicts(APWORLD / "regions.py")
     location_rules = load_rule_dicts(APWORLD / "rules.py")
+    # rules.py builds LOCATION_RULES_VANILLA from the open castle base plus the
+    # vanilla deltas (_VANILLA_EXTRA ANDs extra requirements onto the open rule,
+    # _VANILLA_OVERRIDE replaces it, _VANILLA_ONLY adds locations open castle does
+    # not gate), not as a literal dict, so reconstruct it from the literal blocks.
+    if "LOCATION_RULES_VANILLA" not in location_rules:
+        open_tbl = location_rules.get("LOCATION_RULES_OPEN_CASTLE", {})
+        vanilla = dict(open_tbl)
+        for k, extra in location_rules.get("_VANILLA_EXTRA", {}).items():
+            vanilla[k] = ast.BinOp(left=open_tbl[k], op=ast.BitAnd(), right=extra)
+        vanilla.update(location_rules.get("_VANILLA_OVERRIDE", {}))
+        vanilla.update(location_rules.get("_VANILLA_ONLY", {}))
+        location_rules["LOCATION_RULES_VANILLA"] = vanilla
     ITEM_PREDICATES.update(load_item_predicates(APWORLD / "access.py"))
     RULE_ALIASES.update(load_rule_aliases(APWORLD / "rules.py"))
+    INT_CONSTANTS.update(load_int_constants(APWORLD / "rules.py"))
 
     name_to_id_items = items["ITEM_NAME_TO_ID"]
     name_to_id_locs = locations["LOCATION_NAME_TO_ID"]

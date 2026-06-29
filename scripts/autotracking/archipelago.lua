@@ -304,6 +304,8 @@ end
 
 -- Card items each bump their tier counter (bronze_cards / silver_cards /
 -- gold_cards) so the items+settings panel shows a per-tier collected count.
+-- The tier -> counter codes mirror the apworld ITEM_GROUPS card tiers (the
+-- source of truth that generate.py emits into items.json); keep them in step.
 CARD_COUNTERS = { Bronze = "bronze_cards", Silver = "silver_cards", Gold = "gold_cards" }
 
 function bump_card_counter(code)

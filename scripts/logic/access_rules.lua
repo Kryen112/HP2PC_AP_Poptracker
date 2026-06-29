@@ -39,7 +39,7 @@ function rule_Bicorn_Level_Card_Agrippa()
 end
 function rule_Entry_Hall_Card_Alderton()
 	if isOpenCastle() then
-		return true and (has("Spongify") and has("Alohomora"))
+		return true and (has("Alohomora") and has("Spongify"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Spongify"))
 	end
@@ -132,7 +132,7 @@ function rule_Entry_Hall_Card_Gunhilda()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Rictusempra"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Grand_Staircase_Card_Hipworth()
@@ -160,7 +160,7 @@ function rule_Castle_Exterior_Card_Marjoribanks()
 	if isOpenCastle() then
 		return true and (has("Diffindo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Diffindo") and ((has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) or has("Running")))
+		return (has("Lumos") and has("Flipendo")) and (has("Diffindo") and has("Alohomora") and ((has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) or has("Running")))
 	end
 end
 function rule_Spongify_Challenge_Card_Merlin()
@@ -382,7 +382,7 @@ function rule_Spongify_Challenge_Card_Woodcroft()
 end
 function rule_Entry_Hall_Card_Andros()
 	if isOpenCastle() then
-		return true and (has("Flipendo") and has("Alohomora"))
+		return true and (has("Alohomora") and has("Flipendo"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Flipendo"))
 	end
@@ -489,7 +489,7 @@ function rule_Entry_Hall_Card_Jones()
 	if isOpenCastle() then
 		return true and (has("Flipendo") and has("Diffindo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Diffindo") and has("Flipendo"))
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and has("Diffindo") and has("Alohomora"))
 	end
 end
 function rule_Grand_Staircase_Card_Lufkin()
@@ -501,7 +501,7 @@ function rule_Grand_Staircase_Card_Lufkin()
 end
 function rule_Grand_Staircase_Card_Maeve()
 	if isOpenCastle() then
-		return true and (has("Flipendo") and has("Alohomora"))
+		return true and (has("Alohomora") and has("Flipendo"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Flipendo"))
 	end
@@ -510,7 +510,7 @@ function rule_Entry_Hall_Card_Montmorency()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Rictusempra"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and (has("Rictusempra") or has("Diffindo")))
 	end
 end
 function rule_Entry_Hall_Card_Mopsus()
@@ -531,7 +531,7 @@ function rule_Castle_Exterior_Card_Oglethorpe()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Diffindo") and has("Lumos") and has("Spongify"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Spongify") and has("Diffindo") and has("Lumos"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Diffindo") and has("Lumos") and has("Spongify"))
 	end
 end
 function rule_Grand_Staircase_Card_Oldridge()
@@ -573,7 +573,7 @@ function rule_Entry_Hall_Card_Shingleton()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Lumos") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Rictusempra") and has("Lumos"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Lumos") and has("Skurge") and (has("Rictusempra") or has("Diffindo")))
 	end
 end
 function rule_Diffindo_Challenge_Card_Smethwyck()
@@ -636,7 +636,7 @@ function rule_Entry_Hall_Card_Wendelin()
 	if isOpenCastle() then
 		return true and (has("Lumos") and has("Diffindo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Diffindo") and has("Rictusempra") and has("Lumos"))
+		return (has("Lumos") and has("Flipendo")) and (has("Lumos") and has("Diffindo") and has("Alohomora") and (has("Rictusempra") or has("Skurge")))
 	end
 end
 function rule_Goyle_Level_Card_Wildsmith()
@@ -648,7 +648,7 @@ function rule_Goyle_Level_Card_Wildsmith()
 end
 function rule_Entry_Hall_Card_Wright()
 	if isOpenCastle() then
-		return true and (has("Diffindo") and has("Alohomora"))
+		return true and (has("Alohomora") and has("Diffindo"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Diffindo"))
 	end
@@ -984,7 +984,7 @@ function rule_Castle_Exterior_Secret_3()
 end
 function rule_Castle_Exterior_Secret_4()
 	if isOpenCastle() then
-		return true and (has("Alohomora") and has("Diffindo") and has("Lumos") and has("Spongify"))
+		return true and (has("Alohomora") and has("Diffindo") and has("Spongify") and has("Lumos"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Diffindo") and has("Spongify") and has("Lumos"))
 	end
@@ -1231,28 +1231,28 @@ function rule_Entry_Hall_Secret_1()
 	if isOpenCastle() then
 		return true and (has("Lumos") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and has("Skurge") and has("Lumos"))
+		return (has("Lumos") and has("Flipendo")) and (has("Lumos") and has("Skurge") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Entry_Hall_Secret_2()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Skurge"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and has("Skurge") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Entry_Hall_Secret_3()
 	if isOpenCastle() then
 		return true and ((has("Skurge") or has("Alohomora")) and has("Lumos") and has("Diffindo"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and (has("Skurge") or has("Alohomora")) and has("Diffindo") and has("Lumos"))
+		return (has("Lumos") and has("Flipendo")) and ((has("Skurge") or has("Alohomora")) and has("Lumos") and has("Diffindo") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Entry_Hall_Secret_4()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and has("Alohomora"))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Entry_Hall_Secret_5()
@@ -1285,7 +1285,7 @@ function rule_Entry_Hall_Secret_8()
 end
 function rule_Entry_Hall_Secret_9()
 	if isOpenCastle() then
-		return true and (has("Flipendo") and has("Diffindo"))
+		return true and (has("Diffindo") and has("Flipendo"))
 	else
 		return (has("Lumos") and has("Flipendo")) and (has("Diffindo") and has("Flipendo"))
 	end
@@ -2218,14 +2218,14 @@ function rule_Entry_Hall_Ingredient_Vendor_2()
 	if isOpenCastle() then
 		return true
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") or (has("Skurge") and has("Diffindo")))
 	end
 end
 function rule_Entry_Hall_Ingredient_Vendor_3()
 	if isOpenCastle() then
 		return true
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Rictusempra")
+		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") or (has("Skurge") and has("Diffindo")))
 	end
 end
 function rule_Grand_Staircase_Card_Vendor_1()
@@ -3842,14 +3842,14 @@ function rule_Entry_Hall_Wiggentree_Bark_Jar()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Entry_Hall_Chest_4()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Spongify"))
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Spongify") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Entry_Hall_Chest_1()
@@ -3891,14 +3891,14 @@ function rule_Entry_Hall_Chest_5()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Entry_Hall_Chest_6()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Entry_Hall_Knight_1()
@@ -3919,21 +3919,21 @@ function rule_Entry_Hall_Knight_4()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Entry_Hall_Knight_3()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Entry_Hall_Flobberworm_Mucous_Jar()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and (has("Rictusempra") or (has("Skurge") and has("Diffindo"))))
 	end
 end
 function rule_Grand_Staircase_Chest_4()
@@ -3961,7 +3961,7 @@ function rule_Grand_Staircase_Chest_3()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Spongify"))
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Spongify"))
 	end
 end
 function rule_Dumbledore_s_Study_Chest()
@@ -3975,7 +3975,7 @@ function rule_Grand_Staircase_Chest_6()
 	if isOpenCastle() then
 		return true and (has("Alohomora") and has("Skurge") and has("Diffindo"))
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Skurge") and has("Diffindo"))
 	end
 end
 function rule_Grand_Staircase_Chest_7()
@@ -4003,7 +4003,7 @@ function rule_Grand_Staircase_Cigar_Box_2()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Rictusempra") and has("Skurge"))
 	end
 end
 function rule_Grand_Staircase_Cigar_Box_1()
@@ -4017,7 +4017,7 @@ function rule_Grand_Staircase_Decanter_1()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and has("Rictusempra"))
 	end
 end
 function rule_Dumbledore_s_Study_Decanter()
@@ -4031,7 +4031,7 @@ function rule_Grand_Staircase_Decanter_2()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and has("Rictusempra"))
 	end
 end
 function rule_Grand_Staircase_Jewel_Box_1()
@@ -4045,21 +4045,21 @@ function rule_Grand_Staircase_Jewel_Box_2()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Rictusempra"))
 	end
 end
 function rule_Grand_Staircase_Knight()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and has("Rictusempra"))
 	end
 end
 function rule_Grand_Staircase_Music_Box()
 	if isOpenCastle() then
 		return true and has("Alohomora")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Rictusempra"))
 	end
 end
 function rule_Grand_Staircase_Cauldron_2()
@@ -4080,7 +4080,7 @@ function rule_Grand_Staircase_Cauldron_5()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and has("Rictusempra") and has("Skurge"))
 	end
 end
 function rule_Grand_Staircase_Cauldron_4()
@@ -4115,7 +4115,7 @@ function rule_Grand_Staircase_Cauldron_3()
 	if isOpenCastle() then
 		return true and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and has("Rictusempra") and has("Skurge"))
 	end
 end
 function rule_Castle_Exterior_Chest_7()
@@ -4225,15 +4225,15 @@ function rule_Castle_Exterior_Dragon_Statue()
 end
 function rule_Castle_Exterior_Plant_Dragon_1()
 	if isOpenCastle() then
-		return true and (has("Flipendo") or has("Spongify") or has("Running"))
+		return true and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and ((has("Alohomora") and has("Skurge") and has("Rictusempra") and has("Flipendo") and has("Bicorn Level Key")) or has("Running"))
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and ((has("Skurge") and has("Rictusempra") and has("Alohomora") and has("Bicorn Level Key")) or has("Running")))
 	end
 end
 function rule_Castle_Exterior_Plant_Dragon_2()
 	if isOpenCastle() then
-		return true and has("Diffindo")
+		return true and has("Flipendo")
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and ((has("Skurge") and has("Rictusempra") and has("Diffindo") and has("Bicorn Level Key")) or has("Running")))
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and ((has("Skurge") and has("Rictusempra") and has("Diffindo") and has("Alohomora") and has("Bicorn Level Key")) or has("Running")))
 	end
 end
