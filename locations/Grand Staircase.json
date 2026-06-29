@@ -745,6 +745,52 @@
 				]
 			},
 			{
+				"name": "Dragon Skeleton",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Dragon_Skeleton"
+				],
+				"sections": [
+					{
+						"name": "Dragon Skeleton"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 563,
+						"y": 822
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
+				"name": "Gregory the Smarmy Statue",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Grand_Staircase_Gregory_the_Smarmy_Statue"
+				],
+				"sections": [
+					{
+						"name": "Gregory the Smarmy Statue"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Grand Staircase",
+						"x": 161,
+						"y": 443
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
 				"name": "Ingredient Vendor 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",

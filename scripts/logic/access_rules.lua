@@ -160,7 +160,7 @@ function rule_Castle_Exterior_Card_Marjoribanks()
 	if isOpenCastle() then
 		return true and (has("Diffindo") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and ((has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key")) or has("Running")))
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Diffindo") and ((has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) or has("Running")))
 	end
 end
 function rule_Spongify_Challenge_Card_Merlin()
@@ -1007,7 +1007,7 @@ function rule_Castle_Exterior_Secret_7()
 	if isOpenCastle() then
 		return true and has("Diffindo")
 	else
-		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and ((has("Skurge") and has("Rictusempra") and has("Diffindo") and has("Bicorn Level Key")) or has("Running")))
+		return (has("Lumos") and has("Flipendo")) and (has("Diffindo") and ((has("Skurge") and has("Rictusempra") and has("Flipendo") and has("Bicorn Level Key")) or has("Running")))
 	end
 end
 function rule_Castle_Exterior_Secret_8()
@@ -2468,16 +2468,16 @@ function rule_Whomping_Willow_Chest_2()
 end
 function rule_Whomping_Willow_Knight_1()
 	if isOpenCastle() then
-		return (has("Whomping Willow Key") and has("Spongify")) and (has("Lumos") and has("Flipendo") and has("Flipendo"))
+		return (has("Whomping Willow Key") and has("Spongify")) and (has("Lumos") and has("Flipendo"))
 	else
-		return true and (has("Lumos") and has("Flipendo") and has("Flipendo"))
+		return true and (has("Lumos") and has("Flipendo"))
 	end
 end
 function rule_Whomping_Willow_Knight_2()
 	if isOpenCastle() then
-		return (has("Whomping Willow Key") and has("Spongify")) and (has("Lumos") and has("Flipendo") and has("Flipendo"))
+		return (has("Whomping Willow Key") and has("Spongify")) and (has("Lumos") and has("Flipendo"))
 	else
-		return true and (has("Lumos") and has("Flipendo") and has("Flipendo"))
+		return true and (has("Lumos") and has("Flipendo"))
 	end
 end
 function rule_Bicorn_Level_Wiggentree_Bark_Jar_1()
@@ -4179,5 +4179,61 @@ function rule_Castle_Exterior_Chest_5()
 		return true and has("Alohomora")
 	else
 		return (has("Lumos") and has("Flipendo")) and has("Alohomora")
+	end
+end
+function rule_Whomping_Willow_Dragon_Statue()
+	if isOpenCastle() then
+		return (has("Whomping Willow Key") and has("Spongify")) and (has("Lumos") and has("Flipendo"))
+	else
+		return true and (has("Lumos") and has("Flipendo"))
+	end
+end
+function rule_Skurge_Challenge_Witch_Statue()
+	if isOpenCastle() then
+		return (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo"))
+	else
+		return (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo"))
+	end
+end
+function rule_Entry_Hall_Witch_Statue()
+	if isOpenCastle() then
+		return true and has("Flipendo")
+	else
+		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+	end
+end
+function rule_Grand_Staircase_Gregory_the_Smarmy_Statue()
+	if isOpenCastle() then
+		return true and has("Flipendo")
+	else
+		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+	end
+end
+function rule_Grand_Staircase_Dragon_Skeleton()
+	if isOpenCastle() then
+		return true and has("Flipendo")
+	else
+		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and has("Rictusempra"))
+	end
+end
+function rule_Castle_Exterior_Dragon_Statue()
+	if isOpenCastle() then
+		return true and has("Flipendo")
+	else
+		return (has("Lumos") and has("Flipendo")) and has("Flipendo")
+	end
+end
+function rule_Castle_Exterior_Plant_Dragon_1()
+	if isOpenCastle() then
+		return true and (has("Flipendo") or has("Spongify") or has("Running"))
+	else
+		return (has("Lumos") and has("Flipendo")) and ((has("Alohomora") and has("Skurge") and has("Rictusempra") and has("Flipendo") and has("Bicorn Level Key")) or has("Running"))
+	end
+end
+function rule_Castle_Exterior_Plant_Dragon_2()
+	if isOpenCastle() then
+		return true and has("Diffindo")
+	else
+		return (has("Lumos") and has("Flipendo")) and (has("Alohomora") and ((has("Skurge") and has("Rictusempra") and has("Diffindo") and has("Bicorn Level Key")) or has("Running")))
 	end
 end

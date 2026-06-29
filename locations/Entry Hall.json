@@ -966,6 +966,29 @@
 				]
 			},
 			{
+				"name": "Witch Statue",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Entry_Hall_Witch_Statue"
+				],
+				"sections": [
+					{
+						"name": "Witch Statue"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Entry Hall",
+						"x": 817,
+						"y": 144
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
 				"name": "Duels",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -1704,6 +1727,10 @@
 					{
 						"name": "Wiggentree Bark Jar",
 						"ref": "Skurge Challenge/Wiggentree Bark Jar/Wiggentree Bark Jar"
+					},
+					{
+						"name": "Witch Statue",
+						"ref": "Skurge Challenge/Witch Statue/Witch Statue"
 					}
 				],
 				"map_locations": [

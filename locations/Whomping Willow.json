@@ -140,6 +140,29 @@
 				]
 			},
 			{
+				"name": "Dragon Statue",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Whomping_Willow_Dragon_Statue"
+				],
+				"sections": [
+					{
+						"name": "Dragon Statue"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Whomping Willow",
+						"x": 33,
+						"y": 603
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
 				"name": "Knight 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",

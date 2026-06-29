@@ -510,6 +510,29 @@
 				]
 			},
 			{
+				"name": "Dragon Statue",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Dragon_Statue"
+				],
+				"sections": [
+					{
+						"name": "Dragon Statue"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 702,
+						"y": 428
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
 				"name": "Ingredient Vendor 1",
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
@@ -585,6 +608,52 @@
 						"x": 804,
 						"y": 463
 					}
+				]
+			},
+			{
+				"name": "Plant Dragon 1",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Plant_Dragon_1"
+				],
+				"sections": [
+					{
+						"name": "Plant Dragon 1"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 373,
+						"y": 565
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
+				"name": "Plant Dragon 2",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Castle_Exterior_Plant_Dragon_2"
+				],
+				"sections": [
+					{
+						"name": "Plant Dragon 2"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Castle Exterior",
+						"x": 138,
+						"y": 393
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
 				]
 			},
 			{
@@ -1232,6 +1301,10 @@
 					{
 						"name": "Complete",
 						"ref": "Whomping Willow/Complete/Complete"
+					},
+					{
+						"name": "Dragon Statue",
+						"ref": "Whomping Willow/Dragon Statue/Dragon Statue"
 					},
 					{
 						"name": "Knight 1",

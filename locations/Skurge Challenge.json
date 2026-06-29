@@ -1117,6 +1117,29 @@
 				"visibility_rules": [
 					"$visContainers"
 				]
+			},
+			{
+				"name": "Witch Statue",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"$rule_Skurge_Challenge_Witch_Statue"
+				],
+				"sections": [
+					{
+						"name": "Witch Statue"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Skurge Challenge",
+						"x": 1015,
+						"y": 677
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
 			}
 		]
 	}

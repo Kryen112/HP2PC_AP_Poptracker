@@ -596,4 +596,12 @@ LOCATION_MAPPING = {
 	[5761295] = {"@Castle Exterior/Chest 8/Chest 8"},
 	[5761296] = {"@Castle Exterior/Chest 2/Chest 2"},
 	[5761297] = {"@Castle Exterior/Chest 5/Chest 5"},
+	[5761298] = {"@Whomping Willow/Dragon Statue/Dragon Statue"},
+	[5761299] = {"@Skurge Challenge/Witch Statue/Witch Statue"},
+	[5761300] = {"@Entry Hall/Witch Statue/Witch Statue"},
+	[5761301] = {"@Grand Staircase/Gregory the Smarmy Statue/Gregory the Smarmy Statue"},
+	[5761302] = {"@Grand Staircase/Dragon Skeleton/Dragon Skeleton"},
+	[5761303] = {"@Castle Exterior/Dragon Statue/Dragon Statue"},
+	[5761304] = {"@Castle Exterior/Plant Dragon 1/Plant Dragon 1"},
+	[5761305] = {"@Castle Exterior/Plant Dragon 2/Plant Dragon 2"},
 }
