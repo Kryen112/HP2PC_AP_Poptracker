@@ -1,6 +1,7 @@
 """Regenerate the bulk PopTracker pack files from the HP2PC_AP world.
 
-Reads ../HP2PC_AP/apworld/{items,locations,regions,rules}.py and emits:
+Reads ../HP2PC_AP/apworld/{items,locations,regions,rules}.py (plus the
+post-ending chest exclusion set from __init__.py) and emits:
     items/items.json
     locations/<Region>.json   (one per region)
     maps/maps.json            (only if missing — otherwise leaves Stefan's
@@ -352,6 +353,12 @@ RULE_ALIASES: dict[str, ast.AST] = {}
 # card-count helper can take a named count instead of a bare literal.
 INT_CONSTANTS: dict[str, int] = {}
 
+# Locations the apworld drops as checks in open castle because they sit past
+# the ending cutscene's point of no return. Read from __init__.py's
+# ENTRY_HALL_POST_ENDING_CHESTS so the tracker hides them in open castle
+# instead of showing them reachable. vis_rules_for gates them vanilla-only.
+POST_ENDING_CHESTS: frozenset[str] = frozenset()
+
 
 def _flatten_binop(node, op_type) -> list:
     """Collapse a left-associative chain of the same & / | op into a flat operand
@@ -594,7 +601,12 @@ def vis_rules_for(region: str, loc_name: str, loc_groups: dict[str, str]) -> lis
     if region == "GryffindorChallenge":
         rules.append("$visOpenCastleOnly")
     group = loc_groups.get(loc_name)
-    if group == "Classrooms":
+    if loc_name in POST_ENDING_CHESTS:
+        # East-wing chests stranded past the open castle ending; vanilla-only.
+        # The helper also folds in the containersanity gate, so this replaces
+        # the plain $visContainers these would otherwise carry.
+        rules.append("$visEntryHallPostEndingChests")
+    elif group == "Classrooms":
         # Classroom (Learned X) checks only exist in vanilla.
         rules.append("$visClassrooms")
     else:
@@ -870,6 +882,11 @@ def main() -> None:  # noqa: C901
     ITEM_PREDICATES.update(load_item_predicates(APWORLD / "access.py"))
     RULE_ALIASES.update(load_rule_aliases(APWORLD / "rules.py"))
     INT_CONSTANTS.update(load_int_constants(APWORLD / "rules.py"))
+    # The post-ending chest exclusion lives in __init__.py's _location_enabled,
+    # not in the regions/rules tables, so read the name set straight from there.
+    global POST_ENDING_CHESTS
+    POST_ENDING_CHESTS = load_assignments(
+        APWORLD / "__init__.py").get("ENTRY_HALL_POST_ENDING_CHESTS", frozenset())
 
     name_to_id_items = items["ITEM_NAME_TO_ID"]
     name_to_id_locs = locations["LOCATION_NAME_TO_ID"]

@@ -81,3 +81,7 @@ function visContainers() return containersanityOn() end
 function visClassrooms()        return isVanilla() end
 -- The Gryffindor challenge level only exists in open castle distribution maps.
 function visOpenCastleOnly()    return isOpenCastle() end
+-- The two east-wing Entry Hall chests sit past the open castle ending cutscene's
+-- point of no return, so the apworld drops them as checks there. Vanilla
+-- traverses the wing normally and keeps both.
+function visEntryHallPostEndingChests() return containersanityOn() and isVanilla() end

@@ -2391,16 +2391,16 @@ function rule_Chamber_of_Secrets_Wiggentree_Bark_Jar_2()
 end
 function rule_Chamber_of_Secrets_Wiggentree_Bark_Jar_3()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and has("Flipendo")
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Chamber_of_Secrets_Chest_7()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and has("Alohomora")
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and has("Alohomora")
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo") and has("Lumos") and has("Alohomora"))
 	end
 end
 function rule_Chamber_of_Secrets_Flobberworm_Mucous_Jar_2()
@@ -2412,9 +2412,9 @@ function rule_Chamber_of_Secrets_Flobberworm_Mucous_Jar_2()
 end
 function rule_Chamber_of_Secrets_Flobberworm_Mucous_Jar_3()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and has("Flipendo")
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Chamber_of_Secrets_Cauldron_8()
@@ -2433,9 +2433,9 @@ function rule_Chamber_of_Secrets_Cauldron_9()
 end
 function rule_Chamber_of_Secrets_Cauldron_10()
 	if isOpenCastle() then
-		return (has("Chamber of Secrets Key") and has("Alohomora")) and has("Flipendo")
+		return (has("Chamber of Secrets Key") and has("Alohomora")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	else
-		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and has("Flipendo")
+		return (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key") and has("Chamber of Secrets Key")) and (has("Spongify") and has("Diffindo") and has("Skurge") and has("Rictusempra") and has("Flipendo"))
 	end
 end
 function rule_Whomping_Willow_Chest_4()

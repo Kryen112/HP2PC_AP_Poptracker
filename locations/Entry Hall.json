@@ -502,7 +502,7 @@
 					}
 				],
 				"visibility_rules": [
-					"$visContainers"
+					"$visEntryHallPostEndingChests"
 				]
 			},
 			{
@@ -525,7 +525,7 @@
 					}
 				],
 				"visibility_rules": [
-					"$visContainers"
+					"$visEntryHallPostEndingChests"
 				]
 			},
 			{
