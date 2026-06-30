@@ -50,24 +50,24 @@
 			[
 				"game_mode",
 				"vanilla_gate_levels",
-				"tradersanity",
-				"enable_wizard_cards",
-				"enable_secrets",
 				"allow_missable_progression",
-				"enable_challenge_stars"
-			],
-			[
-				"enable_quidditch_upgrades",
-				"enable_duelling",
-				"enable_quidditch_matches",
-				"enable_spell_challenge_times",
+				"allow_running_logic",
 				"enable_traps",
 				"ring_link",
 				"death_link"
 			],
 			[
+				"enable_wizard_cards",
+				"enable_secrets",
+				"enable_challenge_stars",
 				"containersanity",
-				"allow_running_logic",
+				"tradersanity",
+				"enable_quidditch_upgrades",
+				"enable_spell_challenge_times"
+			],
+			[
+				"enable_duelling",
+				"enable_quidditch_matches",
 				"",
 				"",
 				"",
