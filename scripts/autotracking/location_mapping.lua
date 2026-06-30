@@ -604,4 +604,5 @@ LOCATION_MAPPING = {
 	[5761303] = {"@Castle Exterior/Dragon Statue/Dragon Statue"},
 	[5761304] = {"@Castle Exterior/Plant Dragon 1/Plant Dragon 1"},
 	[5761305] = {"@Castle Exterior/Plant Dragon 2/Plant Dragon 2"},
+	[5761306] = {"@Grand Staircase/Toilet/Toilet"},
 }

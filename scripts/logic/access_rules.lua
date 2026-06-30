@@ -4237,3 +4237,10 @@ function rule_Castle_Exterior_Plant_Dragon_2()
 		return (has("Lumos") and has("Flipendo")) and (has("Flipendo") and ((has("Skurge") and has("Rictusempra") and has("Diffindo") and has("Alohomora") and has("Bicorn Level Key")) or has("Running")))
 	end
 end
+function rule_Grand_Staircase_Toilet()
+	if isOpenCastle() then
+		return true and (has("Chamber of Secrets Key") and has("Flipendo"))
+	else
+		return (has("Lumos") and has("Flipendo")) and (has("Rictusempra") and has("Skurge") and has("Flipendo"))
+	end
+end
