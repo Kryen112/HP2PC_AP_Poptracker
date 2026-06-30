@@ -68,7 +68,11 @@
 			[
 				"containersanity",
 				"allow_running_logic",
-				"allow_glitched_logic"
+				"",
+				"",
+				"",
+				"",
+				""
 			]
 		]
 	},
