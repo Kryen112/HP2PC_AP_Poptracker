@@ -346,6 +346,26 @@ def load_rule_aliases(path: Path) -> dict[str, ast.AST]:
 # seed can reach these checks regardless of whether the flag is enabled in logic.
 FLAG_ITEMS: frozenset[str] = frozenset({"Running", "Glitched"})
 
+# Checks visible before they are collectable. The value lists the items needed to
+# SEE the check, ANDed onto its region entry. When the collect rule is unmet but
+# the see condition holds, the check shows Inspect (blue): you can look at it but
+# not take it yet. Keep the see items a subset of the collect rule so blue only
+# ever precedes green, never outlives it.
+#   Toothill / Sykes: on open shelves in view from the start of their area, so
+#     the see condition is region entry alone (nothing extra).
+#   Alderton: the chest opens from the ground floor with Alohomora, revealing the
+#     item, but reaching it up on the platform still needs Spongify.
+#   Shingleton: Alohomora reveals the contents, but taking it needs more.
+#   Spongify Challenge Star 1: in view on entering the challenge (the key alone),
+#     but out of reach without Spongify.
+INSPECT_CHECKS: dict[str, list[str]] = {
+    "Grand Staircase - Card Toothill": [],
+    "Castle Exterior - Card Sykes": [],
+    "Entry Hall - Card Alderton": ["Alohomora"],
+    "Entry Hall - Card Shingleton": ["Alohomora"],
+    "Spongify Challenge - Challenge Star 1": [],
+}
+
 # Item-predicate name from access.py (`alohomora = _item('Alohomora')`) to item
 # name. Lets the translator turn a bare predicate Name in the _Access DSL into
 # has("Item").
@@ -1033,6 +1053,17 @@ def main() -> None:  # noqa: C901
             return "true"
         return " and ".join(parts)
 
+    def see_lua(region: str, loc_name: str, region_tbl, extra_items: list[str]) -> str:
+        # The see condition for an inspect check: its region entry ANDed with the
+        # extra items needed to lay eyes on it. Region entry is the strict form
+        # (no flag forcing): visibility does not depend on Running / Glitched.
+        parts = []
+        rnode = region_tbl.get(region)
+        if rnode is not None:
+            parts.append(rule_to_lua(rnode))
+        parts.extend(f'has("{_lua_escape(it)}")' for it in extra_items)
+        return " and ".join(parts) if parts else "true"
+
     def mode_access(region_tbl, loc_tbl, region: str, loc_name: str) -> str:
         # Strict path (logic flags as the player set them) against the same rule
         # with Running / Glitched forced on. Equal strings mean the rule has no
@@ -1040,6 +1071,10 @@ def main() -> None:  # noqa: C901
         # gate the yellow out-of-logic tier via flagAccess.
         strict = compose(region, loc_name, region_tbl, loc_tbl)
         forced = compose(region, loc_name, region_tbl, loc_tbl, FLAG_ITEMS)
+        extra_see = INSPECT_CHECKS.get(loc_name)
+        if extra_see is not None:
+            see = see_lua(region, loc_name, region_tbl, extra_see)
+            return f"inspectAccess({strict}, {forced}, {see})"
         if strict == forced:
             return f"reachAccess({strict})"
         return f"flagAccess({strict}, {forced})"

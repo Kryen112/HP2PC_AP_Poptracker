@@ -41,9 +41,9 @@ function rule_Bicorn_Level_Card_Agrippa()
 end
 function rule_Entry_Hall_Card_Alderton()
 	if isOpenCastle() then
-		return reachAccess(true and (has("Alohomora") and has("Spongify")))
+		return inspectAccess(true and (has("Alohomora") and has("Spongify")), true and (has("Alohomora") and has("Spongify")), true and has("Alohomora"))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Spongify")))
+		return inspectAccess((has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Spongify")), (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Spongify")), (has("Lumos") and has("Flipendo")) and has("Alohomora"))
 	end
 end
 function rule_Rictusempra_Challenge_Card_Barbary()
@@ -279,9 +279,9 @@ function rule_Castle_Exterior_Card_Sweeting()
 end
 function rule_Castle_Exterior_Card_Sykes()
 	if isOpenCastle() then
-		return reachAccess(true and has("Spongify"))
+		return inspectAccess(true and has("Spongify"), true and has("Spongify"), true)
 	else
-		return reachAccess((has("Lumos") and has("Flipendo")) and has("Spongify"))
+		return inspectAccess((has("Lumos") and has("Flipendo")) and has("Spongify"), (has("Lumos") and has("Flipendo")) and has("Spongify"), (has("Lumos") and has("Flipendo")))
 	end
 end
 function rule_Rictusempra_Challenge_Card_Thruston()
@@ -573,9 +573,9 @@ function rule_Diffindo_Challenge_Card_Shimpling()
 end
 function rule_Entry_Hall_Card_Shingleton()
 	if isOpenCastle() then
-		return reachAccess(true and (has("Alohomora") and has("Lumos") and has("Skurge")))
+		return inspectAccess(true and (has("Alohomora") and has("Lumos") and has("Skurge")), true and (has("Alohomora") and has("Lumos") and has("Skurge")), true and has("Alohomora"))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Lumos") and has("Skurge") and (has("Rictusempra") or has("Diffindo"))))
+		return inspectAccess((has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Lumos") and has("Skurge") and (has("Rictusempra") or has("Diffindo"))), (has("Lumos") and has("Flipendo")) and (has("Alohomora") and has("Lumos") and has("Skurge") and (has("Rictusempra") or has("Diffindo"))), (has("Lumos") and has("Flipendo")) and has("Alohomora"))
 	end
 end
 function rule_Diffindo_Challenge_Card_Smethwyck()
@@ -608,9 +608,9 @@ function rule_Diffindo_Challenge_Card_Thurkell()
 end
 function rule_Grand_Staircase_Card_Toothill()
 	if isOpenCastle() then
-		return reachAccess(true and has("Spongify"))
+		return inspectAccess(true and has("Spongify"), true and has("Spongify"), true)
 	else
-		return reachAccess((has("Lumos") and has("Flipendo")) and has("Spongify"))
+		return inspectAccess((has("Lumos") and has("Flipendo")) and has("Spongify"), (has("Lumos") and has("Flipendo")) and has("Spongify"), (has("Lumos") and has("Flipendo")))
 	end
 end
 function rule_Rictusempra_Challenge_Card_Tremlett()
@@ -1959,9 +1959,9 @@ function rule_Diffindo_Challenge_Challenge_Star_1()
 end
 function rule_Spongify_Challenge_Challenge_Star_1()
 	if isOpenCastle() then
-		return reachAccess(has("Spongify Challenge Key") and has("Spongify"))
+		return inspectAccess(has("Spongify Challenge Key") and has("Spongify"), has("Spongify Challenge Key") and has("Spongify"), has("Spongify Challenge Key"))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and has("Spongify"))
+		return inspectAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and has("Spongify"), (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) and has("Spongify"), (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")))
 	end
 end
 function rule_Spongify_Challenge_Challenge_Star_3()
@@ -2155,9 +2155,9 @@ function rule_Rictusempra_Challenge_Complete()
 end
 function rule_Skurge_Challenge_Complete()
 	if isOpenCastle() then
-		return reachAccess((has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos")))
+		return flagAccess((has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running"))), (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or true)))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos")))
+		return flagAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running"))), (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or true)))
 	end
 end
 function rule_Diffindo_Challenge_Complete()

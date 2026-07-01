@@ -27,6 +27,17 @@ function flagAccess(inLogic, outOfLogic)
     return AccessibilityLevel.None
 end
 
+-- A check visible before it is collectable. collectInLogic maps to Normal
+-- (green); collectable only by forcing a flag on maps to SequenceBreak (yellow);
+-- otherwise, if the see condition holds, Inspect (blue) so it reads as visible
+-- but not yet obtainable; else None.
+function inspectAccess(collectInLogic, collectOutOfLogic, visible)
+    if collectInLogic then return AccessibilityLevel.Normal end
+    if collectOutOfLogic then return AccessibilityLevel.SequenceBreak end
+    if visible then return AccessibilityLevel.Inspect end
+    return AccessibilityLevel.None
+end
+
 -- Mode / setting helpers driven by the slot_data-backed setting items in items.json.
 -- The setting items use multi-stage codes (e.g. "game_mode_vanilla" / "game_mode_open_castle")
 -- so we can test the current stage with has(stage_code).
