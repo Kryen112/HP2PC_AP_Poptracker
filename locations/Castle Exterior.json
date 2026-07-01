@@ -12,7 +12,7 @@
 					{
 						"name": "Secret 7",
 						"access_rules": [
-							"$rule_Castle_Exterior_Secret_7"
+							"^$rule_Castle_Exterior_Secret_7"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -21,7 +21,7 @@
 					{
 						"name": "Card Marjoribanks",
 						"access_rules": [
-							"$rule_Castle_Exterior_Card_Marjoribanks"
+							"^$rule_Castle_Exterior_Card_Marjoribanks"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -44,7 +44,7 @@
 					{
 						"name": "Secret 4",
 						"access_rules": [
-							"$rule_Castle_Exterior_Secret_4"
+							"^$rule_Castle_Exterior_Secret_4"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -53,7 +53,7 @@
 					{
 						"name": "Card Oglethorpe",
 						"access_rules": [
-							"$rule_Castle_Exterior_Card_Oglethorpe"
+							"^$rule_Castle_Exterior_Card_Oglethorpe"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -73,7 +73,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Card_Plunkett"
+					"^$rule_Castle_Exterior_Card_Plunkett"
 				],
 				"sections": [
 					{
@@ -96,7 +96,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Card_Pokeby"
+					"^$rule_Castle_Exterior_Card_Pokeby"
 				],
 				"sections": [
 					{
@@ -119,7 +119,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Card_Sweeting"
+					"^$rule_Castle_Exterior_Card_Sweeting"
 				],
 				"sections": [
 					{
@@ -145,7 +145,7 @@
 					{
 						"name": "Secret 5",
 						"access_rules": [
-							"$rule_Castle_Exterior_Secret_5"
+							"^$rule_Castle_Exterior_Secret_5"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -154,7 +154,7 @@
 					{
 						"name": "Card Sykes",
 						"access_rules": [
-							"$rule_Castle_Exterior_Card_Sykes"
+							"^$rule_Castle_Exterior_Card_Sykes"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -177,7 +177,7 @@
 					{
 						"name": "Secret 1",
 						"access_rules": [
-							"$rule_Castle_Exterior_Secret_1"
+							"^$rule_Castle_Exterior_Secret_1"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -186,7 +186,7 @@
 					{
 						"name": "Card Twonk",
 						"access_rules": [
-							"$rule_Castle_Exterior_Card_Twonk"
+							"^$rule_Castle_Exterior_Card_Twonk"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -206,7 +206,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Card_Vendor_1"
+					"^$rule_Castle_Exterior_Card_Vendor_1"
 				],
 				"sections": [
 					{
@@ -229,7 +229,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Card_Vendor_2"
+					"^$rule_Castle_Exterior_Card_Vendor_2"
 				],
 				"sections": [
 					{
@@ -255,7 +255,7 @@
 					{
 						"name": "Secret 8",
 						"access_rules": [
-							"$rule_Castle_Exterior_Secret_8"
+							"^$rule_Castle_Exterior_Secret_8"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -264,7 +264,7 @@
 					{
 						"name": "Card Wadcock",
 						"access_rules": [
-							"$rule_Castle_Exterior_Card_Wadcock"
+							"^$rule_Castle_Exterior_Card_Wadcock"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -284,7 +284,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Card_Youdle"
+					"^$rule_Castle_Exterior_Card_Youdle"
 				],
 				"sections": [
 					{
@@ -307,7 +307,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Chest_1"
+					"^$rule_Castle_Exterior_Chest_1"
 				],
 				"sections": [
 					{
@@ -330,7 +330,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Chest_2"
+					"^$rule_Castle_Exterior_Chest_2"
 				],
 				"sections": [
 					{
@@ -353,7 +353,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Chest_3"
+					"^$rule_Castle_Exterior_Chest_3"
 				],
 				"sections": [
 					{
@@ -376,7 +376,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Chest_4"
+					"^$rule_Castle_Exterior_Chest_4"
 				],
 				"sections": [
 					{
@@ -399,7 +399,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Chest_5"
+					"^$rule_Castle_Exterior_Chest_5"
 				],
 				"sections": [
 					{
@@ -422,7 +422,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Chest_6"
+					"^$rule_Castle_Exterior_Chest_6"
 				],
 				"sections": [
 					{
@@ -445,7 +445,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Chest_7"
+					"^$rule_Castle_Exterior_Chest_7"
 				],
 				"sections": [
 					{
@@ -468,7 +468,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Chest_8"
+					"^$rule_Castle_Exterior_Chest_8"
 				],
 				"sections": [
 					{
@@ -491,7 +491,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Chest_9"
+					"^$rule_Castle_Exterior_Chest_9"
 				],
 				"sections": [
 					{
@@ -514,7 +514,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Dragon_Statue"
+					"^$rule_Castle_Exterior_Dragon_Statue"
 				],
 				"sections": [
 					{
@@ -537,7 +537,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Ingredient_Vendor_1"
+					"^$rule_Castle_Exterior_Ingredient_Vendor_1"
 				],
 				"sections": [
 					{
@@ -560,7 +560,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Ingredient_Vendor_2"
+					"^$rule_Castle_Exterior_Ingredient_Vendor_2"
 				],
 				"sections": [
 					{
@@ -586,7 +586,7 @@
 					{
 						"name": "Nimbus 2001",
 						"access_rules": [
-							"$rule_Castle_Exterior_Nimbus_2001"
+							"^$rule_Castle_Exterior_Nimbus_2001"
 						],
 						"visibility_rules": [
 							"$visQuidPurch"
@@ -595,7 +595,7 @@
 					{
 						"name": "Quidditch Armour",
 						"access_rules": [
-							"$rule_Castle_Exterior_Quidditch_Armour"
+							"^$rule_Castle_Exterior_Quidditch_Armour"
 						],
 						"visibility_rules": [
 							"$visQuidPurch"
@@ -615,7 +615,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Plant_Dragon_1"
+					"^$rule_Castle_Exterior_Plant_Dragon_1"
 				],
 				"sections": [
 					{
@@ -638,7 +638,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Plant_Dragon_2"
+					"^$rule_Castle_Exterior_Plant_Dragon_2"
 				],
 				"sections": [
 					{
@@ -661,7 +661,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Secret_2"
+					"^$rule_Castle_Exterior_Secret_2"
 				],
 				"sections": [
 					{
@@ -684,7 +684,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Secret_3"
+					"^$rule_Castle_Exterior_Secret_3"
 				],
 				"sections": [
 					{
@@ -707,7 +707,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Castle_Exterior_Secret_6"
+					"^$rule_Castle_Exterior_Secret_6"
 				],
 				"sections": [
 					{
@@ -730,7 +730,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Learned_Diffindo"
+					"^$rule_Learned_Diffindo"
 				],
 				"sections": [
 					{
@@ -756,7 +756,7 @@
 					{
 						"name": "Match 1 (Hufflepuff)",
 						"access_rules": [
-							"$rule_Quidditch_Match_1_Hufflepuff"
+							"^$rule_Quidditch_Match_1_Hufflepuff"
 						],
 						"visibility_rules": [
 							"$visQuidMatch"
@@ -765,7 +765,7 @@
 					{
 						"name": "Match 2 (Ravenclaw)",
 						"access_rules": [
-							"$rule_Quidditch_Match_2_Ravenclaw"
+							"^$rule_Quidditch_Match_2_Ravenclaw"
 						],
 						"visibility_rules": [
 							"$visQuidMatch"
@@ -774,7 +774,7 @@
 					{
 						"name": "Match 3 (Slytherin)",
 						"access_rules": [
-							"$rule_Quidditch_Match_3_Slytherin"
+							"^$rule_Quidditch_Match_3_Slytherin"
 						],
 						"visibility_rules": [
 							"$visQuidMatch"
@@ -783,7 +783,7 @@
 					{
 						"name": "Match 4 (Hufflepuff)",
 						"access_rules": [
-							"$rule_Quidditch_Match_4_Hufflepuff"
+							"^$rule_Quidditch_Match_4_Hufflepuff"
 						],
 						"visibility_rules": [
 							"$visQuidMatch"
@@ -792,7 +792,7 @@
 					{
 						"name": "Match 5 (Ravenclaw)",
 						"access_rules": [
-							"$rule_Quidditch_Match_5_Ravenclaw"
+							"^$rule_Quidditch_Match_5_Ravenclaw"
 						],
 						"visibility_rules": [
 							"$visQuidMatch"
@@ -801,7 +801,7 @@
 					{
 						"name": "Match 6 (Slytherin)",
 						"access_rules": [
-							"$rule_Quidditch_Match_6_Slytherin"
+							"^$rule_Quidditch_Match_6_Slytherin"
 						],
 						"visibility_rules": [
 							"$visQuidMatch"

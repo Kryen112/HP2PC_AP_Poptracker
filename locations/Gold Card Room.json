@@ -9,7 +9,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Card_Bott"
+					"^$rule_Gold_Card_Room_Card_Bott"
 				],
 				"sections": [
 					{
@@ -32,7 +32,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Card_Dumbledore"
+					"^$rule_Gold_Card_Room_Card_Dumbledore"
 				],
 				"sections": [
 					{
@@ -55,7 +55,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Card_Gryffindor"
+					"^$rule_Gold_Card_Room_Card_Gryffindor"
 				],
 				"sections": [
 					{
@@ -78,7 +78,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Card_Herpo"
+					"^$rule_Gold_Card_Room_Card_Herpo"
 				],
 				"sections": [
 					{
@@ -101,7 +101,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Card_Hufflepuff"
+					"^$rule_Gold_Card_Room_Card_Hufflepuff"
 				],
 				"sections": [
 					{
@@ -124,7 +124,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Card_Knightley"
+					"^$rule_Gold_Card_Room_Card_Knightley"
 				],
 				"sections": [
 					{
@@ -147,7 +147,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Card_Paracelsus"
+					"^$rule_Gold_Card_Room_Card_Paracelsus"
 				],
 				"sections": [
 					{
@@ -170,7 +170,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Card_Pinkstone"
+					"^$rule_Gold_Card_Room_Card_Pinkstone"
 				],
 				"sections": [
 					{
@@ -193,7 +193,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Card_Potter"
+					"^$rule_Gold_Card_Room_Card_Potter"
 				],
 				"sections": [
 					{
@@ -216,7 +216,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Card_Ravenclaw"
+					"^$rule_Gold_Card_Room_Card_Ravenclaw"
 				],
 				"sections": [
 					{
@@ -239,7 +239,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Card_Slytherin"
+					"^$rule_Gold_Card_Room_Card_Slytherin"
 				],
 				"sections": [
 					{
@@ -262,7 +262,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gold_Card_Room_Complete"
+					"^$rule_Gold_Card_Room_Complete"
 				],
 				"sections": [
 					{

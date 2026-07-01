@@ -340,6 +340,12 @@ def load_rule_aliases(path: Path) -> dict[str, ast.AST]:
 # _Access DSL to Lua expression
 # ---------------------------------------------------------------------------
 
+# Logic-flag item names. A rule reachable only when one of these is forced on is
+# out of logic (SequenceBreak / yellow) rather than unreachable. Running and
+# Glitched are player-selected capabilities, always physically possible, so every
+# seed can reach these checks regardless of whether the flag is enabled in logic.
+FLAG_ITEMS: frozenset[str] = frozenset({"Running", "Glitched"})
+
 # Item-predicate name from access.py (`alohomora = _item('Alohomora')`) to item
 # name. Lets the translator turn a bare predicate Name in the _Access DSL into
 # has("Item").
@@ -368,7 +374,10 @@ def _flatten_binop(node, op_type) -> list:
     return [node]
 
 
-def rule_to_lua(node) -> str:
+def rule_to_lua(node, force_true: frozenset[str] = frozenset()) -> str:
+    # force_true names item predicates (by item name) rendered as the literal
+    # `true` instead of has("Item"). Used to build the out-of-logic variant of a
+    # rule, where a logic flag (Running / Glitched) is force-allowed.
     # _Access DSL: a bare item predicate, or never / always.
     if isinstance(node, ast.Name):
         if node.id == "never":
@@ -377,20 +386,22 @@ def rule_to_lua(node) -> str:
             return "true"
         item = ITEM_PREDICATES.get(node.id)
         if item is not None:
+            if item in force_true:
+                return "true"
             return f'has("{_lua_escape(item)}")'
         # Module-level _Access alias (e.g. chamber_first_fall): inline its body.
         alias = RULE_ALIASES.get(node.id)
         if alias is not None:
-            return rule_to_lua(alias)
+            return rule_to_lua(alias, force_true)
         raise ValueError(f"unknown predicate name: {node.id}")
     # _Access DSL: a & b (and), a | b (or). Flatten same-op chains to one paren.
     if isinstance(node, ast.BinOp):
         if isinstance(node.op, ast.BitAnd):
             parts = _flatten_binop(node, ast.BitAnd)
-            return "(" + " and ".join(rule_to_lua(p) for p in parts) + ")"
+            return "(" + " and ".join(rule_to_lua(p, force_true) for p in parts) + ")"
         if isinstance(node.op, ast.BitOr):
             parts = _flatten_binop(node, ast.BitOr)
-            return "(" + " or ".join(rule_to_lua(p) for p in parts) + ")"
+            return "(" + " or ".join(rule_to_lua(p, force_true) for p in parts) + ")"
         raise ValueError(f"unsupported BinOp op: {ast.dump(node.op)}")
     # _Access DSL: _silver_cards(n) / _bronze_cards(n) -> count(tier) >= n. The
     # count is a literal or a named int constant (INT_CONSTANTS) from rules.py.
@@ -661,7 +672,7 @@ def build_region_children(region: str, region_locs: list[str],
                 member_loc = sec_to_loc.get(member)
                 if member_loc is None:
                     continue
-                sec = {"name": member, "access_rules": [f"${rule_fn_name(member_loc)}"]}
+                sec = {"name": member, "access_rules": [f"^${rule_fn_name(member_loc)}"]}
                 vis = vis_rules_for(region, member_loc, loc_groups)
                 if vis:
                     sec["visibility_rules"] = vis
@@ -688,7 +699,7 @@ def build_region_children(region: str, region_locs: list[str],
             entry = {
                 "name": section_name,
                 **CHEST_IMGS,
-                "access_rules": [f"${rule_fn_name(loc_name)}"],
+                "access_rules": [f"^${rule_fn_name(loc_name)}"],
                 "sections": [{"name": section_name}],
                 "map_locations": map_locs_for(section_name),
             }
@@ -1009,28 +1020,42 @@ def main() -> None:  # noqa: C901
     loc_rules_v = location_rules.get("LOCATION_RULES_VANILLA", {})
     loc_rules_o = location_rules.get("LOCATION_RULES_OPEN_CASTLE", {})
 
-    def compose(region: str, loc_name: str, region_tbl, loc_tbl) -> str:
+    def compose(region: str, loc_name: str, region_tbl, loc_tbl,
+                force_true: frozenset[str] = frozenset()) -> str:
         parts = []
         rnode = region_tbl.get(region)
         if rnode is not None:
-            parts.append(rule_to_lua(rnode))
+            parts.append(rule_to_lua(rnode, force_true))
         lnode = loc_tbl.get(loc_name)
         if lnode is not None:
-            parts.append(rule_to_lua(lnode))
+            parts.append(rule_to_lua(lnode, force_true))
         if not parts:
             return "true"
         return " and ".join(parts)
 
+    def mode_access(region_tbl, loc_tbl, region: str, loc_name: str) -> str:
+        # Strict path (logic flags as the player set them) against the same rule
+        # with Running / Glitched forced on. Equal strings mean the rule has no
+        # flag branch, so it is a plain Normal-or-None check; differing strings
+        # gate the yellow out-of-logic tier via flagAccess.
+        strict = compose(region, loc_name, region_tbl, loc_tbl)
+        forced = compose(region, loc_name, region_tbl, loc_tbl, FLAG_ITEMS)
+        if strict == forced:
+            return f"reachAccess({strict})"
+        return f"flagAccess({strict}, {forced})"
+
     lua_lines = [
         "-- Auto-generated by tools/generate.py from HP2PC_AP/apworld/{regions,rules}.py.",
-        "-- One function per AP location returning whether it is accessible now.",
-        "-- Mode-switched on isOpenCastle() — both vanilla and open castle rules embedded.",
+        "-- One function per AP location returning its PopTracker AccessibilityLevel.",
+        "-- Reachable in logic is Normal. Reachable only by forcing a Running or",
+        "-- Glitched flag on is SequenceBreak (obtainable but out of logic). Otherwise",
+        "-- None. Mode-switched on isOpenCastle(): vanilla and open castle both embedded.",
         "",
     ]
     for loc_name in name_to_id_locs:
         region = loc_regions.get(loc_name, "TBD")
-        van = compose(region, loc_name, region_vanilla, loc_rules_v)
-        ocs = compose(region, loc_name, region_open, loc_rules_o)
+        van = mode_access(region_vanilla, loc_rules_v, region, loc_name)
+        ocs = mode_access(region_open, loc_rules_o, region, loc_name)
         fn = rule_fn_name(loc_name)
         if van == ocs:
             lua_lines.append(f"function {fn}() return {van} end")

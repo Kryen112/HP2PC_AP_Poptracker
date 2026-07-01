@@ -12,13 +12,13 @@
 					{
 						"name": "Complete",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Complete"
+							"^$rule_Spongify_Challenge_Complete"
 						]
 					},
 					{
 						"name": "Beat Par Time",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Beat_Par_Time"
+							"^$rule_Spongify_Challenge_Beat_Par_Time"
 						],
 						"visibility_rules": [
 							"$visSpellTimes"
@@ -41,7 +41,7 @@
 					{
 						"name": "Secret 6",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Secret_6"
+							"^$rule_Spongify_Challenge_Secret_6"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -50,7 +50,7 @@
 					{
 						"name": "Card Furmage",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Card_Furmage"
+							"^$rule_Spongify_Challenge_Card_Furmage"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -73,7 +73,7 @@
 					{
 						"name": "Secret 10",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Secret_10"
+							"^$rule_Spongify_Challenge_Secret_10"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -82,7 +82,7 @@
 					{
 						"name": "Card Grunnion",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Card_Grunnion"
+							"^$rule_Spongify_Challenge_Card_Grunnion"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -105,7 +105,7 @@
 					{
 						"name": "Secret 1",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Secret_1"
+							"^$rule_Spongify_Challenge_Secret_1"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -114,7 +114,7 @@
 					{
 						"name": "Card Merlin",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Card_Merlin"
+							"^$rule_Spongify_Challenge_Card_Merlin"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -137,7 +137,7 @@
 					{
 						"name": "Secret 5",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Secret_5"
+							"^$rule_Spongify_Challenge_Secret_5"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -146,7 +146,7 @@
 					{
 						"name": "Card Po",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Card_Po"
+							"^$rule_Spongify_Challenge_Card_Po"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -169,7 +169,7 @@
 					{
 						"name": "Secret 2",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Secret_2"
+							"^$rule_Spongify_Challenge_Secret_2"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -178,7 +178,7 @@
 					{
 						"name": "Card Rastrick",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Card_Rastrick"
+							"^$rule_Spongify_Challenge_Card_Rastrick"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -201,7 +201,7 @@
 					{
 						"name": "Secret 8",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Secret_8"
+							"^$rule_Spongify_Challenge_Secret_8"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -210,7 +210,7 @@
 					{
 						"name": "Card Summerbee",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Card_Summerbee"
+							"^$rule_Spongify_Challenge_Card_Summerbee"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -230,7 +230,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Card_Warbeck"
+					"^$rule_Spongify_Challenge_Card_Warbeck"
 				],
 				"sections": [
 					{
@@ -256,7 +256,7 @@
 					{
 						"name": "Secret 15",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Secret_15"
+							"^$rule_Spongify_Challenge_Secret_15"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -265,7 +265,7 @@
 					{
 						"name": "Card Woodcroft",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Card_Woodcroft"
+							"^$rule_Spongify_Challenge_Card_Woodcroft"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -285,7 +285,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Cauldron_1"
+					"^$rule_Spongify_Challenge_Cauldron_1"
 				],
 				"sections": [
 					{
@@ -308,7 +308,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Cauldron_2"
+					"^$rule_Spongify_Challenge_Cauldron_2"
 				],
 				"sections": [
 					{
@@ -331,7 +331,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Cauldron_3"
+					"^$rule_Spongify_Challenge_Cauldron_3"
 				],
 				"sections": [
 					{
@@ -354,7 +354,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Cauldron_4"
+					"^$rule_Spongify_Challenge_Cauldron_4"
 				],
 				"sections": [
 					{
@@ -377,7 +377,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Challenge_Star_1"
+					"^$rule_Spongify_Challenge_Challenge_Star_1"
 				],
 				"sections": [
 					{
@@ -400,7 +400,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Challenge_Star_10"
+					"^$rule_Spongify_Challenge_Challenge_Star_10"
 				],
 				"sections": [
 					{
@@ -426,7 +426,7 @@
 					{
 						"name": "Secret 4",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Secret_4"
+							"^$rule_Spongify_Challenge_Secret_4"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -435,7 +435,7 @@
 					{
 						"name": "Challenge Star 2",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Challenge_Star_2"
+							"^$rule_Spongify_Challenge_Challenge_Star_2"
 						],
 						"visibility_rules": [
 							"$visStars"
@@ -455,7 +455,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Challenge_Star_3"
+					"^$rule_Spongify_Challenge_Challenge_Star_3"
 				],
 				"sections": [
 					{
@@ -478,7 +478,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Challenge_Star_4"
+					"^$rule_Spongify_Challenge_Challenge_Star_4"
 				],
 				"sections": [
 					{
@@ -501,7 +501,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Challenge_Star_5"
+					"^$rule_Spongify_Challenge_Challenge_Star_5"
 				],
 				"sections": [
 					{
@@ -527,7 +527,7 @@
 					{
 						"name": "Secret 9",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Secret_9"
+							"^$rule_Spongify_Challenge_Secret_9"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -536,7 +536,7 @@
 					{
 						"name": "Challenge Star 6",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Challenge_Star_6"
+							"^$rule_Spongify_Challenge_Challenge_Star_6"
 						],
 						"visibility_rules": [
 							"$visStars"
@@ -556,7 +556,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Challenge_Star_7"
+					"^$rule_Spongify_Challenge_Challenge_Star_7"
 				],
 				"sections": [
 					{
@@ -582,7 +582,7 @@
 					{
 						"name": "Challenge Star 8",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Challenge_Star_8"
+							"^$rule_Spongify_Challenge_Challenge_Star_8"
 						],
 						"visibility_rules": [
 							"$visStars"
@@ -591,7 +591,7 @@
 					{
 						"name": "Music Box",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Music_Box"
+							"^$rule_Spongify_Challenge_Music_Box"
 						],
 						"visibility_rules": [
 							"$visContainers"
@@ -611,7 +611,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Challenge_Star_9"
+					"^$rule_Spongify_Challenge_Challenge_Star_9"
 				],
 				"sections": [
 					{
@@ -637,7 +637,7 @@
 					{
 						"name": "Chest 1",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Chest_1"
+							"^$rule_Spongify_Challenge_Chest_1"
 						],
 						"visibility_rules": [
 							"$visContainers"
@@ -646,7 +646,7 @@
 					{
 						"name": "Secret 3",
 						"access_rules": [
-							"$rule_Spongify_Challenge_Secret_3"
+							"^$rule_Spongify_Challenge_Secret_3"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -666,7 +666,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Chest_2"
+					"^$rule_Spongify_Challenge_Chest_2"
 				],
 				"sections": [
 					{
@@ -689,7 +689,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Chest_3"
+					"^$rule_Spongify_Challenge_Chest_3"
 				],
 				"sections": [
 					{
@@ -712,7 +712,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Chest_4"
+					"^$rule_Spongify_Challenge_Chest_4"
 				],
 				"sections": [
 					{
@@ -735,7 +735,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Chest_5"
+					"^$rule_Spongify_Challenge_Chest_5"
 				],
 				"sections": [
 					{
@@ -758,7 +758,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Chest_6"
+					"^$rule_Spongify_Challenge_Chest_6"
 				],
 				"sections": [
 					{
@@ -781,7 +781,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Chest_7"
+					"^$rule_Spongify_Challenge_Chest_7"
 				],
 				"sections": [
 					{
@@ -804,7 +804,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Chest_8"
+					"^$rule_Spongify_Challenge_Chest_8"
 				],
 				"sections": [
 					{
@@ -827,7 +827,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Chest_9"
+					"^$rule_Spongify_Challenge_Chest_9"
 				],
 				"sections": [
 					{
@@ -850,7 +850,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Cigar_Box"
+					"^$rule_Spongify_Challenge_Cigar_Box"
 				],
 				"sections": [
 					{
@@ -873,7 +873,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Decanter_1"
+					"^$rule_Spongify_Challenge_Decanter_1"
 				],
 				"sections": [
 					{
@@ -896,7 +896,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Decanter_2"
+					"^$rule_Spongify_Challenge_Decanter_2"
 				],
 				"sections": [
 					{
@@ -919,7 +919,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Flobberworm_Mucous_Jar_1"
+					"^$rule_Spongify_Challenge_Flobberworm_Mucous_Jar_1"
 				],
 				"sections": [
 					{
@@ -942,7 +942,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Flobberworm_Mucous_Jar_2"
+					"^$rule_Spongify_Challenge_Flobberworm_Mucous_Jar_2"
 				],
 				"sections": [
 					{
@@ -965,7 +965,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Flobberworm_Mucous_Jar_3"
+					"^$rule_Spongify_Challenge_Flobberworm_Mucous_Jar_3"
 				],
 				"sections": [
 					{
@@ -988,7 +988,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_11"
+					"^$rule_Spongify_Challenge_Secret_11"
 				],
 				"sections": [
 					{
@@ -1011,7 +1011,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_12"
+					"^$rule_Spongify_Challenge_Secret_12"
 				],
 				"sections": [
 					{
@@ -1034,7 +1034,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_13"
+					"^$rule_Spongify_Challenge_Secret_13"
 				],
 				"sections": [
 					{
@@ -1057,7 +1057,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_14"
+					"^$rule_Spongify_Challenge_Secret_14"
 				],
 				"sections": [
 					{
@@ -1080,7 +1080,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_16"
+					"^$rule_Spongify_Challenge_Secret_16"
 				],
 				"sections": [
 					{
@@ -1103,7 +1103,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Secret_7"
+					"^$rule_Spongify_Challenge_Secret_7"
 				],
 				"sections": [
 					{
@@ -1126,7 +1126,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Wiggentree_Bark_Jar_1"
+					"^$rule_Spongify_Challenge_Wiggentree_Bark_Jar_1"
 				],
 				"sections": [
 					{
@@ -1149,7 +1149,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Wiggentree_Bark_Jar_2"
+					"^$rule_Spongify_Challenge_Wiggentree_Bark_Jar_2"
 				],
 				"sections": [
 					{
@@ -1172,7 +1172,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Spongify_Challenge_Wiggentree_Bark_Jar_3"
+					"^$rule_Spongify_Challenge_Wiggentree_Bark_Jar_3"
 				],
 				"sections": [
 					{

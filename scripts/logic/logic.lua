@@ -6,6 +6,27 @@ function count(item)
     return Tracker:ProviderCountForCode(item)
 end
 
+-- Access-level helpers layered on the boolean rules in access_rules.lua. The
+-- rules are referenced as "^$rule_X" so PopTracker reads the return as an
+-- AccessibilityLevel instead of a plain reachable flag.
+
+-- A rule with no logic-flag branch: reachable maps to Normal, else None.
+function reachAccess(reachable)
+    if reachable then return AccessibilityLevel.Normal end
+    return AccessibilityLevel.None
+end
+
+-- A rule with a Running or Glitched branch. inLogic holds when the strict path
+-- (including a logic flag the player has actually enabled) satisfies it: Normal,
+-- green. outOfLogic holds when forcing that flag on would satisfy it:
+-- SequenceBreak, yellow, so the check reads as obtainable but out of logic.
+-- Neither: None.
+function flagAccess(inLogic, outOfLogic)
+    if inLogic then return AccessibilityLevel.Normal end
+    if outOfLogic then return AccessibilityLevel.SequenceBreak end
+    return AccessibilityLevel.None
+end
+
 -- Mode / setting helpers driven by the slot_data-backed setting items in items.json.
 -- The setting items use multi-stage codes (e.g. "game_mode_vanilla" / "game_mode_open_castle")
 -- so we can test the current stage with has(stage_code).

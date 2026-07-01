@@ -9,7 +9,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Whomping_Willow_Card_Starkey"
+					"^$rule_Whomping_Willow_Card_Starkey"
 				],
 				"sections": [
 					{
@@ -32,7 +32,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Whomping_Willow_Chest_1"
+					"^$rule_Whomping_Willow_Chest_1"
 				],
 				"sections": [
 					{
@@ -55,7 +55,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Whomping_Willow_Chest_2"
+					"^$rule_Whomping_Willow_Chest_2"
 				],
 				"sections": [
 					{
@@ -78,7 +78,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Whomping_Willow_Chest_3"
+					"^$rule_Whomping_Willow_Chest_3"
 				],
 				"sections": [
 					{
@@ -101,7 +101,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Whomping_Willow_Chest_4"
+					"^$rule_Whomping_Willow_Chest_4"
 				],
 				"sections": [
 					{
@@ -124,7 +124,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Whomping_Willow_Complete"
+					"^$rule_Whomping_Willow_Complete"
 				],
 				"sections": [
 					{
@@ -144,7 +144,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Whomping_Willow_Dragon_Statue"
+					"^$rule_Whomping_Willow_Dragon_Statue"
 				],
 				"sections": [
 					{
@@ -167,7 +167,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Whomping_Willow_Knight_1"
+					"^$rule_Whomping_Willow_Knight_1"
 				],
 				"sections": [
 					{
@@ -190,7 +190,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Whomping_Willow_Knight_2"
+					"^$rule_Whomping_Willow_Knight_2"
 				],
 				"sections": [
 					{
@@ -213,7 +213,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Whomping_Willow_Secret_1"
+					"^$rule_Whomping_Willow_Secret_1"
 				],
 				"sections": [
 					{
@@ -236,7 +236,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Whomping_Willow_Secret_2"
+					"^$rule_Whomping_Willow_Secret_2"
 				],
 				"sections": [
 					{

@@ -9,7 +9,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Card_Barkwith"
+					"^$rule_Grand_Staircase_Card_Barkwith"
 				],
 				"sections": [
 					{
@@ -32,7 +32,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Card_Blane"
+					"^$rule_Grand_Staircase_Card_Blane"
 				],
 				"sections": [
 					{
@@ -55,7 +55,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Card_Bonham"
+					"^$rule_Grand_Staircase_Card_Bonham"
 				],
 				"sections": [
 					{
@@ -78,7 +78,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Card_Ethelred"
+					"^$rule_Grand_Staircase_Card_Ethelred"
 				],
 				"sections": [
 					{
@@ -101,7 +101,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Card_Hipworth"
+					"^$rule_Grand_Staircase_Card_Hipworth"
 				],
 				"sections": [
 					{
@@ -127,7 +127,7 @@
 					{
 						"name": "Secret 6",
 						"access_rules": [
-							"$rule_Grand_Staircase_Secret_6"
+							"^$rule_Grand_Staircase_Secret_6"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -136,7 +136,7 @@
 					{
 						"name": "Card Lufkin",
 						"access_rules": [
-							"$rule_Grand_Staircase_Card_Lufkin"
+							"^$rule_Grand_Staircase_Card_Lufkin"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -159,7 +159,7 @@
 					{
 						"name": "Secret 4",
 						"access_rules": [
-							"$rule_Grand_Staircase_Secret_4"
+							"^$rule_Grand_Staircase_Secret_4"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -168,7 +168,7 @@
 					{
 						"name": "Card Maeve",
 						"access_rules": [
-							"$rule_Grand_Staircase_Card_Maeve"
+							"^$rule_Grand_Staircase_Card_Maeve"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -191,7 +191,7 @@
 					{
 						"name": "Secret 5",
 						"access_rules": [
-							"$rule_Grand_Staircase_Secret_5"
+							"^$rule_Grand_Staircase_Secret_5"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -200,7 +200,7 @@
 					{
 						"name": "Card Oldridge",
 						"access_rules": [
-							"$rule_Grand_Staircase_Card_Oldridge"
+							"^$rule_Grand_Staircase_Card_Oldridge"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -220,7 +220,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Card_Toothill"
+					"^$rule_Grand_Staircase_Card_Toothill"
 				],
 				"sections": [
 					{
@@ -243,7 +243,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Card_Vablatsky"
+					"^$rule_Grand_Staircase_Card_Vablatsky"
 				],
 				"sections": [
 					{
@@ -266,7 +266,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Card_Vendor_1"
+					"^$rule_Grand_Staircase_Card_Vendor_1"
 				],
 				"sections": [
 					{
@@ -289,7 +289,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Card_Vendor_2"
+					"^$rule_Grand_Staircase_Card_Vendor_2"
 				],
 				"sections": [
 					{
@@ -312,7 +312,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Cauldron_1"
+					"^$rule_Grand_Staircase_Cauldron_1"
 				],
 				"sections": [
 					{
@@ -335,7 +335,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Cauldron_2"
+					"^$rule_Grand_Staircase_Cauldron_2"
 				],
 				"sections": [
 					{
@@ -358,7 +358,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Cauldron_3"
+					"^$rule_Grand_Staircase_Cauldron_3"
 				],
 				"sections": [
 					{
@@ -381,7 +381,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Cauldron_4"
+					"^$rule_Grand_Staircase_Cauldron_4"
 				],
 				"sections": [
 					{
@@ -404,7 +404,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Cauldron_5"
+					"^$rule_Grand_Staircase_Cauldron_5"
 				],
 				"sections": [
 					{
@@ -427,7 +427,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Cauldron_6"
+					"^$rule_Grand_Staircase_Cauldron_6"
 				],
 				"sections": [
 					{
@@ -450,7 +450,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Cauldron_7"
+					"^$rule_Grand_Staircase_Cauldron_7"
 				],
 				"sections": [
 					{
@@ -473,7 +473,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Cauldron_8"
+					"^$rule_Grand_Staircase_Cauldron_8"
 				],
 				"sections": [
 					{
@@ -496,7 +496,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Chest_1"
+					"^$rule_Grand_Staircase_Chest_1"
 				],
 				"sections": [
 					{
@@ -519,7 +519,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Chest_2"
+					"^$rule_Grand_Staircase_Chest_2"
 				],
 				"sections": [
 					{
@@ -542,7 +542,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Chest_3"
+					"^$rule_Grand_Staircase_Chest_3"
 				],
 				"sections": [
 					{
@@ -565,7 +565,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Chest_4"
+					"^$rule_Grand_Staircase_Chest_4"
 				],
 				"sections": [
 					{
@@ -588,7 +588,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Chest_5"
+					"^$rule_Grand_Staircase_Chest_5"
 				],
 				"sections": [
 					{
@@ -611,7 +611,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Chest_6"
+					"^$rule_Grand_Staircase_Chest_6"
 				],
 				"sections": [
 					{
@@ -634,7 +634,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Chest_7"
+					"^$rule_Grand_Staircase_Chest_7"
 				],
 				"sections": [
 					{
@@ -657,7 +657,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Cigar_Box_1"
+					"^$rule_Grand_Staircase_Cigar_Box_1"
 				],
 				"sections": [
 					{
@@ -680,7 +680,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Cigar_Box_2"
+					"^$rule_Grand_Staircase_Cigar_Box_2"
 				],
 				"sections": [
 					{
@@ -703,7 +703,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Decanter_1"
+					"^$rule_Grand_Staircase_Decanter_1"
 				],
 				"sections": [
 					{
@@ -726,7 +726,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Decanter_2"
+					"^$rule_Grand_Staircase_Decanter_2"
 				],
 				"sections": [
 					{
@@ -749,7 +749,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Dragon_Skeleton"
+					"^$rule_Grand_Staircase_Dragon_Skeleton"
 				],
 				"sections": [
 					{
@@ -772,7 +772,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Gregory_the_Smarmy_Statue"
+					"^$rule_Grand_Staircase_Gregory_the_Smarmy_Statue"
 				],
 				"sections": [
 					{
@@ -795,7 +795,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Ingredient_Vendor_1"
+					"^$rule_Grand_Staircase_Ingredient_Vendor_1"
 				],
 				"sections": [
 					{
@@ -818,7 +818,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Jewel_Box_1"
+					"^$rule_Grand_Staircase_Jewel_Box_1"
 				],
 				"sections": [
 					{
@@ -841,7 +841,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Jewel_Box_2"
+					"^$rule_Grand_Staircase_Jewel_Box_2"
 				],
 				"sections": [
 					{
@@ -864,7 +864,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Knight"
+					"^$rule_Grand_Staircase_Knight"
 				],
 				"sections": [
 					{
@@ -887,7 +887,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Music_Box"
+					"^$rule_Grand_Staircase_Music_Box"
 				],
 				"sections": [
 					{
@@ -910,7 +910,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Secret_1"
+					"^$rule_Grand_Staircase_Secret_1"
 				],
 				"sections": [
 					{
@@ -933,7 +933,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Secret_2"
+					"^$rule_Grand_Staircase_Secret_2"
 				],
 				"sections": [
 					{
@@ -956,7 +956,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Secret_3"
+					"^$rule_Grand_Staircase_Secret_3"
 				],
 				"sections": [
 					{
@@ -979,7 +979,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Secret_7"
+					"^$rule_Grand_Staircase_Secret_7"
 				],
 				"sections": [
 					{
@@ -1002,7 +1002,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Secret_8"
+					"^$rule_Grand_Staircase_Secret_8"
 				],
 				"sections": [
 					{
@@ -1025,7 +1025,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Secret_9"
+					"^$rule_Grand_Staircase_Secret_9"
 				],
 				"sections": [
 					{
@@ -1048,7 +1048,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Grand_Staircase_Toilet"
+					"^$rule_Grand_Staircase_Toilet"
 				],
 				"sections": [
 					{
@@ -1074,7 +1074,7 @@
 					{
 						"name": "Learned Rictusempra",
 						"access_rules": [
-							"$rule_Learned_Rictusempra"
+							"^$rule_Learned_Rictusempra"
 						],
 						"visibility_rules": [
 							"$visClassrooms"
@@ -1083,7 +1083,7 @@
 					{
 						"name": "Learned Spongify",
 						"access_rules": [
-							"$rule_Learned_Spongify"
+							"^$rule_Learned_Spongify"
 						],
 						"visibility_rules": [
 							"$visClassrooms"
@@ -1103,7 +1103,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Learned_Skurge"
+					"^$rule_Learned_Skurge"
 				],
 				"sections": [
 					{
@@ -1126,7 +1126,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Dumbledore_s_Study_Card_Beamish"
+					"^$rule_Dumbledore_s_Study_Card_Beamish"
 				],
 				"sections": [
 					{
@@ -1149,7 +1149,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Dumbledore_s_Study_Card_Muldoon"
+					"^$rule_Dumbledore_s_Study_Card_Muldoon"
 				],
 				"sections": [
 					{
@@ -1172,7 +1172,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Dumbledore_s_Study_Chest"
+					"^$rule_Dumbledore_s_Study_Chest"
 				],
 				"sections": [
 					{
@@ -1195,7 +1195,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Dumbledore_s_Study_Cigar_Box"
+					"^$rule_Dumbledore_s_Study_Cigar_Box"
 				],
 				"sections": [
 					{
@@ -1218,7 +1218,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Dumbledore_s_Study_Decanter"
+					"^$rule_Dumbledore_s_Study_Decanter"
 				],
 				"sections": [
 					{
@@ -1241,7 +1241,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Dumbledore_s_Study_Secret"
+					"^$rule_Dumbledore_s_Study_Secret"
 				],
 				"sections": [
 					{

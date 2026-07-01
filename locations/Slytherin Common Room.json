@@ -9,7 +9,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Card_Clagg"
+					"^$rule_Slytherin_Common_Room_Card_Clagg"
 				],
 				"sections": [
 					{
@@ -35,7 +35,7 @@
 					{
 						"name": "Secret 7",
 						"access_rules": [
-							"$rule_Slytherin_Common_Room_Secret_7"
+							"^$rule_Slytherin_Common_Room_Secret_7"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -44,7 +44,7 @@
 					{
 						"name": "Card Fay",
 						"access_rules": [
-							"$rule_Slytherin_Common_Room_Card_Fay"
+							"^$rule_Slytherin_Common_Room_Card_Fay"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -67,7 +67,7 @@
 					{
 						"name": "Secret 5",
 						"access_rules": [
-							"$rule_Slytherin_Common_Room_Secret_5"
+							"^$rule_Slytherin_Common_Room_Secret_5"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -76,7 +76,7 @@
 					{
 						"name": "Card Pilliwickle",
 						"access_rules": [
-							"$rule_Slytherin_Common_Room_Card_Pilliwickle"
+							"^$rule_Slytherin_Common_Room_Card_Pilliwickle"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -99,7 +99,7 @@
 					{
 						"name": "Secret 6",
 						"access_rules": [
-							"$rule_Slytherin_Common_Room_Secret_6"
+							"^$rule_Slytherin_Common_Room_Secret_6"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -108,7 +108,7 @@
 					{
 						"name": "Card Platt",
 						"access_rules": [
-							"$rule_Slytherin_Common_Room_Card_Platt"
+							"^$rule_Slytherin_Common_Room_Card_Platt"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -128,7 +128,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Card_Waffling"
+					"^$rule_Slytherin_Common_Room_Card_Waffling"
 				],
 				"sections": [
 					{
@@ -151,7 +151,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Cauldron_1"
+					"^$rule_Slytherin_Common_Room_Cauldron_1"
 				],
 				"sections": [
 					{
@@ -174,7 +174,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Cauldron_2"
+					"^$rule_Slytherin_Common_Room_Cauldron_2"
 				],
 				"sections": [
 					{
@@ -197,7 +197,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Chest_1"
+					"^$rule_Slytherin_Common_Room_Chest_1"
 				],
 				"sections": [
 					{
@@ -220,7 +220,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Chest_2"
+					"^$rule_Slytherin_Common_Room_Chest_2"
 				],
 				"sections": [
 					{
@@ -243,7 +243,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Chest_3"
+					"^$rule_Slytherin_Common_Room_Chest_3"
 				],
 				"sections": [
 					{
@@ -269,7 +269,7 @@
 					{
 						"name": "Chest 4",
 						"access_rules": [
-							"$rule_Slytherin_Common_Room_Chest_4"
+							"^$rule_Slytherin_Common_Room_Chest_4"
 						],
 						"visibility_rules": [
 							"$visContainers"
@@ -278,7 +278,7 @@
 					{
 						"name": "Secret 8",
 						"access_rules": [
-							"$rule_Slytherin_Common_Room_Secret_8"
+							"^$rule_Slytherin_Common_Room_Secret_8"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -298,7 +298,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Complete"
+					"^$rule_Slytherin_Common_Room_Complete"
 				],
 				"sections": [
 					{
@@ -318,7 +318,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Flobberworm_Mucous_Jar"
+					"^$rule_Slytherin_Common_Room_Flobberworm_Mucous_Jar"
 				],
 				"sections": [
 					{
@@ -341,7 +341,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Knight_1"
+					"^$rule_Slytherin_Common_Room_Knight_1"
 				],
 				"sections": [
 					{
@@ -364,7 +364,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Knight_2"
+					"^$rule_Slytherin_Common_Room_Knight_2"
 				],
 				"sections": [
 					{
@@ -387,7 +387,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Knight_3"
+					"^$rule_Slytherin_Common_Room_Knight_3"
 				],
 				"sections": [
 					{
@@ -410,7 +410,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Knight_4"
+					"^$rule_Slytherin_Common_Room_Knight_4"
 				],
 				"sections": [
 					{
@@ -433,7 +433,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Knight_5"
+					"^$rule_Slytherin_Common_Room_Knight_5"
 				],
 				"sections": [
 					{
@@ -456,7 +456,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Knight_6"
+					"^$rule_Slytherin_Common_Room_Knight_6"
 				],
 				"sections": [
 					{
@@ -479,7 +479,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Knight_7"
+					"^$rule_Slytherin_Common_Room_Knight_7"
 				],
 				"sections": [
 					{
@@ -502,7 +502,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Secret_1"
+					"^$rule_Slytherin_Common_Room_Secret_1"
 				],
 				"sections": [
 					{
@@ -525,7 +525,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Secret_2"
+					"^$rule_Slytherin_Common_Room_Secret_2"
 				],
 				"sections": [
 					{
@@ -548,7 +548,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Secret_3"
+					"^$rule_Slytherin_Common_Room_Secret_3"
 				],
 				"sections": [
 					{
@@ -571,7 +571,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Secret_4"
+					"^$rule_Slytherin_Common_Room_Secret_4"
 				],
 				"sections": [
 					{
@@ -594,7 +594,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Slytherin_Common_Room_Wiggentree_Bark_Jar"
+					"^$rule_Slytherin_Common_Room_Wiggentree_Bark_Jar"
 				],
 				"sections": [
 					{

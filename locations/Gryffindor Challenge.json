@@ -9,7 +9,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Cauldron_1"
+					"^$rule_Gryffindor_Challenge_Cauldron_1"
 				],
 				"sections": [
 					{
@@ -33,7 +33,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Cauldron_2"
+					"^$rule_Gryffindor_Challenge_Cauldron_2"
 				],
 				"sections": [
 					{
@@ -57,7 +57,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Cauldron_3"
+					"^$rule_Gryffindor_Challenge_Cauldron_3"
 				],
 				"sections": [
 					{
@@ -81,7 +81,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Cauldron_4"
+					"^$rule_Gryffindor_Challenge_Cauldron_4"
 				],
 				"sections": [
 					{
@@ -105,7 +105,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Cauldron_5"
+					"^$rule_Gryffindor_Challenge_Cauldron_5"
 				],
 				"sections": [
 					{
@@ -129,7 +129,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Challenge_Star_1"
+					"^$rule_Gryffindor_Challenge_Challenge_Star_1"
 				],
 				"sections": [
 					{
@@ -153,7 +153,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Challenge_Star_10"
+					"^$rule_Gryffindor_Challenge_Challenge_Star_10"
 				],
 				"sections": [
 					{
@@ -177,7 +177,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Challenge_Star_2"
+					"^$rule_Gryffindor_Challenge_Challenge_Star_2"
 				],
 				"sections": [
 					{
@@ -201,7 +201,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Challenge_Star_3"
+					"^$rule_Gryffindor_Challenge_Challenge_Star_3"
 				],
 				"sections": [
 					{
@@ -225,7 +225,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Challenge_Star_4"
+					"^$rule_Gryffindor_Challenge_Challenge_Star_4"
 				],
 				"sections": [
 					{
@@ -249,7 +249,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Challenge_Star_5"
+					"^$rule_Gryffindor_Challenge_Challenge_Star_5"
 				],
 				"sections": [
 					{
@@ -273,7 +273,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Challenge_Star_6"
+					"^$rule_Gryffindor_Challenge_Challenge_Star_6"
 				],
 				"sections": [
 					{
@@ -297,7 +297,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Challenge_Star_7"
+					"^$rule_Gryffindor_Challenge_Challenge_Star_7"
 				],
 				"sections": [
 					{
@@ -321,7 +321,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Challenge_Star_8"
+					"^$rule_Gryffindor_Challenge_Challenge_Star_8"
 				],
 				"sections": [
 					{
@@ -345,7 +345,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Challenge_Star_9"
+					"^$rule_Gryffindor_Challenge_Challenge_Star_9"
 				],
 				"sections": [
 					{
@@ -369,7 +369,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_1"
+					"^$rule_Gryffindor_Challenge_Chest_1"
 				],
 				"sections": [
 					{
@@ -393,7 +393,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_10"
+					"^$rule_Gryffindor_Challenge_Chest_10"
 				],
 				"sections": [
 					{
@@ -417,7 +417,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_11"
+					"^$rule_Gryffindor_Challenge_Chest_11"
 				],
 				"sections": [
 					{
@@ -441,7 +441,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_12"
+					"^$rule_Gryffindor_Challenge_Chest_12"
 				],
 				"sections": [
 					{
@@ -465,7 +465,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_13"
+					"^$rule_Gryffindor_Challenge_Chest_13"
 				],
 				"sections": [
 					{
@@ -489,7 +489,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_14"
+					"^$rule_Gryffindor_Challenge_Chest_14"
 				],
 				"sections": [
 					{
@@ -513,7 +513,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_15"
+					"^$rule_Gryffindor_Challenge_Chest_15"
 				],
 				"sections": [
 					{
@@ -537,7 +537,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_16"
+					"^$rule_Gryffindor_Challenge_Chest_16"
 				],
 				"sections": [
 					{
@@ -561,7 +561,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_17"
+					"^$rule_Gryffindor_Challenge_Chest_17"
 				],
 				"sections": [
 					{
@@ -585,7 +585,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_18"
+					"^$rule_Gryffindor_Challenge_Chest_18"
 				],
 				"sections": [
 					{
@@ -609,7 +609,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_19"
+					"^$rule_Gryffindor_Challenge_Chest_19"
 				],
 				"sections": [
 					{
@@ -633,7 +633,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_2"
+					"^$rule_Gryffindor_Challenge_Chest_2"
 				],
 				"sections": [
 					{
@@ -657,7 +657,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_20"
+					"^$rule_Gryffindor_Challenge_Chest_20"
 				],
 				"sections": [
 					{
@@ -681,7 +681,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_21"
+					"^$rule_Gryffindor_Challenge_Chest_21"
 				],
 				"sections": [
 					{
@@ -705,7 +705,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_22"
+					"^$rule_Gryffindor_Challenge_Chest_22"
 				],
 				"sections": [
 					{
@@ -729,7 +729,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_3"
+					"^$rule_Gryffindor_Challenge_Chest_3"
 				],
 				"sections": [
 					{
@@ -753,7 +753,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_4"
+					"^$rule_Gryffindor_Challenge_Chest_4"
 				],
 				"sections": [
 					{
@@ -777,7 +777,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_5"
+					"^$rule_Gryffindor_Challenge_Chest_5"
 				],
 				"sections": [
 					{
@@ -801,7 +801,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_6"
+					"^$rule_Gryffindor_Challenge_Chest_6"
 				],
 				"sections": [
 					{
@@ -825,7 +825,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_7"
+					"^$rule_Gryffindor_Challenge_Chest_7"
 				],
 				"sections": [
 					{
@@ -849,7 +849,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_8"
+					"^$rule_Gryffindor_Challenge_Chest_8"
 				],
 				"sections": [
 					{
@@ -873,7 +873,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Chest_9"
+					"^$rule_Gryffindor_Challenge_Chest_9"
 				],
 				"sections": [
 					{
@@ -897,7 +897,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Complete"
+					"^$rule_Gryffindor_Challenge_Complete"
 				],
 				"sections": [
 					{
@@ -920,7 +920,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Secret_1"
+					"^$rule_Gryffindor_Challenge_Secret_1"
 				],
 				"sections": [
 					{
@@ -944,7 +944,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Secret_2"
+					"^$rule_Gryffindor_Challenge_Secret_2"
 				],
 				"sections": [
 					{
@@ -968,7 +968,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Secret_3"
+					"^$rule_Gryffindor_Challenge_Secret_3"
 				],
 				"sections": [
 					{
@@ -992,7 +992,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Secret_4"
+					"^$rule_Gryffindor_Challenge_Secret_4"
 				],
 				"sections": [
 					{
@@ -1016,7 +1016,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Secret_5"
+					"^$rule_Gryffindor_Challenge_Secret_5"
 				],
 				"sections": [
 					{
@@ -1040,7 +1040,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Secret_6"
+					"^$rule_Gryffindor_Challenge_Secret_6"
 				],
 				"sections": [
 					{
@@ -1064,7 +1064,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Secret_7"
+					"^$rule_Gryffindor_Challenge_Secret_7"
 				],
 				"sections": [
 					{
@@ -1088,7 +1088,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Secret_8"
+					"^$rule_Gryffindor_Challenge_Secret_8"
 				],
 				"sections": [
 					{
@@ -1112,7 +1112,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Gryffindor_Challenge_Secret_9"
+					"^$rule_Gryffindor_Challenge_Secret_9"
 				],
 				"sections": [
 					{

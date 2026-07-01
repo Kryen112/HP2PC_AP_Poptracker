@@ -9,7 +9,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Card_Toke"
+					"^$rule_Boomslang_Level_Card_Toke"
 				],
 				"sections": [
 					{
@@ -32,7 +32,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Card_Tugwood"
+					"^$rule_Boomslang_Level_Card_Tugwood"
 				],
 				"sections": [
 					{
@@ -55,7 +55,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Chest"
+					"^$rule_Boomslang_Level_Chest"
 				],
 				"sections": [
 					{
@@ -78,7 +78,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Complete"
+					"^$rule_Boomslang_Level_Complete"
 				],
 				"sections": [
 					{
@@ -98,7 +98,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Flobberworm_Mucous_Jar"
+					"^$rule_Boomslang_Level_Flobberworm_Mucous_Jar"
 				],
 				"sections": [
 					{
@@ -121,7 +121,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Oil_Can_1"
+					"^$rule_Boomslang_Level_Oil_Can_1"
 				],
 				"sections": [
 					{
@@ -144,7 +144,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Oil_Can_2"
+					"^$rule_Boomslang_Level_Oil_Can_2"
 				],
 				"sections": [
 					{
@@ -167,7 +167,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Oil_Can_3"
+					"^$rule_Boomslang_Level_Oil_Can_3"
 				],
 				"sections": [
 					{
@@ -190,7 +190,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Plant_Pot_1"
+					"^$rule_Boomslang_Level_Plant_Pot_1"
 				],
 				"sections": [
 					{
@@ -216,7 +216,7 @@
 					{
 						"name": "Plant Pot 2",
 						"access_rules": [
-							"$rule_Boomslang_Level_Plant_Pot_2"
+							"^$rule_Boomslang_Level_Plant_Pot_2"
 						],
 						"visibility_rules": [
 							"$visContainers"
@@ -225,7 +225,7 @@
 					{
 						"name": "Plant Pot 3",
 						"access_rules": [
-							"$rule_Boomslang_Level_Plant_Pot_3"
+							"^$rule_Boomslang_Level_Plant_Pot_3"
 						],
 						"visibility_rules": [
 							"$visContainers"
@@ -245,7 +245,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Plant_Pot_4"
+					"^$rule_Boomslang_Level_Plant_Pot_4"
 				],
 				"sections": [
 					{
@@ -268,7 +268,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Plant_Pot_5"
+					"^$rule_Boomslang_Level_Plant_Pot_5"
 				],
 				"sections": [
 					{
@@ -291,7 +291,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Plant_Pot_6"
+					"^$rule_Boomslang_Level_Plant_Pot_6"
 				],
 				"sections": [
 					{
@@ -314,7 +314,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Secret_1"
+					"^$rule_Boomslang_Level_Secret_1"
 				],
 				"sections": [
 					{
@@ -337,7 +337,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Secret_2"
+					"^$rule_Boomslang_Level_Secret_2"
 				],
 				"sections": [
 					{
@@ -360,7 +360,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Boomslang_Level_Secret_3"
+					"^$rule_Boomslang_Level_Secret_3"
 				],
 				"sections": [
 					{

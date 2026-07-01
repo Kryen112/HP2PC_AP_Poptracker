@@ -9,7 +9,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Alderton"
+					"^$rule_Entry_Hall_Card_Alderton"
 				],
 				"sections": [
 					{
@@ -32,7 +32,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Andros"
+					"^$rule_Entry_Hall_Card_Andros"
 				],
 				"sections": [
 					{
@@ -55,7 +55,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Dodderidge"
+					"^$rule_Entry_Hall_Card_Dodderidge"
 				],
 				"sections": [
 					{
@@ -78,7 +78,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Gunhilda"
+					"^$rule_Entry_Hall_Card_Gunhilda"
 				],
 				"sections": [
 					{
@@ -104,7 +104,7 @@
 					{
 						"name": "Secret 9",
 						"access_rules": [
-							"$rule_Entry_Hall_Secret_9"
+							"^$rule_Entry_Hall_Secret_9"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -113,7 +113,7 @@
 					{
 						"name": "Card Jones",
 						"access_rules": [
-							"$rule_Entry_Hall_Card_Jones"
+							"^$rule_Entry_Hall_Card_Jones"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -133,7 +133,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Montmorency"
+					"^$rule_Entry_Hall_Card_Montmorency"
 				],
 				"sections": [
 					{
@@ -156,7 +156,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Mopsus"
+					"^$rule_Entry_Hall_Card_Mopsus"
 				],
 				"sections": [
 					{
@@ -179,7 +179,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Sawbridge"
+					"^$rule_Entry_Hall_Card_Sawbridge"
 				],
 				"sections": [
 					{
@@ -202,7 +202,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Shingleton"
+					"^$rule_Entry_Hall_Card_Shingleton"
 				],
 				"sections": [
 					{
@@ -225,7 +225,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Vendor_1"
+					"^$rule_Entry_Hall_Card_Vendor_1"
 				],
 				"sections": [
 					{
@@ -248,7 +248,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Vendor_2"
+					"^$rule_Entry_Hall_Card_Vendor_2"
 				],
 				"sections": [
 					{
@@ -271,7 +271,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Vendor_3"
+					"^$rule_Entry_Hall_Card_Vendor_3"
 				],
 				"sections": [
 					{
@@ -297,7 +297,7 @@
 					{
 						"name": "Secret 3",
 						"access_rules": [
-							"$rule_Entry_Hall_Secret_3"
+							"^$rule_Entry_Hall_Secret_3"
 						],
 						"visibility_rules": [
 							"$visSecrets"
@@ -306,7 +306,7 @@
 					{
 						"name": "Card Wendelin",
 						"access_rules": [
-							"$rule_Entry_Hall_Card_Wendelin"
+							"^$rule_Entry_Hall_Card_Wendelin"
 						],
 						"visibility_rules": [
 							"$visCards"
@@ -326,7 +326,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Card_Wright"
+					"^$rule_Entry_Hall_Card_Wright"
 				],
 				"sections": [
 					{
@@ -349,7 +349,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Chest_1"
+					"^$rule_Entry_Hall_Chest_1"
 				],
 				"sections": [
 					{
@@ -372,7 +372,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Chest_2"
+					"^$rule_Entry_Hall_Chest_2"
 				],
 				"sections": [
 					{
@@ -395,7 +395,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Chest_3"
+					"^$rule_Entry_Hall_Chest_3"
 				],
 				"sections": [
 					{
@@ -418,7 +418,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Chest_4"
+					"^$rule_Entry_Hall_Chest_4"
 				],
 				"sections": [
 					{
@@ -441,7 +441,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Chest_5"
+					"^$rule_Entry_Hall_Chest_5"
 				],
 				"sections": [
 					{
@@ -464,7 +464,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Chest_6"
+					"^$rule_Entry_Hall_Chest_6"
 				],
 				"sections": [
 					{
@@ -487,7 +487,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Chest_7"
+					"^$rule_Entry_Hall_Chest_7"
 				],
 				"sections": [
 					{
@@ -510,7 +510,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Chest_8"
+					"^$rule_Entry_Hall_Chest_8"
 				],
 				"sections": [
 					{
@@ -533,7 +533,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Flobberworm_Mucous_Jar"
+					"^$rule_Entry_Hall_Flobberworm_Mucous_Jar"
 				],
 				"sections": [
 					{
@@ -556,7 +556,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Ingredient_Vendor_1"
+					"^$rule_Entry_Hall_Ingredient_Vendor_1"
 				],
 				"sections": [
 					{
@@ -579,7 +579,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Ingredient_Vendor_2"
+					"^$rule_Entry_Hall_Ingredient_Vendor_2"
 				],
 				"sections": [
 					{
@@ -602,7 +602,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Ingredient_Vendor_3"
+					"^$rule_Entry_Hall_Ingredient_Vendor_3"
 				],
 				"sections": [
 					{
@@ -625,7 +625,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Knight_1"
+					"^$rule_Entry_Hall_Knight_1"
 				],
 				"sections": [
 					{
@@ -648,7 +648,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Knight_2"
+					"^$rule_Entry_Hall_Knight_2"
 				],
 				"sections": [
 					{
@@ -671,7 +671,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Knight_3"
+					"^$rule_Entry_Hall_Knight_3"
 				],
 				"sections": [
 					{
@@ -694,7 +694,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Knight_4"
+					"^$rule_Entry_Hall_Knight_4"
 				],
 				"sections": [
 					{
@@ -717,7 +717,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Secret_1"
+					"^$rule_Entry_Hall_Secret_1"
 				],
 				"sections": [
 					{
@@ -740,7 +740,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Secret_10"
+					"^$rule_Entry_Hall_Secret_10"
 				],
 				"sections": [
 					{
@@ -763,7 +763,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Secret_11"
+					"^$rule_Entry_Hall_Secret_11"
 				],
 				"sections": [
 					{
@@ -786,7 +786,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Secret_12"
+					"^$rule_Entry_Hall_Secret_12"
 				],
 				"sections": [
 					{
@@ -809,7 +809,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Secret_2"
+					"^$rule_Entry_Hall_Secret_2"
 				],
 				"sections": [
 					{
@@ -832,7 +832,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Secret_4"
+					"^$rule_Entry_Hall_Secret_4"
 				],
 				"sections": [
 					{
@@ -855,7 +855,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Secret_5"
+					"^$rule_Entry_Hall_Secret_5"
 				],
 				"sections": [
 					{
@@ -878,7 +878,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Secret_6"
+					"^$rule_Entry_Hall_Secret_6"
 				],
 				"sections": [
 					{
@@ -901,7 +901,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Secret_7"
+					"^$rule_Entry_Hall_Secret_7"
 				],
 				"sections": [
 					{
@@ -924,7 +924,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Secret_8"
+					"^$rule_Entry_Hall_Secret_8"
 				],
 				"sections": [
 					{
@@ -947,7 +947,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Wiggentree_Bark_Jar"
+					"^$rule_Entry_Hall_Wiggentree_Bark_Jar"
 				],
 				"sections": [
 					{
@@ -970,7 +970,7 @@
 				"chest_unopened_img": "images/items/item.png",
 				"chest_opened_img": "images/items/item_opened.png",
 				"access_rules": [
-					"$rule_Entry_Hall_Witch_Statue"
+					"^$rule_Entry_Hall_Witch_Statue"
 				],
 				"sections": [
 					{
@@ -996,7 +996,7 @@
 					{
 						"name": "Duel Rank 1",
 						"access_rules": [
-							"$rule_Duelling_Club_Duel_Rank_1"
+							"^$rule_Duelling_Club_Duel_Rank_1"
 						],
 						"visibility_rules": [
 							"$visDuels"
@@ -1005,7 +1005,7 @@
 					{
 						"name": "Duel Rank 2",
 						"access_rules": [
-							"$rule_Duelling_Club_Duel_Rank_2"
+							"^$rule_Duelling_Club_Duel_Rank_2"
 						],
 						"visibility_rules": [
 							"$visDuels"
@@ -1014,7 +1014,7 @@
 					{
 						"name": "Duel Rank 3",
 						"access_rules": [
-							"$rule_Duelling_Club_Duel_Rank_3"
+							"^$rule_Duelling_Club_Duel_Rank_3"
 						],
 						"visibility_rules": [
 							"$visDuels"
@@ -1023,7 +1023,7 @@
 					{
 						"name": "Duel Rank 4",
 						"access_rules": [
-							"$rule_Duelling_Club_Duel_Rank_4"
+							"^$rule_Duelling_Club_Duel_Rank_4"
 						],
 						"visibility_rules": [
 							"$visDuels"
@@ -1032,7 +1032,7 @@
 					{
 						"name": "Duel Rank 5",
 						"access_rules": [
-							"$rule_Duelling_Club_Duel_Rank_5"
+							"^$rule_Duelling_Club_Duel_Rank_5"
 						],
 						"visibility_rules": [
 							"$visDuels"
@@ -1041,7 +1041,7 @@
 					{
 						"name": "Duel Rank 6",
 						"access_rules": [
-							"$rule_Duelling_Club_Duel_Rank_6"
+							"^$rule_Duelling_Club_Duel_Rank_6"
 						],
 						"visibility_rules": [
 							"$visDuels"
@@ -1050,7 +1050,7 @@
 					{
 						"name": "Duel Rank 7",
 						"access_rules": [
-							"$rule_Duelling_Club_Duel_Rank_7"
+							"^$rule_Duelling_Club_Duel_Rank_7"
 						],
 						"visibility_rules": [
 							"$visDuels"
@@ -1059,7 +1059,7 @@
 					{
 						"name": "Duel Rank 8",
 						"access_rules": [
-							"$rule_Duelling_Club_Duel_Rank_8"
+							"^$rule_Duelling_Club_Duel_Rank_8"
 						],
 						"visibility_rules": [
 							"$visDuels"
@@ -1068,7 +1068,7 @@
 					{
 						"name": "Duel Rank 9",
 						"access_rules": [
-							"$rule_Duelling_Club_Duel_Rank_9"
+							"^$rule_Duelling_Club_Duel_Rank_9"
 						],
 						"visibility_rules": [
 							"$visDuels"
@@ -1077,7 +1077,7 @@
 					{
 						"name": "Duel Rank 10",
 						"access_rules": [
-							"$rule_Duelling_Club_Duel_Rank_10"
+							"^$rule_Duelling_Club_Duel_Rank_10"
 						],
 						"visibility_rules": [
 							"$visDuels"
