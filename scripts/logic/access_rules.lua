@@ -2589,9 +2589,9 @@ function rule_Bicorn_Level_Cauldron_1()
 end
 function rule_Bicorn_Level_Cauldron_3()
 	if isOpenCastle() then
-		return reachAccess((has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")))
+		return inspectAccess((has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Bicorn Level Key") and has("Skurge")) and has("Alohomora") and has("Flipendo") and has("Rictusempra"))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")))
+		return inspectAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and has("Alohomora") and has("Flipendo") and has("Rictusempra"))
 	end
 end
 function rule_Bicorn_Level_Cauldron_4()
