@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.3",
+			"download_url": "https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/download/v1.0.3/HP2PC_AP_Poptracker_v1.0.3.zip",
+			"sha256": "cf8c1561f764895d0c100c6295ed632209ed166e0921c468759fcc327df48b1a",
+			"changelog": [
+				"Containersanity, the open-castle bean bonus room, and out-of-logic check colors"
+			]
+		},
+		{
 			"package_version": "1.0.2",
 			"download_url": "https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/download/v1.0.2/HP2PC_AP_Poptracker_v1.0.2.zip",
 			"sha256": "a18363f4291c77de26221e71adc93cee8599a7915e444aeee756701db01a54ab",
