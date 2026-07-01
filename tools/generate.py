@@ -361,6 +361,9 @@ FLAG_ITEMS: frozenset[str] = frozenset({"Running", "Glitched"})
 #   Beamish: in view on entering the study (Alohomora in open castle), but needs
 #     Flipendo to take. Vanilla study entry already requires Flipendo, so it never
 #     goes blue there.
+#   Skurge Challenge Star 10: in view on entering the challenge, but out of reach
+#     without Lumos. The see items are its collect spells minus Lumos (Skurge
+#     rides the region entry), so blue holds until Lumos arrives.
 INSPECT_CHECKS: dict[str, list[str]] = {
     "Grand Staircase - Card Toothill": [],
     "Castle Exterior - Card Sykes": [],
@@ -368,6 +371,7 @@ INSPECT_CHECKS: dict[str, list[str]] = {
     "Entry Hall - Card Shingleton": ["Alohomora"],
     "Spongify Challenge - Challenge Star 1": [],
     "Dumbledore's Study - Card Beamish": [],
+    "Skurge Challenge - Challenge Star 10": ["Flipendo", "Alohomora"],
 }
 
 # Item-predicate name from access.py (`alohomora = _item('Alohomora')`) to item
