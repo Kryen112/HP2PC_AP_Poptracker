@@ -362,9 +362,10 @@ FLAG_ITEMS: frozenset[str] = frozenset({"Running", "Glitched"})
 #     Flipendo to take. Vanilla study entry already requires Flipendo, so it never
 #     goes blue there.
 #   Skurge Challenge Star 10 / Bicorn Cauldron 3: in view on entering the level,
-#     but out of reach without Lumos. The see items are their collect spells minus
-#     Lumos (the level key and Skurge ride the region entry), so blue holds until
-#     Lumos arrives.
+#     but out of reach without Lumos, so the see items are the reach spells minus
+#     Lumos. Skurge is a physical in-level requirement, so it is listed explicitly
+#     rather than left to ride the region entry. That keeps the hint honest if the
+#     player glitches into the level past the region entry.
 INSPECT_CHECKS: dict[str, list[str]] = {
     "Grand Staircase - Card Toothill": [],
     "Castle Exterior - Card Sykes": [],
@@ -372,8 +373,8 @@ INSPECT_CHECKS: dict[str, list[str]] = {
     "Entry Hall - Card Shingleton": ["Alohomora"],
     "Spongify Challenge - Challenge Star 1": [],
     "Dumbledore's Study - Card Beamish": [],
-    "Skurge Challenge - Challenge Star 10": ["Flipendo", "Alohomora"],
-    "Bicorn Level - Cauldron 3": ["Alohomora", "Flipendo", "Rictusempra"],
+    "Skurge Challenge - Challenge Star 10": ["Flipendo", "Alohomora", "Skurge"],
+    "Bicorn Level - Cauldron 3": ["Alohomora", "Flipendo", "Rictusempra", "Skurge"],
 }
 
 # Item-predicate name from access.py (`alohomora = _item('Alohomora')`) to item

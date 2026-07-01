@@ -1840,9 +1840,9 @@ function rule_Skurge_Challenge_Challenge_Star_7()
 end
 function rule_Skurge_Challenge_Challenge_Star_10()
 	if isOpenCastle() then
-		return inspectAccess((has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora")), (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora")), (has("Skurge Challenge Key") and has("Skurge")) and has("Flipendo") and has("Alohomora"))
+		return inspectAccess((has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora")), (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora")), (has("Skurge Challenge Key") and has("Skurge")) and has("Flipendo") and has("Alohomora") and has("Skurge"))
 	else
-		return inspectAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora")), (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora")), (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and has("Flipendo") and has("Alohomora"))
+		return inspectAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora")), (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and has("Lumos") and has("Alohomora")), (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and has("Flipendo") and has("Alohomora") and has("Skurge"))
 	end
 end
 function rule_Skurge_Challenge_Challenge_Star_9()
@@ -2589,9 +2589,9 @@ function rule_Bicorn_Level_Cauldron_1()
 end
 function rule_Bicorn_Level_Cauldron_3()
 	if isOpenCastle() then
-		return inspectAccess((has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Bicorn Level Key") and has("Skurge")) and has("Alohomora") and has("Flipendo") and has("Rictusempra"))
+		return inspectAccess((has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Bicorn Level Key") and has("Skurge")) and has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge"))
 	else
-		return inspectAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and has("Alohomora") and has("Flipendo") and has("Rictusempra"))
+		return inspectAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Lumos")), (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge"))
 	end
 end
 function rule_Bicorn_Level_Cauldron_4()
