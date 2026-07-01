@@ -391,9 +391,9 @@ function rule_Entry_Hall_Card_Andros()
 end
 function rule_Dumbledore_s_Study_Card_Beamish()
 	if isOpenCastle() then
-		return reachAccess(has("Alohomora") and has("Flipendo"))
+		return inspectAccess(has("Alohomora") and has("Flipendo"), has("Alohomora") and has("Flipendo"), has("Alohomora"))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and has("Flipendo"))
+		return inspectAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and has("Flipendo"), (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")) and has("Flipendo"), (has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Bicorn Level Key") and has("Boomslang Level Key")))
 	end
 end
 function rule_Rictusempra_Challenge_Card_Chittock()

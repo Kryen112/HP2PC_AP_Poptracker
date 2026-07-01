@@ -358,12 +358,16 @@ FLAG_ITEMS: frozenset[str] = frozenset({"Running", "Glitched"})
 #   Shingleton: Alohomora reveals the contents, but taking it needs more.
 #   Spongify Challenge Star 1: in view on entering the challenge (the key alone),
 #     but out of reach without Spongify.
+#   Beamish: in view on entering the study (Alohomora in open castle), but needs
+#     Flipendo to take. Vanilla study entry already requires Flipendo, so it never
+#     goes blue there.
 INSPECT_CHECKS: dict[str, list[str]] = {
     "Grand Staircase - Card Toothill": [],
     "Castle Exterior - Card Sykes": [],
     "Entry Hall - Card Alderton": ["Alohomora"],
     "Entry Hall - Card Shingleton": ["Alohomora"],
     "Spongify Challenge - Challenge Star 1": [],
+    "Dumbledore's Study - Card Beamish": [],
 }
 
 # Item-predicate name from access.py (`alohomora = _item('Alohomora')`) to item
