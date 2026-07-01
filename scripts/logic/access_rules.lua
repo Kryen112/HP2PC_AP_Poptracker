@@ -2498,9 +2498,9 @@ function rule_Bicorn_Level_Wiggentree_Bark_Jar_2()
 end
 function rule_Bicorn_Level_Chest_8()
 	if isOpenCastle() then
-		return reachAccess((has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge")))
+		return reachAccess((has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge") and has("Lumos")))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge")))
+		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge") and has("Lumos")))
 	end
 end
 function rule_Bicorn_Level_Chest_4()
@@ -2512,9 +2512,9 @@ function rule_Bicorn_Level_Chest_4()
 end
 function rule_Bicorn_Level_Chest_5()
 	if isOpenCastle() then
-		return reachAccess((has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge") and has("Lumos")))
+		return reachAccess((has("Bicorn Level Key") and has("Skurge")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge")))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge") and has("Lumos")))
+		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Bicorn Level Key")) and (has("Alohomora") and has("Flipendo") and has("Rictusempra") and has("Skurge")))
 	end
 end
 function rule_Bicorn_Level_Chest_6()
