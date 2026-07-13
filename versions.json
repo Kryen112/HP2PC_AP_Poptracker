@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.4",
+			"download_url": "https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/download/v1.0.4/HP2PC_AP_Poptracker_v1.0.4.zip",
+			"sha256": "ca959caa6ff24c7a2f0ac803a9405891c297f8acefff61eeb9d49c7e6496cc66",
+			"changelog": [
+				"Progressive level key tracking for Vanilla key mode"
+			]
+		},
+		{
 			"package_version": "1.0.3",
 			"download_url": "https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/download/v1.0.3/HP2PC_AP_Poptracker_v1.0.3.zip",
 			"sha256": "cf8c1561f764895d0c100c6295ed632209ed166e0921c468759fcc327df48b1a",
