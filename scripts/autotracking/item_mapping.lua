@@ -20,6 +20,7 @@ ITEM_MAPPING = {
 	[5750261] = {"Duelling Key", "toggle"},
 	[5750262] = {"Quidditch Key", "toggle"},
 	[5750263] = {"Gryffindor Challenge Key", "toggle"},
+	[5750264] = {"Progressive Level Key", "consumable"},
 	[5750008] = {"Nimbus 2001", "toggle"},
 	[5750009] = {"Quidditch Armour", "toggle"},
 	[5750100] = {"Bronze Card - Agrippa", "toggle"},

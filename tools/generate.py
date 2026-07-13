@@ -382,9 +382,15 @@ INSPECT_CHECKS: dict[str, list[str]] = {
 # has("Item").
 ITEM_PREDICATES: dict[str, str] = {}
 
-# Module-level _Access aliases from rules.py (name -> expression AST), inlined by
-# rule_to_lua when a rule references the name (e.g. chamber_first_fall).
+# Module-level _Access aliases from rules.py and access.py (name -> expression
+# AST), inlined by rule_to_lua when a rule references the name (e.g.
+# chamber_first_fall, keys_through_bicorn). Item predicates take precedence, so
+# access.py's `name = _item(...)` lines resolve as predicates, never aliases.
 RULE_ALIASES: dict[str, ast.AST] = {}
+
+# The vanilla story-chain item name from items.py (PROGRESSIVE_LEVEL_KEY_NAME).
+# Tracked as a consumable counter; rules compare count(name) >= n.
+PROGRESSIVE_KEY_NAME: str = "Progressive Level Key"
 
 # Top-level int constants from rules.py (e.g. CHAMBER_FALL_BRONZE_COUNT), so a
 # card-count helper can take a named count instead of a bare literal.
@@ -447,6 +453,12 @@ def rule_to_lua(node, force_true: frozenset[str] = frozenset()) -> str:
             raise ValueError(f"unsupported card-count arg: {ast.dump(node)}")
         tier = "silver_cards" if node.func.id == "_silver_cards" else "bronze_cards"
         return f'(count("{tier}") >= {count})'
+    # _Access DSL: _progressive_level_keys(n) -> count of the consumable
+    # Progressive Level Key item, mirroring state.has(name, player, n).
+    if (isinstance(node, ast.Call) and isinstance(node.func, ast.Name)
+            and node.func.id == "_progressive_level_keys" and len(node.args) == 1
+            and isinstance(node.args[0], ast.Constant)):
+        return f'(count("{_lua_escape(PROGRESSIVE_KEY_NAME)}") >= {node.args[0].value})'
     raise ValueError(f"unsupported _Access node: {ast.dump(node)}")
 
 
@@ -545,8 +557,23 @@ def _classify_for_img(name: str, groups: dict[str, list[str]]) -> str:
 def build_items_json(items: dict) -> list:
     name_to_id = items["ITEM_NAME_TO_ID"]
     groups = items["ITEM_GROUPS"]
+    progressive_max = len(items.get("PROGRESSIVE_LEVEL_KEY_ORDER") or [])
     out = []
     for name in name_to_id:
+        if name == PROGRESSIVE_KEY_NAME:
+            # N copies of one AP item: a consumable counter, bumped per copy by
+            # the autotracker, compared via count() in the access rules.
+            out.append({
+                "name": name,
+                "type": "consumable",
+                "img": f"{CLASS_TO_IMG_DIR['key']}/{slug(name).lower()}.png",
+                "codes": name,
+                "min_quantity": 0,
+                "max_quantity": progressive_max,
+                "increment": 1,
+                "decrement": 1,
+            })
+            continue
         kind = _classify_for_img(name, groups)
         img = f"{CLASS_TO_IMG_DIR[kind]}/{slug(name).lower()}.png"
         out.append({
@@ -923,7 +950,13 @@ def main() -> None:  # noqa: C901
         location_rules["LOCATION_RULES_VANILLA"] = vanilla
     ITEM_PREDICATES.update(load_item_predicates(APWORLD / "access.py"))
     RULE_ALIASES.update(load_rule_aliases(APWORLD / "rules.py"))
+    RULE_ALIASES.update(load_rule_aliases(APWORLD / "access.py"))
     INT_CONSTANTS.update(load_int_constants(APWORLD / "rules.py"))
+    # The progressive key's canonical name lives in items.py; read it so the
+    # count() rules and the consumable item can never drift from the apworld.
+    global PROGRESSIVE_KEY_NAME
+    PROGRESSIVE_KEY_NAME = load_assignments(APWORLD / "items.py").get(
+        "PROGRESSIVE_LEVEL_KEY_NAME", PROGRESSIVE_KEY_NAME)
     # The post-ending chest exclusion lives in __init__.py's _location_enabled,
     # not in the regions/rules tables, so read the name set straight from there.
     global POST_ENDING_CHESTS
@@ -999,7 +1032,8 @@ def main() -> None:  # noqa: C901
     # ---- scripts/autotracking/item_mapping.lua ---------------------------
     item_rows = []
     for name, ap_id in name_to_id_items.items():
-        item_rows.append((str(ap_id), f'{{"{_lua_escape(name)}", "toggle"}}'))
+        kind = "consumable" if name == PROGRESSIVE_KEY_NAME else "toggle"
+        item_rows.append((str(ap_id), f'{{"{_lua_escape(name)}", "{kind}"}}'))
     write_text(PACK / "scripts" / "autotracking" / "item_mapping.lua",
                "ITEM_MAPPING = {\n" + lua_table_kv(item_rows) + "\n}\n")
 

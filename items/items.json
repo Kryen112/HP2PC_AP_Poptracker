@@ -126,6 +126,16 @@
 		"codes": "Gryffindor Challenge Key"
 	},
 	{
+		"name": "Progressive Level Key",
+		"type": "consumable",
+		"img": "images/items/keys/progressive_level_key.png",
+		"codes": "Progressive Level Key",
+		"min_quantity": 0,
+		"max_quantity": 5,
+		"increment": 1,
+		"decrement": 1
+	},
+	{
 		"name": "Nimbus 2001",
 		"type": "toggle",
 		"img": "images/items/equipment/nimbus_2001.png",
