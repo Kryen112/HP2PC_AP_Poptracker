@@ -37,7 +37,9 @@ SLOT_CODES = {
 	allow_running_logic = {
 		code = "allow_running_logic",
 		mapping = {
-			[0] = 0, [1] = 1,
+			["off"] = 0, [0] = 0,
+			["on"] = 1, [1] = 1,
+			["difficult"] = 2, [2] = 2,
 			[false] = 0, [true] = 1,
 		},
 	},

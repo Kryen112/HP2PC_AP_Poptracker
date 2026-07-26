@@ -341,10 +341,11 @@ def load_rule_aliases(path: Path) -> dict[str, ast.AST]:
 # ---------------------------------------------------------------------------
 
 # Logic-flag item names. A rule reachable only when one of these is forced on is
-# out of logic (SequenceBreak / yellow) rather than unreachable. Running and
-# Glitched are player-selected capabilities, always physically possible, so every
-# seed can reach these checks regardless of whether the flag is enabled in logic.
-FLAG_ITEMS: frozenset[str] = frozenset({"Running", "Glitched"})
+# out of logic (SequenceBreak / yellow) rather than unreachable. Running,
+# Difficult Running and Glitched are player-selected capabilities, always
+# physically possible, so every seed can reach these checks regardless of
+# whether the flag is enabled in logic.
+FLAG_ITEMS: frozenset[str] = frozenset({"Running", "Difficult Running", "Glitched"})
 
 # Checks visible before they are collectable. The value lists the items needed to
 # SEE the check, ANDed onto its region entry. When the collect rule is unmet but
@@ -495,6 +496,9 @@ def region_rule_fn_name(region: str) -> str:
 # "default" is the initial stage index shown before slot_data arrives (the
 # autotracker overwrites it on connect). Binary stages are [off=0, on=1];
 # game_mode is [vanilla=0, open_castle=1]. Omit to start at stage 0.
+# A staged entry may give a stage a third element: the logic tokens that stage
+# carries. Stages do not inherit codes, so a tier lists every token it grants,
+# not just the one it adds.
 SETTING_ITEMS = [
     {
         "name": "Game mode", "key": "game_mode", "default": 1,
@@ -511,7 +515,19 @@ SETTING_ITEMS = [
     # has("X") in access_rules.lua); it rides only the ON stage's codes so a
     # `... | Running` / `... | Glitched` clause resolves true exactly when the
     # toggle is on. Default off (no `default`), matching the apworld default.
-    {"name": "Allow running logic", "key": "allow_running_logic", "binary": True, "logic_code": "Running"},
+    # Running is tiered rather than binary: `difficult` grants plain Running too,
+    # so it carries both tokens. `bool_compat` keeps the mapping accepting the
+    # bare true/false a pre-tier seed sends. Both non-off stages share the on
+    # icon: the tier is a logic depth, not a different setting.
+    {
+        "name": "Allow running logic", "key": "allow_running_logic", "bool_compat": True,
+        "stages": [
+            ("off", "off", ()),
+            ("on", "on", ("Running",)),
+            ("difficult", "difficult", ("Running", "Difficult Running")),
+        ],
+        "stage_images": {"on": "allow_running_logic_on", "difficult": "allow_running_logic_on"},
+    },
     {"name": "Allow glitched logic", "key": "allow_glitched_logic", "binary": True, "logic_code": "Glitched"},
     {"name": "Enable challenge stars", "key": "enable_challenge_stars", "binary": True, "default": 1},
     {"name": "Enable Quidditch upgrades", "key": "enable_quidditch_upgrades", "binary": True},
@@ -622,15 +638,20 @@ def build_items_json(items: dict) -> list:
                 },
             ]
         else:
-            stages = [
-                {
-                    "img": f"images/items/settings/{s['key']}_{stage_key}.png",
+            stage_images = s.get("stage_images", {})
+            stages = []
+            for stage in s["stages"]:
+                stage_key, stage_label = stage[0], stage[1]
+                codes = f"{s['key']},{s['key']}_{stage_key}"
+                for token in (stage[2] if len(stage) > 2 else ()):
+                    codes += f",{token}"
+                img = stage_images.get(stage_key, f"{s['key']}_{stage_key}")
+                stages.append({
+                    "img": f"images/items/settings/{img}.png",
                     "name": f"{s['name']}: {stage_label}",
-                    "codes": f"{s['key']},{s['key']}_{stage_key}",
+                    "codes": codes,
                     "inherit_codes": False,
-                }
-                for stage_key, stage_label in s["stages"]
-            ]
+                })
         entry = {
             "name": s["name"],
             "type": "progressive",
@@ -1078,8 +1099,13 @@ def main() -> None:  # noqa: C901
             slot_lines.append("\t\t\t[0] = 0, [1] = 1,")
             slot_lines.append('\t\t\t[false] = 0, [true] = 1,')
         else:
-            for i, (stage_key, _) in enumerate(s["stages"]):
-                slot_lines.append(f'\t\t\t["{stage_key}"] = {i}, [{i}] = {i},')
+            for i, stage in enumerate(s["stages"]):
+                slot_lines.append(f'\t\t\t["{stage[0]}"] = {i}, [{i}] = {i},')
+            if s.get("bool_compat"):
+                # A setting that used to be binary: a seed from before it gained
+                # its extra stages sends a bare boolean, which lands on the same
+                # off / on pair the toggle had.
+                slot_lines.append('\t\t\t[false] = 0, [true] = 1,')
         slot_lines.append("\t\t},")
         slot_lines.append("\t},")
     slot_lines.append("}")

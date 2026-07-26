@@ -1036,6 +1036,12 @@
 				"name": "Allow running logic: on",
 				"codes": "allow_running_logic,allow_running_logic_on,Running",
 				"inherit_codes": false
+			},
+			{
+				"img": "images/items/settings/allow_running_logic_on.png",
+				"name": "Allow running logic: difficult",
+				"codes": "allow_running_logic,allow_running_logic_difficult,Running,Difficult Running",
+				"inherit_codes": false
 			}
 		]
 	},
