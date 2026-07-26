@@ -659,12 +659,21 @@ def loc_section_ref(region_display: str, loc_name: str) -> str:
     return short
 
 
+def as_and_rule(rules: list[str]) -> list[str]:
+    """Turn a list of visibility helpers into a PopTracker visibility_rules value
+    that requires all of them. PopTracker OR's the entries of the array and only
+    AND's the comma-separated codes within a single entry, so every helper has to
+    ride one comma-joined rule to be ANDed rather than ORed."""
+    return [",".join(rules)] if rules else []
+
+
 def vis_rules_for(region: str, loc_name: str, loc_groups: dict[str, str]) -> list[str]:
-    """Visibility helpers gating a location's pin, ANDed by PopTracker — the pin
-    shows only when every listed helper returns true. A location can be gated by
-    both its region (the open-castle-only Gryffindor challenge) and its group
-    (cards, secrets, containers, ...), so a Gryffindor container pin carries
-    both $visOpenCastleOnly and $visContainers."""
+    """Visibility helpers gating a location's pin; every one must hold for the
+    pin to show. A location can be gated by both its region (the open-castle-only
+    Gryffindor challenge) and its group (cards, secrets, containers, ...), so a
+    Gryffindor container pin carries both $visOpenCastleOnly and $visContainers.
+    Returned as separate helpers — pass through as_and_rule before writing them
+    into a visibility_rules array so PopTracker ANDs them."""
     rules: list[str] = []
     # The Gryffindor challenge level only exists in the open-castle build.
     if region == "GryffindorChallenge":
@@ -733,7 +742,7 @@ def build_region_children(region: str, region_locs: list[str],
                 sec = {"name": member, "access_rules": [f"^${rule_fn_name(member_loc)}"]}
                 vis = vis_rules_for(region, member_loc, loc_groups)
                 if vis:
-                    sec["visibility_rules"] = vis
+                    sec["visibility_rules"] = as_and_rule(vis)
                 sections.append(sec)
             if not sections:
                 continue
@@ -763,7 +772,7 @@ def build_region_children(region: str, region_locs: list[str],
             }
             vis = vis_rules_for(region, loc_name, loc_groups)
             if vis:
-                entry["visibility_rules"] = vis
+                entry["visibility_rules"] = as_and_rule(vis)
             children.append(entry)
     return children
 
@@ -820,7 +829,7 @@ def build_menu_room_node(parent_name: str, target_map: str,
                      for ln in by_region.get(src, [])]
         common = set.intersection(*rule_sets) if rule_sets else set()
         if common:
-            child["visibility_rules"] = sorted(common)
+            child["visibility_rules"] = as_and_rule(sorted(common))
         children.append(child)
     return {
         "name": parent_name,
