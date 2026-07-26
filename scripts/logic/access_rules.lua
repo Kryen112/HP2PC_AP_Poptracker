@@ -841,7 +841,7 @@ function rule_Quidditch_Match_3_Slytherin()
 	if isOpenCastle() then
 		return flagAccess((has("Quidditch Key") or has("Difficult Running")), (has("Quidditch Key") or true))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Quidditch Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora")))
+		return reachAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Quidditch Key")) and (has("Rictusempra") and has("Skurge") and has("Alohomora") and (has("Bicorn Level Key") or (count("Progressive Level Key") >= 1))))
 	end
 end
 function rule_Quidditch_Match_4_Hufflepuff()
