@@ -699,37 +699,37 @@ function rule_Gold_Card_Room_Card_Hufflepuff()
 end
 function rule_Gold_Card_Room_Card_Knightley()
 	if isOpenCastle() then
-		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	end
 end
 function rule_Gold_Card_Room_Card_Paracelsus()
 	if isOpenCastle() then
-		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	end
 end
 function rule_Gold_Card_Room_Card_Pinkstone()
 	if isOpenCastle() then
-		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	end
 end
 function rule_Gold_Card_Room_Card_Potter()
 	if isOpenCastle() then
-		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	end
 end
 function rule_Gold_Card_Room_Card_Ravenclaw()
 	if isOpenCastle() then
-		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	end
 end
 function rule_Gold_Card_Room_Card_Slytherin()
@@ -2183,9 +2183,9 @@ function rule_Gryffindor_Challenge_Complete()
 end
 function rule_Gold_Card_Room_Complete()
 	if isOpenCastle() then
-		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((count("silver_cards") >= 20) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Diffindo") and has("Skurge") and (has("Rictusempra") or has("Spongify"))))
+		return reachAccess((has("Lumos") and has("Flipendo") and (count("silver_cards") >= 40)) and (has("Alohomora") and has("Flipendo") and has("Diffindo") and has("Skurge") and has("Lumos") and (has("Rictusempra") or has("Spongify"))))
 	end
 end
 function rule_Entry_Hall_Card_Vendor_1()
