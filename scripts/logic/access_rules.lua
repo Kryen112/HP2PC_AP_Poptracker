@@ -3100,9 +3100,9 @@ function rule_Skurge_Challenge_Chest_1()
 end
 function rule_Skurge_Challenge_Chest_6()
 	if isOpenCastle() then
-		return reachAccess((has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Alohomora")))
+		return flagAccess((has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora")), (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or true) and has("Alohomora")))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Alohomora")))
+		return flagAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora")), (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or true) and has("Alohomora")))
 	end
 end
 function rule_Skurge_Challenge_Cigar_Box()
@@ -3247,9 +3247,9 @@ function rule_Skurge_Challenge_Chest_3()
 end
 function rule_Skurge_Challenge_Chest_5()
 	if isOpenCastle() then
-		return reachAccess((has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Alohomora")))
+		return flagAccess((has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora")), (has("Skurge Challenge Key") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or true) and has("Alohomora")))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Alohomora")))
+		return flagAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or has("Running")) and has("Alohomora")), (has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Skurge")) and (has("Skurge") and has("Flipendo") and (has("Lumos") or true) and has("Alohomora")))
 	end
 end
 function rule_Diffindo_Challenge_Chest_3()
