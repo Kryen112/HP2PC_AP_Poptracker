@@ -1,11 +1,19 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.6",
+			"download_url": "https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/download/v1.0.6/HP2PC_AP_Poptracker_v1.0.6.zip",
+			"sha256": "70177c7880a1de9aa821fcee7dd429302c687a5adeb315271a1d26173ea24788",
+			"changelog": [
+				"For APWorld v2.10.0"
+			]
+		},
+		{
 			"package_version": "1.0.5",
 			"download_url": "https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/download/v1.0.5/HP2PC_AP_Poptracker_v1.0.5.zip",
-			"sha256": "84b5e87b431ab2be16b331bf38a0865b5612873590d045e495d05b108f0aee31",
+			"sha256": "7b0114cc4f20a821ce25cf73e7aa6ecc7ea21bcfde1401a2d4891d8d88a8c290",
 			"changelog": [
-				"For APWorld v2.9.0"
+				"For APWorld v2.10.0"
 			]
 		},
 		{
