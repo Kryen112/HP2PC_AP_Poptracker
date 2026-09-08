@@ -3660,9 +3660,9 @@ function rule_Gryffindor_Challenge_Cauldron_1()
 end
 function rule_Gryffindor_Challenge_Cauldron_2()
 	if isOpenCastle() then
-		return flagAccess(has("Gryffindor Challenge Key") and ((has("Diffindo") or has("Running")) and has("Spongify") and has("Flipendo")), has("Gryffindor Challenge Key") and ((has("Diffindo") or true) and has("Spongify") and has("Flipendo")))
+		return flagAccess(has("Gryffindor Challenge Key") and ((has("Diffindo") or has("Running")) and has("Spongify") and has("Alohomora") and has("Flipendo")), has("Gryffindor Challenge Key") and ((has("Diffindo") or true) and has("Spongify") and has("Alohomora") and has("Flipendo")))
 	else
-		return flagAccess(false and ((has("Diffindo") or has("Running")) and has("Spongify") and has("Flipendo")), false and ((has("Diffindo") or true) and has("Spongify") and has("Flipendo")))
+		return flagAccess(false and ((has("Diffindo") or has("Running")) and has("Spongify") and has("Alohomora") and has("Flipendo")), false and ((has("Diffindo") or true) and has("Spongify") and has("Alohomora") and has("Flipendo")))
 	end
 end
 function rule_Gryffindor_Challenge_Cauldron_3()
