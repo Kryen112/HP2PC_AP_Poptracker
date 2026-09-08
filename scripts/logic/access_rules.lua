@@ -2281,9 +2281,9 @@ function rule_Castle_Exterior_Ingredient_Vendor_2()
 end
 function rule_Chamber_of_Secrets_Wiggentree_Bark_Jar_1()
 	if isOpenCastle() then
-		return reachAccess((has("Chamber of Secrets Key") and has("Alohomora")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo")))
+		return reachAccess((has("Chamber of Secrets Key") and has("Alohomora")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Diffindo") and has("Flipendo")))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and ((has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) or (count("Progressive Level Key") >= 5)) and has("Chamber of Secrets Key")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo")))
+		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and ((has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) or (count("Progressive Level Key") >= 5)) and has("Chamber of Secrets Key")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Diffindo") and has("Flipendo")))
 	end
 end
 function rule_Chamber_of_Secrets_Chest_1()
@@ -2330,9 +2330,9 @@ function rule_Chamber_of_Secrets_Chest_2()
 end
 function rule_Chamber_of_Secrets_Flobberworm_Mucous_Jar_1()
 	if isOpenCastle() then
-		return reachAccess((has("Chamber of Secrets Key") and has("Alohomora")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo")))
+		return reachAccess((has("Chamber of Secrets Key") and has("Alohomora")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Diffindo") and has("Flipendo")))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and ((has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) or (count("Progressive Level Key") >= 5)) and has("Chamber of Secrets Key")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Flipendo")))
+		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and ((has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) or (count("Progressive Level Key") >= 5)) and has("Chamber of Secrets Key")) and ((has("Spongify") or (count("bronze_cards") >= 20)) and has("Diffindo") and has("Flipendo")))
 	end
 end
 function rule_Chamber_of_Secrets_Cauldron_1()
