@@ -1169,6 +1169,29 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
+						"x": 1088,
+						"y": 736
+					}
+				],
+				"visibility_rules": [
+					"$visContainers"
+				]
+			},
+			{
+				"name": "Plant Pot 11",
+				"chest_unopened_img": "images/items/item.png",
+				"chest_opened_img": "images/items/item_opened.png",
+				"access_rules": [
+					"^$rule_Diffindo_Challenge_Plant_Pot_11"
+				],
+				"sections": [
+					{
+						"name": "Plant Pot 11"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "Diffindo Challenge",
 						"x": 978,
 						"y": 736
 					}
@@ -1284,8 +1307,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 892,
-						"y": 569
+						"x": 799,
+						"y": 543
 					}
 				],
 				"visibility_rules": [
@@ -1307,8 +1330,8 @@
 				"map_locations": [
 					{
 						"map": "Diffindo Challenge",
-						"x": 1088,
-						"y": 736
+						"x": 892,
+						"y": 569
 					}
 				],
 				"visibility_rules": [

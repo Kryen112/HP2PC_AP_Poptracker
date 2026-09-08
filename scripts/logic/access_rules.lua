@@ -3406,14 +3406,21 @@ function rule_Diffindo_Challenge_Plant_Pot_8()
 		return reachAccess((has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Skurge") and has("Flipendo")))
 	end
 end
-function rule_Diffindo_Challenge_Plant_Pot_10()
+function rule_Diffindo_Challenge_Plant_Pot_9()
+	if isOpenCastle() then
+		return reachAccess((has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Skurge") and has("Flipendo")))
+	else
+		return reachAccess((has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Skurge") and has("Flipendo")))
+	end
+end
+function rule_Diffindo_Challenge_Plant_Pot_11()
 	if isOpenCastle() then
 		return reachAccess((has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Skurge") and has("Lumos") and has("Flipendo")))
 	else
 		return reachAccess((has("Lumos") and has("Flipendo") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Skurge") and has("Lumos") and has("Flipendo")))
 	end
 end
-function rule_Diffindo_Challenge_Plant_Pot_9()
+function rule_Diffindo_Challenge_Plant_Pot_10()
 	if isOpenCastle() then
 		return reachAccess((has("Diffindo Challenge Key") and has("Diffindo")) and (has("Diffindo") and has("Rictusempra") and has("Skurge") and has("Lumos") and has("Flipendo")))
 	else
