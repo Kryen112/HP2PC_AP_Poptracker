@@ -855,7 +855,7 @@ function rule_Quidditch_Match_5_Ravenclaw()
 	if isOpenCastle() then
 		return flagAccess((has("Quidditch Key") or has("Difficult Running")), (has("Quidditch Key") or true))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Quidditch Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and has("Alohomora") and ((has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) or (count("Progressive Level Key") >= 4))))
+		return reachAccess((has("Lumos") and has("Flipendo") and has("Rictusempra") and has("Quidditch Key")) and (has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Alohomora") and ((has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key")) or (count("Progressive Level Key") >= 4))))
 	end
 end
 function rule_Quidditch_Match_6_Slytherin()
