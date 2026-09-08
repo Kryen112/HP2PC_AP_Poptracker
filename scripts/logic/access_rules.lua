@@ -244,9 +244,9 @@ function rule_Entry_Hall_Card_Sawbridge()
 end
 function rule_Forbidden_Forest_Card_Scamander()
 	if isOpenCastle() then
-		return flagAccess((has("Forbidden Forest Key") or has("Difficult Running")) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Alohomora")), (has("Forbidden Forest Key") or true) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Alohomora")))
+		return flagAccess((has("Forbidden Forest Key") or has("Difficult Running")) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Flipendo") and has("Alohomora")), (has("Forbidden Forest Key") or true) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Flipendo") and has("Alohomora")))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and ((has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) or (count("Progressive Level Key") >= 5))) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Alohomora")))
+		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and ((has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) or (count("Progressive Level Key") >= 5))) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Flipendo") and has("Alohomora")))
 	end
 end
 function rule_Whomping_Willow_Card_Starkey()
@@ -1147,9 +1147,9 @@ function rule_Diffindo_Challenge_Secret_11()
 end
 function rule_Forbidden_Forest_Secret_4()
 	if isOpenCastle() then
-		return flagAccess((has("Forbidden Forest Key") or has("Difficult Running")) and (has("Lumos") and has("Spongify") and has("Diffindo")), (has("Forbidden Forest Key") or true) and (has("Lumos") and has("Spongify") and has("Diffindo")))
+		return flagAccess((has("Forbidden Forest Key") or has("Difficult Running")) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Flipendo")), (has("Forbidden Forest Key") or true) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Flipendo")))
 	else
-		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and ((has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) or (count("Progressive Level Key") >= 5))) and (has("Lumos") and has("Spongify") and has("Diffindo")))
+		return reachAccess((has("Lumos") and has("Flipendo") and has("Alohomora") and has("Rictusempra") and has("Skurge") and has("Diffindo") and has("Spongify") and ((has("Bicorn Level Key") and has("Boomslang Level Key") and has("Goyle Level Key") and has("Slytherin Common Room Key") and has("Forbidden Forest Key")) or (count("Progressive Level Key") >= 5))) and (has("Lumos") and has("Spongify") and has("Diffindo") and has("Flipendo")))
 	end
 end
 function rule_Forbidden_Forest_Secret_3()
