@@ -1,6 +1,15 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.9",
+			"download_url": "https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/download/v1.0.9/HP2PC_AP_Poptracker_v1.0.9.zip",
+			"sha256": "30d7d749087ebf63f2968494ceeb73692bedf064d62d09f60c4a5173f543b89d",
+			"changelog": [
+				"For APWorld v2.12.0",
+				"Access rules regenerated for the Gold Card Room gate: Spongify, or Rictusempra with Flipendo"
+			]
+		},
+		{
 			"package_version": "1.0.8",
 			"download_url": "https://github.com/Kryen112/HP2PC_AP_Poptracker/releases/download/v1.0.8/HP2PC_AP_Poptracker_v1.0.8.zip",
 			"sha256": "32322723eaf65c1edc20ed93406c22112233a245d9fe33e3bd24f283ee47e261",
